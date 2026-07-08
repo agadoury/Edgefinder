@@ -29,6 +29,7 @@ type SortKey = "strength" | "name" | "market" | "confidence";
 
 const CONF_RANK = { high: 3, medium: 2, low: 1 } as const;
 const LEAN_RANK = { over: 3, under: 2, neutral: 1 } as const;
+const PAGE_SIZE = 30;
 
 function HeaderCell({
   label,
@@ -159,6 +160,11 @@ export function Board({
   const [leanF, setLeanF] = useState<string>("ALL");
   const [sortKey, setSortKey] = useState<SortKey>("strength");
   const [sortDir, setSortDir] = useState<1 | -1>(-1);
+  // paging state resets whenever the filter combination changes
+  const filterKey = `${pos}|${market}|${teamF}|${leanF}`;
+  const [paging, setPaging] = useState({ key: filterKey, n: PAGE_SIZE });
+  const visible = paging.key === filterKey ? paging.n : PAGE_SIZE;
+  const setVisible = (n: number) => setPaging({ key: filterKey, n });
 
   const teams = useMemo(() => [...new Set(rows.map((r) => r.team))].sort(), [rows]);
 
@@ -183,6 +189,9 @@ export function Board({
     });
     return out;
   }, [rows, pos, market, teamF, leanF, sortKey, sortDir]);
+
+  const shown = filtered.slice(0, visible);
+  const hiddenCount = filtered.length - shown.length;
 
   const record = useMemo(() => {
     let hit = 0,
@@ -338,7 +347,7 @@ export function Board({
               </tr>
             </thead>
             <tbody>
-              {filtered.map((r) => {
+              {shown.map((r) => {
                 const delta = r.projection - r.refLine;
                 return (
                   <tr
@@ -406,7 +415,7 @@ export function Board({
 
       {/* mobile cards */}
       <ul className="grid gap-3 md:hidden">
-        {filtered.map((r) => (
+        {shown.map((r) => (
           <li key={`${r.playerId}-${r.market}`}>
             <Link
               href={`/players/${r.playerId}`}
@@ -440,6 +449,24 @@ export function Board({
           <li className="card p-8 text-center text-sm text-ink3">No calls match those filters.</li>
         )}
       </ul>
+      {hiddenCount > 0 && (
+        <div className="mt-4 flex items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={() => setVisible(visible + PAGE_SIZE)}
+            className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-ink2 transition-colors hover:bg-white/10 hover:text-ink"
+          >
+            Show {Math.min(PAGE_SIZE, hiddenCount)} more
+          </button>
+          <button
+            type="button"
+            onClick={() => setVisible(filtered.length)}
+            className="rounded-full px-4 py-2.5 text-sm font-medium text-ink3 transition-colors hover:text-ink"
+          >
+            Show all {filtered.length}
+          </button>
+        </div>
+      )}
       <p className="mt-3 text-xs text-ink3">
         {games.length} games · {rows.length} calls · tap any row for the full breakdown
       </p>

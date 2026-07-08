@@ -103,7 +103,7 @@ live numbers baked in.
       "refLine": 249.5,
       "overProbAtRef": 0.58,
       "lean": "over",               // over | under | neutral (|p-0.5| < 0.04)
-      "strength": 64,               // 0-100 edge score, see below
+      "strength": 16,               // 0-100 edge score, see below
       "confidence": "high",         // high | medium | low
       "actual": 287.0,              // null if DNP
       "result": "over"              // over | under | push | dnp
@@ -138,7 +138,7 @@ the model lean?" — NOT "is this +EV vs a sportsbook".
       "refLine": 249.5,
       "overProbAtRef": 0.58,
       "lean": "over",
-      "strength": 64,
+      "strength": 16,
       "confidence": "high",
       "confidenceReason": "12 games of steady volume this season",
       "verdict": "The model projects 261 passing yards — it gives Josh a 58% chance to clear a 249.5-yard line.",

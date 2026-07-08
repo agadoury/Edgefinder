@@ -58,9 +58,19 @@ export function DistributionChart({
       if (dx <= 0) continue;
       mids.push({ line: (a.line + b.line) / 2, d: (a.over - b.over) / dx });
     }
-    const sm = mids.map((m, i) => {
-      const w = [mids[i - 1]?.d, m.d, mids[i + 1]?.d].filter((v): v is number => v !== undefined);
-      return { line: m.line, d: w.reduce((s, v) => s + v, 0) / w.length };
+    // Gaussian-kernel smoothing: the exported curve is piecewise-linear
+    // between quantile knots, so its raw derivative is a step function.
+    // Cosmetic only — probability readouts interpolate the exact curve.
+    const sigma = (hi - lo) / 14;
+    const sm = mids.map((m) => {
+      let num = 0;
+      let den = 0;
+      for (const o of mids) {
+        const w = Math.exp(-((o.line - m.line) ** 2) / (2 * sigma * sigma));
+        num += w * o.d;
+        den += w;
+      }
+      return { line: m.line, d: den > 0 ? num / den : m.d };
     });
     const dMax = Math.max(...sm.map((m) => m.d), 1e-9);
     const pts = sm.map((m) => ({
