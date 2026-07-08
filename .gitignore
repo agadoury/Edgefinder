@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Pipeline artifacts (re-creatable via `python pipeline/run_pipeline.py`)
+pipeline/data/raw/
+pipeline/data/processed/
+pipeline/data/models/
+
+# Node / Next.js
+node_modules/
+web/.next/
+web/out/
+*.tsbuildinfo
+npm-debug.log*
+
+# Misc
+.DS_Store
