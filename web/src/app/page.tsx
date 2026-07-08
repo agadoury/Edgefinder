@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BrainCircuit, ReceiptText, ShieldCheck } from "lucide-react";
-import { getMeta, getSlate } from "../lib/data";
+import { getHeadshots, getMeta, getSlate } from "../lib/data";
 import { Board } from "../components/Board";
 import { GameCard } from "../components/GameCard";
 import { HeroVisual } from "../components/HeroVisual";
@@ -153,7 +153,12 @@ export default function Home() {
           </span>{" "}
           — click any row for the full story.
         </p>
-        <Board rows={slate.props} games={slate.games} markets={meta.markets} />
+        <Board
+          rows={slate.props}
+          games={slate.games}
+          markets={meta.markets}
+          headshots={getHeadshots()}
+        />
       </section>
 
       {/* ---------- honesty strip ---------- */}

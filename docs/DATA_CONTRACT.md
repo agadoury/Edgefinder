@@ -15,8 +15,15 @@ the pipeline normalizes any source codes into these.
 web/src/data/
 ├── meta.json              # season/week, markets, model card numbers
 ├── slate.json             # demo-week games + player-prop index rows
-└── players/{playerId}.json  # one file per slate player: full detail
+├── players/{playerId}.json  # one file per slate player: full detail
+└── headshots.json         # OPTIONAL: playerId -> portrait URL
 ```
+
+`headshots.json` is produced by `pipeline/edgefinder/headshots.py` (name
+matching against the DynastyProcess ID crosswalk, ESPN headshot CDN
+URLs). It is optional: if the file is absent, a player has no entry, or
+an image fails to load in the browser, the app falls back to the
+team-colored monogram avatar.
 
 ## Markets
 

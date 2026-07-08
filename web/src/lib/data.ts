@@ -221,6 +221,21 @@ export function getPlayer(playerId: string): PlayerFile {
   return file;
 }
 
+let headshotsCache: Record<string, string> | null = null;
+
+/** Optional playerId -> portrait URL map (headshots.json). Players without
+ * an entry — or whose image fails to load — fall back to monogram avatars. */
+export function getHeadshots(): Record<string, string> {
+  if (!headshotsCache) {
+    try {
+      headshotsCache = readJson<Record<string, string>>("headshots.json");
+    } catch {
+      headshotsCache = {};
+    }
+  }
+  return headshotsCache;
+}
+
 export function getGame(gameId: string): Game {
   const game = getSlate().games.find((g) => g.gameId === gameId);
   if (!game) throw new Error(`Unknown gameId: ${gameId}`);

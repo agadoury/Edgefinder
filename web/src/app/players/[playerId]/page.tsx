@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, MapPin } from "lucide-react";
 import {
   getGame,
+  getHeadshots,
   getMarketMeta,
   getMeta,
   getPlayer,
@@ -10,7 +11,7 @@ import {
 } from "../../../lib/data";
 import { fmtKickoff, fmtLine, fmtSpread, firstName } from "../../../lib/format";
 import { teamFullName } from "../../../lib/teams";
-import { MonogramAvatar } from "../../../components/ui";
+import { PlayerAvatar } from "../../../components/PlayerAvatar";
 import { WeatherChip } from "../../../components/GameCard";
 import { MarketCard } from "../../../components/MarketCard";
 import { Receipts } from "../../../components/Receipts";
@@ -68,7 +69,12 @@ export default async function PlayerPage({
 
       {/* ---------- player header ---------- */}
       <header className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
-        <MonogramAvatar name={player.name} teamCode={player.team} size={72} />
+        <PlayerAvatar
+          name={player.name}
+          teamCode={player.team}
+          size={72}
+          src={getHeadshots()[player.playerId]}
+        />
         <div className="min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{player.name}</h1>
           <p className="mt-1 text-sm text-ink2">

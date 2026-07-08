@@ -19,10 +19,10 @@ import {
   ConfidenceBadge,
   HitMissMark,
   LeanPill,
-  MonogramAvatar,
   ResultBadge,
   StrengthMeter,
 } from "./ui";
+import { PlayerAvatar } from "./PlayerAvatar";
 import { InfoTip } from "./Tooltip";
 
 type SortKey = "strength" | "name" | "market" | "confidence";
@@ -147,10 +147,12 @@ export function Board({
   rows,
   games,
   markets,
+  headshots = {},
 }: {
   rows: SlateProp[];
   games: Game[];
   markets: MarketMeta[];
+  headshots?: Record<string, string>;
 }) {
   const router = useRouter();
   const { revealed } = useReveal();
@@ -357,7 +359,7 @@ export function Board({
                   >
                     <td className="py-3 pr-3 pl-4">
                       <span className="flex items-center gap-3">
-                        <MonogramAvatar name={r.name} teamCode={r.team} size={34} />
+                        <PlayerAvatar name={r.name} teamCode={r.team} size={34} src={headshots[r.playerId]} />
                         <span>
                           <Link
                             href={`/players/${r.playerId}`}
@@ -425,7 +427,7 @@ export function Board({
               )} versus line ${fmtLine(r.refLine)}, lean ${leanLabel(r.lean)}`}
             >
               <span className="flex items-center gap-3">
-                <MonogramAvatar name={r.name} teamCode={r.team} size={38} />
+                <PlayerAvatar name={r.name} teamCode={r.team} size={38} src={headshots[r.playerId]} />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-semibold">{r.name}</span>
                   <span className="block text-xs text-ink3">
