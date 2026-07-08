@@ -1,0 +1,301 @@
+{
+ "generatedAt": "2026-07-08T02:39:25Z",
+ "season": 2025,
+ "week": 14,
+ "mode": "backtest_replay",
+ "modelVersion": "1.0.0",
+ "trainSeasons": [
+  2021,
+  2022,
+  2023,
+  2024
+ ],
+ "markets": [
+  {
+   "id": "pass_yds",
+   "label": "Passing Yards",
+   "unit": "yards",
+   "positions": [
+    "QB"
+   ],
+   "lineStep": 2.5
+  },
+  {
+   "id": "pass_tds",
+   "label": "Passing TDs",
+   "unit": "touchdowns",
+   "positions": [
+    "QB"
+   ],
+   "lineStep": 0.5
+  },
+  {
+   "id": "rush_yds",
+   "label": "Rushing Yards",
+   "unit": "yards",
+   "positions": [
+    "RB",
+    "QB"
+   ],
+   "lineStep": 2.5
+  },
+  {
+   "id": "rec_yds",
+   "label": "Receiving Yards",
+   "unit": "yards",
+   "positions": [
+    "WR",
+    "TE",
+    "RB"
+   ],
+   "lineStep": 2.5
+  },
+  {
+   "id": "receptions",
+   "label": "Receptions",
+   "unit": "catches",
+   "positions": [
+    "WR",
+    "TE",
+    "RB"
+   ],
+   "lineStep": 0.5
+  }
+ ],
+ "backtest": {
+  "season": 2025,
+  "weeksEvaluated": 13,
+  "byMarket": {
+   "pass_yds": {
+    "n": 435,
+    "mae": 59.3,
+    "baselineMae": 69.17,
+    "coverage80": 0.749,
+    "strongCallHitRate": 0.905,
+    "strongCallN": 21,
+    "calibration": [
+     {
+      "bucketMid": 0.15,
+      "predicted": 0.224,
+      "actual": 0.26,
+      "n": 73
+     },
+     {
+      "bucketMid": 0.35,
+      "predicted": 0.35,
+      "actual": 0.349,
+      "n": 63
+     },
+     {
+      "bucketMid": 0.45,
+      "predicted": 0.453,
+      "actual": 0.466,
+      "n": 58
+     },
+     {
+      "bucketMid": 0.55,
+      "predicted": 0.553,
+      "actual": 0.476,
+      "n": 63
+     },
+     {
+      "bucketMid": 0.65,
+      "predicted": 0.644,
+      "actual": 0.6,
+      "n": 70
+     },
+     {
+      "bucketMid": 0.85,
+      "predicted": 0.796,
+      "actual": 0.75,
+      "n": 108
+     }
+    ]
+   },
+   "pass_tds": {
+    "n": 435,
+    "mae": 0.85,
+    "baselineMae": 0.95,
+    "coverage80": 0.83,
+    "strongCallHitRate": 0.904,
+    "strongCallN": 52,
+    "calibration": [
+     {
+      "bucketMid": 0.15,
+      "predicted": 0.171,
+      "actual": 0.213,
+      "n": 183
+     },
+     {
+      "bucketMid": 0.35,
+      "predicted": 0.343,
+      "actual": 0.431,
+      "n": 58
+     },
+     {
+      "bucketMid": 0.45,
+      "predicted": 0.451,
+      "actual": 0.545,
+      "n": 22
+     },
+     {
+      "bucketMid": 0.55,
+      "predicted": 0.555,
+      "actual": 0.604,
+      "n": 53
+     },
+     {
+      "bucketMid": 0.65,
+      "predicted": 0.655,
+      "actual": 0.746,
+      "n": 67
+     },
+     {
+      "bucketMid": 0.85,
+      "predicted": 0.765,
+      "actual": 0.827,
+      "n": 52
+     }
+    ]
+   },
+   "rush_yds": {
+    "n": 1226,
+    "mae": 18.7,
+    "baselineMae": 19.32,
+    "coverage80": 0.778,
+    "strongCallHitRate": 0.767,
+    "strongCallN": 30,
+    "calibration": [
+     {
+      "bucketMid": 0.15,
+      "predicted": 0.219,
+      "actual": 0.279,
+      "n": 204
+     },
+     {
+      "bucketMid": 0.35,
+      "predicted": 0.354,
+      "actual": 0.348,
+      "n": 207
+     },
+     {
+      "bucketMid": 0.45,
+      "predicted": 0.451,
+      "actual": 0.467,
+      "n": 338
+     },
+     {
+      "bucketMid": 0.55,
+      "predicted": 0.549,
+      "actual": 0.542,
+      "n": 216
+     },
+     {
+      "bucketMid": 0.65,
+      "predicted": 0.642,
+      "actual": 0.582,
+      "n": 170
+     },
+     {
+      "bucketMid": 0.85,
+      "predicted": 0.745,
+      "actual": 0.626,
+      "n": 91
+     }
+    ]
+   },
+   "rec_yds": {
+    "n": 2766,
+    "mae": 18.4,
+    "baselineMae": 19.25,
+    "coverage80": 0.808,
+    "strongCallHitRate": 0.741,
+    "strongCallN": 27,
+    "calibration": [
+     {
+      "bucketMid": 0.15,
+      "predicted": 0.226,
+      "actual": 0.263,
+      "n": 304
+     },
+     {
+      "bucketMid": 0.35,
+      "predicted": 0.356,
+      "actual": 0.289,
+      "n": 398
+     },
+     {
+      "bucketMid": 0.45,
+      "predicted": 0.451,
+      "actual": 0.435,
+      "n": 809
+     },
+     {
+      "bucketMid": 0.55,
+      "predicted": 0.547,
+      "actual": 0.538,
+      "n": 660
+     },
+     {
+      "bucketMid": 0.65,
+      "predicted": 0.647,
+      "actual": 0.593,
+      "n": 464
+     },
+     {
+      "bucketMid": 0.85,
+      "predicted": 0.743,
+      "actual": 0.649,
+      "n": 131
+     }
+    ]
+   },
+   "receptions": {
+    "n": 2766,
+    "mae": 1.38,
+    "baselineMae": 1.41,
+    "coverage80": 0.89,
+    "strongCallHitRate": 0.865,
+    "strongCallN": 74,
+    "calibration": [
+     {
+      "bucketMid": 0.15,
+      "predicted": 0.218,
+      "actual": 0.192,
+      "n": 369
+     },
+     {
+      "bucketMid": 0.35,
+      "predicted": 0.353,
+      "actual": 0.342,
+      "n": 421
+     },
+     {
+      "bucketMid": 0.45,
+      "predicted": 0.45,
+      "actual": 0.472,
+      "n": 636
+     },
+     {
+      "bucketMid": 0.55,
+      "predicted": 0.553,
+      "actual": 0.494,
+      "n": 464
+     },
+     {
+      "bucketMid": 0.65,
+      "predicted": 0.632,
+      "actual": 0.586,
+      "n": 476
+     },
+     {
+      "bucketMid": 0.85,
+      "predicted": 0.812,
+      "actual": 0.738,
+      "n": 400
+     }
+    ]
+   }
+  }
+ }
+}

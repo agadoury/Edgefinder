@@ -1,0 +1,592 @@
+{
+ "playerId": "2560888",
+ "name": "Courtland Sutton",
+ "team": "DEN",
+ "pos": "WR",
+ "opponent": "LV",
+ "home": false,
+ "gameId": "2025_14_DEN_LV",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rec_yds",
+   "projection": 50.0,
+   "quantiles": {
+    "p10": 11.4,
+    "p25": 23.8,
+    "p50": 43.3,
+    "p75": 74.7,
+    "p90": 96.7
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.939
+    },
+    {
+     "line": 5.0,
+     "over": 0.928
+    },
+    {
+     "line": 7.5,
+     "over": 0.917
+    },
+    {
+     "line": 10.0,
+     "over": 0.906
+    },
+    {
+     "line": 12.5,
+     "over": 0.8865
+    },
+    {
+     "line": 15.0,
+     "over": 0.8564
+    },
+    {
+     "line": 17.5,
+     "over": 0.8263
+    },
+    {
+     "line": 20.0,
+     "over": 0.7963
+    },
+    {
+     "line": 22.5,
+     "over": 0.7662
+    },
+    {
+     "line": 25.0,
+     "over": 0.7353
+    },
+    {
+     "line": 27.5,
+     "over": 0.7032
+    },
+    {
+     "line": 30.0,
+     "over": 0.6711
+    },
+    {
+     "line": 32.5,
+     "over": 0.6391
+    },
+    {
+     "line": 35.0,
+     "over": 0.607
+    },
+    {
+     "line": 37.5,
+     "over": 0.5749
+    },
+    {
+     "line": 40.0,
+     "over": 0.5429
+    },
+    {
+     "line": 42.5,
+     "over": 0.5108
+    },
+    {
+     "line": 45.0,
+     "over": 0.4868
+    },
+    {
+     "line": 47.5,
+     "over": 0.4669
+    },
+    {
+     "line": 50.0,
+     "over": 0.4469
+    },
+    {
+     "line": 52.5,
+     "over": 0.427
+    },
+    {
+     "line": 55.0,
+     "over": 0.4071
+    },
+    {
+     "line": 57.5,
+     "over": 0.3871
+    },
+    {
+     "line": 60.0,
+     "over": 0.3672
+    },
+    {
+     "line": 62.5,
+     "over": 0.3473
+    },
+    {
+     "line": 65.0,
+     "over": 0.3274
+    },
+    {
+     "line": 67.5,
+     "over": 0.3074
+    },
+    {
+     "line": 70.0,
+     "over": 0.2875
+    },
+    {
+     "line": 72.5,
+     "over": 0.2676
+    },
+    {
+     "line": 75.0,
+     "over": 0.248
+    },
+    {
+     "line": 77.5,
+     "over": 0.2309
+    },
+    {
+     "line": 80.0,
+     "over": 0.2138
+    },
+    {
+     "line": 82.5,
+     "over": 0.1968
+    },
+    {
+     "line": 85.0,
+     "over": 0.1797
+    },
+    {
+     "line": 87.5,
+     "over": 0.1627
+    },
+    {
+     "line": 90.0,
+     "over": 0.1456
+    },
+    {
+     "line": 92.5,
+     "over": 0.1285
+    },
+    {
+     "line": 95.0,
+     "over": 0.1115
+    },
+    {
+     "line": 97.5,
+     "over": 0.0978
+    },
+    {
+     "line": 100.0,
+     "over": 0.0913
+    },
+    {
+     "line": 102.5,
+     "over": 0.0847
+    },
+    {
+     "line": 105.0,
+     "over": 0.0782
+    },
+    {
+     "line": 107.5,
+     "over": 0.0716
+    },
+    {
+     "line": 110.0,
+     "over": 0.065
+    },
+    {
+     "line": 112.5,
+     "over": 0.0585
+    },
+    {
+     "line": 115.0,
+     "over": 0.0519
+    },
+    {
+     "line": 117.5,
+     "over": 0.047
+    },
+    {
+     "line": 120.0,
+     "over": 0.0427
+    },
+    {
+     "line": 122.5,
+     "over": 0.0384
+    },
+    {
+     "line": 125.0,
+     "over": 0.0341
+    },
+    {
+     "line": 127.5,
+     "over": 0.0298
+    },
+    {
+     "line": 130.0,
+     "over": 0.0255
+    },
+    {
+     "line": 132.5,
+     "over": 0.0212
+    },
+    {
+     "line": 135.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 60.5,
+   "overProbAtRef": 0.3632,
+   "lean": "under",
+   "strength": 23,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 50 receiving yards \u2014 it gives Courtland a 36% chance to clear a 60.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 17.2,
+     "label": "Averaging 48.3 receiving yards over his last 3 games",
+     "detail": "That's down from 55.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 17 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 4.6,
+     "label": "Seeing 6.0 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.7,
+     "label": "Las Vegas gives up 224 receiving yards a game \u2014 15th fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.7 receiving yards."
+    }
+   ],
+   "actual": 62.0,
+   "result": "over"
+  },
+  {
+   "market": "receptions",
+   "projection": 3.6,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 2.1,
+    "p50": 3.4,
+    "p75": 5.5,
+    "p90": 6.3
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8636
+    },
+    {
+     "line": 1.0,
+     "over": 0.8272
+    },
+    {
+     "line": 1.5,
+     "over": 0.7909
+    },
+    {
+     "line": 2.0,
+     "over": 0.7545
+    },
+    {
+     "line": 2.5,
+     "over": 0.67
+    },
+    {
+     "line": 3.0,
+     "over": 0.5789
+    },
+    {
+     "line": 3.5,
+     "over": 0.4917
+    },
+    {
+     "line": 4.0,
+     "over": 0.4303
+    },
+    {
+     "line": 4.5,
+     "over": 0.3689
+    },
+    {
+     "line": 5.0,
+     "over": 0.3075
+    },
+    {
+     "line": 5.5,
+     "over": 0.2443
+    },
+    {
+     "line": 6.0,
+     "over": 0.1561
+    },
+    {
+     "line": 6.5,
+     "over": 0.0874
+    },
+    {
+     "line": 7.0,
+     "over": 0.053
+    },
+    {
+     "line": 7.5,
+     "over": 0.0293
+    },
+    {
+     "line": 8.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 4.5,
+   "overProbAtRef": 0.3689,
+   "lean": "under",
+   "strength": 22,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 3.6 catches \u2014 a 37% chance to beat a 4.5-catch line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.68,
+     "label": "Averaging 4.0 catches over his last 3 games",
+     "detail": "That's up from 4.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.7 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 0.27,
+     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
+     "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.03,
+     "label": "Las Vegas gives up 21 catches a game \u2014 15th fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.0 catches."
+    }
+   ],
+   "actual": 6.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 62.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "KC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 59.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "LV",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 24.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "HOU",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 30.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "DAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 67.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 87.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "NYJ",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 17.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "PHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 99.0,
+    "receptions": 8.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "CIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 81.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "LAC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 118.0,
+    "receptions": 6.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rec_yds": 59.2,
+  "receptions": 4.2
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 50.0,
+   "refLine": 60.5,
+   "lean": "under",
+   "actual": 62.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 3.5,
+   "refLine": 4.5,
+   "lean": "under",
+   "actual": 5.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 61.6,
+   "refLine": 46.5,
+   "lean": "over",
+   "actual": 59.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 4.3,
+   "refLine": 3.5,
+   "lean": "neutral",
+   "actual": 4.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 61.5,
+   "refLine": 66.5,
+   "lean": "under",
+   "actual": 24.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 4.3,
+   "refLine": 4.5,
+   "lean": "under",
+   "actual": 3.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rec_yds",
+   "projection": 63.7,
+   "refLine": 77.5,
+   "lean": "under",
+   "actual": 30.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "receptions",
+   "projection": 4.3,
+   "refLine": 5.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  }
+ ]
+}

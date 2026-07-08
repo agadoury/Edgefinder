@@ -1,0 +1,414 @@
+{
+ "playerId": "2574063",
+ "name": "Shedeur Sanders",
+ "team": "CLE",
+ "pos": "QB",
+ "opponent": "TEN",
+ "home": true,
+ "gameId": "2025_14_TEN_CLE",
+ "gamesPlayed2025": 3,
+ "props": [
+  {
+   "market": "pass_yds",
+   "projection": 206.1,
+   "quantiles": {
+    "p10": 70.3,
+    "p25": 145.2,
+    "p50": 208.0,
+    "p75": 228.1,
+    "p90": 248.0
+   },
+   "probCurve": [
+    {
+     "line": 27.5,
+     "over": 0.98
+    },
+    {
+     "line": 32.5,
+     "over": 0.9733
+    },
+    {
+     "line": 37.5,
+     "over": 0.9659
+    },
+    {
+     "line": 42.5,
+     "over": 0.9585
+    },
+    {
+     "line": 47.5,
+     "over": 0.9511
+    },
+    {
+     "line": 52.5,
+     "over": 0.9403
+    },
+    {
+     "line": 57.5,
+     "over": 0.929
+    },
+    {
+     "line": 62.5,
+     "over": 0.9177
+    },
+    {
+     "line": 67.5,
+     "over": 0.9063
+    },
+    {
+     "line": 72.5,
+     "over": 0.8956
+    },
+    {
+     "line": 77.5,
+     "over": 0.8856
+    },
+    {
+     "line": 82.5,
+     "over": 0.8756
+    },
+    {
+     "line": 87.5,
+     "over": 0.8655
+    },
+    {
+     "line": 92.5,
+     "over": 0.8555
+    },
+    {
+     "line": 97.5,
+     "over": 0.8455
+    },
+    {
+     "line": 102.5,
+     "over": 0.8355
+    },
+    {
+     "line": 107.5,
+     "over": 0.8255
+    },
+    {
+     "line": 112.5,
+     "over": 0.8155
+    },
+    {
+     "line": 117.5,
+     "over": 0.8055
+    },
+    {
+     "line": 122.5,
+     "over": 0.7954
+    },
+    {
+     "line": 127.5,
+     "over": 0.7854
+    },
+    {
+     "line": 132.5,
+     "over": 0.7754
+    },
+    {
+     "line": 137.5,
+     "over": 0.7654
+    },
+    {
+     "line": 142.5,
+     "over": 0.7554
+    },
+    {
+     "line": 147.5,
+     "over": 0.7408
+    },
+    {
+     "line": 152.5,
+     "over": 0.7209
+    },
+    {
+     "line": 157.5,
+     "over": 0.701
+    },
+    {
+     "line": 162.5,
+     "over": 0.6812
+    },
+    {
+     "line": 167.5,
+     "over": 0.6613
+    },
+    {
+     "line": 172.5,
+     "over": 0.6414
+    },
+    {
+     "line": 177.5,
+     "over": 0.6215
+    },
+    {
+     "line": 182.5,
+     "over": 0.6016
+    },
+    {
+     "line": 187.5,
+     "over": 0.5817
+    },
+    {
+     "line": 192.5,
+     "over": 0.5618
+    },
+    {
+     "line": 197.5,
+     "over": 0.542
+    },
+    {
+     "line": 202.5,
+     "over": 0.5221
+    },
+    {
+     "line": 207.5,
+     "over": 0.5022
+    },
+    {
+     "line": 212.5,
+     "over": 0.4445
+    },
+    {
+     "line": 217.5,
+     "over": 0.3822
+    },
+    {
+     "line": 222.5,
+     "over": 0.3199
+    },
+    {
+     "line": 227.5,
+     "over": 0.2576
+    },
+    {
+     "line": 232.5,
+     "over": 0.2169
+    },
+    {
+     "line": 237.5,
+     "over": 0.1792
+    },
+    {
+     "line": 242.5,
+     "over": 0.1415
+    },
+    {
+     "line": 247.5,
+     "over": 0.1039
+    },
+    {
+     "line": 252.5,
+     "over": 0.0888
+    },
+    {
+     "line": 257.5,
+     "over": 0.0764
+    },
+    {
+     "line": 262.5,
+     "over": 0.0639
+    },
+    {
+     "line": 267.5,
+     "over": 0.0515
+    },
+    {
+     "line": 272.5,
+     "over": 0.0428
+    },
+    {
+     "line": 277.5,
+     "over": 0.0346
+    },
+    {
+     "line": 282.5,
+     "over": 0.0265
+    },
+    {
+     "line": 287.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 148.5,
+   "overProbAtRef": 0.7368,
+   "lean": "over",
+   "strength": 33,
+   "confidence": "low",
+   "confidenceReason": "Only 3 games played this season, so the sample is thin.",
+   "verdict": "The model projects 206 passing yards \u2014 it gives Shedeur a 74% chance to clear a 148.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -37.2,
+     "label": "Vegas pegs this at 33.5 total points, about 19 for the Browns",
+     "detail": "The expected scoring script nudges the projection down by about 37 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 10.5,
+     "label": "His offense throws about 26 passes a game",
+     "detail": "How often the team drops back nudges the projection up by about 10 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 5.2,
+     "label": "Tennessee gives up 236 passing yards a game \u2014 11th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 5 yards."
+    }
+   ],
+   "actual": 364.0,
+   "result": "over"
+  },
+  {
+   "market": "pass_tds",
+   "projection": 1.2,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 0.0,
+    "p50": 1.0,
+    "p75": 2.0,
+    "p90": 2.0
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.7067
+    },
+    {
+     "line": 1.5,
+     "over": 0.3469
+    },
+    {
+     "line": 2.5,
+     "over": 0.1263
+    },
+    {
+     "line": 3.5,
+     "over": 0.0361
+    },
+    {
+     "line": 4.5,
+     "over": 0.0085
+    }
+   ],
+   "refLine": 0.5,
+   "overProbAtRef": 0.7067,
+   "lean": "over",
+   "strength": 29,
+   "confidence": "low",
+   "confidenceReason": "Only 3 games played this season, so the sample is thin.",
+   "verdict": "The model expects 1.2 touchdown passes \u2014 it gives Shedeur a 71% chance to go over 0.5.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.32,
+     "label": "Vegas pegs this at 33.5 total points, about 19 for the Browns",
+     "detail": "The expected scoring script nudges the projection down by about 0.32 touchdown passes."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.23,
+     "label": "Fair conditions \u2014 about 33 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.23 touchdown passes."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.16,
+     "label": "His offense throws about 26 passes a game",
+     "detail": "How often the team drops back nudges the projection up by about 0.16 touchdown passes."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "up",
+     "impact": 0.06,
+     "label": "Missed 1 of the last 5 weeks",
+     "detail": "The stop-start stretch nudges the projection up by about 0.06 touchdown passes."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.05,
+     "label": "Averaging 0.7 touchdown passes over his last 3 games",
+     "detail": "That's up from 0.7 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.05 touchdown passes."
+    }
+   ],
+   "actual": 3.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "SF",
+   "home": true,
+   "stats": {
+    "pass_yds": 149.0,
+    "pass_tds": 1.0,
+    "rush_yds": 6.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 209.0,
+    "pass_tds": 1.0,
+    "rush_yds": -1.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 47.0,
+    "pass_tds": 0.0,
+    "rush_yds": 16.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "pass_yds": 135.0,
+  "pass_tds": 0.7,
+  "rush_yds": 7.0
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "pass_tds",
+   "projection": 0.9,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "pass_yds",
+   "projection": 167.4,
+   "refLine": 128.5,
+   "lean": "over",
+   "actual": 149.0,
+   "result": "over"
+  }
+ ]
+}

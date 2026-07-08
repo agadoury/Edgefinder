@@ -1,0 +1,462 @@
+{
+ "playerId": "2568030",
+ "name": "Breece Hall",
+ "team": "NYJ",
+ "pos": "RB",
+ "opponent": "MIA",
+ "home": true,
+ "gameId": "2025_14_MIA_NYJ",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 59.0,
+   "quantiles": {
+    "p10": 23.6,
+    "p25": 34.6,
+    "p50": 55.1,
+    "p75": 82.2,
+    "p90": 102.9
+   },
+   "probCurve": [
+    {
+     "line": 7.5,
+     "over": 0.98
+    },
+    {
+     "line": 10.0,
+     "over": 0.9767
+    },
+    {
+     "line": 12.5,
+     "over": 0.9658
+    },
+    {
+     "line": 15.0,
+     "over": 0.9549
+    },
+    {
+     "line": 17.5,
+     "over": 0.9408
+    },
+    {
+     "line": 20.0,
+     "over": 0.9241
+    },
+    {
+     "line": 22.5,
+     "over": 0.9074
+    },
+    {
+     "line": 25.0,
+     "over": 0.881
+    },
+    {
+     "line": 27.5,
+     "over": 0.847
+    },
+    {
+     "line": 30.0,
+     "over": 0.813
+    },
+    {
+     "line": 32.5,
+     "over": 0.779
+    },
+    {
+     "line": 35.0,
+     "over": 0.7455
+    },
+    {
+     "line": 37.5,
+     "over": 0.7149
+    },
+    {
+     "line": 40.0,
+     "over": 0.6843
+    },
+    {
+     "line": 42.5,
+     "over": 0.6538
+    },
+    {
+     "line": 45.0,
+     "over": 0.6232
+    },
+    {
+     "line": 47.5,
+     "over": 0.5926
+    },
+    {
+     "line": 50.0,
+     "over": 0.5621
+    },
+    {
+     "line": 52.5,
+     "over": 0.5315
+    },
+    {
+     "line": 55.0,
+     "over": 0.5009
+    },
+    {
+     "line": 57.5,
+     "over": 0.4776
+    },
+    {
+     "line": 60.0,
+     "over": 0.4546
+    },
+    {
+     "line": 62.5,
+     "over": 0.4316
+    },
+    {
+     "line": 65.0,
+     "over": 0.4085
+    },
+    {
+     "line": 67.5,
+     "over": 0.3855
+    },
+    {
+     "line": 70.0,
+     "over": 0.3624
+    },
+    {
+     "line": 72.5,
+     "over": 0.3394
+    },
+    {
+     "line": 75.0,
+     "over": 0.3163
+    },
+    {
+     "line": 77.5,
+     "over": 0.2933
+    },
+    {
+     "line": 80.0,
+     "over": 0.2702
+    },
+    {
+     "line": 82.5,
+     "over": 0.2478
+    },
+    {
+     "line": 85.0,
+     "over": 0.2296
+    },
+    {
+     "line": 87.5,
+     "over": 0.2115
+    },
+    {
+     "line": 90.0,
+     "over": 0.1934
+    },
+    {
+     "line": 92.5,
+     "over": 0.1752
+    },
+    {
+     "line": 95.0,
+     "over": 0.1571
+    },
+    {
+     "line": 97.5,
+     "over": 0.139
+    },
+    {
+     "line": 100.0,
+     "over": 0.1208
+    },
+    {
+     "line": 102.5,
+     "over": 0.1027
+    },
+    {
+     "line": 105.0,
+     "over": 0.0853
+    },
+    {
+     "line": 107.5,
+     "over": 0.068
+    },
+    {
+     "line": 110.0,
+     "over": 0.0507
+    },
+    {
+     "line": 112.5,
+     "over": 0.0392
+    },
+    {
+     "line": 115.0,
+     "over": 0.0278
+    },
+    {
+     "line": 117.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 65.5,
+   "overProbAtRef": 0.4039,
+   "lean": "under",
+   "strength": 19,
+   "confidence": "high",
+   "confidenceReason": "12 games of steady production make this range tight.",
+   "verdict": "The model projects 59 rushing yards \u2014 it gives Breece a 40% chance to clear a 65.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 19.6,
+     "label": "Averaging 56.7 rushing yards over his last 3 games",
+     "detail": "That's down from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 20 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 16.8,
+     "label": "Getting 19.8 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 17 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -5.1,
+     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
+     "detail": "The expected scoring script nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 4.9,
+     "label": "Miami gives up 138 rushing yards a game \u2014 4th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "home_away",
+     "direction": "up",
+     "impact": 1.8,
+     "label": "Playing at home",
+     "detail": "Home cooking nudges the projection up by about 2 yards."
+    }
+   ],
+   "actual": 43.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "ATL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 68.0,
+    "rec_yds": 8.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "BAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 44.0,
+    "rec_yds": 75.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "NE",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 58.0,
+    "rec_yds": 6.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "CLE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 83.0,
+    "rec_yds": 42.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "CIN",
+   "home": false,
+   "stats": {
+    "pass_yds": 4.0,
+    "pass_tds": 1.0,
+    "rush_yds": 133.0,
+    "rec_yds": 14.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "CAR",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 38.0,
+    "rec_yds": 14.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "DEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 59.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "DAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 113.0,
+    "rec_yds": 42.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "MIA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 81.0,
+    "rec_yds": 30.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "TB",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 21.0,
+    "rec_yds": 31.0,
+    "receptions": 4.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 69.5,
+  "rec_yds": 25.8,
+  "receptions": 2.5
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 17.8,
+   "refLine": 22.5,
+   "lean": "under",
+   "actual": 8.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 2.2,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 66.2,
+   "refLine": 58.5,
+   "lean": "neutral",
+   "actual": 68.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 61.8,
+   "refLine": 64.5,
+   "lean": "neutral",
+   "actual": 44.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 44.5,
+   "refLine": 82.5,
+   "lean": "under",
+   "actual": 58.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 14.9,
+   "refLine": 18.5,
+   "lean": "under",
+   "actual": 42.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 1.7,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 51.9,
+   "refLine": 75.5,
+   "lean": "under",
+   "actual": 83.0,
+   "result": "over"
+  }
+ ]
+}

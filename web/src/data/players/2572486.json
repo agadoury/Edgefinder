@@ -1,0 +1,459 @@
+{
+ "playerId": "2572486",
+ "name": "Kimani Vidal",
+ "team": "LAC",
+ "pos": "RB",
+ "opponent": "PHI",
+ "home": true,
+ "gameId": "2025_14_PHI_LAC",
+ "gamesPlayed2025": 8,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 68.7,
+   "quantiles": {
+    "p10": 22.0,
+    "p25": 39.9,
+    "p50": 62.3,
+    "p75": 95.8,
+    "p90": 107.0
+   },
+   "probCurve": [
+    {
+     "line": 15.0,
+     "over": 0.98
+    },
+    {
+     "line": 17.5,
+     "over": 0.9711
+    },
+    {
+     "line": 20.0,
+     "over": 0.937
+    },
+    {
+     "line": 22.5,
+     "over": 0.8962
+    },
+    {
+     "line": 25.0,
+     "over": 0.8751
+    },
+    {
+     "line": 27.5,
+     "over": 0.8541
+    },
+    {
+     "line": 30.0,
+     "over": 0.8331
+    },
+    {
+     "line": 32.5,
+     "over": 0.812
+    },
+    {
+     "line": 35.0,
+     "over": 0.791
+    },
+    {
+     "line": 37.5,
+     "over": 0.77
+    },
+    {
+     "line": 40.0,
+     "over": 0.7486
+    },
+    {
+     "line": 42.5,
+     "over": 0.7208
+    },
+    {
+     "line": 45.0,
+     "over": 0.693
+    },
+    {
+     "line": 47.5,
+     "over": 0.6652
+    },
+    {
+     "line": 50.0,
+     "over": 0.6374
+    },
+    {
+     "line": 52.5,
+     "over": 0.6095
+    },
+    {
+     "line": 55.0,
+     "over": 0.5817
+    },
+    {
+     "line": 57.5,
+     "over": 0.5539
+    },
+    {
+     "line": 60.0,
+     "over": 0.5261
+    },
+    {
+     "line": 62.5,
+     "over": 0.4989
+    },
+    {
+     "line": 65.0,
+     "over": 0.4802
+    },
+    {
+     "line": 67.5,
+     "over": 0.4616
+    },
+    {
+     "line": 70.0,
+     "over": 0.4429
+    },
+    {
+     "line": 72.5,
+     "over": 0.4242
+    },
+    {
+     "line": 75.0,
+     "over": 0.4056
+    },
+    {
+     "line": 77.5,
+     "over": 0.3869
+    },
+    {
+     "line": 80.0,
+     "over": 0.3683
+    },
+    {
+     "line": 82.5,
+     "over": 0.3496
+    },
+    {
+     "line": 85.0,
+     "over": 0.331
+    },
+    {
+     "line": 87.5,
+     "over": 0.3123
+    },
+    {
+     "line": 90.0,
+     "over": 0.2936
+    },
+    {
+     "line": 92.5,
+     "over": 0.275
+    },
+    {
+     "line": 95.0,
+     "over": 0.2563
+    },
+    {
+     "line": 97.5,
+     "over": 0.2277
+    },
+    {
+     "line": 100.0,
+     "over": 0.194
+    },
+    {
+     "line": 102.5,
+     "over": 0.1602
+    },
+    {
+     "line": 105.0,
+     "over": 0.1265
+    },
+    {
+     "line": 107.5,
+     "over": 0.0975
+    },
+    {
+     "line": 110.0,
+     "over": 0.0857
+    },
+    {
+     "line": 112.5,
+     "over": 0.0739
+    },
+    {
+     "line": 115.0,
+     "over": 0.0621
+    },
+    {
+     "line": 117.5,
+     "over": 0.0504
+    },
+    {
+     "line": 120.0,
+     "over": 0.0425
+    },
+    {
+     "line": 122.5,
+     "over": 0.0348
+    },
+    {
+     "line": 125.0,
+     "over": 0.0271
+    },
+    {
+     "line": 127.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 78.5,
+   "overProbAtRef": 0.3795,
+   "lean": "under",
+   "strength": 20,
+   "confidence": "medium",
+   "confidenceReason": "Decent 8-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 69 rushing yards \u2014 it gives Kimani a 38% chance to clear a 78.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 23.4,
+     "label": "Getting 17.8 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 23 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 22.1,
+     "label": "Averaging 78.0 rushing yards over his last 3 games",
+     "detail": "That's up from 67.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 22 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -6.7,
+     "label": "Vegas pegs this at 41.5 total points, about 20 for the Chargers",
+     "detail": "The expected scoring script nudges the projection down by about 7 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 3.7,
+     "label": "Philadelphia gives up 129 rushing yards a game \u2014 9th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 4 yards."
+    }
+   ],
+   "actual": 44.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "LV",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 126.0,
+    "rec_yds": 11.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "JAX",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 13.0,
+    "rec_yds": -1.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "PIT",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 95.0,
+    "rec_yds": 13.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "TEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 30.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "MIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 117.0,
+    "rec_yds": 10.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "IND",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 20.0,
+    "rec_yds": 15.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "MIA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 124.0,
+    "rec_yds": 14.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 18.0,
+    "rec_yds": 1.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 16,
+   "opponent": "DEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 24.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 15,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 9.0,
+    "rec_yds": 13.0,
+    "receptions": 2.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 67.9,
+  "rec_yds": 7.9,
+  "receptions": 1.6
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 61.0,
+   "refLine": 30.5,
+   "lean": "over",
+   "actual": 126.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 60.6,
+   "refLine": 78.5,
+   "lean": "under",
+   "actual": 13.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 13.6,
+   "refLine": 10.5,
+   "lean": "over",
+   "actual": 13.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 2.2,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 44.7,
+   "refLine": 30.5,
+   "lean": "over",
+   "actual": 95.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "rec_yds",
+   "projection": 12.8,
+   "refLine": 10.5,
+   "lean": "neutral",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "receptions",
+   "projection": 2.1,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rush_yds",
+   "projection": 59.8,
+   "refLine": 46.5,
+   "lean": "over",
+   "actual": 30.0,
+   "result": "under"
+  }
+ ]
+}

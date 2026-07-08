@@ -1,0 +1,665 @@
+{
+ "playerId": "2567565",
+ "name": "Jameson Williams",
+ "team": "DET",
+ "pos": "WR",
+ "opponent": "DAL",
+ "home": true,
+ "gameId": "2025_14_DAL_DET",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rec_yds",
+   "projection": 60.7,
+   "quantiles": {
+    "p10": 16.5,
+    "p25": 35.6,
+    "p50": 57.7,
+    "p75": 86.9,
+    "p90": 113.1
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9424
+    },
+    {
+     "line": 5.0,
+     "over": 0.9348
+    },
+    {
+     "line": 7.5,
+     "over": 0.9272
+    },
+    {
+     "line": 10.0,
+     "over": 0.9197
+    },
+    {
+     "line": 12.5,
+     "over": 0.9121
+    },
+    {
+     "line": 15.0,
+     "over": 0.9045
+    },
+    {
+     "line": 17.5,
+     "over": 0.892
+    },
+    {
+     "line": 20.0,
+     "over": 0.8723
+    },
+    {
+     "line": 22.5,
+     "over": 0.8527
+    },
+    {
+     "line": 25.0,
+     "over": 0.8331
+    },
+    {
+     "line": 27.5,
+     "over": 0.8134
+    },
+    {
+     "line": 30.0,
+     "over": 0.7938
+    },
+    {
+     "line": 32.5,
+     "over": 0.7742
+    },
+    {
+     "line": 35.0,
+     "over": 0.7546
+    },
+    {
+     "line": 37.5,
+     "over": 0.7283
+    },
+    {
+     "line": 40.0,
+     "over": 0.7
+    },
+    {
+     "line": 42.5,
+     "over": 0.6717
+    },
+    {
+     "line": 45.0,
+     "over": 0.6434
+    },
+    {
+     "line": 47.5,
+     "over": 0.6151
+    },
+    {
+     "line": 50.0,
+     "over": 0.5868
+    },
+    {
+     "line": 52.5,
+     "over": 0.5585
+    },
+    {
+     "line": 55.0,
+     "over": 0.5302
+    },
+    {
+     "line": 57.5,
+     "over": 0.5019
+    },
+    {
+     "line": 60.0,
+     "over": 0.48
+    },
+    {
+     "line": 62.5,
+     "over": 0.4586
+    },
+    {
+     "line": 65.0,
+     "over": 0.4372
+    },
+    {
+     "line": 67.5,
+     "over": 0.4158
+    },
+    {
+     "line": 70.0,
+     "over": 0.3944
+    },
+    {
+     "line": 72.5,
+     "over": 0.373
+    },
+    {
+     "line": 75.0,
+     "over": 0.3516
+    },
+    {
+     "line": 77.5,
+     "over": 0.3302
+    },
+    {
+     "line": 80.0,
+     "over": 0.3088
+    },
+    {
+     "line": 82.5,
+     "over": 0.2874
+    },
+    {
+     "line": 85.0,
+     "over": 0.266
+    },
+    {
+     "line": 87.5,
+     "over": 0.2464
+    },
+    {
+     "line": 90.0,
+     "over": 0.2321
+    },
+    {
+     "line": 92.5,
+     "over": 0.2179
+    },
+    {
+     "line": 95.0,
+     "over": 0.2036
+    },
+    {
+     "line": 97.5,
+     "over": 0.1893
+    },
+    {
+     "line": 100.0,
+     "over": 0.175
+    },
+    {
+     "line": 102.5,
+     "over": 0.1608
+    },
+    {
+     "line": 105.0,
+     "over": 0.1465
+    },
+    {
+     "line": 107.5,
+     "over": 0.1322
+    },
+    {
+     "line": 110.0,
+     "over": 0.118
+    },
+    {
+     "line": 112.5,
+     "over": 0.1037
+    },
+    {
+     "line": 115.0,
+     "over": 0.0963
+    },
+    {
+     "line": 117.5,
+     "over": 0.0914
+    },
+    {
+     "line": 120.0,
+     "over": 0.0864
+    },
+    {
+     "line": 122.5,
+     "over": 0.0814
+    },
+    {
+     "line": 125.0,
+     "over": 0.0765
+    },
+    {
+     "line": 127.5,
+     "over": 0.0715
+    },
+    {
+     "line": 130.0,
+     "over": 0.0666
+    },
+    {
+     "line": 132.5,
+     "over": 0.0616
+    },
+    {
+     "line": 135.0,
+     "over": 0.0567
+    },
+    {
+     "line": 137.5,
+     "over": 0.0517
+    },
+    {
+     "line": 140.0,
+     "over": 0.0479
+    },
+    {
+     "line": 142.5,
+     "over": 0.0446
+    },
+    {
+     "line": 145.0,
+     "over": 0.0414
+    },
+    {
+     "line": 147.5,
+     "over": 0.0381
+    },
+    {
+     "line": 150.0,
+     "over": 0.0349
+    },
+    {
+     "line": 152.5,
+     "over": 0.0316
+    },
+    {
+     "line": 155.0,
+     "over": 0.0284
+    },
+    {
+     "line": 157.5,
+     "over": 0.0251
+    },
+    {
+     "line": 160.0,
+     "over": 0.0219
+    },
+    {
+     "line": 162.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 71.5,
+   "overProbAtRef": 0.3816,
+   "lean": "under",
+   "strength": 24,
+   "confidence": "high",
+   "confidenceReason": "12 games of steady production make this range tight.",
+   "verdict": "The model projects 61 receiving yards \u2014 it gives Jameson a 38% chance to clear a 71.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 18.3,
+     "label": "Averaging 77.3 receiving yards over his last 3 games",
+     "detail": "That's up from 61.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 18 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 15.2,
+     "label": "Seeing 6.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 15 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 4.5,
+     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
+     "detail": "The expected scoring script nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.9,
+     "label": "Jared Goff has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 0.9 receiving yards."
+    }
+   ],
+   "actual": 96.0,
+   "result": "over"
+  },
+  {
+   "market": "receptions",
+   "projection": 4.1,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 1.9,
+    "p50": 3.9,
+    "p75": 5.5,
+    "p90": 7.1
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8595
+    },
+    {
+     "line": 1.0,
+     "over": 0.819
+    },
+    {
+     "line": 1.5,
+     "over": 0.7784
+    },
+    {
+     "line": 2.0,
+     "over": 0.7315
+    },
+    {
+     "line": 2.5,
+     "over": 0.6692
+    },
+    {
+     "line": 3.0,
+     "over": 0.607
+    },
+    {
+     "line": 3.5,
+     "over": 0.5448
+    },
+    {
+     "line": 4.0,
+     "over": 0.4789
+    },
+    {
+     "line": 4.5,
+     "over": 0.4032
+    },
+    {
+     "line": 5.0,
+     "over": 0.3276
+    },
+    {
+     "line": 5.5,
+     "over": 0.252
+    },
+    {
+     "line": 6.0,
+     "over": 0.205
+    },
+    {
+     "line": 6.5,
+     "over": 0.1587
+    },
+    {
+     "line": 7.0,
+     "over": 0.1125
+    },
+    {
+     "line": 7.5,
+     "over": 0.0757
+    },
+    {
+     "line": 8.0,
+     "over": 0.0451
+    },
+    {
+     "line": 8.5,
+     "over": 0.0233
+    },
+    {
+     "line": 9.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 3.5,
+   "overProbAtRef": 0.5448,
+   "lean": "over",
+   "strength": 8,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 4.1 catches \u2014 a 54% chance to beat a 3.5-catch line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.9,
+     "label": "Seeing 6.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.9 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 0.58,
+     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
+     "detail": "The expected scoring script nudges the projection up by about 0.6 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.28,
+     "label": "Dallas gives up 23 catches a game \u2014 5th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 0.3 catches."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.14,
+     "label": "Averaging 3.7 catches over his last 3 games",
+     "detail": "That's up from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.1 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.07,
+     "label": "Jared Goff has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 0.1 catches."
+    }
+   ],
+   "actual": 7.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "GB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": -5.0,
+    "rec_yds": 144.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "PHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 9.0,
+    "rec_yds": 88.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 119.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "MIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 66.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "KC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 66.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "CIN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 1.0,
+    "rec_yds": 9.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "CLE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": -3.0,
+    "rec_yds": 40.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "BAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 43.0,
+    "receptions": 2.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rec_yds": 58.8,
+  "receptions": 3.2
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 42.2,
+   "refLine": 54.5,
+   "lean": "under",
+   "actual": 144.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 3.1,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 7.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 49.4,
+   "refLine": 60.5,
+   "lean": "under",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 3.5,
+   "refLine": 3.5,
+   "lean": "neutral",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 44.6,
+   "refLine": 54.5,
+   "lean": "under",
+   "actual": 88.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.9,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 4.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 45.0,
+   "refLine": 40.5,
+   "lean": "neutral",
+   "actual": 119.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 2.7,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 6.0,
+   "result": "over"
+  }
+ ]
+}

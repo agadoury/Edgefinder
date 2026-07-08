@@ -1,0 +1,451 @@
+{
+ "playerId": "2562502",
+ "name": "David Montgomery",
+ "team": "DET",
+ "pos": "RB",
+ "opponent": "DAL",
+ "home": true,
+ "gameId": "2025_14_DAL_DET",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 31.5,
+   "quantiles": {
+    "p10": 6.1,
+    "p25": 13.8,
+    "p50": 25.6,
+    "p75": 46.7,
+    "p90": 76.2
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.98
+    },
+    {
+     "line": 5.0,
+     "over": 0.9702
+    },
+    {
+     "line": 7.5,
+     "over": 0.8724
+    },
+    {
+     "line": 10.0,
+     "over": 0.8237
+    },
+    {
+     "line": 12.5,
+     "over": 0.7749
+    },
+    {
+     "line": 15.0,
+     "over": 0.7241
+    },
+    {
+     "line": 17.5,
+     "over": 0.6711
+    },
+    {
+     "line": 20.0,
+     "over": 0.618
+    },
+    {
+     "line": 22.5,
+     "over": 0.565
+    },
+    {
+     "line": 25.0,
+     "over": 0.512
+    },
+    {
+     "line": 27.5,
+     "over": 0.4771
+    },
+    {
+     "line": 30.0,
+     "over": 0.4475
+    },
+    {
+     "line": 32.5,
+     "over": 0.418
+    },
+    {
+     "line": 35.0,
+     "over": 0.3884
+    },
+    {
+     "line": 37.5,
+     "over": 0.3588
+    },
+    {
+     "line": 40.0,
+     "over": 0.3292
+    },
+    {
+     "line": 42.5,
+     "over": 0.2996
+    },
+    {
+     "line": 45.0,
+     "over": 0.2701
+    },
+    {
+     "line": 47.5,
+     "over": 0.2459
+    },
+    {
+     "line": 50.0,
+     "over": 0.2332
+    },
+    {
+     "line": 52.5,
+     "over": 0.2204
+    },
+    {
+     "line": 55.0,
+     "over": 0.2077
+    },
+    {
+     "line": 57.5,
+     "over": 0.195
+    },
+    {
+     "line": 60.0,
+     "over": 0.1823
+    },
+    {
+     "line": 62.5,
+     "over": 0.1695
+    },
+    {
+     "line": 65.0,
+     "over": 0.1568
+    },
+    {
+     "line": 67.5,
+     "over": 0.1441
+    },
+    {
+     "line": 70.0,
+     "over": 0.1313
+    },
+    {
+     "line": 72.5,
+     "over": 0.1186
+    },
+    {
+     "line": 75.0,
+     "over": 0.1059
+    },
+    {
+     "line": 77.5,
+     "over": 0.0959
+    },
+    {
+     "line": 80.0,
+     "over": 0.0883
+    },
+    {
+     "line": 82.5,
+     "over": 0.0807
+    },
+    {
+     "line": 85.0,
+     "over": 0.0731
+    },
+    {
+     "line": 87.5,
+     "over": 0.0655
+    },
+    {
+     "line": 90.0,
+     "over": 0.0579
+    },
+    {
+     "line": 92.5,
+     "over": 0.0503
+    },
+    {
+     "line": 95.0,
+     "over": 0.0452
+    },
+    {
+     "line": 97.5,
+     "over": 0.0402
+    },
+    {
+     "line": 100.0,
+     "over": 0.0353
+    },
+    {
+     "line": 102.5,
+     "over": 0.0303
+    },
+    {
+     "line": 105.0,
+     "over": 0.0253
+    },
+    {
+     "line": 107.5,
+     "over": 0.0203
+    },
+    {
+     "line": 110.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 30.5,
+   "overProbAtRef": 0.4416,
+   "lean": "under",
+   "strength": 10,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 32 rushing yards \u2014 it gives David a 44% chance to clear a 30.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 10.4,
+     "label": "Getting 10.2 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 10 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 7.7,
+     "label": "Averaging 25.7 rushing yards over his last 3 games",
+     "detail": "That's down from 37.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 8 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -2.1,
+     "label": "Dallas gives up 125 rushing yards a game \u2014 13th most in the NFL",
+     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 1.8,
+     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
+     "detail": "The expected scoring script nudges the projection up by about 2 yards."
+    }
+   ],
+   "actual": 60.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "GB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 32.0,
+    "rec_yds": 16.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 18.0,
+    "rec_yds": 19.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "PHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 27.0,
+    "rec_yds": 10.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 71.0,
+    "rec_yds": 0.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "MIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 40.0,
+    "rec_yds": 10.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 21.0,
+    "rec_yds": 18.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "KC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 24.0,
+    "rec_yds": 37.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "CIN",
+   "home": false,
+   "stats": {
+    "pass_yds": 3.0,
+    "pass_tds": 1.0,
+    "rush_yds": 65.0,
+    "rec_yds": 6.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "CLE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 12.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "BAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 151.0,
+    "rec_yds": 13.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 45.2,
+  "rec_yds": 12.6,
+  "receptions": 1.7
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 47.8,
+   "refLine": 26.5,
+   "lean": "over",
+   "actual": 32.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 57.7,
+   "refLine": 30.5,
+   "lean": "over",
+   "actual": 18.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 13.2,
+   "refLine": 10.5,
+   "lean": "neutral",
+   "actual": 10.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 1.9,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 52.1,
+   "refLine": 40.5,
+   "lean": "over",
+   "actual": 27.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 17.5,
+   "refLine": 10.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 2.1,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 47.3,
+   "refLine": 28.5,
+   "lean": "over",
+   "actual": 71.0,
+   "result": "over"
+  }
+ ]
+}

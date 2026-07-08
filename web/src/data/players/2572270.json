@@ -1,0 +1,740 @@
+{
+ "playerId": "2572270",
+ "name": "J.J. McCarthy",
+ "team": "MIN",
+ "pos": "QB",
+ "opponent": "WAS",
+ "home": true,
+ "gameId": "2025_14_WAS_MIN",
+ "gamesPlayed2025": 6,
+ "props": [
+  {
+   "market": "pass_yds",
+   "projection": 164.3,
+   "quantiles": {
+    "p10": 40.2,
+    "p25": 97.5,
+    "p50": 166.4,
+    "p75": 209.2,
+    "p90": 288.2
+   },
+   "probCurve": [
+    {
+     "line": 22.5,
+     "over": 0.98
+    },
+    {
+     "line": 27.5,
+     "over": 0.9684
+    },
+    {
+     "line": 32.5,
+     "over": 0.9473
+    },
+    {
+     "line": 37.5,
+     "over": 0.9165
+    },
+    {
+     "line": 42.5,
+     "over": 0.8939
+    },
+    {
+     "line": 47.5,
+     "over": 0.8809
+    },
+    {
+     "line": 52.5,
+     "over": 0.8678
+    },
+    {
+     "line": 57.5,
+     "over": 0.8547
+    },
+    {
+     "line": 62.5,
+     "over": 0.8416
+    },
+    {
+     "line": 67.5,
+     "over": 0.8286
+    },
+    {
+     "line": 72.5,
+     "over": 0.8155
+    },
+    {
+     "line": 77.5,
+     "over": 0.8024
+    },
+    {
+     "line": 82.5,
+     "over": 0.7893
+    },
+    {
+     "line": 87.5,
+     "over": 0.7763
+    },
+    {
+     "line": 92.5,
+     "over": 0.7632
+    },
+    {
+     "line": 97.5,
+     "over": 0.7501
+    },
+    {
+     "line": 102.5,
+     "over": 0.732
+    },
+    {
+     "line": 107.5,
+     "over": 0.7139
+    },
+    {
+     "line": 112.5,
+     "over": 0.6957
+    },
+    {
+     "line": 117.5,
+     "over": 0.6776
+    },
+    {
+     "line": 122.5,
+     "over": 0.6594
+    },
+    {
+     "line": 127.5,
+     "over": 0.6412
+    },
+    {
+     "line": 132.5,
+     "over": 0.6231
+    },
+    {
+     "line": 137.5,
+     "over": 0.6049
+    },
+    {
+     "line": 142.5,
+     "over": 0.5868
+    },
+    {
+     "line": 147.5,
+     "over": 0.5686
+    },
+    {
+     "line": 152.5,
+     "over": 0.5505
+    },
+    {
+     "line": 157.5,
+     "over": 0.5323
+    },
+    {
+     "line": 162.5,
+     "over": 0.5142
+    },
+    {
+     "line": 167.5,
+     "over": 0.4936
+    },
+    {
+     "line": 172.5,
+     "over": 0.4644
+    },
+    {
+     "line": 177.5,
+     "over": 0.4353
+    },
+    {
+     "line": 182.5,
+     "over": 0.4061
+    },
+    {
+     "line": 187.5,
+     "over": 0.3769
+    },
+    {
+     "line": 192.5,
+     "over": 0.3477
+    },
+    {
+     "line": 197.5,
+     "over": 0.3185
+    },
+    {
+     "line": 202.5,
+     "over": 0.2893
+    },
+    {
+     "line": 207.5,
+     "over": 0.2601
+    },
+    {
+     "line": 212.5,
+     "over": 0.2438
+    },
+    {
+     "line": 217.5,
+     "over": 0.2343
+    },
+    {
+     "line": 222.5,
+     "over": 0.2248
+    },
+    {
+     "line": 227.5,
+     "over": 0.2153
+    },
+    {
+     "line": 232.5,
+     "over": 0.2058
+    },
+    {
+     "line": 237.5,
+     "over": 0.1963
+    },
+    {
+     "line": 242.5,
+     "over": 0.1868
+    },
+    {
+     "line": 247.5,
+     "over": 0.1773
+    },
+    {
+     "line": 252.5,
+     "over": 0.1678
+    },
+    {
+     "line": 257.5,
+     "over": 0.1583
+    },
+    {
+     "line": 262.5,
+     "over": 0.1488
+    },
+    {
+     "line": 267.5,
+     "over": 0.1393
+    },
+    {
+     "line": 272.5,
+     "over": 0.1298
+    },
+    {
+     "line": 277.5,
+     "over": 0.1203
+    },
+    {
+     "line": 282.5,
+     "over": 0.1108
+    },
+    {
+     "line": 287.5,
+     "over": 0.1013
+    },
+    {
+     "line": 292.5,
+     "over": 0.0922
+    },
+    {
+     "line": 297.5,
+     "over": 0.0831
+    },
+    {
+     "line": 302.5,
+     "over": 0.0741
+    },
+    {
+     "line": 307.5,
+     "over": 0.065
+    },
+    {
+     "line": 312.5,
+     "over": 0.056
+    },
+    {
+     "line": 317.5,
+     "over": 0.048
+    },
+    {
+     "line": 322.5,
+     "over": 0.042
+    },
+    {
+     "line": 327.5,
+     "over": 0.0361
+    },
+    {
+     "line": 332.5,
+     "over": 0.0302
+    },
+    {
+     "line": 337.5,
+     "over": 0.0243
+    },
+    {
+     "line": 342.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 148.5,
+   "overProbAtRef": 0.565,
+   "lean": "over",
+   "strength": 9,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model projects 164 passing yards \u2014 it gives J.J. a 56% chance to clear a 148.5-yard line.",
+   "factors": [
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -46.9,
+     "label": "Sat out last week",
+     "detail": "Coming back from a missed game nudges the projection down by about 47 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -18.1,
+     "label": "Averaging 161.7 passing yards over his last 3 games",
+     "detail": "That's up from 154.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 18 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -12.4,
+     "label": "His offense throws about 29 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 12 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 5.1,
+     "label": "Vegas pegs this at 43.5 total points, about 21 for the Vikings",
+     "detail": "The expected scoring script nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 4.6,
+     "label": "Washington gives up 269 passing yards a game \u2014 2nd most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 5 yards."
+    }
+   ],
+   "actual": 163.0,
+   "result": "over"
+  },
+  {
+   "market": "pass_tds",
+   "projection": 0.4,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 0.0,
+    "p50": 0.0,
+    "p75": 1.1,
+    "p90": 2.1
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.308
+    },
+    {
+     "line": 1.5,
+     "over": 0.0532
+    },
+    {
+     "line": 2.5,
+     "over": 0.0063
+    },
+    {
+     "line": 3.5,
+     "over": 0.0006
+    },
+    {
+     "line": 4.5,
+     "over": 0.0
+    }
+   ],
+   "refLine": 0.5,
+   "overProbAtRef": 0.308,
+   "lean": "under",
+   "strength": 38,
+   "confidence": "high",
+   "confidenceReason": "6 games of steady production make this range tight.",
+   "verdict": "The model expects 0.4 touchdown passes \u2014 it gives J.J. a 31% chance to go over 0.5.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -0.35,
+     "label": "His offense throws about 29 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 0.35 touchdown passes."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -0.3,
+     "label": "Sat out last week",
+     "detail": "Coming back from a missed game nudges the projection down by about 0.30 touchdown passes."
+    },
+    {
+     "group": "weather",
+     "direction": "down",
+     "impact": -0.22,
+     "label": "Indoor game \u2014 weather is a non-factor",
+     "detail": "Roof's closed, so wind and cold are off the table."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.1,
+     "label": "Averaging 0.7 touchdown passes over his last 3 games",
+     "detail": "That's down from 1.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.10 touchdown passes."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.05,
+     "label": "Vegas pegs this at 43.5 total points, about 21 for the Vikings",
+     "detail": "The expected scoring script nudges the projection down by about 0.05 touchdown passes."
+    }
+   ],
+   "actual": 3.0,
+   "result": "over"
+  },
+  {
+   "market": "rush_yds",
+   "projection": 13.9,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 7.0,
+    "p50": 13.7,
+    "p75": 20.9,
+    "p90": 40.8
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.8463
+    },
+    {
+     "line": 5.0,
+     "over": 0.7925
+    },
+    {
+     "line": 7.5,
+     "over": 0.7305
+    },
+    {
+     "line": 10.0,
+     "over": 0.6374
+    },
+    {
+     "line": 12.5,
+     "over": 0.5442
+    },
+    {
+     "line": 15.0,
+     "over": 0.4547
+    },
+    {
+     "line": 17.5,
+     "over": 0.3685
+    },
+    {
+     "line": 20.0,
+     "over": 0.2822
+    },
+    {
+     "line": 22.5,
+     "over": 0.2382
+    },
+    {
+     "line": 25.0,
+     "over": 0.2194
+    },
+    {
+     "line": 27.5,
+     "over": 0.2005
+    },
+    {
+     "line": 30.0,
+     "over": 0.1817
+    },
+    {
+     "line": 32.5,
+     "over": 0.1629
+    },
+    {
+     "line": 35.0,
+     "over": 0.144
+    },
+    {
+     "line": 37.5,
+     "over": 0.1252
+    },
+    {
+     "line": 40.0,
+     "over": 0.1064
+    },
+    {
+     "line": 42.5,
+     "over": 0.0942
+    },
+    {
+     "line": 45.0,
+     "over": 0.0855
+    },
+    {
+     "line": 47.5,
+     "over": 0.0768
+    },
+    {
+     "line": 50.0,
+     "over": 0.068
+    },
+    {
+     "line": 52.5,
+     "over": 0.0593
+    },
+    {
+     "line": 55.0,
+     "over": 0.0506
+    },
+    {
+     "line": 57.5,
+     "over": 0.0446
+    },
+    {
+     "line": 60.0,
+     "over": 0.0389
+    },
+    {
+     "line": 62.5,
+     "over": 0.0332
+    },
+    {
+     "line": 65.0,
+     "over": 0.0275
+    },
+    {
+     "line": 67.5,
+     "over": 0.0218
+    },
+    {
+     "line": 70.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 15.5,
+   "overProbAtRef": 0.4375,
+   "lean": "under",
+   "strength": 11,
+   "confidence": "medium",
+   "confidenceReason": "Decent 6-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 14 rushing yards \u2014 it gives J.J. a 44% chance to clear a 15.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -4.6,
+     "label": "Getting 4.0 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -3.2,
+     "label": "Vegas pegs this at 43.5 total points, about 21 for the Vikings",
+     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -3.1,
+     "label": "Sat out last week",
+     "detail": "Coming back from a missed game nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -1.7,
+     "label": "Washington gives up 133 rushing yards a game \u2014 6th most in the NFL",
+     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -1.6,
+     "label": "Averaging 19.3 rushing yards over his last 3 games",
+     "detail": "That's down from 20.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+    }
+   ],
+   "actual": 19.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "GB",
+   "home": false,
+   "stats": {
+    "pass_yds": 87.0,
+    "pass_tds": 0.0,
+    "rush_yds": 10.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "CHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 150.0,
+    "pass_tds": 1.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 248.0,
+    "pass_tds": 1.0,
+    "rush_yds": 48.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "DET",
+   "home": false,
+   "stats": {
+    "pass_yds": 143.0,
+    "pass_tds": 2.0,
+    "rush_yds": 12.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 2,
+   "opponent": "ATL",
+   "home": true,
+   "stats": {
+    "pass_yds": 158.0,
+    "pass_tds": 0.0,
+    "rush_yds": 25.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 1,
+   "opponent": "CHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 143.0,
+    "pass_tds": 2.0,
+    "rush_yds": 25.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "pass_yds": 154.8,
+  "pass_tds": 1.0,
+  "rush_yds": 20.0
+ },
+ "modelHistory": [
+  {
+   "week": 12,
+   "market": "pass_tds",
+   "projection": 1.0,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "pass_yds",
+   "projection": 156.5,
+   "refLine": 150.5,
+   "lean": "over",
+   "actual": 87.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 23.9,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 10.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "pass_tds",
+   "projection": 1.3,
+   "refLine": 1.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "pass_yds",
+   "projection": 178.8,
+   "refLine": 150.5,
+   "lean": "over",
+   "actual": 150.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 22.0,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "pass_tds",
+   "projection": 0.8,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "pass_yds",
+   "projection": 171.6,
+   "refLine": 142.5,
+   "lean": "over",
+   "actual": 248.0,
+   "result": "over"
+  }
+ ]
+}

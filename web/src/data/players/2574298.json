@@ -1,0 +1,774 @@
+{
+ "playerId": "2574298",
+ "name": "Ashton Jeanty",
+ "team": "LV",
+ "pos": "RB",
+ "opponent": "DEN",
+ "home": true,
+ "gameId": "2025_14_DEN_LV",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 63.1,
+   "quantiles": {
+    "p10": 20.4,
+    "p25": 27.6,
+    "p50": 54.0,
+    "p75": 69.9,
+    "p90": 96.7
+   },
+   "probCurve": [
+    {
+     "line": 5.0,
+     "over": 0.98
+    },
+    {
+     "line": 7.5,
+     "over": 0.9747
+    },
+    {
+     "line": 10.0,
+     "over": 0.9635
+    },
+    {
+     "line": 12.5,
+     "over": 0.9524
+    },
+    {
+     "line": 15.0,
+     "over": 0.9366
+    },
+    {
+     "line": 17.5,
+     "over": 0.9195
+    },
+    {
+     "line": 20.0,
+     "over": 0.9025
+    },
+    {
+     "line": 22.5,
+     "over": 0.856
+    },
+    {
+     "line": 25.0,
+     "over": 0.8045
+    },
+    {
+     "line": 27.5,
+     "over": 0.7529
+    },
+    {
+     "line": 30.0,
+     "over": 0.7276
+    },
+    {
+     "line": 32.5,
+     "over": 0.7039
+    },
+    {
+     "line": 35.0,
+     "over": 0.6801
+    },
+    {
+     "line": 37.5,
+     "over": 0.6564
+    },
+    {
+     "line": 40.0,
+     "over": 0.6326
+    },
+    {
+     "line": 42.5,
+     "over": 0.6089
+    },
+    {
+     "line": 45.0,
+     "over": 0.5852
+    },
+    {
+     "line": 47.5,
+     "over": 0.5614
+    },
+    {
+     "line": 50.0,
+     "over": 0.5377
+    },
+    {
+     "line": 52.5,
+     "over": 0.514
+    },
+    {
+     "line": 55.0,
+     "over": 0.4839
+    },
+    {
+     "line": 57.5,
+     "over": 0.4447
+    },
+    {
+     "line": 60.0,
+     "over": 0.4055
+    },
+    {
+     "line": 62.5,
+     "over": 0.3664
+    },
+    {
+     "line": 65.0,
+     "over": 0.3272
+    },
+    {
+     "line": 67.5,
+     "over": 0.2881
+    },
+    {
+     "line": 70.0,
+     "over": 0.2496
+    },
+    {
+     "line": 72.5,
+     "over": 0.2356
+    },
+    {
+     "line": 75.0,
+     "over": 0.2216
+    },
+    {
+     "line": 77.5,
+     "over": 0.2075
+    },
+    {
+     "line": 80.0,
+     "over": 0.1935
+    },
+    {
+     "line": 82.5,
+     "over": 0.1795
+    },
+    {
+     "line": 85.0,
+     "over": 0.1654
+    },
+    {
+     "line": 87.5,
+     "over": 0.1514
+    },
+    {
+     "line": 90.0,
+     "over": 0.1374
+    },
+    {
+     "line": 92.5,
+     "over": 0.1234
+    },
+    {
+     "line": 95.0,
+     "over": 0.1093
+    },
+    {
+     "line": 97.5,
+     "over": 0.0955
+    },
+    {
+     "line": 100.0,
+     "over": 0.0822
+    },
+    {
+     "line": 102.5,
+     "over": 0.0688
+    },
+    {
+     "line": 105.0,
+     "over": 0.0554
+    },
+    {
+     "line": 107.5,
+     "over": 0.0448
+    },
+    {
+     "line": 110.0,
+     "over": 0.0361
+    },
+    {
+     "line": 112.5,
+     "over": 0.0273
+    },
+    {
+     "line": 115.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 44.5,
+   "overProbAtRef": 0.5899,
+   "lean": "over",
+   "strength": 18,
+   "confidence": "high",
+   "confidenceReason": "12 games of steady production make this range tight.",
+   "verdict": "The model projects 63 rushing yards \u2014 it gives Ashton a 59% chance to clear a 44.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 34.9,
+     "label": "Getting 20.0 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 35 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -9.3,
+     "label": "Denver gives up 93 rushing yards a game \u2014 5th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 9 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 7.9,
+     "label": "Averaging 29.3 rushing yards over his last 3 games",
+     "detail": "That's down from 44.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 8 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -6.6,
+     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "detail": "The expected scoring script nudges the projection down by about 7 yards."
+    }
+   ],
+   "actual": 30.0,
+   "result": "under"
+  },
+  {
+   "market": "rec_yds",
+   "projection": 24.8,
+   "quantiles": {
+    "p10": 2.3,
+    "p25": 9.7,
+    "p50": 24.1,
+    "p75": 42.6,
+    "p90": 54.8
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.8956
+    },
+    {
+     "line": 5.0,
+     "over": 0.8447
+    },
+    {
+     "line": 7.5,
+     "over": 0.7938
+    },
+    {
+     "line": 10.0,
+     "over": 0.744
+    },
+    {
+     "line": 12.5,
+     "over": 0.7006
+    },
+    {
+     "line": 15.0,
+     "over": 0.6572
+    },
+    {
+     "line": 17.5,
+     "over": 0.6138
+    },
+    {
+     "line": 20.0,
+     "over": 0.5704
+    },
+    {
+     "line": 22.5,
+     "over": 0.527
+    },
+    {
+     "line": 25.0,
+     "over": 0.4873
+    },
+    {
+     "line": 27.5,
+     "over": 0.4535
+    },
+    {
+     "line": 30.0,
+     "over": 0.4198
+    },
+    {
+     "line": 32.5,
+     "over": 0.3861
+    },
+    {
+     "line": 35.0,
+     "over": 0.3524
+    },
+    {
+     "line": 37.5,
+     "over": 0.3187
+    },
+    {
+     "line": 40.0,
+     "over": 0.285
+    },
+    {
+     "line": 42.5,
+     "over": 0.2513
+    },
+    {
+     "line": 45.0,
+     "over": 0.2205
+    },
+    {
+     "line": 47.5,
+     "over": 0.1899
+    },
+    {
+     "line": 50.0,
+     "over": 0.1592
+    },
+    {
+     "line": 52.5,
+     "over": 0.1286
+    },
+    {
+     "line": 55.0,
+     "over": 0.0993
+    },
+    {
+     "line": 57.5,
+     "over": 0.0896
+    },
+    {
+     "line": 60.0,
+     "over": 0.0798
+    },
+    {
+     "line": 62.5,
+     "over": 0.07
+    },
+    {
+     "line": 65.0,
+     "over": 0.0602
+    },
+    {
+     "line": 67.5,
+     "over": 0.0505
+    },
+    {
+     "line": 70.0,
+     "over": 0.0439
+    },
+    {
+     "line": 72.5,
+     "over": 0.0375
+    },
+    {
+     "line": 75.0,
+     "over": 0.0311
+    },
+    {
+     "line": 77.5,
+     "over": 0.0247
+    },
+    {
+     "line": 80.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 22.5,
+   "overProbAtRef": 0.527,
+   "lean": "neutral",
+   "strength": 5,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 25 receiving yards \u2014 it gives Ashton a 53% chance to clear a 22.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 5.7,
+     "label": "Seeing 7.2 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 6 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -5.6,
+     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "detail": "The expected scoring script nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 2.8,
+     "label": "Averaging 38.3 receiving yards over his last 3 games",
+     "detail": "That's up from 28.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.5,
+     "label": "Denver gives up 220 receiving yards a game \u2014 12th fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.5 receiving yards."
+    }
+   ],
+   "actual": 8.0,
+   "result": "under"
+  },
+  {
+   "market": "receptions",
+   "projection": 4.4,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 2.6,
+    "p50": 4.4,
+    "p75": 5.9,
+    "p90": 8.3
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8715
+    },
+    {
+     "line": 1.0,
+     "over": 0.8431
+    },
+    {
+     "line": 1.5,
+     "over": 0.8146
+    },
+    {
+     "line": 2.0,
+     "over": 0.7862
+    },
+    {
+     "line": 2.5,
+     "over": 0.7577
+    },
+    {
+     "line": 3.0,
+     "over": 0.6975
+    },
+    {
+     "line": 3.5,
+     "over": 0.6256
+    },
+    {
+     "line": 4.0,
+     "over": 0.5536
+    },
+    {
+     "line": 4.5,
+     "over": 0.4791
+    },
+    {
+     "line": 5.0,
+     "over": 0.397
+    },
+    {
+     "line": 5.5,
+     "over": 0.3148
+    },
+    {
+     "line": 6.0,
+     "over": 0.2434
+    },
+    {
+     "line": 6.5,
+     "over": 0.2121
+    },
+    {
+     "line": 7.0,
+     "over": 0.1809
+    },
+    {
+     "line": 7.5,
+     "over": 0.1496
+    },
+    {
+     "line": 8.0,
+     "over": 0.1183
+    },
+    {
+     "line": 8.5,
+     "over": 0.0877
+    },
+    {
+     "line": 9.0,
+     "over": 0.0579
+    },
+    {
+     "line": 9.5,
+     "over": 0.0357
+    },
+    {
+     "line": 10.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 4.5,
+   "overProbAtRef": 0.4791,
+   "lean": "neutral",
+   "strength": 4,
+   "confidence": "high",
+   "confidenceReason": "12 games of steady production make this range tight.",
+   "verdict": "The model projects 4.4 catches \u2014 a 48% chance to beat a 4.5-catch line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.89,
+     "label": "Averaging 6.7 catches over his last 3 games",
+     "detail": "That's up from 4.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.9 catches."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.25,
+     "label": "Seeing 7.2 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.2 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.18,
+     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "detail": "The expected scoring script nudges the projection down by about 0.2 catches."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.15,
+     "label": "Indoor game \u2014 weather is a non-factor",
+     "detail": "Roof's closed, so wind and cold are off the table."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.14,
+     "label": "Geno Smith has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.1 catches."
+    }
+   ],
+   "actual": 2.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "LAC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 31.0,
+    "rec_yds": 30.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "CLE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 50.0,
+    "rec_yds": 58.0,
+    "receptions": 8.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "DAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 7.0,
+    "rec_yds": 27.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "DEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 60.0,
+    "rec_yds": 3.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "JAX",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 42.0,
+    "rec_yds": 47.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "KC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 21.0,
+    "rec_yds": 13.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "TEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 75.0,
+    "rec_yds": 11.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 67.0,
+    "rec_yds": 42.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "CHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 138.0,
+    "rec_yds": 17.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 63.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 52.9,
+  "rec_yds": 20.9,
+  "receptions": 3.6
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 19.9,
+   "refLine": 20.5,
+   "lean": "under",
+   "actual": 30.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 3.8,
+   "refLine": 4.5,
+   "lean": "under",
+   "actual": 6.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 54.2,
+   "refLine": 46.5,
+   "lean": "over",
+   "actual": 31.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 15.0,
+   "refLine": 12.5,
+   "lean": "over",
+   "actual": 58.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 2.9,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 8.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 62.1,
+   "refLine": 46.5,
+   "lean": "over",
+   "actual": 50.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 17.0,
+   "refLine": 12.5,
+   "lean": "neutral",
+   "actual": 27.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.8,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 6.0,
+   "result": "over"
+  }
+ ]
+}

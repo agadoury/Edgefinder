@@ -1,0 +1,732 @@
+{
+ "playerId": "2560968",
+ "name": "Saquon Barkley",
+ "team": "PHI",
+ "pos": "RB",
+ "opponent": "LAC",
+ "home": false,
+ "gameId": "2025_14_PHI_LAC",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 51.9,
+   "quantiles": {
+    "p10": 18.9,
+    "p25": 33.4,
+    "p50": 44.7,
+    "p75": 74.4,
+    "p90": 92.6
+   },
+   "probCurve": [
+    {
+     "line": 10.0,
+     "over": 0.98
+    },
+    {
+     "line": 12.5,
+     "over": 0.9795
+    },
+    {
+     "line": 15.0,
+     "over": 0.9553
+    },
+    {
+     "line": 17.5,
+     "over": 0.9211
+    },
+    {
+     "line": 20.0,
+     "over": 0.8889
+    },
+    {
+     "line": 22.5,
+     "over": 0.8631
+    },
+    {
+     "line": 25.0,
+     "over": 0.8372
+    },
+    {
+     "line": 27.5,
+     "over": 0.8114
+    },
+    {
+     "line": 30.0,
+     "over": 0.7856
+    },
+    {
+     "line": 32.5,
+     "over": 0.7597
+    },
+    {
+     "line": 35.0,
+     "over": 0.7155
+    },
+    {
+     "line": 37.5,
+     "over": 0.6601
+    },
+    {
+     "line": 40.0,
+     "over": 0.6047
+    },
+    {
+     "line": 42.5,
+     "over": 0.5494
+    },
+    {
+     "line": 45.0,
+     "over": 0.4977
+    },
+    {
+     "line": 47.5,
+     "over": 0.4766
+    },
+    {
+     "line": 50.0,
+     "over": 0.4555
+    },
+    {
+     "line": 52.5,
+     "over": 0.4345
+    },
+    {
+     "line": 55.0,
+     "over": 0.4134
+    },
+    {
+     "line": 57.5,
+     "over": 0.3923
+    },
+    {
+     "line": 60.0,
+     "over": 0.3712
+    },
+    {
+     "line": 62.5,
+     "over": 0.3501
+    },
+    {
+     "line": 65.0,
+     "over": 0.329
+    },
+    {
+     "line": 67.5,
+     "over": 0.3079
+    },
+    {
+     "line": 70.0,
+     "over": 0.2869
+    },
+    {
+     "line": 72.5,
+     "over": 0.2658
+    },
+    {
+     "line": 75.0,
+     "over": 0.2448
+    },
+    {
+     "line": 77.5,
+     "over": 0.2243
+    },
+    {
+     "line": 80.0,
+     "over": 0.2038
+    },
+    {
+     "line": 82.5,
+     "over": 0.1832
+    },
+    {
+     "line": 85.0,
+     "over": 0.1627
+    },
+    {
+     "line": 87.5,
+     "over": 0.1421
+    },
+    {
+     "line": 90.0,
+     "over": 0.1216
+    },
+    {
+     "line": 92.5,
+     "over": 0.1011
+    },
+    {
+     "line": 95.0,
+     "over": 0.0835
+    },
+    {
+     "line": 97.5,
+     "over": 0.0661
+    },
+    {
+     "line": 100.0,
+     "over": 0.0492
+    },
+    {
+     "line": 102.5,
+     "over": 0.0378
+    },
+    {
+     "line": 105.0,
+     "over": 0.0264
+    },
+    {
+     "line": 107.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 58.5,
+   "overProbAtRef": 0.3839,
+   "lean": "under",
+   "strength": 20,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 52 rushing yards \u2014 it gives Saquon a 38% chance to clear a 58.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 17.5,
+     "label": "Getting 20.5 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 18 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 15.1,
+     "label": "Averaging 53.7 rushing yards over his last 3 games",
+     "detail": "That's down from 62.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 15 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -5.0,
+     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "detail": "The expected scoring script nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -4.7,
+     "label": "Los Angeles gives up 107 rushing yards a game \u2014 13th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 1.4,
+     "label": "Jalen Hurts has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 1 yards."
+    }
+   ],
+   "actual": 122.0,
+   "result": "over"
+  },
+  {
+   "market": "rec_yds",
+   "projection": 18.2,
+   "quantiles": {
+    "p10": 0.1,
+    "p25": 5.3,
+    "p50": 15.9,
+    "p75": 28.0,
+    "p90": 43.1
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.831
+    },
+    {
+     "line": 5.0,
+     "over": 0.7581
+    },
+    {
+     "line": 7.5,
+     "over": 0.6975
+    },
+    {
+     "line": 10.0,
+     "over": 0.6385
+    },
+    {
+     "line": 12.5,
+     "over": 0.5795
+    },
+    {
+     "line": 15.0,
+     "over": 0.5205
+    },
+    {
+     "line": 17.5,
+     "over": 0.4665
+    },
+    {
+     "line": 20.0,
+     "over": 0.4152
+    },
+    {
+     "line": 22.5,
+     "over": 0.3639
+    },
+    {
+     "line": 25.0,
+     "over": 0.3125
+    },
+    {
+     "line": 27.5,
+     "over": 0.2612
+    },
+    {
+     "line": 30.0,
+     "over": 0.2306
+    },
+    {
+     "line": 32.5,
+     "over": 0.2058
+    },
+    {
+     "line": 35.0,
+     "over": 0.1809
+    },
+    {
+     "line": 37.5,
+     "over": 0.1561
+    },
+    {
+     "line": 40.0,
+     "over": 0.1312
+    },
+    {
+     "line": 42.5,
+     "over": 0.1064
+    },
+    {
+     "line": 45.0,
+     "over": 0.0931
+    },
+    {
+     "line": 47.5,
+     "over": 0.0837
+    },
+    {
+     "line": 50.0,
+     "over": 0.0744
+    },
+    {
+     "line": 52.5,
+     "over": 0.0651
+    },
+    {
+     "line": 55.0,
+     "over": 0.0557
+    },
+    {
+     "line": 57.5,
+     "over": 0.0476
+    },
+    {
+     "line": 60.0,
+     "over": 0.0415
+    },
+    {
+     "line": 62.5,
+     "over": 0.0354
+    },
+    {
+     "line": 65.0,
+     "over": 0.0293
+    },
+    {
+     "line": 67.5,
+     "over": 0.0232
+    },
+    {
+     "line": 70.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 20.5,
+   "overProbAtRef": 0.4049,
+   "lean": "under",
+   "strength": 16,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 18 receiving yards \u2014 it gives Saquon a 40% chance to clear a 20.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 3.4,
+     "label": "Averaging 19.7 receiving yards over his last 3 games",
+     "detail": "That's down from 23.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -3.3,
+     "label": "Los Angeles gives up 185 receiving yards a game \u2014 2nd fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -1.0,
+     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "detail": "The expected scoring script nudges the projection down by about 1.0 receiving yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.6,
+     "label": "Seeing 3.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.6 receiving yards."
+    }
+   ],
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "market": "receptions",
+   "projection": 2.5,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 1.0,
+    "p50": 2.3,
+    "p75": 3.6,
+    "p90": 4.3
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8285
+    },
+    {
+     "line": 1.0,
+     "over": 0.7569
+    },
+    {
+     "line": 1.5,
+     "over": 0.6567
+    },
+    {
+     "line": 2.0,
+     "over": 0.5535
+    },
+    {
+     "line": 2.5,
+     "over": 0.4545
+    },
+    {
+     "line": 3.0,
+     "over": 0.36
+    },
+    {
+     "line": 3.5,
+     "over": 0.2655
+    },
+    {
+     "line": 4.0,
+     "over": 0.1629
+    },
+    {
+     "line": 4.5,
+     "over": 0.0933
+    },
+    {
+     "line": 5.0,
+     "over": 0.0764
+    },
+    {
+     "line": 5.5,
+     "over": 0.0595
+    },
+    {
+     "line": 6.0,
+     "over": 0.0452
+    },
+    {
+     "line": 6.5,
+     "over": 0.0341
+    },
+    {
+     "line": 7.0,
+     "over": 0.0231
+    },
+    {
+     "line": 7.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 2.5,
+   "overProbAtRef": 0.4545,
+   "lean": "under",
+   "strength": 8,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 2.5 catches \u2014 a 45% chance to beat a 2.5-catch line.",
+   "factors": [
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -0.21,
+     "label": "Los Angeles gives up 18 catches a game \u2014 3rd fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 0.2 catches."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.12,
+     "label": "Seeing 3.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.1 catches."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.08,
+     "label": "On the road at Los Angeles",
+     "detail": "The road trip nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.07,
+     "label": "Jalen Hurts has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.06,
+     "label": "Averaging 2.7 catches over his last 3 games",
+     "detail": "That's up from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.05,
+     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "detail": "The expected scoring script nudges the projection down by about 0.1 catches."
+    }
+   ],
+   "actual": 0.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "CHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 56.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "DAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 52.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "DET",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 83.0,
+    "rec_yds": 7.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "GB",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 60.0,
+    "rec_yds": 41.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 150.0,
+    "rec_yds": 24.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "MIN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 44.0,
+    "rec_yds": -2.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "NYG",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 58.0,
+    "rec_yds": 9.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "DEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 30.0,
+    "rec_yds": 58.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "TB",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 43.0,
+    "rec_yds": 31.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "LA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 46.0,
+    "rec_yds": 9.0,
+    "receptions": 4.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 61.7,
+  "rec_yds": 21.6,
+  "receptions": 2.9
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 21.0,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 3.1,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 70.7,
+   "refLine": 58.5,
+   "lean": "over",
+   "actual": 56.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 19.3,
+   "refLine": 12.5,
+   "lean": "over",
+   "actual": 52.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 2.6,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 7.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 84.1,
+   "refLine": 59.5,
+   "lean": "over",
+   "actual": 22.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 16.4,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 7.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.7,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 1.0,
+   "result": "under"
+  }
+ ]
+}

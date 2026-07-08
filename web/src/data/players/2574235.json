@@ -1,0 +1,443 @@
+{
+ "playerId": "2574235",
+ "name": "Bhayshul Tuten",
+ "team": "JAX",
+ "pos": "RB",
+ "opponent": "IND",
+ "home": true,
+ "gameId": "2025_14_IND_JAX",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 24.9,
+   "quantiles": {
+    "p10": 3.2,
+    "p25": 8.4,
+    "p50": 19.2,
+    "p75": 41.0,
+    "p90": 62.9
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9149
+    },
+    {
+     "line": 5.0,
+     "over": 0.8489
+    },
+    {
+     "line": 7.5,
+     "over": 0.7765
+    },
+    {
+     "line": 10.0,
+     "over": 0.7134
+    },
+    {
+     "line": 12.5,
+     "over": 0.6555
+    },
+    {
+     "line": 15.0,
+     "over": 0.5977
+    },
+    {
+     "line": 17.5,
+     "over": 0.5399
+    },
+    {
+     "line": 20.0,
+     "over": 0.4911
+    },
+    {
+     "line": 22.5,
+     "over": 0.4624
+    },
+    {
+     "line": 25.0,
+     "over": 0.4337
+    },
+    {
+     "line": 27.5,
+     "over": 0.405
+    },
+    {
+     "line": 30.0,
+     "over": 0.3763
+    },
+    {
+     "line": 32.5,
+     "over": 0.3476
+    },
+    {
+     "line": 35.0,
+     "over": 0.3189
+    },
+    {
+     "line": 37.5,
+     "over": 0.2902
+    },
+    {
+     "line": 40.0,
+     "over": 0.2615
+    },
+    {
+     "line": 42.5,
+     "over": 0.2397
+    },
+    {
+     "line": 45.0,
+     "over": 0.2226
+    },
+    {
+     "line": 47.5,
+     "over": 0.2055
+    },
+    {
+     "line": 50.0,
+     "over": 0.1883
+    },
+    {
+     "line": 52.5,
+     "over": 0.1712
+    },
+    {
+     "line": 55.0,
+     "over": 0.1541
+    },
+    {
+     "line": 57.5,
+     "over": 0.1369
+    },
+    {
+     "line": 60.0,
+     "over": 0.1198
+    },
+    {
+     "line": 62.5,
+     "over": 0.1027
+    },
+    {
+     "line": 65.0,
+     "over": 0.0951
+    },
+    {
+     "line": 67.5,
+     "over": 0.0894
+    },
+    {
+     "line": 70.0,
+     "over": 0.0836
+    },
+    {
+     "line": 72.5,
+     "over": 0.0779
+    },
+    {
+     "line": 75.0,
+     "over": 0.0721
+    },
+    {
+     "line": 77.5,
+     "over": 0.0664
+    },
+    {
+     "line": 80.0,
+     "over": 0.0606
+    },
+    {
+     "line": 82.5,
+     "over": 0.0549
+    },
+    {
+     "line": 85.0,
+     "over": 0.0494
+    },
+    {
+     "line": 87.5,
+     "over": 0.0457
+    },
+    {
+     "line": 90.0,
+     "over": 0.0419
+    },
+    {
+     "line": 92.5,
+     "over": 0.0381
+    },
+    {
+     "line": 95.0,
+     "over": 0.0344
+    },
+    {
+     "line": 97.5,
+     "over": 0.0306
+    },
+    {
+     "line": 100.0,
+     "over": 0.0268
+    },
+    {
+     "line": 102.5,
+     "over": 0.0231
+    },
+    {
+     "line": 105.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 16.5,
+   "overProbAtRef": 0.563,
+   "lean": "over",
+   "strength": 11,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 25 rushing yards \u2014 it gives Bhayshul a 56% chance to clear a 16.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 5.5,
+     "label": "Getting 9.0 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 6 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -2.5,
+     "label": "Indianapolis gives up 98 rushing yards a game \u2014 6th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -2.1,
+     "label": "Averaging 36.0 rushing yards over his last 3 games",
+     "detail": "That's up from 23.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.6,
+     "label": "Trevor Lawrence has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.6 rushing yards."
+    }
+   ],
+   "actual": 5.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "TEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 17.0,
+    "rec_yds": 2.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "ARI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 17.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "LAC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 74.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "HOU",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 5.0,
+    "rec_yds": 5.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 29.0,
+    "rec_yds": -3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "LA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "SEA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 14.0,
+    "rec_yds": 14.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "KC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 6.0,
+    "rec_yds": 5.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "SF",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 14.0,
+    "rec_yds": 8.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "HOU",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 21.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 22.7,
+  "rec_yds": 5.2,
+  "receptions": 0.8
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 24.8,
+   "refLine": 19.5,
+   "lean": "neutral",
+   "actual": 17.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 26.6,
+   "refLine": 19.5,
+   "lean": "over",
+   "actual": 17.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 15.6,
+   "refLine": 14.5,
+   "lean": "neutral",
+   "actual": 74.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 18.2,
+   "refLine": 15.5,
+   "lean": "neutral",
+   "actual": 5.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rush_yds",
+   "projection": 16.1,
+   "refLine": 14.5,
+   "lean": "neutral",
+   "actual": 29.0,
+   "result": "over"
+  },
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 16.1,
+   "refLine": 14.5,
+   "lean": "neutral",
+   "actual": 22.0,
+   "result": "over"
+  },
+  {
+   "week": 6,
+   "market": "rush_yds",
+   "projection": 16.3,
+   "refLine": 14.5,
+   "lean": "neutral",
+   "actual": 14.0,
+   "result": "under"
+  },
+  {
+   "week": 5,
+   "market": "rush_yds",
+   "projection": 22.1,
+   "refLine": 17.5,
+   "lean": "neutral",
+   "actual": 6.0,
+   "result": "under"
+  }
+ ]
+}

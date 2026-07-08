@@ -1,0 +1,719 @@
+{
+ "playerId": "2569795",
+ "name": "Tyjae Spears",
+ "team": "TEN",
+ "pos": "RB",
+ "opponent": "CLE",
+ "home": false,
+ "gameId": "2025_14_TEN_CLE",
+ "gamesPlayed2025": 8,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 19.9,
+   "quantiles": {
+    "p10": 0.9,
+    "p25": 8.8,
+    "p50": 18.0,
+    "p75": 27.0,
+    "p90": 46.6
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.8702
+    },
+    {
+     "line": 5.0,
+     "over": 0.8226
+    },
+    {
+     "line": 7.5,
+     "over": 0.7751
+    },
+    {
+     "line": 10.0,
+     "over": 0.7178
+    },
+    {
+     "line": 12.5,
+     "over": 0.6497
+    },
+    {
+     "line": 15.0,
+     "over": 0.5816
+    },
+    {
+     "line": 17.5,
+     "over": 0.5134
+    },
+    {
+     "line": 20.0,
+     "over": 0.444
+    },
+    {
+     "line": 22.5,
+     "over": 0.3743
+    },
+    {
+     "line": 25.0,
+     "over": 0.3045
+    },
+    {
+     "line": 27.5,
+     "over": 0.2458
+    },
+    {
+     "line": 30.0,
+     "over": 0.2267
+    },
+    {
+     "line": 32.5,
+     "over": 0.2076
+    },
+    {
+     "line": 35.0,
+     "over": 0.1884
+    },
+    {
+     "line": 37.5,
+     "over": 0.1693
+    },
+    {
+     "line": 40.0,
+     "over": 0.1502
+    },
+    {
+     "line": 42.5,
+     "over": 0.1311
+    },
+    {
+     "line": 45.0,
+     "over": 0.1119
+    },
+    {
+     "line": 47.5,
+     "over": 0.0973
+    },
+    {
+     "line": 50.0,
+     "over": 0.0901
+    },
+    {
+     "line": 52.5,
+     "over": 0.083
+    },
+    {
+     "line": 55.0,
+     "over": 0.0758
+    },
+    {
+     "line": 57.5,
+     "over": 0.0687
+    },
+    {
+     "line": 60.0,
+     "over": 0.0615
+    },
+    {
+     "line": 62.5,
+     "over": 0.0543
+    },
+    {
+     "line": 65.0,
+     "over": 0.0481
+    },
+    {
+     "line": 67.5,
+     "over": 0.0435
+    },
+    {
+     "line": 70.0,
+     "over": 0.0388
+    },
+    {
+     "line": 72.5,
+     "over": 0.0341
+    },
+    {
+     "line": 75.0,
+     "over": 0.0294
+    },
+    {
+     "line": 77.5,
+     "over": 0.0247
+    },
+    {
+     "line": 80.0,
+     "over": 0.02
+    },
+    {
+     "line": 82.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 10.5,
+   "overProbAtRef": 0.7042,
+   "lean": "over",
+   "strength": 35,
+   "confidence": "medium",
+   "confidenceReason": "Decent 8-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 20 rushing yards \u2014 it gives Tyjae a 70% chance to clear a 10.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -7.0,
+     "label": "Averaging 2.0 rushing yards over his last 3 games",
+     "detail": "That's down from 19.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 7 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -2.8,
+     "label": "Cleveland gives up 101 rushing yards a game \u2014 10th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 1.2,
+     "label": "Getting 8.5 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 1 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.6,
+     "label": "Cam Ward has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 0.6 rushing yards."
+    }
+   ],
+   "actual": 19.0,
+   "result": "over"
+  },
+  {
+   "market": "rec_yds",
+   "projection": 16.9,
+   "quantiles": {
+    "p10": 0.9,
+    "p25": 4.2,
+    "p50": 17.8,
+    "p75": 34.8,
+    "p90": 47.7
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.8292
+    },
+    {
+     "line": 5.0,
+     "over": 0.7361
+    },
+    {
+     "line": 7.5,
+     "over": 0.6901
+    },
+    {
+     "line": 10.0,
+     "over": 0.6441
+    },
+    {
+     "line": 12.5,
+     "over": 0.598
+    },
+    {
+     "line": 15.0,
+     "over": 0.552
+    },
+    {
+     "line": 17.5,
+     "over": 0.506
+    },
+    {
+     "line": 20.0,
+     "over": 0.468
+    },
+    {
+     "line": 22.5,
+     "over": 0.4312
+    },
+    {
+     "line": 25.0,
+     "over": 0.3944
+    },
+    {
+     "line": 27.5,
+     "over": 0.3577
+    },
+    {
+     "line": 30.0,
+     "over": 0.3209
+    },
+    {
+     "line": 32.5,
+     "over": 0.2841
+    },
+    {
+     "line": 35.0,
+     "over": 0.2479
+    },
+    {
+     "line": 37.5,
+     "over": 0.2188
+    },
+    {
+     "line": 40.0,
+     "over": 0.1898
+    },
+    {
+     "line": 42.5,
+     "over": 0.1607
+    },
+    {
+     "line": 45.0,
+     "over": 0.1316
+    },
+    {
+     "line": 47.5,
+     "over": 0.1025
+    },
+    {
+     "line": 50.0,
+     "over": 0.0935
+    },
+    {
+     "line": 52.5,
+     "over": 0.0864
+    },
+    {
+     "line": 55.0,
+     "over": 0.0794
+    },
+    {
+     "line": 57.5,
+     "over": 0.0723
+    },
+    {
+     "line": 60.0,
+     "over": 0.0652
+    },
+    {
+     "line": 62.5,
+     "over": 0.0581
+    },
+    {
+     "line": 65.0,
+     "over": 0.051
+    },
+    {
+     "line": 67.5,
+     "over": 0.046
+    },
+    {
+     "line": 70.0,
+     "over": 0.0414
+    },
+    {
+     "line": 72.5,
+     "over": 0.0368
+    },
+    {
+     "line": 75.0,
+     "over": 0.0321
+    },
+    {
+     "line": 77.5,
+     "over": 0.0275
+    },
+    {
+     "line": 80.0,
+     "over": 0.0228
+    },
+    {
+     "line": 82.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 23.5,
+   "overProbAtRef": 0.4165,
+   "lean": "under",
+   "strength": 14,
+   "confidence": "medium",
+   "confidenceReason": "Decent 8-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 17 receiving yards \u2014 it gives Tyjae a 42% chance to clear a 23.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -6.0,
+     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "detail": "The expected scoring script nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 2.6,
+     "label": "Seeing 4.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 3 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -2.3,
+     "label": "Cleveland gives up 194 receiving yards a game \u2014 3rd fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -1.0,
+     "label": "Cam Ward has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 1 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "down",
+     "impact": -0.7,
+     "label": "Fair conditions \u2014 about 33 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection down by about 0.7 receiving yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.6,
+     "label": "Averaging 25.7 receiving yards over his last 3 games",
+     "detail": "That's up from 21.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.6 receiving yards."
+    }
+   ],
+   "actual": 28.0,
+   "result": "over"
+  },
+  {
+   "market": "receptions",
+   "projection": 2.7,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 1.4,
+    "p50": 3.0,
+    "p75": 3.8,
+    "p90": 4.9
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8469
+    },
+    {
+     "line": 1.0,
+     "over": 0.7938
+    },
+    {
+     "line": 1.5,
+     "over": 0.7366
+    },
+    {
+     "line": 2.0,
+     "over": 0.6595
+    },
+    {
+     "line": 2.5,
+     "over": 0.5824
+    },
+    {
+     "line": 3.0,
+     "over": 0.5052
+    },
+    {
+     "line": 3.5,
+     "over": 0.3464
+    },
+    {
+     "line": 4.0,
+     "over": 0.2225
+    },
+    {
+     "line": 4.5,
+     "over": 0.1564
+    },
+    {
+     "line": 5.0,
+     "over": 0.093
+    },
+    {
+     "line": 5.5,
+     "over": 0.047
+    },
+    {
+     "line": 6.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 3.5,
+   "overProbAtRef": 0.3464,
+   "lean": "under",
+   "strength": 26,
+   "confidence": "medium",
+   "confidenceReason": "Decent 8-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 2.7 catches \u2014 a 35% chance to beat a 3.5-catch line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.58,
+     "label": "Averaging 5.0 catches over his last 3 games",
+     "detail": "That's up from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.6 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.5,
+     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "detail": "The expected scoring script nudges the projection down by about 0.5 catches."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.43,
+     "label": "Seeing 4.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -0.29,
+     "label": "Cleveland gives up 18 catches a game \u2014 4th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 0.3 catches."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.26,
+     "label": "On the road at Cleveland",
+     "detail": "The road trip nudges the projection down by about 0.3 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.13,
+     "label": "Cam Ward has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.1 catches."
+    }
+   ],
+   "actual": 2.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "JAX",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": -1.0,
+    "rec_yds": 25.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "SEA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 4.0,
+    "rec_yds": 21.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "HOU",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 3.0,
+    "rec_yds": 31.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "LAC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 26.0,
+    "rec_yds": 36.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 59.0,
+    "rec_yds": 23.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "NE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 18.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 31.0,
+    "rec_yds": 19.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "ARI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 14.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 16,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 27.0,
+    "rec_yds": 39.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 15,
+   "opponent": "CIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 5.0,
+    "rec_yds": 87.0,
+    "receptions": 6.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 19.8,
+  "rec_yds": 21.6,
+  "receptions": 3.5
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 22.4,
+   "refLine": 22.5,
+   "lean": "neutral",
+   "actual": 25.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 3.2,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 6.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 23.2,
+   "refLine": 22.5,
+   "lean": "neutral",
+   "actual": -1.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 21.9,
+   "refLine": 22.5,
+   "lean": "neutral",
+   "actual": 21.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 2.9,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 4.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 35.6,
+   "refLine": 24.5,
+   "lean": "over",
+   "actual": 4.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 16.2,
+   "refLine": 18.5,
+   "lean": "under",
+   "actual": 31.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.3,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 5.0,
+   "result": "over"
+  }
+ ]
+}

@@ -1,0 +1,487 @@
+{
+ "playerId": "2574174",
+ "name": "Woody Marks",
+ "team": "HOU",
+ "pos": "RB",
+ "opponent": "KC",
+ "home": false,
+ "gameId": "2025_14_HOU_KC",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 43.9,
+   "quantiles": {
+    "p10": 14.8,
+    "p25": 27.0,
+    "p50": 41.6,
+    "p75": 67.1,
+    "p90": 86.8
+   },
+   "probCurve": [
+    {
+     "line": 10.0,
+     "over": 0.98
+    },
+    {
+     "line": 12.5,
+     "over": 0.9475
+    },
+    {
+     "line": 15.0,
+     "over": 0.898
+    },
+    {
+     "line": 17.5,
+     "over": 0.8672
+    },
+    {
+     "line": 20.0,
+     "over": 0.8364
+    },
+    {
+     "line": 22.5,
+     "over": 0.8057
+    },
+    {
+     "line": 25.0,
+     "over": 0.7749
+    },
+    {
+     "line": 27.5,
+     "over": 0.7419
+    },
+    {
+     "line": 30.0,
+     "over": 0.6991
+    },
+    {
+     "line": 32.5,
+     "over": 0.6564
+    },
+    {
+     "line": 35.0,
+     "over": 0.6137
+    },
+    {
+     "line": 37.5,
+     "over": 0.5709
+    },
+    {
+     "line": 40.0,
+     "over": 0.5282
+    },
+    {
+     "line": 42.5,
+     "over": 0.4916
+    },
+    {
+     "line": 45.0,
+     "over": 0.4671
+    },
+    {
+     "line": 47.5,
+     "over": 0.4426
+    },
+    {
+     "line": 50.0,
+     "over": 0.418
+    },
+    {
+     "line": 52.5,
+     "over": 0.3935
+    },
+    {
+     "line": 55.0,
+     "over": 0.3689
+    },
+    {
+     "line": 57.5,
+     "over": 0.3444
+    },
+    {
+     "line": 60.0,
+     "over": 0.3198
+    },
+    {
+     "line": 62.5,
+     "over": 0.2953
+    },
+    {
+     "line": 65.0,
+     "over": 0.2707
+    },
+    {
+     "line": 67.5,
+     "over": 0.247
+    },
+    {
+     "line": 70.0,
+     "over": 0.228
+    },
+    {
+     "line": 72.5,
+     "over": 0.209
+    },
+    {
+     "line": 75.0,
+     "over": 0.1899
+    },
+    {
+     "line": 77.5,
+     "over": 0.1709
+    },
+    {
+     "line": 80.0,
+     "over": 0.1519
+    },
+    {
+     "line": 82.5,
+     "over": 0.1329
+    },
+    {
+     "line": 85.0,
+     "over": 0.1139
+    },
+    {
+     "line": 87.5,
+     "over": 0.0988
+    },
+    {
+     "line": 90.0,
+     "over": 0.0942
+    },
+    {
+     "line": 92.5,
+     "over": 0.0896
+    },
+    {
+     "line": 95.0,
+     "over": 0.0851
+    },
+    {
+     "line": 97.5,
+     "over": 0.0805
+    },
+    {
+     "line": 100.0,
+     "over": 0.0759
+    },
+    {
+     "line": 102.5,
+     "over": 0.0714
+    },
+    {
+     "line": 105.0,
+     "over": 0.0668
+    },
+    {
+     "line": 107.5,
+     "over": 0.0622
+    },
+    {
+     "line": 110.0,
+     "over": 0.0577
+    },
+    {
+     "line": 112.5,
+     "over": 0.0531
+    },
+    {
+     "line": 115.0,
+     "over": 0.0491
+    },
+    {
+     "line": 117.5,
+     "over": 0.0461
+    },
+    {
+     "line": 120.0,
+     "over": 0.0431
+    },
+    {
+     "line": 122.5,
+     "over": 0.0401
+    },
+    {
+     "line": 125.0,
+     "over": 0.0371
+    },
+    {
+     "line": 127.5,
+     "over": 0.0341
+    },
+    {
+     "line": 130.0,
+     "over": 0.0311
+    },
+    {
+     "line": 132.5,
+     "over": 0.0281
+    },
+    {
+     "line": 135.0,
+     "over": 0.0251
+    },
+    {
+     "line": 137.5,
+     "over": 0.0222
+    },
+    {
+     "line": 140.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 49.5,
+   "overProbAtRef": 0.4229,
+   "lean": "under",
+   "strength": 13,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 44 rushing yards \u2014 it gives Woody a 42% chance to clear a 49.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -9.8,
+     "label": "Vegas pegs this at 41.5 total points, about 18 for the Texans",
+     "detail": "The expected scoring script nudges the projection down by about 10 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -7.5,
+     "label": "Kansas City gives up 101 rushing yards a game \u2014 9th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 8 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 6.7,
+     "label": "Getting 18.0 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 7 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 2.5,
+     "label": "Averaging 60.7 rushing yards over his last 3 games",
+     "detail": "That's up from 46.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+    }
+   ],
+   "actual": 68.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 64.0,
+    "rec_yds": 3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "BUF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 74.0,
+    "rec_yds": -5.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "TEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 44.0,
+    "rec_yds": 7.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "JAX",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 63.0,
+    "rec_yds": 18.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "DEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 27.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "SF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 62.0,
+    "rec_yds": 49.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "SEA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 15.0,
+    "rec_yds": 20.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "BAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 24.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "TEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 69.0,
+    "rec_yds": 50.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "JAX",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 27.0,
+    "rec_yds": 9.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 40.5,
+  "rec_yds": 15.7,
+  "receptions": 1.5
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 47.6,
+   "refLine": 44.5,
+   "lean": "under",
+   "actual": 64.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 15.9,
+   "refLine": 15.5,
+   "lean": "neutral",
+   "actual": -5.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 2.2,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 49.2,
+   "refLine": 35.5,
+   "lean": "over",
+   "actual": 74.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 17.4,
+   "refLine": 18.5,
+   "lean": "under",
+   "actual": 7.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.3,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 44.6,
+   "refLine": 26.5,
+   "lean": "over",
+   "actual": 44.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 16.5,
+   "refLine": 17.5,
+   "lean": "under",
+   "actual": 18.0,
+   "result": "over"
+  }
+ ]
+}

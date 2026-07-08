@@ -1,0 +1,540 @@
+{
+ "playerId": "2539335",
+ "name": "Geno Smith",
+ "team": "LV",
+ "pos": "QB",
+ "opponent": "DEN",
+ "home": true,
+ "gameId": "2025_14_DEN_LV",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "pass_yds",
+   "projection": 198.3,
+   "quantiles": {
+    "p10": 91.0,
+    "p25": 160.1,
+    "p50": 193.6,
+    "p75": 240.3,
+    "p90": 259.7
+   },
+   "probCurve": [
+    {
+     "line": 70.0,
+     "over": 0.98
+    },
+    {
+     "line": 75.0,
+     "over": 0.9663
+    },
+    {
+     "line": 80.0,
+     "over": 0.9509
+    },
+    {
+     "line": 85.0,
+     "over": 0.928
+    },
+    {
+     "line": 90.0,
+     "over": 0.9046
+    },
+    {
+     "line": 95.0,
+     "over": 0.8913
+    },
+    {
+     "line": 100.0,
+     "over": 0.8804
+    },
+    {
+     "line": 105.0,
+     "over": 0.8696
+    },
+    {
+     "line": 110.0,
+     "over": 0.8587
+    },
+    {
+     "line": 115.0,
+     "over": 0.8479
+    },
+    {
+     "line": 120.0,
+     "over": 0.837
+    },
+    {
+     "line": 125.0,
+     "over": 0.8261
+    },
+    {
+     "line": 130.0,
+     "over": 0.8153
+    },
+    {
+     "line": 135.0,
+     "over": 0.8044
+    },
+    {
+     "line": 140.0,
+     "over": 0.7936
+    },
+    {
+     "line": 145.0,
+     "over": 0.7827
+    },
+    {
+     "line": 150.0,
+     "over": 0.7719
+    },
+    {
+     "line": 155.0,
+     "over": 0.761
+    },
+    {
+     "line": 160.0,
+     "over": 0.7501
+    },
+    {
+     "line": 165.0,
+     "over": 0.7132
+    },
+    {
+     "line": 170.0,
+     "over": 0.676
+    },
+    {
+     "line": 175.0,
+     "over": 0.6387
+    },
+    {
+     "line": 180.0,
+     "over": 0.6015
+    },
+    {
+     "line": 185.0,
+     "over": 0.5642
+    },
+    {
+     "line": 190.0,
+     "over": 0.527
+    },
+    {
+     "line": 195.0,
+     "over": 0.4926
+    },
+    {
+     "line": 200.0,
+     "over": 0.4658
+    },
+    {
+     "line": 205.0,
+     "over": 0.439
+    },
+    {
+     "line": 210.0,
+     "over": 0.4122
+    },
+    {
+     "line": 215.0,
+     "over": 0.3854
+    },
+    {
+     "line": 220.0,
+     "over": 0.3586
+    },
+    {
+     "line": 225.0,
+     "over": 0.3318
+    },
+    {
+     "line": 230.0,
+     "over": 0.305
+    },
+    {
+     "line": 235.0,
+     "over": 0.2782
+    },
+    {
+     "line": 240.0,
+     "over": 0.2514
+    },
+    {
+     "line": 245.0,
+     "over": 0.2134
+    },
+    {
+     "line": 250.0,
+     "over": 0.1748
+    },
+    {
+     "line": 255.0,
+     "over": 0.1362
+    },
+    {
+     "line": 260.0,
+     "over": 0.0995
+    },
+    {
+     "line": 265.0,
+     "over": 0.091
+    },
+    {
+     "line": 270.0,
+     "over": 0.0826
+    },
+    {
+     "line": 275.0,
+     "over": 0.0742
+    },
+    {
+     "line": 280.0,
+     "over": 0.0657
+    },
+    {
+     "line": 285.0,
+     "over": 0.0573
+    },
+    {
+     "line": 290.0,
+     "over": 0.0492
+    },
+    {
+     "line": 295.0,
+     "over": 0.0437
+    },
+    {
+     "line": 300.0,
+     "over": 0.0382
+    },
+    {
+     "line": 305.0,
+     "over": 0.0327
+    },
+    {
+     "line": 310.0,
+     "over": 0.0271
+    },
+    {
+     "line": 315.0,
+     "over": 0.0216
+    }
+   ],
+   "refLine": 220.5,
+   "overProbAtRef": 0.3559,
+   "lean": "under",
+   "strength": 24,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 198 passing yards \u2014 it gives Geno a 36% chance to clear a 220.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -27.2,
+     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "detail": "The expected scoring script nudges the projection down by about 27 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 11.1,
+     "label": "Averaging 229.3 passing yards over his last 3 games",
+     "detail": "That's up from 198.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 11 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -6.1,
+     "label": "His offense throws about 33 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -4.3,
+     "label": "Denver gives up 220 passing yards a game \u2014 11th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
+    }
+   ],
+   "actual": 116.0,
+   "result": "under"
+  },
+  {
+   "market": "pass_tds",
+   "projection": 1.2,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 0.0,
+    "p50": 1.0,
+    "p75": 2.2,
+    "p90": 2.7
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.7094
+    },
+    {
+     "line": 1.5,
+     "over": 0.3503
+    },
+    {
+     "line": 2.5,
+     "over": 0.1284
+    },
+    {
+     "line": 3.5,
+     "over": 0.037
+    },
+    {
+     "line": 4.5,
+     "over": 0.0087
+    }
+   ],
+   "refLine": 0.5,
+   "overProbAtRef": 0.7094,
+   "lean": "over",
+   "strength": 29,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model expects 1.2 touchdown passes \u2014 it gives Geno a 71% chance to go over 0.5.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.32,
+     "label": "His offense throws about 33 passes a game",
+     "detail": "How often the team drops back nudges the projection up by about 0.32 touchdown passes."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.08,
+     "label": "Denver gives up 1 touchdown passes a game \u2014 the fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.08 touchdown passes."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.01,
+     "label": "Averaging 1.3 touchdown passes over his last 3 games",
+     "detail": "That's up from 1.1 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.01 touchdown passes."
+    }
+   ],
+   "actual": 1.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "LAC",
+   "home": false,
+   "stats": {
+    "pass_yds": 165.0,
+    "pass_tds": 2.0,
+    "rush_yds": -6.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "CLE",
+   "home": true,
+   "stats": {
+    "pass_yds": 285.0,
+    "pass_tds": 1.0,
+    "rush_yds": 8.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "DAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 238.0,
+    "pass_tds": 1.0,
+    "rush_yds": 14.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "DEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 143.0,
+    "pass_tds": 0.0,
+    "rush_yds": 7.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "JAX",
+   "home": true,
+   "stats": {
+    "pass_yds": 284.0,
+    "pass_tds": 4.0,
+    "rush_yds": 9.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "KC",
+   "home": false,
+   "stats": {
+    "pass_yds": 67.0,
+    "pass_tds": 0.0,
+    "rush_yds": 1.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "TEN",
+   "home": true,
+   "stats": {
+    "pass_yds": 174.0,
+    "pass_tds": 1.0,
+    "rush_yds": -3.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 228.0,
+    "pass_tds": 0.0,
+    "rush_yds": 8.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "CHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 117.0,
+    "pass_tds": 2.0,
+    "rush_yds": 31.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 289.0,
+    "pass_tds": 3.0,
+    "rush_yds": 5.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "pass_yds": 211.0,
+  "pass_tds": 1.2,
+  "rush_yds": 8.7
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "pass_tds",
+   "projection": 0.5,
+   "refLine": 0.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "pass_yds",
+   "projection": 178.4,
+   "refLine": 232.5,
+   "lean": "under",
+   "actual": 165.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "pass_tds",
+   "projection": 1.0,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "pass_yds",
+   "projection": 154.2,
+   "refLine": 188.5,
+   "lean": "under",
+   "actual": 285.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "pass_tds",
+   "projection": 1.1,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "pass_yds",
+   "projection": 190.1,
+   "refLine": 176.5,
+   "lean": "over",
+   "actual": 238.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "pass_tds",
+   "projection": 1.0,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "pass_yds",
+   "projection": 214.9,
+   "refLine": 188.5,
+   "lean": "over",
+   "actual": 143.0,
+   "result": "under"
+  }
+ ]
+}

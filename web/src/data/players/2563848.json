@@ -1,0 +1,741 @@
+{
+ "playerId": "2563848",
+ "name": "CeeDee Lamb",
+ "team": "DAL",
+ "pos": "WR",
+ "opponent": "DET",
+ "home": false,
+ "gameId": "2025_14_DAL_DET",
+ "gamesPlayed2025": 8,
+ "props": [
+  {
+   "market": "rec_yds",
+   "projection": 96.5,
+   "quantiles": {
+    "p10": 26.8,
+    "p25": 47.8,
+    "p50": 87.1,
+    "p75": 109.5,
+    "p90": 160.7
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9453
+    },
+    {
+     "line": 5.0,
+     "over": 0.9407
+    },
+    {
+     "line": 7.5,
+     "over": 0.936
+    },
+    {
+     "line": 10.0,
+     "over": 0.9313
+    },
+    {
+     "line": 12.5,
+     "over": 0.9267
+    },
+    {
+     "line": 15.0,
+     "over": 0.922
+    },
+    {
+     "line": 17.5,
+     "over": 0.9174
+    },
+    {
+     "line": 20.0,
+     "over": 0.9127
+    },
+    {
+     "line": 22.5,
+     "over": 0.908
+    },
+    {
+     "line": 25.0,
+     "over": 0.9034
+    },
+    {
+     "line": 27.5,
+     "over": 0.895
+    },
+    {
+     "line": 30.0,
+     "over": 0.8771
+    },
+    {
+     "line": 32.5,
+     "over": 0.8593
+    },
+    {
+     "line": 35.0,
+     "over": 0.8414
+    },
+    {
+     "line": 37.5,
+     "over": 0.8236
+    },
+    {
+     "line": 40.0,
+     "over": 0.8057
+    },
+    {
+     "line": 42.5,
+     "over": 0.7878
+    },
+    {
+     "line": 45.0,
+     "over": 0.77
+    },
+    {
+     "line": 47.5,
+     "over": 0.7521
+    },
+    {
+     "line": 50.0,
+     "over": 0.7359
+    },
+    {
+     "line": 52.5,
+     "over": 0.72
+    },
+    {
+     "line": 55.0,
+     "over": 0.7041
+    },
+    {
+     "line": 57.5,
+     "over": 0.6882
+    },
+    {
+     "line": 60.0,
+     "over": 0.6723
+    },
+    {
+     "line": 62.5,
+     "over": 0.6564
+    },
+    {
+     "line": 65.0,
+     "over": 0.6404
+    },
+    {
+     "line": 67.5,
+     "over": 0.6245
+    },
+    {
+     "line": 70.0,
+     "over": 0.6086
+    },
+    {
+     "line": 72.5,
+     "over": 0.5927
+    },
+    {
+     "line": 75.0,
+     "over": 0.5768
+    },
+    {
+     "line": 77.5,
+     "over": 0.5608
+    },
+    {
+     "line": 80.0,
+     "over": 0.5449
+    },
+    {
+     "line": 82.5,
+     "over": 0.529
+    },
+    {
+     "line": 85.0,
+     "over": 0.5131
+    },
+    {
+     "line": 87.5,
+     "over": 0.495
+    },
+    {
+     "line": 90.0,
+     "over": 0.4671
+    },
+    {
+     "line": 92.5,
+     "over": 0.4393
+    },
+    {
+     "line": 95.0,
+     "over": 0.4114
+    },
+    {
+     "line": 97.5,
+     "over": 0.3835
+    },
+    {
+     "line": 100.0,
+     "over": 0.3556
+    },
+    {
+     "line": 102.5,
+     "over": 0.3277
+    },
+    {
+     "line": 105.0,
+     "over": 0.2999
+    },
+    {
+     "line": 107.5,
+     "over": 0.272
+    },
+    {
+     "line": 110.0,
+     "over": 0.2485
+    },
+    {
+     "line": 112.5,
+     "over": 0.2411
+    },
+    {
+     "line": 115.0,
+     "over": 0.2338
+    },
+    {
+     "line": 117.5,
+     "over": 0.2265
+    },
+    {
+     "line": 120.0,
+     "over": 0.2192
+    },
+    {
+     "line": 122.5,
+     "over": 0.2118
+    },
+    {
+     "line": 125.0,
+     "over": 0.2045
+    },
+    {
+     "line": 127.5,
+     "over": 0.1972
+    },
+    {
+     "line": 130.0,
+     "over": 0.1899
+    },
+    {
+     "line": 132.5,
+     "over": 0.1825
+    },
+    {
+     "line": 135.0,
+     "over": 0.1752
+    },
+    {
+     "line": 137.5,
+     "over": 0.1679
+    },
+    {
+     "line": 140.0,
+     "over": 0.1606
+    },
+    {
+     "line": 142.5,
+     "over": 0.1532
+    },
+    {
+     "line": 145.0,
+     "over": 0.1459
+    },
+    {
+     "line": 147.5,
+     "over": 0.1386
+    },
+    {
+     "line": 150.0,
+     "over": 0.1313
+    },
+    {
+     "line": 152.5,
+     "over": 0.1239
+    },
+    {
+     "line": 155.0,
+     "over": 0.1166
+    },
+    {
+     "line": 157.5,
+     "over": 0.1093
+    },
+    {
+     "line": 160.0,
+     "over": 0.102
+    },
+    {
+     "line": 162.5,
+     "over": 0.0949
+    },
+    {
+     "line": 165.0,
+     "over": 0.0879
+    },
+    {
+     "line": 167.5,
+     "over": 0.0809
+    },
+    {
+     "line": 170.0,
+     "over": 0.074
+    },
+    {
+     "line": 172.5,
+     "over": 0.067
+    },
+    {
+     "line": 175.0,
+     "over": 0.06
+    },
+    {
+     "line": 177.5,
+     "over": 0.053
+    },
+    {
+     "line": 180.0,
+     "over": 0.0474
+    },
+    {
+     "line": 182.5,
+     "over": 0.0429
+    },
+    {
+     "line": 185.0,
+     "over": 0.0383
+    },
+    {
+     "line": 187.5,
+     "over": 0.0337
+    },
+    {
+     "line": 190.0,
+     "over": 0.0292
+    },
+    {
+     "line": 192.5,
+     "over": 0.0246
+    },
+    {
+     "line": 195.0,
+     "over": 0.02
+    },
+    {
+     "line": 197.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 86.5,
+   "overProbAtRef": 0.5022,
+   "lean": "neutral",
+   "strength": 0,
+   "confidence": "high",
+   "confidenceReason": "8 games of steady production make this range tight.",
+   "verdict": "The model projects 96 receiving yards \u2014 it gives CeeDee a 50% chance to clear a 86.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 50.3,
+     "label": "Averaging 84.3 receiving yards over his last 3 games",
+     "detail": "That's down from 93.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 50 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 23.8,
+     "label": "Seeing 9.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 24 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 5.2,
+     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "detail": "The expected scoring script nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 4.2,
+     "label": "Indoor game \u2014 weather is a non-factor",
+     "detail": "Roof's closed, so wind and cold are off the table."
+    },
+    {
+     "group": "home_away",
+     "direction": "up",
+     "impact": 2.8,
+     "label": "On the road at Detroit",
+     "detail": "The road trip nudges the projection up by about 3 yards."
+    }
+   ],
+   "actual": 121.0,
+   "result": "over"
+  },
+  {
+   "market": "receptions",
+   "projection": 6.3,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 4.0,
+    "p50": 5.9,
+    "p75": 7.6,
+    "p90": 9.3
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8814
+    },
+    {
+     "line": 1.0,
+     "over": 0.8628
+    },
+    {
+     "line": 1.5,
+     "over": 0.8441
+    },
+    {
+     "line": 2.0,
+     "over": 0.8255
+    },
+    {
+     "line": 2.5,
+     "over": 0.8069
+    },
+    {
+     "line": 3.0,
+     "over": 0.7883
+    },
+    {
+     "line": 3.5,
+     "over": 0.7696
+    },
+    {
+     "line": 4.0,
+     "over": 0.751
+    },
+    {
+     "line": 4.5,
+     "over": 0.6861
+    },
+    {
+     "line": 5.0,
+     "over": 0.6184
+    },
+    {
+     "line": 5.5,
+     "over": 0.5507
+    },
+    {
+     "line": 6.0,
+     "over": 0.482
+    },
+    {
+     "line": 6.5,
+     "over": 0.4099
+    },
+    {
+     "line": 7.0,
+     "over": 0.3378
+    },
+    {
+     "line": 7.5,
+     "over": 0.2658
+    },
+    {
+     "line": 8.0,
+     "over": 0.2153
+    },
+    {
+     "line": 8.5,
+     "over": 0.1708
+    },
+    {
+     "line": 9.0,
+     "over": 0.1264
+    },
+    {
+     "line": 9.5,
+     "over": 0.0892
+    },
+    {
+     "line": 10.0,
+     "over": 0.0625
+    },
+    {
+     "line": 10.5,
+     "over": 0.0407
+    },
+    {
+     "line": 11.0,
+     "over": 0.0233
+    },
+    {
+     "line": 11.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 6.5,
+   "overProbAtRef": 0.4099,
+   "lean": "under",
+   "strength": 18,
+   "confidence": "high",
+   "confidenceReason": "8 games of steady production make this range tight.",
+   "verdict": "The model projects 6.3 catches \u2014 a 41% chance to beat a 6.5-catch line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 3.16,
+     "label": "Averaging 5.3 catches over his last 3 games",
+     "detail": "That's down from 6.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3.2 catches."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.87,
+     "label": "Seeing 9.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.9 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.54,
+     "label": "Detroit gives up 19 catches a game \u2014 9th fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.5 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 0.26,
+     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
+    }
+   ],
+   "actual": 6.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "KC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 112.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "PHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 75.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 66.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "ARI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 85.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "DEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 2.0,
+    "rec_yds": 74.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 110.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 2,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 112.0,
+    "receptions": 9.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 1,
+   "opponent": "PHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 110.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 16,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 105.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 15,
+   "opponent": "CAR",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 116.0,
+    "receptions": 9.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rec_yds": 93.0,
+  "receptions": 6.4
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 95.3,
+   "refLine": 80.5,
+   "lean": "neutral",
+   "actual": 112.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 6.5,
+   "refLine": 6.5,
+   "lean": "neutral",
+   "actual": 7.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 89.1,
+   "refLine": 91.5,
+   "lean": "under",
+   "actual": 75.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 6.9,
+   "refLine": 6.5,
+   "lean": "neutral",
+   "actual": 4.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 92.9,
+   "refLine": 110.5,
+   "lean": "under",
+   "actual": 66.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 6.7,
+   "refLine": 6.5,
+   "lean": "neutral",
+   "actual": 5.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rec_yds",
+   "projection": 65.8,
+   "refLine": 110.5,
+   "lean": "under",
+   "actual": 85.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "receptions",
+   "projection": 6.4,
+   "refLine": 6.5,
+   "lean": "under",
+   "actual": 7.0,
+   "result": "over"
+  }
+ ]
+}

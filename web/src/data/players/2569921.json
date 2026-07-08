@@ -1,0 +1,647 @@
+{
+ "playerId": "2569921",
+ "name": "Rashee Rice",
+ "team": "KC",
+ "pos": "WR",
+ "opponent": "HOU",
+ "home": true,
+ "gameId": "2025_14_HOU_KC",
+ "gamesPlayed2025": 6,
+ "props": [
+  {
+   "market": "rec_yds",
+   "projection": 63.7,
+   "quantiles": {
+    "p10": 21.8,
+    "p25": 40.1,
+    "p50": 64.0,
+    "p75": 90.1,
+    "p90": 114.0
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9443
+    },
+    {
+     "line": 5.0,
+     "over": 0.9385
+    },
+    {
+     "line": 7.5,
+     "over": 0.9328
+    },
+    {
+     "line": 10.0,
+     "over": 0.9271
+    },
+    {
+     "line": 12.5,
+     "over": 0.9213
+    },
+    {
+     "line": 15.0,
+     "over": 0.9156
+    },
+    {
+     "line": 17.5,
+     "over": 0.9099
+    },
+    {
+     "line": 20.0,
+     "over": 0.9041
+    },
+    {
+     "line": 22.5,
+     "over": 0.8943
+    },
+    {
+     "line": 25.0,
+     "over": 0.8737
+    },
+    {
+     "line": 27.5,
+     "over": 0.8532
+    },
+    {
+     "line": 30.0,
+     "over": 0.8327
+    },
+    {
+     "line": 32.5,
+     "over": 0.8122
+    },
+    {
+     "line": 35.0,
+     "over": 0.7917
+    },
+    {
+     "line": 37.5,
+     "over": 0.7712
+    },
+    {
+     "line": 40.0,
+     "over": 0.7507
+    },
+    {
+     "line": 42.5,
+     "over": 0.7247
+    },
+    {
+     "line": 45.0,
+     "over": 0.6985
+    },
+    {
+     "line": 47.5,
+     "over": 0.6723
+    },
+    {
+     "line": 50.0,
+     "over": 0.6462
+    },
+    {
+     "line": 52.5,
+     "over": 0.62
+    },
+    {
+     "line": 55.0,
+     "over": 0.5938
+    },
+    {
+     "line": 57.5,
+     "over": 0.5677
+    },
+    {
+     "line": 60.0,
+     "over": 0.5415
+    },
+    {
+     "line": 62.5,
+     "over": 0.5153
+    },
+    {
+     "line": 65.0,
+     "over": 0.4901
+    },
+    {
+     "line": 67.5,
+     "over": 0.4661
+    },
+    {
+     "line": 70.0,
+     "over": 0.4422
+    },
+    {
+     "line": 72.5,
+     "over": 0.4182
+    },
+    {
+     "line": 75.0,
+     "over": 0.3942
+    },
+    {
+     "line": 77.5,
+     "over": 0.3703
+    },
+    {
+     "line": 80.0,
+     "over": 0.3463
+    },
+    {
+     "line": 82.5,
+     "over": 0.3224
+    },
+    {
+     "line": 85.0,
+     "over": 0.2984
+    },
+    {
+     "line": 87.5,
+     "over": 0.2745
+    },
+    {
+     "line": 90.0,
+     "over": 0.2505
+    },
+    {
+     "line": 92.5,
+     "over": 0.2347
+    },
+    {
+     "line": 95.0,
+     "over": 0.2191
+    },
+    {
+     "line": 97.5,
+     "over": 0.2034
+    },
+    {
+     "line": 100.0,
+     "over": 0.1878
+    },
+    {
+     "line": 102.5,
+     "over": 0.1721
+    },
+    {
+     "line": 105.0,
+     "over": 0.1565
+    },
+    {
+     "line": 107.5,
+     "over": 0.1408
+    },
+    {
+     "line": 110.0,
+     "over": 0.1252
+    },
+    {
+     "line": 112.5,
+     "over": 0.1096
+    },
+    {
+     "line": 115.0,
+     "over": 0.0942
+    },
+    {
+     "line": 117.5,
+     "over": 0.0793
+    },
+    {
+     "line": 120.0,
+     "over": 0.0644
+    },
+    {
+     "line": 122.5,
+     "over": 0.0497
+    },
+    {
+     "line": 125.0,
+     "over": 0.0399
+    },
+    {
+     "line": 127.5,
+     "over": 0.0302
+    },
+    {
+     "line": 130.0,
+     "over": 0.0204
+    },
+    {
+     "line": 132.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 88.5,
+   "overProbAtRef": 0.2649,
+   "lean": "under",
+   "strength": 47,
+   "confidence": "high",
+   "confidenceReason": "6 games of steady production make this range tight.",
+   "verdict": "The model projects 64 receiving yards \u2014 it gives Rashee a 26% chance to clear a 88.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 31.1,
+     "label": "Seeing 10.0 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 31 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 20.6,
+     "label": "Averaging 90.3 receiving yards over his last 3 games",
+     "detail": "That's up from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 21 yards."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -7.2,
+     "label": "Extra rest \u2014 10 days since his last game",
+     "detail": "The rest edge versus Houston nudges the projection down by about 7 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -4.2,
+     "label": "Houston gives up 196 receiving yards a game \u2014 4th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "down",
+     "impact": -1.8,
+     "label": "Freezing kickoff \u2014 around 27 degrees",
+     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -1.6,
+     "label": "Patrick Mahomes has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 2 yards."
+    }
+   ],
+   "actual": 34.0,
+   "result": "under"
+  },
+  {
+   "market": "receptions",
+   "projection": 6.5,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 4.3,
+    "p50": 6.4,
+    "p75": 7.4,
+    "p90": 9.4
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8828
+    },
+    {
+     "line": 1.0,
+     "over": 0.8655
+    },
+    {
+     "line": 1.5,
+     "over": 0.8483
+    },
+    {
+     "line": 2.0,
+     "over": 0.831
+    },
+    {
+     "line": 2.5,
+     "over": 0.8138
+    },
+    {
+     "line": 3.0,
+     "over": 0.7965
+    },
+    {
+     "line": 3.5,
+     "over": 0.7793
+    },
+    {
+     "line": 4.0,
+     "over": 0.762
+    },
+    {
+     "line": 4.5,
+     "over": 0.7318
+    },
+    {
+     "line": 5.0,
+     "over": 0.6717
+    },
+    {
+     "line": 5.5,
+     "over": 0.6115
+    },
+    {
+     "line": 6.0,
+     "over": 0.5513
+    },
+    {
+     "line": 6.5,
+     "over": 0.4817
+    },
+    {
+     "line": 7.0,
+     "over": 0.3582
+    },
+    {
+     "line": 7.5,
+     "over": 0.2452
+    },
+    {
+     "line": 8.0,
+     "over": 0.2067
+    },
+    {
+     "line": 8.5,
+     "over": 0.1682
+    },
+    {
+     "line": 9.0,
+     "over": 0.1296
+    },
+    {
+     "line": 9.5,
+     "over": 0.0931
+    },
+    {
+     "line": 10.0,
+     "over": 0.0631
+    },
+    {
+     "line": 10.5,
+     "over": 0.039
+    },
+    {
+     "line": 11.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 7.5,
+   "overProbAtRef": 0.2452,
+   "lean": "under",
+   "strength": 51,
+   "confidence": "high",
+   "confidenceReason": "6 games of steady production make this range tight.",
+   "verdict": "The model projects 6.5 catches \u2014 a 25% chance to beat a 7.5-catch line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 2.65,
+     "label": "Averaging 7.3 catches over his last 3 games",
+     "detail": "That's up from 6.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2.6 catches."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 1.74,
+     "label": "Seeing 10.0 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.7 catches."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.43,
+     "label": "Freezing kickoff \u2014 around 27 degrees",
+     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.4 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.34,
+     "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
+     "detail": "The expected scoring script nudges the projection down by about 0.3 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 0.32,
+     "label": "Houston gives up 18 catches a game \u2014 5th fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.3 catches."
+    }
+   ],
+   "actual": 4.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "DAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 2.0,
+    "rec_yds": 92.0,
+    "receptions": 8.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "IND",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 141.0,
+    "receptions": 8.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "DEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 38.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "BUF",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 6.0,
+    "rec_yds": 80.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 12.0,
+    "rec_yds": 93.0,
+    "receptions": 9.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "LV",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 42.0,
+    "receptions": 7.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 4,
+   "opponent": "LAC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 3,
+   "opponent": "ATL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 1.0,
+    "rec_yds": 110.0,
+    "receptions": 12.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 2,
+   "opponent": "CIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 75.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 1,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 103.0,
+    "receptions": 7.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rec_yds": 81.0,
+  "receptions": 7.0
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 78.5,
+   "refLine": 80.5,
+   "lean": "under",
+   "actual": 92.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 7.4,
+   "refLine": 6.5,
+   "lean": "neutral",
+   "actual": 8.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 70.7,
+   "refLine": 51.5,
+   "lean": "over",
+   "actual": 141.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 6.2,
+   "refLine": 6.5,
+   "lean": "under",
+   "actual": 8.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 66.5,
+   "refLine": 80.5,
+   "lean": "under",
+   "actual": 38.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 5.4,
+   "refLine": 6.5,
+   "lean": "under",
+   "actual": 6.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rec_yds",
+   "projection": 81.2,
+   "refLine": 71.5,
+   "lean": "neutral",
+   "actual": 80.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "receptions",
+   "projection": 6.7,
+   "refLine": 7.5,
+   "lean": "under",
+   "actual": 4.0,
+   "result": "under"
+  }
+ ]
+}

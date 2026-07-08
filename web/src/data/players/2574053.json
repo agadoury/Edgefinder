@@ -1,0 +1,493 @@
+{
+ "playerId": "2574053",
+ "name": "Quinshon Judkins",
+ "team": "CLE",
+ "pos": "RB",
+ "opponent": "TEN",
+ "home": true,
+ "gameId": "2025_14_TEN_CLE",
+ "gamesPlayed2025": 11,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 66.3,
+   "quantiles": {
+    "p10": 22.9,
+    "p25": 37.6,
+    "p50": 63.8,
+    "p75": 95.7,
+    "p90": 114.4
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.98
+    },
+    {
+     "line": 5.0,
+     "over": 0.9761
+    },
+    {
+     "line": 7.5,
+     "over": 0.9678
+    },
+    {
+     "line": 10.0,
+     "over": 0.9596
+    },
+    {
+     "line": 12.5,
+     "over": 0.9514
+    },
+    {
+     "line": 15.0,
+     "over": 0.9395
+    },
+    {
+     "line": 17.5,
+     "over": 0.927
+    },
+    {
+     "line": 20.0,
+     "over": 0.9144
+    },
+    {
+     "line": 22.5,
+     "over": 0.9018
+    },
+    {
+     "line": 25.0,
+     "over": 0.8782
+    },
+    {
+     "line": 27.5,
+     "over": 0.8527
+    },
+    {
+     "line": 30.0,
+     "over": 0.8272
+    },
+    {
+     "line": 32.5,
+     "over": 0.8017
+    },
+    {
+     "line": 35.0,
+     "over": 0.7762
+    },
+    {
+     "line": 37.5,
+     "over": 0.7507
+    },
+    {
+     "line": 40.0,
+     "over": 0.7269
+    },
+    {
+     "line": 42.5,
+     "over": 0.703
+    },
+    {
+     "line": 45.0,
+     "over": 0.6792
+    },
+    {
+     "line": 47.5,
+     "over": 0.6554
+    },
+    {
+     "line": 50.0,
+     "over": 0.6316
+    },
+    {
+     "line": 52.5,
+     "over": 0.6078
+    },
+    {
+     "line": 55.0,
+     "over": 0.584
+    },
+    {
+     "line": 57.5,
+     "over": 0.5602
+    },
+    {
+     "line": 60.0,
+     "over": 0.5364
+    },
+    {
+     "line": 62.5,
+     "over": 0.5125
+    },
+    {
+     "line": 65.0,
+     "over": 0.4907
+    },
+    {
+     "line": 67.5,
+     "over": 0.4711
+    },
+    {
+     "line": 70.0,
+     "over": 0.4515
+    },
+    {
+     "line": 72.5,
+     "over": 0.4319
+    },
+    {
+     "line": 75.0,
+     "over": 0.4123
+    },
+    {
+     "line": 77.5,
+     "over": 0.3927
+    },
+    {
+     "line": 80.0,
+     "over": 0.3731
+    },
+    {
+     "line": 82.5,
+     "over": 0.3535
+    },
+    {
+     "line": 85.0,
+     "over": 0.3339
+    },
+    {
+     "line": 87.5,
+     "over": 0.3143
+    },
+    {
+     "line": 90.0,
+     "over": 0.2946
+    },
+    {
+     "line": 92.5,
+     "over": 0.275
+    },
+    {
+     "line": 95.0,
+     "over": 0.2554
+    },
+    {
+     "line": 97.5,
+     "over": 0.2355
+    },
+    {
+     "line": 100.0,
+     "over": 0.2155
+    },
+    {
+     "line": 102.5,
+     "over": 0.1955
+    },
+    {
+     "line": 105.0,
+     "over": 0.1755
+    },
+    {
+     "line": 107.5,
+     "over": 0.1555
+    },
+    {
+     "line": 110.0,
+     "over": 0.1355
+    },
+    {
+     "line": 112.5,
+     "over": 0.1155
+    },
+    {
+     "line": 115.0,
+     "over": 0.0957
+    },
+    {
+     "line": 117.5,
+     "over": 0.0767
+    },
+    {
+     "line": 120.0,
+     "over": 0.0576
+    },
+    {
+     "line": 122.5,
+     "over": 0.0425
+    },
+    {
+     "line": 125.0,
+     "over": 0.0301
+    },
+    {
+     "line": 127.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 66.5,
+   "overProbAtRef": 0.4789,
+   "lean": "neutral",
+   "strength": 4,
+   "confidence": "medium",
+   "confidenceReason": "Decent 11-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 66 rushing yards \u2014 it gives Quinshon a 48% chance to clear a 66.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 22.6,
+     "label": "Getting 20.8 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 23 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 20.4,
+     "label": "Averaging 65.7 rushing yards over his last 3 games",
+     "detail": "That's up from 65.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 20 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -5.9,
+     "label": "Vegas pegs this at 33.5 total points, about 19 for the Browns",
+     "detail": "The expected scoring script nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 4.6,
+     "label": "Tennessee gives up 128 rushing yards a game \u2014 11th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 5 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 2.5,
+     "label": "Shedeur Sanders has just 2 starts this season \u2014 passing game still unsettled",
+     "detail": "Stability under center nudges the projection up by about 3 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 1.2,
+     "label": "Fair conditions \u2014 about 33 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 1 yards."
+    }
+   ],
+   "actual": 26.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "SF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 91.0,
+    "rec_yds": 18.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 47.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 59.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "NYJ",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 75.0,
+    "rec_yds": 10.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "NE",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 19.0,
+    "rec_yds": -2.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "MIA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 84.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "PIT",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 36.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "MIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 110.0,
+    "rec_yds": 18.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "DET",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 82.0,
+    "rec_yds": 33.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "GB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 94.0,
+    "rec_yds": 1.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 68.9,
+  "rec_yds": 8.0,
+  "receptions": 1.5
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 62.4,
+   "refLine": 63.5,
+   "lean": "under",
+   "actual": 91.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 64.7,
+   "refLine": 66.5,
+   "lean": "under",
+   "actual": 47.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 49.7,
+   "refLine": 76.5,
+   "lean": "under",
+   "actual": 59.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 80.0,
+   "refLine": 82.5,
+   "lean": "under",
+   "actual": 75.0,
+   "result": "under"
+  },
+  {
+   "week": 8,
+   "market": "rush_yds",
+   "projection": 49.8,
+   "refLine": 83.5,
+   "lean": "under",
+   "actual": 19.0,
+   "result": "under"
+  },
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 80.8,
+   "refLine": 82.5,
+   "lean": "neutral",
+   "actual": 84.0,
+   "result": "over"
+  },
+  {
+   "week": 6,
+   "market": "rec_yds",
+   "projection": 14.0,
+   "refLine": 14.5,
+   "lean": "under",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 6,
+   "market": "receptions",
+   "projection": 2.3,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 0.0,
+   "result": "under"
+  }
+ ]
+}

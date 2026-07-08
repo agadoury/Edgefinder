@@ -1,0 +1,728 @@
+{
+ "playerId": "2562699",
+ "name": "Tony Pollard",
+ "team": "TEN",
+ "pos": "RB",
+ "opponent": "CLE",
+ "home": false,
+ "gameId": "2025_14_TEN_CLE",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 53.4,
+   "quantiles": {
+    "p10": 14.7,
+    "p25": 25.2,
+    "p50": 52.4,
+    "p75": 81.0,
+    "p90": 91.2
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.98
+    },
+    {
+     "line": 5.0,
+     "over": 0.9764
+    },
+    {
+     "line": 7.5,
+     "over": 0.9611
+    },
+    {
+     "line": 10.0,
+     "over": 0.9437
+    },
+    {
+     "line": 12.5,
+     "over": 0.9204
+    },
+    {
+     "line": 15.0,
+     "over": 0.8955
+    },
+    {
+     "line": 17.5,
+     "over": 0.8596
+    },
+    {
+     "line": 20.0,
+     "over": 0.8238
+    },
+    {
+     "line": 22.5,
+     "over": 0.788
+    },
+    {
+     "line": 25.0,
+     "over": 0.7522
+    },
+    {
+     "line": 27.5,
+     "over": 0.7285
+    },
+    {
+     "line": 30.0,
+     "over": 0.7055
+    },
+    {
+     "line": 32.5,
+     "over": 0.6826
+    },
+    {
+     "line": 35.0,
+     "over": 0.6597
+    },
+    {
+     "line": 37.5,
+     "over": 0.6367
+    },
+    {
+     "line": 40.0,
+     "over": 0.6138
+    },
+    {
+     "line": 42.5,
+     "over": 0.5908
+    },
+    {
+     "line": 45.0,
+     "over": 0.5679
+    },
+    {
+     "line": 47.5,
+     "over": 0.545
+    },
+    {
+     "line": 50.0,
+     "over": 0.522
+    },
+    {
+     "line": 52.5,
+     "over": 0.4991
+    },
+    {
+     "line": 55.0,
+     "over": 0.4773
+    },
+    {
+     "line": 57.5,
+     "over": 0.4554
+    },
+    {
+     "line": 60.0,
+     "over": 0.4336
+    },
+    {
+     "line": 62.5,
+     "over": 0.4117
+    },
+    {
+     "line": 65.0,
+     "over": 0.3899
+    },
+    {
+     "line": 67.5,
+     "over": 0.368
+    },
+    {
+     "line": 70.0,
+     "over": 0.3462
+    },
+    {
+     "line": 72.5,
+     "over": 0.3243
+    },
+    {
+     "line": 75.0,
+     "over": 0.3025
+    },
+    {
+     "line": 77.5,
+     "over": 0.2806
+    },
+    {
+     "line": 80.0,
+     "over": 0.2588
+    },
+    {
+     "line": 82.5,
+     "over": 0.228
+    },
+    {
+     "line": 85.0,
+     "over": 0.1912
+    },
+    {
+     "line": 87.5,
+     "over": 0.1543
+    },
+    {
+     "line": 90.0,
+     "over": 0.1175
+    },
+    {
+     "line": 92.5,
+     "over": 0.0935
+    },
+    {
+     "line": 95.0,
+     "over": 0.0809
+    },
+    {
+     "line": 97.5,
+     "over": 0.0684
+    },
+    {
+     "line": 100.0,
+     "over": 0.0559
+    },
+    {
+     "line": 102.5,
+     "over": 0.0457
+    },
+    {
+     "line": 105.0,
+     "over": 0.0375
+    },
+    {
+     "line": 107.5,
+     "over": 0.0293
+    },
+    {
+     "line": 110.0,
+     "over": 0.0211
+    },
+    {
+     "line": 112.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 47.5,
+   "overProbAtRef": 0.545,
+   "lean": "over",
+   "strength": 8,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 53 rushing yards \u2014 it gives Tony a 55% chance to clear a 47.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 18.5,
+     "label": "Getting 12.5 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 18 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 10.8,
+     "label": "Averaging 34.0 rushing yards over his last 3 games",
+     "detail": "That's down from 40.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 11 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -7.6,
+     "label": "Cleveland gives up 101 rushing yards a game \u2014 10th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 8 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -5.3,
+     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "detail": "The expected scoring script nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 2.1,
+     "label": "Cam Ward has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 2 yards."
+    }
+   ],
+   "actual": 161.0,
+   "result": "over"
+  },
+  {
+   "market": "rec_yds",
+   "projection": 14.8,
+   "quantiles": {
+    "p10": 1.1,
+    "p25": 1.5,
+    "p50": 12.5,
+    "p75": 27.3,
+    "p90": 44.4
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.7277
+    },
+    {
+     "line": 5.0,
+     "over": 0.6708
+    },
+    {
+     "line": 7.5,
+     "over": 0.6138
+    },
+    {
+     "line": 10.0,
+     "over": 0.5568
+    },
+    {
+     "line": 12.5,
+     "over": 0.4999
+    },
+    {
+     "line": 15.0,
+     "over": 0.4576
+    },
+    {
+     "line": 17.5,
+     "over": 0.4153
+    },
+    {
+     "line": 20.0,
+     "over": 0.373
+    },
+    {
+     "line": 22.5,
+     "over": 0.3307
+    },
+    {
+     "line": 25.0,
+     "over": 0.2884
+    },
+    {
+     "line": 27.5,
+     "over": 0.248
+    },
+    {
+     "line": 30.0,
+     "over": 0.2261
+    },
+    {
+     "line": 32.5,
+     "over": 0.2043
+    },
+    {
+     "line": 35.0,
+     "over": 0.1824
+    },
+    {
+     "line": 37.5,
+     "over": 0.1605
+    },
+    {
+     "line": 40.0,
+     "over": 0.1387
+    },
+    {
+     "line": 42.5,
+     "over": 0.1168
+    },
+    {
+     "line": 45.0,
+     "over": 0.0965
+    },
+    {
+     "line": 47.5,
+     "over": 0.0812
+    },
+    {
+     "line": 50.0,
+     "over": 0.0659
+    },
+    {
+     "line": 52.5,
+     "over": 0.0506
+    },
+    {
+     "line": 55.0,
+     "over": 0.0404
+    },
+    {
+     "line": 57.5,
+     "over": 0.0304
+    },
+    {
+     "line": 60.0,
+     "over": 0.0204
+    },
+    {
+     "line": 62.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 10.5,
+   "overProbAtRef": 0.5454,
+   "lean": "over",
+   "strength": 6,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model projects 15 receiving yards \u2014 it gives Tony a 55% chance to clear a 10.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -2.9,
+     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 2.2,
+     "label": "Seeing 3.0 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 2 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -1.6,
+     "label": "Cleveland gives up 194 receiving yards a game \u2014 3rd fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.6,
+     "label": "Averaging 9.3 receiving yards over his last 3 games",
+     "detail": "That's down from 14.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.6 receiving yards."
+    }
+   ],
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "market": "receptions",
+   "projection": 2.4,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 1.0,
+    "p50": 2.2,
+    "p75": 4.0,
+    "p90": 4.4
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8279
+    },
+    {
+     "line": 1.0,
+     "over": 0.7558
+    },
+    {
+     "line": 1.5,
+     "over": 0.65
+    },
+    {
+     "line": 2.0,
+     "over": 0.5413
+    },
+    {
+     "line": 2.5,
+     "over": 0.4571
+    },
+    {
+     "line": 3.0,
+     "over": 0.3879
+    },
+    {
+     "line": 3.5,
+     "over": 0.3186
+    },
+    {
+     "line": 4.0,
+     "over": 0.2482
+    },
+    {
+     "line": 4.5,
+     "over": 0.0897
+    },
+    {
+     "line": 5.0,
+     "over": 0.0533
+    },
+    {
+     "line": 5.5,
+     "over": 0.0283
+    },
+    {
+     "line": 6.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 1.5,
+   "overProbAtRef": 0.65,
+   "lean": "over",
+   "strength": 21,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model projects 2.4 catches \u2014 a 65% chance to beat a 1.5-catch line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.41,
+     "label": "Seeing 3.0 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.17,
+     "label": "Averaging 2.7 catches over his last 3 games",
+     "detail": "That's up from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.2 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.15,
+     "label": "Cam Ward has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.1,
+     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "detail": "The expected scoring script nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.09,
+     "label": "On the road at Cleveland",
+     "detail": "The road trip nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.06,
+     "label": "Fair conditions \u2014 about 33 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.1 catches."
+    }
+   ],
+   "actual": 0.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "JAX",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 60.0,
+    "rec_yds": 3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "SEA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 20.0,
+    "rec_yds": 21.0,
+    "receptions": 4.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "HOU",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 4.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "LAC",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 56.0,
+    "rec_yds": 12.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 44.0,
+    "rec_yds": 9.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "NE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 18.0,
+    "rec_yds": 43.0,
+    "receptions": 6.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 34.0,
+    "rec_yds": 13.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "ARI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 67.0,
+    "rec_yds": 11.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "HOU",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 64.0,
+    "rec_yds": 12.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "IND",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 45.0,
+    "rec_yds": 14.0,
+    "receptions": 2.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 48.5,
+  "rec_yds": 14.2,
+  "receptions": 2.2
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 16.7,
+   "refLine": 12.5,
+   "lean": "neutral",
+   "actual": 3.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 2.8,
+   "refLine": 2.5,
+   "lean": "neutral",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 47.5,
+   "refLine": 33.5,
+   "lean": "over",
+   "actual": 60.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rec_yds",
+   "projection": 15.9,
+   "refLine": 12.5,
+   "lean": "neutral",
+   "actual": 21.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "receptions",
+   "projection": 2.3,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 4.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 57.7,
+   "refLine": 42.5,
+   "lean": "over",
+   "actual": 20.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 14.2,
+   "refLine": 12.5,
+   "lean": "neutral",
+   "actual": 4.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.0,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 3.0,
+   "result": "over"
+  }
+ ]
+}

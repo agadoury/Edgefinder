@@ -1,0 +1,454 @@
+{
+ "playerId": "2567232",
+ "name": "Tyler Allgeier",
+ "team": "ATL",
+ "pos": "RB",
+ "opponent": "SEA",
+ "home": true,
+ "gameId": "2025_14_SEA_ATL",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 27.6,
+   "quantiles": {
+    "p10": 2.1,
+    "p25": 8.8,
+    "p50": 21.6,
+    "p75": 51.8,
+    "p90": 60.2
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.892
+    },
+    {
+     "line": 5.0,
+     "over": 0.8356
+    },
+    {
+     "line": 7.5,
+     "over": 0.7792
+    },
+    {
+     "line": 10.0,
+     "over": 0.7265
+    },
+    {
+     "line": 12.5,
+     "over": 0.6777
+    },
+    {
+     "line": 15.0,
+     "over": 0.6289
+    },
+    {
+     "line": 17.5,
+     "over": 0.5801
+    },
+    {
+     "line": 20.0,
+     "over": 0.5313
+    },
+    {
+     "line": 22.5,
+     "over": 0.4926
+    },
+    {
+     "line": 25.0,
+     "over": 0.4718
+    },
+    {
+     "line": 27.5,
+     "over": 0.4511
+    },
+    {
+     "line": 30.0,
+     "over": 0.4304
+    },
+    {
+     "line": 32.5,
+     "over": 0.4097
+    },
+    {
+     "line": 35.0,
+     "over": 0.3889
+    },
+    {
+     "line": 37.5,
+     "over": 0.3682
+    },
+    {
+     "line": 40.0,
+     "over": 0.3475
+    },
+    {
+     "line": 42.5,
+     "over": 0.3268
+    },
+    {
+     "line": 45.0,
+     "over": 0.306
+    },
+    {
+     "line": 47.5,
+     "over": 0.2853
+    },
+    {
+     "line": 50.0,
+     "over": 0.2646
+    },
+    {
+     "line": 52.5,
+     "over": 0.2368
+    },
+    {
+     "line": 55.0,
+     "over": 0.1923
+    },
+    {
+     "line": 57.5,
+     "over": 0.1478
+    },
+    {
+     "line": 60.0,
+     "over": 0.1033
+    },
+    {
+     "line": 62.5,
+     "over": 0.0953
+    },
+    {
+     "line": 65.0,
+     "over": 0.0901
+    },
+    {
+     "line": 67.5,
+     "over": 0.085
+    },
+    {
+     "line": 70.0,
+     "over": 0.0799
+    },
+    {
+     "line": 72.5,
+     "over": 0.0747
+    },
+    {
+     "line": 75.0,
+     "over": 0.0696
+    },
+    {
+     "line": 77.5,
+     "over": 0.0645
+    },
+    {
+     "line": 80.0,
+     "over": 0.0594
+    },
+    {
+     "line": 82.5,
+     "over": 0.0542
+    },
+    {
+     "line": 85.0,
+     "over": 0.0494
+    },
+    {
+     "line": 87.5,
+     "over": 0.0461
+    },
+    {
+     "line": 90.0,
+     "over": 0.0427
+    },
+    {
+     "line": 92.5,
+     "over": 0.0394
+    },
+    {
+     "line": 95.0,
+     "over": 0.036
+    },
+    {
+     "line": 97.5,
+     "over": 0.0326
+    },
+    {
+     "line": 100.0,
+     "over": 0.0293
+    },
+    {
+     "line": 102.5,
+     "over": 0.0259
+    },
+    {
+     "line": 105.0,
+     "over": 0.0226
+    },
+    {
+     "line": 107.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 20.5,
+   "overProbAtRef": 0.5236,
+   "lean": "neutral",
+   "strength": 3,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model projects 28 rushing yards \u2014 it gives Tyler a 52% chance to clear a 20.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 6.9,
+     "label": "Getting 9.8 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 7 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -4.1,
+     "label": "Seattle gives up 89 rushing yards a game \u2014 2nd fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -1.4,
+     "label": "Averaging 24.7 rushing yards over his last 3 games",
+     "detail": "That's up from 23.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 1 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -1.1,
+     "label": "Vegas pegs this at 44.5 total points, about 19 for the Falcons",
+     "detail": "The expected scoring script nudges the projection down by about 1 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.7,
+     "label": "Kirk Cousins has just 3 starts this season \u2014 passing game still unsettled",
+     "detail": "Stability under center nudges the projection down by about 0.7 rushing yards."
+    }
+   ],
+   "actual": 34.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "NYJ",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 20.0,
+    "rec_yds": 35.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "NO",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 44.0,
+    "rec_yds": 5.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "CAR",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 10.0,
+    "rec_yds": 6.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "IND",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 57.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "NE",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 6.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "MIA",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 4.0,
+    "rec_yds": 10.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "SF",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 16.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "BUF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 32.0,
+    "rec_yds": 6.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 51.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "CAR",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 4.0,
+    "rec_yds": 0.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 28.7,
+  "rec_yds": 5.5,
+  "receptions": 0.8
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 33.7,
+   "refLine": 16.5,
+   "lean": "over",
+   "actual": 20.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 23.7,
+   "refLine": 14.5,
+   "lean": "over",
+   "actual": 44.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 24.6,
+   "refLine": 20.5,
+   "lean": "neutral",
+   "actual": 10.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 16.7,
+   "refLine": 18.5,
+   "lean": "under",
+   "actual": 57.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "rush_yds",
+   "projection": 19.6,
+   "refLine": 20.5,
+   "lean": "under",
+   "actual": 6.0,
+   "result": "under"
+  },
+  {
+   "week": 8,
+   "market": "rush_yds",
+   "projection": 37.4,
+   "refLine": 30.5,
+   "lean": "over",
+   "actual": 4.0,
+   "result": "under"
+  },
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 33.2,
+   "refLine": 32.5,
+   "lean": "neutral",
+   "actual": 16.0,
+   "result": "under"
+  },
+  {
+   "week": 6,
+   "market": "rush_yds",
+   "projection": 30.2,
+   "refLine": 30.5,
+   "lean": "neutral",
+   "actual": 32.0,
+   "result": "over"
+  }
+ ]
+}

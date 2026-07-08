@@ -1,0 +1,457 @@
+{
+ "playerId": "2567808",
+ "name": "Isiah Pacheco",
+ "team": "KC",
+ "pos": "RB",
+ "opponent": "HOU",
+ "home": true,
+ "gameId": "2025_14_HOU_KC",
+ "gamesPlayed2025": 9,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 35.3,
+   "quantiles": {
+    "p10": 4.5,
+    "p25": 17.4,
+    "p50": 35.8,
+    "p75": 51.6,
+    "p90": 77.9
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9515
+    },
+    {
+     "line": 5.0,
+     "over": 0.8937
+    },
+    {
+     "line": 7.5,
+     "over": 0.8648
+    },
+    {
+     "line": 10.0,
+     "over": 0.8359
+    },
+    {
+     "line": 12.5,
+     "over": 0.8069
+    },
+    {
+     "line": 15.0,
+     "over": 0.778
+    },
+    {
+     "line": 17.5,
+     "over": 0.7489
+    },
+    {
+     "line": 20.0,
+     "over": 0.7148
+    },
+    {
+     "line": 22.5,
+     "over": 0.6808
+    },
+    {
+     "line": 25.0,
+     "over": 0.6467
+    },
+    {
+     "line": 27.5,
+     "over": 0.6126
+    },
+    {
+     "line": 30.0,
+     "over": 0.5786
+    },
+    {
+     "line": 32.5,
+     "over": 0.5445
+    },
+    {
+     "line": 35.0,
+     "over": 0.5104
+    },
+    {
+     "line": 37.5,
+     "over": 0.4726
+    },
+    {
+     "line": 40.0,
+     "over": 0.433
+    },
+    {
+     "line": 42.5,
+     "over": 0.3935
+    },
+    {
+     "line": 45.0,
+     "over": 0.3539
+    },
+    {
+     "line": 47.5,
+     "over": 0.3144
+    },
+    {
+     "line": 50.0,
+     "over": 0.2748
+    },
+    {
+     "line": 52.5,
+     "over": 0.2447
+    },
+    {
+     "line": 55.0,
+     "over": 0.2305
+    },
+    {
+     "line": 57.5,
+     "over": 0.2163
+    },
+    {
+     "line": 60.0,
+     "over": 0.2021
+    },
+    {
+     "line": 62.5,
+     "over": 0.1878
+    },
+    {
+     "line": 65.0,
+     "over": 0.1736
+    },
+    {
+     "line": 67.5,
+     "over": 0.1594
+    },
+    {
+     "line": 70.0,
+     "over": 0.1452
+    },
+    {
+     "line": 72.5,
+     "over": 0.131
+    },
+    {
+     "line": 75.0,
+     "over": 0.1167
+    },
+    {
+     "line": 77.5,
+     "over": 0.1025
+    },
+    {
+     "line": 80.0,
+     "over": 0.0923
+    },
+    {
+     "line": 82.5,
+     "over": 0.083
+    },
+    {
+     "line": 85.0,
+     "over": 0.0736
+    },
+    {
+     "line": 87.5,
+     "over": 0.0643
+    },
+    {
+     "line": 90.0,
+     "over": 0.0549
+    },
+    {
+     "line": 92.5,
+     "over": 0.0471
+    },
+    {
+     "line": 95.0,
+     "over": 0.041
+    },
+    {
+     "line": 97.5,
+     "over": 0.0349
+    },
+    {
+     "line": 100.0,
+     "over": 0.0287
+    },
+    {
+     "line": 102.5,
+     "over": 0.0226
+    },
+    {
+     "line": 105.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 43.5,
+   "overProbAtRef": 0.3777,
+   "lean": "under",
+   "strength": 21,
+   "confidence": "medium",
+   "confidenceReason": "Decent 9-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 35 rushing yards \u2014 it gives Isiah a 38% chance to clear a 43.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 8.2,
+     "label": "Getting 11.5 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 8 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -5.3,
+     "label": "Houston gives up 92 rushing yards a game \u2014 4th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -2.7,
+     "label": "Missed 3 of the last 5 weeks",
+     "detail": "The stop-start stretch nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 2.0,
+     "label": "Patrick Mahomes has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 2 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.9,
+     "label": "Averaging 43.7 rushing yards over his last 3 games",
+     "detail": "That's up from 40.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.9 rushing yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.8,
+     "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
+     "detail": "The expected scoring script nudges the projection down by about 0.8 rushing yards."
+    }
+   ],
+   "actual": 30.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "DAL",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 16.0,
+    "rec_yds": 17.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 58.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "LV",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 57.0,
+    "rec_yds": -3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "DET",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 51.0,
+    "rec_yds": 0.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "JAX",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 36.0,
+    "rec_yds": 20.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 35.0,
+    "rec_yds": 13.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "NYG",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 45.0,
+    "rec_yds": 3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 2,
+   "opponent": "PHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 7.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 1,
+   "opponent": "LAC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 25.0,
+    "rec_yds": 3.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 16,
+   "opponent": "HOU",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 26.0,
+    "rec_yds": -1.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 38.3,
+  "rec_yds": 6.7,
+  "receptions": 1.4
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 30.7,
+   "refLine": 45.5,
+   "lean": "under",
+   "actual": 16.0,
+   "result": "under"
+  },
+  {
+   "week": 8,
+   "market": "rec_yds",
+   "projection": 13.6,
+   "refLine": 2.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 8,
+   "market": "receptions",
+   "projection": 1.8,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 8,
+   "market": "rush_yds",
+   "projection": 28.3,
+   "refLine": 40.5,
+   "lean": "under",
+   "actual": 58.0,
+   "result": "over"
+  },
+  {
+   "week": 7,
+   "market": "rec_yds",
+   "projection": 15.2,
+   "refLine": 6.5,
+   "lean": "over",
+   "actual": -3.0,
+   "result": "under"
+  },
+  {
+   "week": 7,
+   "market": "receptions",
+   "projection": 2.1,
+   "refLine": 1.5,
+   "lean": "over",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 33.1,
+   "refLine": 35.5,
+   "lean": "under",
+   "actual": 57.0,
+   "result": "over"
+  },
+  {
+   "week": 6,
+   "market": "rush_yds",
+   "projection": 33.0,
+   "refLine": 34.5,
+   "lean": "under",
+   "actual": 51.0,
+   "result": "over"
+  }
+ ]
+}

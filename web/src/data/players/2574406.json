@@ -1,0 +1,553 @@
+{
+ "playerId": "2574406",
+ "name": "Tyler Shough",
+ "team": "NO",
+ "pos": "QB",
+ "opponent": "TB",
+ "home": false,
+ "gameId": "2025_14_NO_TB",
+ "gamesPlayed2025": 5,
+ "props": [
+  {
+   "market": "pass_yds",
+   "projection": 193.1,
+   "quantiles": {
+    "p10": 119.7,
+    "p25": 159.8,
+    "p50": 202.2,
+    "p75": 257.9,
+    "p90": 288.3
+   },
+   "probCurve": [
+    {
+     "line": 47.5,
+     "over": 0.98
+    },
+    {
+     "line": 52.5,
+     "over": 0.9769
+    },
+    {
+     "line": 57.5,
+     "over": 0.9725
+    },
+    {
+     "line": 62.5,
+     "over": 0.968
+    },
+    {
+     "line": 67.5,
+     "over": 0.9636
+    },
+    {
+     "line": 72.5,
+     "over": 0.9592
+    },
+    {
+     "line": 77.5,
+     "over": 0.9547
+    },
+    {
+     "line": 82.5,
+     "over": 0.9503
+    },
+    {
+     "line": 87.5,
+     "over": 0.9437
+    },
+    {
+     "line": 92.5,
+     "over": 0.9369
+    },
+    {
+     "line": 97.5,
+     "over": 0.9301
+    },
+    {
+     "line": 102.5,
+     "over": 0.9233
+    },
+    {
+     "line": 107.5,
+     "over": 0.9165
+    },
+    {
+     "line": 112.5,
+     "over": 0.9098
+    },
+    {
+     "line": 117.5,
+     "over": 0.903
+    },
+    {
+     "line": 122.5,
+     "over": 0.8895
+    },
+    {
+     "line": 127.5,
+     "over": 0.8708
+    },
+    {
+     "line": 132.5,
+     "over": 0.8521
+    },
+    {
+     "line": 137.5,
+     "over": 0.8334
+    },
+    {
+     "line": 142.5,
+     "over": 0.8148
+    },
+    {
+     "line": 147.5,
+     "over": 0.7961
+    },
+    {
+     "line": 152.5,
+     "over": 0.7774
+    },
+    {
+     "line": 157.5,
+     "over": 0.7587
+    },
+    {
+     "line": 162.5,
+     "over": 0.7342
+    },
+    {
+     "line": 167.5,
+     "over": 0.7047
+    },
+    {
+     "line": 172.5,
+     "over": 0.6752
+    },
+    {
+     "line": 177.5,
+     "over": 0.6456
+    },
+    {
+     "line": 182.5,
+     "over": 0.6161
+    },
+    {
+     "line": 187.5,
+     "over": 0.5866
+    },
+    {
+     "line": 192.5,
+     "over": 0.5571
+    },
+    {
+     "line": 197.5,
+     "over": 0.5276
+    },
+    {
+     "line": 202.5,
+     "over": 0.4985
+    },
+    {
+     "line": 207.5,
+     "over": 0.4761
+    },
+    {
+     "line": 212.5,
+     "over": 0.4537
+    },
+    {
+     "line": 217.5,
+     "over": 0.4312
+    },
+    {
+     "line": 222.5,
+     "over": 0.4088
+    },
+    {
+     "line": 227.5,
+     "over": 0.3864
+    },
+    {
+     "line": 232.5,
+     "over": 0.364
+    },
+    {
+     "line": 237.5,
+     "over": 0.3415
+    },
+    {
+     "line": 242.5,
+     "over": 0.3191
+    },
+    {
+     "line": 247.5,
+     "over": 0.2967
+    },
+    {
+     "line": 252.5,
+     "over": 0.2742
+    },
+    {
+     "line": 257.5,
+     "over": 0.2518
+    },
+    {
+     "line": 262.5,
+     "over": 0.2273
+    },
+    {
+     "line": 267.5,
+     "over": 0.2026
+    },
+    {
+     "line": 272.5,
+     "over": 0.1779
+    },
+    {
+     "line": 277.5,
+     "over": 0.1532
+    },
+    {
+     "line": 282.5,
+     "over": 0.1285
+    },
+    {
+     "line": 287.5,
+     "over": 0.1038
+    },
+    {
+     "line": 292.5,
+     "over": 0.0954
+    },
+    {
+     "line": 297.5,
+     "over": 0.0899
+    },
+    {
+     "line": 302.5,
+     "over": 0.0845
+    },
+    {
+     "line": 307.5,
+     "over": 0.079
+    },
+    {
+     "line": 312.5,
+     "over": 0.0735
+    },
+    {
+     "line": 317.5,
+     "over": 0.0681
+    },
+    {
+     "line": 322.5,
+     "over": 0.0626
+    },
+    {
+     "line": 327.5,
+     "over": 0.0572
+    },
+    {
+     "line": 332.5,
+     "over": 0.0517
+    },
+    {
+     "line": 337.5,
+     "over": 0.0475
+    },
+    {
+     "line": 342.5,
+     "over": 0.044
+    },
+    {
+     "line": 347.5,
+     "over": 0.0404
+    },
+    {
+     "line": 352.5,
+     "over": 0.0368
+    },
+    {
+     "line": 357.5,
+     "over": 0.0332
+    },
+    {
+     "line": 362.5,
+     "over": 0.0297
+    },
+    {
+     "line": 367.5,
+     "over": 0.0261
+    },
+    {
+     "line": 372.5,
+     "over": 0.0225
+    },
+    {
+     "line": 377.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 238.5,
+   "overProbAtRef": 0.337,
+   "lean": "under",
+   "strength": 28,
+   "confidence": "medium",
+   "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 193 passing yards \u2014 it gives Tyler a 34% chance to clear a 238.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -45.9,
+     "label": "Vegas pegs this at 41.5 total points, about 17 for the Saints",
+     "detail": "The expected scoring script nudges the projection down by about 46 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 14.6,
+     "label": "Tampa Bay gives up 266 passing yards a game \u2014 4th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 15 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -13.9,
+     "label": "His offense throws about 35 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 14 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -5.8,
+     "label": "Averaging 254.7 passing yards over his last 3 games",
+     "detail": "That's up from 213.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "down",
+     "impact": -3.2,
+     "label": "Fair conditions \u2014 about 73 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -3.0,
+     "label": "On the road at Tampa Bay",
+     "detail": "The road trip nudges the projection down by about 3 yards."
+    }
+   ],
+   "actual": 144.0,
+   "result": "under"
+  },
+  {
+   "market": "pass_tds",
+   "projection": 0.6,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 0.0,
+    "p50": 0.1,
+    "p75": 1.7,
+    "p90": 2.4
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.4332
+    },
+    {
+     "line": 1.5,
+     "over": 0.1114
+    },
+    {
+     "line": 2.5,
+     "over": 0.02
+    },
+    {
+     "line": 3.5,
+     "over": 0.0028
+    },
+    {
+     "line": 4.5,
+     "over": 0.0003
+    }
+   ],
+   "refLine": 0.5,
+   "overProbAtRef": 0.4332,
+   "lean": "under",
+   "strength": 11,
+   "confidence": "medium",
+   "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
+   "verdict": "The model expects 0.6 touchdown passes \u2014 it gives Tyler a 43% chance to go over 0.5.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.22,
+     "label": "Vegas pegs this at 41.5 total points, about 17 for the Saints",
+     "detail": "The expected scoring script nudges the projection down by about 0.22 touchdown passes."
+    },
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -0.12,
+     "label": "His offense throws about 35 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 0.12 touchdown passes."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.09,
+     "label": "Fair conditions \u2014 about 73 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.09 touchdown passes."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.05,
+     "label": "On the road at Tampa Bay",
+     "detail": "The road trip nudges the projection down by about 0.05 touchdown passes."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.05,
+     "label": "Averaging 1.3 touchdown passes over his last 3 games",
+     "detail": "That's up from 1.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.05 touchdown passes."
+    }
+   ],
+   "actual": 0.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "MIA",
+   "home": false,
+   "stats": {
+    "pass_yds": 239.0,
+    "pass_tds": 2.0,
+    "rush_yds": 18.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "ATL",
+   "home": true,
+   "stats": {
+    "pass_yds": 243.0,
+    "pass_tds": 0.0,
+    "rush_yds": 22.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "CAR",
+   "home": false,
+   "stats": {
+    "pass_yds": 282.0,
+    "pass_tds": 2.0,
+    "rush_yds": -3.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "LA",
+   "home": false,
+   "stats": {
+    "pass_yds": 176.0,
+    "pass_tds": 1.0,
+    "rush_yds": 2.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 128.0,
+    "pass_tds": 0.0,
+    "rush_yds": 12.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "pass_yds": 213.6,
+  "pass_tds": 1.0,
+  "rush_yds": 10.2
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "pass_tds",
+   "projection": 0.2,
+   "refLine": 0.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "pass_yds",
+   "projection": 169.4,
+   "refLine": 209.5,
+   "lean": "under",
+   "actual": 239.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "pass_tds",
+   "projection": 1.0,
+   "refLine": 0.5,
+   "lean": "over",
+   "actual": 0.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "pass_yds",
+   "projection": 185.6,
+   "refLine": 176.5,
+   "lean": "over",
+   "actual": 243.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "pass_tds",
+   "projection": 0.3,
+   "refLine": 0.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "pass_yds",
+   "projection": 183.9,
+   "refLine": 152.5,
+   "lean": "over",
+   "actual": 282.0,
+   "result": "over"
+  }
+ ]
+}

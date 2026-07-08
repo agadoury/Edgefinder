@@ -1,0 +1,492 @@
+{
+ "playerId": "2567520",
+ "name": "Greg Dulcich",
+ "team": "MIA",
+ "pos": "TE",
+ "opponent": "NYJ",
+ "home": false,
+ "gameId": "2025_14_MIA_NYJ",
+ "gamesPlayed2025": 4,
+ "props": [
+  {
+   "market": "rec_yds",
+   "projection": 23.2,
+   "quantiles": {
+    "p10": 0.4,
+    "p25": 7.8,
+    "p50": 20.4,
+    "p75": 36.2,
+    "p90": 50.9
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.8572
+    },
+    {
+     "line": 5.0,
+     "over": 0.8063
+    },
+    {
+     "line": 7.5,
+     "over": 0.7554
+    },
+    {
+     "line": 10.0,
+     "over": 0.7056
+    },
+    {
+     "line": 12.5,
+     "over": 0.656
+    },
+    {
+     "line": 15.0,
+     "over": 0.6063
+    },
+    {
+     "line": 17.5,
+     "over": 0.5567
+    },
+    {
+     "line": 20.0,
+     "over": 0.507
+    },
+    {
+     "line": 22.5,
+     "over": 0.4661
+    },
+    {
+     "line": 25.0,
+     "over": 0.4266
+    },
+    {
+     "line": 27.5,
+     "over": 0.3871
+    },
+    {
+     "line": 30.0,
+     "over": 0.3475
+    },
+    {
+     "line": 32.5,
+     "over": 0.308
+    },
+    {
+     "line": 35.0,
+     "over": 0.2685
+    },
+    {
+     "line": 37.5,
+     "over": 0.2365
+    },
+    {
+     "line": 40.0,
+     "over": 0.211
+    },
+    {
+     "line": 42.5,
+     "over": 0.1856
+    },
+    {
+     "line": 45.0,
+     "over": 0.1601
+    },
+    {
+     "line": 47.5,
+     "over": 0.1346
+    },
+    {
+     "line": 50.0,
+     "over": 0.1092
+    },
+    {
+     "line": 52.5,
+     "over": 0.0943
+    },
+    {
+     "line": 55.0,
+     "over": 0.0854
+    },
+    {
+     "line": 57.5,
+     "over": 0.0765
+    },
+    {
+     "line": 60.0,
+     "over": 0.0676
+    },
+    {
+     "line": 62.5,
+     "over": 0.0587
+    },
+    {
+     "line": 65.0,
+     "over": 0.0498
+    },
+    {
+     "line": 67.5,
+     "over": 0.044
+    },
+    {
+     "line": 70.0,
+     "over": 0.0382
+    },
+    {
+     "line": 72.5,
+     "over": 0.0323
+    },
+    {
+     "line": 75.0,
+     "over": 0.0265
+    },
+    {
+     "line": 77.5,
+     "over": 0.0206
+    },
+    {
+     "line": 80.0,
+     "over": 0.02
+    }
+   ],
+   "refLine": 22.5,
+   "overProbAtRef": 0.4661,
+   "lean": "neutral",
+   "strength": 5,
+   "confidence": "low",
+   "confidenceReason": "Only 4 games played this season, so the sample is thin.",
+   "verdict": "The model projects 23 receiving yards \u2014 it gives Greg a 47% chance to clear a 22.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 7.6,
+     "label": "Seeing 3.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 8 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 2.6,
+     "label": "Averaging 21.3 receiving yards over his last 3 games",
+     "detail": "That's up from 18.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.9,
+     "label": "On the road at New York",
+     "detail": "The road trip nudges the projection down by about 0.9 receiving yards."
+    }
+   ],
+   "actual": 41.0,
+   "result": "over"
+  },
+  {
+   "market": "receptions",
+   "projection": 2.1,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 1.0,
+    "p50": 1.9,
+    "p75": 3.4,
+    "p90": 4.1
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.8255
+    },
+    {
+     "line": 1.0,
+     "over": 0.751
+    },
+    {
+     "line": 1.5,
+     "over": 0.6159
+    },
+    {
+     "line": 2.0,
+     "over": 0.4878
+    },
+    {
+     "line": 2.5,
+     "over": 0.4054
+    },
+    {
+     "line": 3.0,
+     "over": 0.323
+    },
+    {
+     "line": 3.5,
+     "over": 0.2376
+    },
+    {
+     "line": 4.0,
+     "over": 0.1298
+    },
+    {
+     "line": 4.5,
+     "over": 0.0822
+    },
+    {
+     "line": 5.0,
+     "over": 0.0575
+    },
+    {
+     "line": 5.5,
+     "over": 0.0388
+    },
+    {
+     "line": 6.0,
+     "over": 0.0226
+    },
+    {
+     "line": 6.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 2.5,
+   "overProbAtRef": 0.4054,
+   "lean": "under",
+   "strength": 13,
+   "confidence": "low",
+   "confidenceReason": "Only 4 games played this season, so the sample is thin.",
+   "verdict": "The model projects 2.1 catches \u2014 a 41% chance to beat a 2.5-catch line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.32,
+     "label": "Seeing 3.8 targets a game over his last 4",
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.04,
+     "label": "Averaging 1.7 catches over his last 3 games",
+     "detail": "That's down from 2.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.0 catches."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.04,
+     "label": "On the road at New York",
+     "detail": "The road trip nudges the projection down by about 0.0 catches."
+    }
+   ],
+   "actual": 3.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "NO",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 24.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 18.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "BUF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 22.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "BAL",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 49.0,
+    "receptions": 5.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 4,
+   "opponent": "NYJ",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 2,
+   "opponent": "PIT",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 16.0,
+    "receptions": 3.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 1,
+   "opponent": "SEA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 12.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2023,
+   "week": 6,
+   "opponent": "KC",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 3.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2023,
+   "week": 1,
+   "opponent": "LV",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 22.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2022,
+   "week": 15,
+   "opponent": "ARI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 0.0,
+    "rec_yds": 11.0,
+    "receptions": 1.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rec_yds": 28.2,
+  "receptions": 2.5
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rec_yds",
+   "projection": 24.9,
+   "refLine": 20.5,
+   "lean": "neutral",
+   "actual": 24.0,
+   "result": "over"
+  },
+  {
+   "week": 13,
+   "market": "receptions",
+   "projection": 2.1,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rec_yds",
+   "projection": 25.5,
+   "refLine": 25.5,
+   "lean": "neutral",
+   "actual": 18.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "receptions",
+   "projection": 2.0,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "rec_yds",
+   "projection": 19.0,
+   "refLine": 30.5,
+   "lean": "under",
+   "actual": 22.0,
+   "result": "under"
+  },
+  {
+   "week": 10,
+   "market": "receptions",
+   "projection": 2.3,
+   "refLine": 3.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "rec_yds",
+   "projection": 15.2,
+   "refLine": 12.5,
+   "lean": "under",
+   "actual": 49.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "receptions",
+   "projection": 1.5,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 5.0,
+   "result": "over"
+  }
+ ]
+}

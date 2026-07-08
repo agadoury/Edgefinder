@@ -1,0 +1,567 @@
+{
+ "playerId": "2555260",
+ "name": "Dak Prescott",
+ "team": "DAL",
+ "pos": "QB",
+ "opponent": "DET",
+ "home": false,
+ "gameId": "2025_14_DAL_DET",
+ "gamesPlayed2025": 12,
+ "props": [
+  {
+   "market": "pass_yds",
+   "projection": 279.8,
+   "quantiles": {
+    "p10": 162.1,
+    "p25": 231.9,
+    "p50": 279.9,
+    "p75": 327.6,
+    "p90": 371.2
+   },
+   "probCurve": [
+    {
+     "line": 130.0,
+     "over": 0.98
+    },
+    {
+     "line": 135.0,
+     "over": 0.9707
+    },
+    {
+     "line": 140.0,
+     "over": 0.9609
+    },
+    {
+     "line": 145.0,
+     "over": 0.951
+    },
+    {
+     "line": 150.0,
+     "over": 0.9364
+    },
+    {
+     "line": 155.0,
+     "over": 0.9214
+    },
+    {
+     "line": 160.0,
+     "over": 0.9063
+    },
+    {
+     "line": 165.0,
+     "over": 0.8937
+    },
+    {
+     "line": 170.0,
+     "over": 0.883
+    },
+    {
+     "line": 175.0,
+     "over": 0.8723
+    },
+    {
+     "line": 180.0,
+     "over": 0.8615
+    },
+    {
+     "line": 185.0,
+     "over": 0.8508
+    },
+    {
+     "line": 190.0,
+     "over": 0.84
+    },
+    {
+     "line": 195.0,
+     "over": 0.8293
+    },
+    {
+     "line": 200.0,
+     "over": 0.8185
+    },
+    {
+     "line": 205.0,
+     "over": 0.8078
+    },
+    {
+     "line": 210.0,
+     "over": 0.797
+    },
+    {
+     "line": 215.0,
+     "over": 0.7863
+    },
+    {
+     "line": 220.0,
+     "over": 0.7756
+    },
+    {
+     "line": 225.0,
+     "over": 0.7648
+    },
+    {
+     "line": 230.0,
+     "over": 0.7541
+    },
+    {
+     "line": 235.0,
+     "over": 0.7338
+    },
+    {
+     "line": 240.0,
+     "over": 0.7078
+    },
+    {
+     "line": 245.0,
+     "over": 0.6818
+    },
+    {
+     "line": 250.0,
+     "over": 0.6557
+    },
+    {
+     "line": 255.0,
+     "over": 0.6297
+    },
+    {
+     "line": 260.0,
+     "over": 0.6037
+    },
+    {
+     "line": 265.0,
+     "over": 0.5776
+    },
+    {
+     "line": 270.0,
+     "over": 0.5516
+    },
+    {
+     "line": 275.0,
+     "over": 0.5256
+    },
+    {
+     "line": 280.0,
+     "over": 0.4995
+    },
+    {
+     "line": 285.0,
+     "over": 0.4733
+    },
+    {
+     "line": 290.0,
+     "over": 0.4471
+    },
+    {
+     "line": 295.0,
+     "over": 0.4209
+    },
+    {
+     "line": 300.0,
+     "over": 0.3946
+    },
+    {
+     "line": 305.0,
+     "over": 0.3684
+    },
+    {
+     "line": 310.0,
+     "over": 0.3422
+    },
+    {
+     "line": 315.0,
+     "over": 0.316
+    },
+    {
+     "line": 320.0,
+     "over": 0.2898
+    },
+    {
+     "line": 325.0,
+     "over": 0.2635
+    },
+    {
+     "line": 330.0,
+     "over": 0.2417
+    },
+    {
+     "line": 335.0,
+     "over": 0.2245
+    },
+    {
+     "line": 340.0,
+     "over": 0.2073
+    },
+    {
+     "line": 345.0,
+     "over": 0.1901
+    },
+    {
+     "line": 350.0,
+     "over": 0.1729
+    },
+    {
+     "line": 355.0,
+     "over": 0.1557
+    },
+    {
+     "line": 360.0,
+     "over": 0.1385
+    },
+    {
+     "line": 365.0,
+     "over": 0.1214
+    },
+    {
+     "line": 370.0,
+     "over": 0.1042
+    },
+    {
+     "line": 375.0,
+     "over": 0.0883
+    },
+    {
+     "line": 380.0,
+     "over": 0.0728
+    },
+    {
+     "line": 385.0,
+     "over": 0.0573
+    },
+    {
+     "line": 390.0,
+     "over": 0.0446
+    },
+    {
+     "line": 395.0,
+     "over": 0.0345
+    },
+    {
+     "line": 400.0,
+     "over": 0.0243
+    }
+   ],
+   "refLine": 265.5,
+   "overProbAtRef": 0.575,
+   "lean": "over",
+   "strength": 13,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 280 passing yards \u2014 it gives Dak a 57% chance to clear a 265.5-yard line.",
+   "factors": [
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 38.6,
+     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "detail": "The expected scoring script nudges the projection up by about 39 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 29.5,
+     "label": "Averaging 314.0 passing yards over his last 3 games",
+     "detail": "That's up from 267.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 30 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -5.8,
+     "label": "His offense throws about 35 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 6 yards."
+    }
+   ],
+   "actual": 376.0,
+   "result": "over"
+  },
+  {
+   "market": "pass_tds",
+   "projection": 1.8,
+   "quantiles": {
+    "p10": 0.0,
+    "p25": 0.0,
+    "p50": 1.8,
+    "p75": 1.9,
+    "p90": 3.4
+   },
+   "probCurve": [
+    {
+     "line": 0.5,
+     "over": 0.835
+    },
+    {
+     "line": 1.5,
+     "over": 0.5376
+    },
+    {
+     "line": 2.5,
+     "over": 0.2698
+    },
+    {
+     "line": 3.5,
+     "over": 0.109
+    },
+    {
+     "line": 4.5,
+     "over": 0.0365
+    }
+   ],
+   "refLine": 2.5,
+   "overProbAtRef": 0.2698,
+   "lean": "under",
+   "strength": 46,
+   "confidence": "high",
+   "confidenceReason": "12 games of steady production make this range tight.",
+   "verdict": "The model expects 1.8 touchdown passes \u2014 it gives Dak a 27% chance to go over 2.5.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -0.47,
+     "label": "His offense throws about 35 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 0.47 touchdown passes."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.34,
+     "label": "Averaging 2.7 touchdown passes over his last 3 games",
+     "detail": "That's up from 2.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.34 touchdown passes."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 0.25,
+     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "detail": "The expected scoring script nudges the projection up by about 0.25 touchdown passes."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -0.2,
+     "label": "Detroit gives up 2 touchdown passes a game \u2014 3rd most in the NFL",
+     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.20 touchdown passes."
+    },
+    {
+     "group": "home_away",
+     "direction": "down",
+     "impact": -0.06,
+     "label": "On the road at Detroit",
+     "detail": "The road trip nudges the projection down by about 0.06 touchdown passes."
+    }
+   ],
+   "actual": 1.0,
+   "result": "under"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "KC",
+   "home": true,
+   "stats": {
+    "pass_yds": 320.0,
+    "pass_tds": 2.0,
+    "rush_yds": -2.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "PHI",
+   "home": true,
+   "stats": {
+    "pass_yds": 354.0,
+    "pass_tds": 2.0,
+    "rush_yds": 9.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "LV",
+   "home": false,
+   "stats": {
+    "pass_yds": 268.0,
+    "pass_tds": 4.0,
+    "rush_yds": -4.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "ARI",
+   "home": true,
+   "stats": {
+    "pass_yds": 250.0,
+    "pass_tds": 1.0,
+    "rush_yds": 34.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "opponent": "DEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 188.0,
+    "pass_tds": 0.0,
+    "rush_yds": 31.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 264.0,
+    "pass_tds": 3.0,
+    "rush_yds": 7.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "CAR",
+   "home": false,
+   "stats": {
+    "pass_yds": 261.0,
+    "pass_tds": 3.0,
+    "rush_yds": -1.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "NYJ",
+   "home": false,
+   "stats": {
+    "pass_yds": 237.0,
+    "pass_tds": 4.0,
+    "rush_yds": 28.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "GB",
+   "home": true,
+   "stats": {
+    "pass_yds": 319.0,
+    "pass_tds": 3.0,
+    "rush_yds": 2.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "CHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 251.0,
+    "pass_tds": 1.0,
+    "rush_yds": 0.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "pass_yds": 271.8,
+  "pass_tds": 2.1,
+  "rush_yds": 10.3
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "pass_tds",
+   "projection": 2.0,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "under"
+  },
+  {
+   "week": 13,
+   "market": "pass_yds",
+   "projection": 273.3,
+   "refLine": 262.5,
+   "lean": "over",
+   "actual": 320.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "pass_tds",
+   "projection": 1.2,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 2.0,
+   "result": "under"
+  },
+  {
+   "week": 12,
+   "market": "pass_yds",
+   "projection": 250.1,
+   "refLine": 258.5,
+   "lean": "under",
+   "actual": 354.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "pass_tds",
+   "projection": 1.7,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 4.0,
+   "result": "over"
+  },
+  {
+   "week": 11,
+   "market": "pass_yds",
+   "projection": 267.6,
+   "refLine": 250.5,
+   "lean": "over",
+   "actual": 268.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "pass_tds",
+   "projection": 2.0,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
+   "week": 9,
+   "market": "pass_yds",
+   "projection": 307.4,
+   "refLine": 258.5,
+   "lean": "over",
+   "actual": 250.0,
+   "result": "under"
+  }
+ ]
+}

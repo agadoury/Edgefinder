@@ -1,0 +1,454 @@
+{
+ "playerId": "2570335",
+ "name": "Zach Charbonnet",
+ "team": "SEA",
+ "pos": "RB",
+ "opponent": "ATL",
+ "home": false,
+ "gameId": "2025_14_SEA_ATL",
+ "gamesPlayed2025": 11,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 44.7,
+   "quantiles": {
+    "p10": 9.0,
+    "p25": 23.8,
+    "p50": 45.8,
+    "p75": 62.0,
+    "p90": 79.8
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.9582
+    },
+    {
+     "line": 5.0,
+     "over": 0.9383
+    },
+    {
+     "line": 7.5,
+     "over": 0.9141
+    },
+    {
+     "line": 10.0,
+     "over": 0.8894
+    },
+    {
+     "line": 12.5,
+     "over": 0.8642
+    },
+    {
+     "line": 15.0,
+     "over": 0.8389
+    },
+    {
+     "line": 17.5,
+     "over": 0.8137
+    },
+    {
+     "line": 20.0,
+     "over": 0.7884
+    },
+    {
+     "line": 22.5,
+     "over": 0.7632
+    },
+    {
+     "line": 25.0,
+     "over": 0.7364
+    },
+    {
+     "line": 27.5,
+     "over": 0.708
+    },
+    {
+     "line": 30.0,
+     "over": 0.6796
+    },
+    {
+     "line": 32.5,
+     "over": 0.6512
+    },
+    {
+     "line": 35.0,
+     "over": 0.6227
+    },
+    {
+     "line": 37.5,
+     "over": 0.5943
+    },
+    {
+     "line": 40.0,
+     "over": 0.5659
+    },
+    {
+     "line": 42.5,
+     "over": 0.5375
+    },
+    {
+     "line": 45.0,
+     "over": 0.5091
+    },
+    {
+     "line": 47.5,
+     "over": 0.4737
+    },
+    {
+     "line": 50.0,
+     "over": 0.435
+    },
+    {
+     "line": 52.5,
+     "over": 0.3963
+    },
+    {
+     "line": 55.0,
+     "over": 0.3577
+    },
+    {
+     "line": 57.5,
+     "over": 0.319
+    },
+    {
+     "line": 60.0,
+     "over": 0.2803
+    },
+    {
+     "line": 62.5,
+     "over": 0.2455
+    },
+    {
+     "line": 65.0,
+     "over": 0.2245
+    },
+    {
+     "line": 67.5,
+     "over": 0.2034
+    },
+    {
+     "line": 70.0,
+     "over": 0.1824
+    },
+    {
+     "line": 72.5,
+     "over": 0.1614
+    },
+    {
+     "line": 75.0,
+     "over": 0.1404
+    },
+    {
+     "line": 77.5,
+     "over": 0.1194
+    },
+    {
+     "line": 80.0,
+     "over": 0.0993
+    },
+    {
+     "line": 82.5,
+     "over": 0.0898
+    },
+    {
+     "line": 85.0,
+     "over": 0.0803
+    },
+    {
+     "line": 87.5,
+     "over": 0.0708
+    },
+    {
+     "line": 90.0,
+     "over": 0.0613
+    },
+    {
+     "line": 92.5,
+     "over": 0.0519
+    },
+    {
+     "line": 95.0,
+     "over": 0.045
+    },
+    {
+     "line": 97.5,
+     "over": 0.0388
+    },
+    {
+     "line": 100.0,
+     "over": 0.0326
+    },
+    {
+     "line": 102.5,
+     "over": 0.0264
+    },
+    {
+     "line": 105.0,
+     "over": 0.0202
+    },
+    {
+     "line": 107.5,
+     "over": 0.02
+    }
+   ],
+   "refLine": 36.5,
+   "overProbAtRef": 0.6057,
+   "lean": "over",
+   "strength": 21,
+   "confidence": "high",
+   "confidenceReason": "11 games of steady production make this range tight.",
+   "verdict": "The model projects 45 rushing yards \u2014 it gives Zach a 61% chance to clear a 36.5-yard line.",
+   "factors": [
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 6.2,
+     "label": "Averaging 41.3 rushing yards over his last 3 games",
+     "detail": "That's down from 42.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 6 yards."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 5.7,
+     "label": "Getting 11.8 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 6 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 2.4,
+     "label": "Vegas pegs this at 44.5 total points, about 26 for the Seahawks",
+     "detail": "The expected scoring script nudges the projection up by about 2 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 1.2,
+     "label": "Atlanta gives up 131 rushing yards a game \u2014 7th most in the NFL",
+     "detail": "A matchup this generous nudges the projection up by about 1 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.8,
+     "label": "Sam Darnold has made 12 starts this season",
+     "detail": "Stability under center nudges the projection up by about 0.8 rushing yards."
+    }
+   ],
+   "actual": 46.0,
+   "result": "over"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 13,
+   "opponent": "MIN",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 52.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 12,
+   "opponent": "TEN",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 35.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "opponent": "LA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 37.0,
+    "rec_yds": 10.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "opponent": "ARI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 83.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "opponent": "WAS",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 25.0,
+    "rec_yds": 21.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "HOU",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 49.0,
+    "rec_yds": 6.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "JAX",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 24.0,
+    "rec_yds": 13.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "TB",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 36.0,
+    "rec_yds": 12.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "ARI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 39.0,
+    "rec_yds": 5.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 2,
+   "opponent": "PIT",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 10.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 39.7,
+  "rec_yds": 6.1,
+  "receptions": 0.8
+ },
+ "modelHistory": [
+  {
+   "week": 13,
+   "market": "rush_yds",
+   "projection": 39.6,
+   "refLine": 36.5,
+   "lean": "neutral",
+   "actual": 52.0,
+   "result": "over"
+  },
+  {
+   "week": 12,
+   "market": "rush_yds",
+   "projection": 42.3,
+   "refLine": 36.5,
+   "lean": "over",
+   "actual": 35.0,
+   "result": "under"
+  },
+  {
+   "week": 11,
+   "market": "rush_yds",
+   "projection": 35.3,
+   "refLine": 36.5,
+   "lean": "under",
+   "actual": 37.0,
+   "result": "over"
+  },
+  {
+   "week": 10,
+   "market": "rush_yds",
+   "projection": 39.1,
+   "refLine": 36.5,
+   "lean": "neutral",
+   "actual": 83.0,
+   "result": "over"
+  },
+  {
+   "week": 9,
+   "market": "rush_yds",
+   "projection": 38.3,
+   "refLine": 36.5,
+   "lean": "neutral",
+   "actual": 25.0,
+   "result": "under"
+  },
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 39.7,
+   "refLine": 36.5,
+   "lean": "neutral",
+   "actual": 49.0,
+   "result": "over"
+  },
+  {
+   "week": 6,
+   "market": "rush_yds",
+   "projection": 34.0,
+   "refLine": 36.5,
+   "lean": "under",
+   "actual": 24.0,
+   "result": "under"
+  },
+  {
+   "week": 5,
+   "market": "rush_yds",
+   "projection": 39.9,
+   "refLine": 38.5,
+   "lean": "neutral",
+   "actual": 36.0,
+   "result": "under"
+  }
+ ]
+}
