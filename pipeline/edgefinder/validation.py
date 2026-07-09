@@ -33,7 +33,6 @@ sys.path.insert(0, str(PIPELINE_DIR))
 from edgefinder import metrics  # noqa: E402
 from edgefinder.conformal import CAL_TRAIN_SEASONS, calibration_mask  # noqa: E402
 from edgefinder.features import (  # noqa: E402
-    FACTOR_GROUPS,
     FEATURES,
     MARKETS,
     POSITION_FLAGS,

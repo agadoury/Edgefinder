@@ -10,287 +10,284 @@
  "props": [
   {
    "market": "pass_yds",
-   "projection": 198.3,
+   "projection": 202.1,
    "quantiles": {
-    "p10": 80.9,
-    "p25": 146.6,
-    "p50": 185.8,
-    "p75": 244.4,
-    "p90": 279.2
+    "p10": 88.0,
+    "p25": 139.2,
+    "p50": 188.4,
+    "p75": 241.2,
+    "p90": 281.7
    },
    "probCurve": [
     {
-     "line": 57.5,
+     "line": 85.0,
      "over": 0.98
     },
     {
-     "line": 62.5,
-     "over": 0.9695
+     "line": 90.0,
+     "over": 0.8942
     },
     {
-     "line": 67.5,
-     "over": 0.9553
+     "line": 95.0,
+     "over": 0.8796
     },
     {
-     "line": 72.5,
-     "over": 0.9363
+     "line": 100.0,
+     "over": 0.8649
     },
     {
-     "line": 77.5,
-     "over": 0.9146
+     "line": 105.0,
+     "over": 0.8502
     },
     {
-     "line": 82.5,
-     "over": 0.8963
+     "line": 110.0,
+     "over": 0.8355
     },
     {
-     "line": 87.5,
-     "over": 0.8849
+     "line": 115.0,
+     "over": 0.8209
     },
     {
-     "line": 92.5,
-     "over": 0.8735
+     "line": 120.0,
+     "over": 0.8062
     },
     {
-     "line": 97.5,
-     "over": 0.8621
+     "line": 125.0,
+     "over": 0.7915
     },
     {
-     "line": 102.5,
-     "over": 0.8506
+     "line": 130.0,
+     "over": 0.7769
     },
     {
-     "line": 107.5,
-     "over": 0.8392
+     "line": 135.0,
+     "over": 0.7622
     },
     {
-     "line": 112.5,
-     "over": 0.8278
+     "line": 140.0,
+     "over": 0.7457
     },
     {
-     "line": 117.5,
-     "over": 0.8164
+     "line": 145.0,
+     "over": 0.7203
     },
     {
-     "line": 122.5,
-     "over": 0.805
+     "line": 150.0,
+     "over": 0.6949
     },
     {
-     "line": 127.5,
-     "over": 0.7936
+     "line": 155.0,
+     "over": 0.6696
     },
     {
-     "line": 132.5,
-     "over": 0.7822
+     "line": 160.0,
+     "over": 0.6442
     },
     {
-     "line": 137.5,
-     "over": 0.7708
+     "line": 165.0,
+     "over": 0.6188
     },
     {
-     "line": 142.5,
-     "over": 0.7594
+     "line": 170.0,
+     "over": 0.5935
     },
     {
-     "line": 147.5,
-     "over": 0.7443
+     "line": 175.0,
+     "over": 0.5681
     },
     {
-     "line": 152.5,
-     "over": 0.7124
+     "line": 180.0,
+     "over": 0.5427
     },
     {
-     "line": 157.5,
-     "over": 0.6805
+     "line": 185.0,
+     "over": 0.5173
     },
     {
-     "line": 162.5,
-     "over": 0.6485
+     "line": 190.0,
+     "over": 0.4925
     },
     {
-     "line": 167.5,
-     "over": 0.6166
+     "line": 195.0,
+     "over": 0.4688
     },
     {
-     "line": 172.5,
-     "over": 0.5846
+     "line": 200.0,
+     "over": 0.4451
     },
     {
-     "line": 177.5,
-     "over": 0.5527
+     "line": 205.0,
+     "over": 0.4214
     },
     {
-     "line": 182.5,
-     "over": 0.5208
+     "line": 210.0,
+     "over": 0.3977
     },
     {
-     "line": 187.5,
-     "over": 0.4926
+     "line": 215.0,
+     "over": 0.374
     },
     {
-     "line": 192.5,
-     "over": 0.4713
+     "line": 220.0,
+     "over": 0.3503
     },
     {
-     "line": 197.5,
-     "over": 0.45
+     "line": 225.0,
+     "over": 0.3266
     },
     {
-     "line": 202.5,
-     "over": 0.4287
+     "line": 230.0,
+     "over": 0.3029
     },
     {
-     "line": 207.5,
-     "over": 0.4074
+     "line": 235.0,
+     "over": 0.2792
     },
     {
-     "line": 212.5,
-     "over": 0.3861
+     "line": 240.0,
+     "over": 0.2555
     },
     {
-     "line": 217.5,
-     "over": 0.3648
+     "line": 245.0,
+     "over": 0.2358
     },
     {
-     "line": 222.5,
-     "over": 0.3435
+     "line": 250.0,
+     "over": 0.2173
     },
     {
-     "line": 227.5,
-     "over": 0.3222
+     "line": 255.0,
+     "over": 0.1987
     },
     {
-     "line": 232.5,
-     "over": 0.3009
+     "line": 260.0,
+     "over": 0.1802
     },
     {
-     "line": 237.5,
-     "over": 0.2796
+     "line": 265.0,
+     "over": 0.1617
     },
     {
-     "line": 242.5,
-     "over": 0.2583
+     "line": 270.0,
+     "over": 0.1432
     },
     {
-     "line": 247.5,
-     "over": 0.2368
+     "line": 275.0,
+     "over": 0.1247
     },
     {
-     "line": 252.5,
-     "over": 0.2152
+     "line": 280.0,
+     "over": 0.1062
     },
     {
-     "line": 257.5,
-     "over": 0.1936
+     "line": 285.0,
+     "over": 0.0967
     },
     {
-     "line": 262.5,
-     "over": 0.172
+     "line": 290.0,
+     "over": 0.0918
     },
     {
-     "line": 267.5,
-     "over": 0.1504
+     "line": 295.0,
+     "over": 0.087
     },
     {
-     "line": 272.5,
-     "over": 0.1288
+     "line": 300.0,
+     "over": 0.0821
     },
     {
-     "line": 277.5,
-     "over": 0.1071
+     "line": 305.0,
+     "over": 0.0772
     },
     {
-     "line": 282.5,
-     "over": 0.0955
+     "line": 310.0,
+     "over": 0.0723
     },
     {
-     "line": 287.5,
-     "over": 0.0887
+     "line": 315.0,
+     "over": 0.0674
     },
     {
-     "line": 292.5,
-     "over": 0.0819
+     "line": 320.0,
+     "over": 0.0625
     },
     {
-     "line": 297.5,
-     "over": 0.0751
+     "line": 325.0,
+     "over": 0.0576
     },
     {
-     "line": 302.5,
-     "over": 0.0683
+     "line": 330.0,
+     "over": 0.0527
     },
     {
-     "line": 307.5,
-     "over": 0.0616
+     "line": 335.0,
+     "over": 0.0486
     },
     {
-     "line": 312.5,
-     "over": 0.0548
+     "line": 340.0,
+     "over": 0.0454
     },
     {
-     "line": 317.5,
-     "over": 0.0487
+     "line": 345.0,
+     "over": 0.0422
     },
     {
-     "line": 322.5,
-     "over": 0.0442
+     "line": 350.0,
+     "over": 0.039
     },
     {
-     "line": 327.5,
-     "over": 0.0398
+     "line": 355.0,
+     "over": 0.0358
     },
     {
-     "line": 332.5,
-     "over": 0.0354
+     "line": 360.0,
+     "over": 0.0326
     },
     {
-     "line": 337.5,
-     "over": 0.0309
+     "line": 365.0,
+     "over": 0.0294
     },
     {
-     "line": 342.5,
-     "over": 0.0265
+     "line": 370.0,
+     "over": 0.0262
     },
     {
-     "line": 347.5,
-     "over": 0.022
+     "line": 375.0,
+     "over": 0.023
+    },
+    {
+     "line": 380.0,
+     "over": 0.02
     }
    ],
    "refLine": 220.5,
-   "overProbAtRef": 0.352,
+   "overProbAtRef": 0.3479,
    "lean": "under",
-   "strength": 25,
+   "strength": 26,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 198 passing yards \u2014 it gives Geno a 35% chance to clear a 220.5-yard line.",
+   "verdict": "The model projects 202 passing yards \u2014 it gives Geno a 35% chance to clear a 220.5-yard line.",
    "factors": [
     {
      "group": "game_environment",
      "direction": "down",
-     "impact": -27.2,
+     "impact": -20.3,
      "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
-     "detail": "The expected scoring script nudges the projection down by about 27 yards."
+     "detail": "The expected scoring script nudges the projection down by about 20 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 11.1,
+     "impact": 14.1,
      "label": "Averaging 229.3 passing yards over his last 3 games",
-     "detail": "That's up from 198.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 11 yards."
+     "detail": "That's up from 198.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 14 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
-     "impact": -6.1,
+     "impact": -12.3,
      "label": "His offense throws about 33 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 6 yards."
-    },
-    {
-     "group": "opp_defense",
-     "direction": "down",
-     "impact": -4.3,
-     "label": "Denver gives up 220 passing yards a game \u2014 11th fewest in the NFL",
-     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
+     "detail": "How often the team drops back nudges the projection down by about 12 yards."
     }
    ],
    "actual": 116.0,
@@ -298,64 +295,78 @@
   },
   {
    "market": "pass_tds",
-   "projection": 1.2,
+   "projection": 1.3,
    "quantiles": {
     "p10": 0.2,
-    "p25": 0.6,
+    "p25": 0.7,
     "p50": 1.3,
-    "p75": 2.2,
-    "p90": 3.3
+    "p75": 2.3,
+    "p90": 3.4
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8109
+     "over": 0.8187
     },
     {
      "line": 1.5,
-     "over": 0.4208
+     "over": 0.4341
     },
     {
      "line": 2.5,
-     "over": 0.189
+     "over": 0.201
     },
     {
      "line": 3.5,
-     "over": 0.0712
+     "over": 0.0856
     },
     {
      "line": 4.5,
-     "over": 0.0203
+     "over": 0.0241
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.8109,
+   "overProbAtRef": 0.8187,
    "lean": "over",
-   "strength": 53,
+   "strength": 54,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.2 touchdown passes \u2014 it gives Geno a 81% chance to go over 0.5.",
+   "verdict": "The model expects 1.3 touchdown passes \u2014 it gives Geno a 82% chance to go over 0.5.",
    "factors": [
-    {
-     "group": "usage_role",
-     "direction": "up",
-     "impact": 0.32,
-     "label": "His offense throws about 33 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 0.32 touchdown passes."
-    },
     {
      "group": "opp_defense",
      "direction": "up",
-     "impact": 0.08,
+     "impact": 0.25,
      "label": "Denver gives up 1 touchdown passes a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.08 touchdown passes."
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.25 touchdown passes."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.2,
+     "label": "12 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection down by about 0.20 touchdown passes."
     },
     {
      "group": "recent_form",
-     "direction": "down",
-     "impact": -0.01,
+     "direction": "up",
+     "impact": 0.19,
      "label": "Averaging 1.3 touchdown passes over his last 3 games",
-     "detail": "That's up from 1.1 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.01 touchdown passes."
+     "detail": "That's up from 1.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.19 touchdown passes."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -0.05,
+     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "detail": "The expected scoring script nudges the projection down by about 0.05 touchdown passes."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.04,
+     "label": "His offense throws about 33 passes a game",
+     "detail": "How often the team drops back nudges the projection up by about 0.04 touchdown passes."
     }
    ],
    "actual": 1.0,
@@ -503,7 +514,7 @@
   {
    "week": 13,
    "market": "pass_tds",
-   "projection": 0.5,
+   "projection": 0.9,
    "refLine": 0.5,
    "lean": "over",
    "actual": 2.0,
@@ -512,7 +523,7 @@
   {
    "week": 13,
    "market": "pass_yds",
-   "projection": 178.4,
+   "projection": 185.0,
    "refLine": 232.5,
    "lean": "under",
    "actual": 165.0,
@@ -530,9 +541,9 @@
   {
    "week": 12,
    "market": "pass_yds",
-   "projection": 154.2,
+   "projection": 170.1,
    "refLine": 188.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 285.0,
    "result": "over"
   },
@@ -548,7 +559,7 @@
   {
    "week": 11,
    "market": "pass_yds",
-   "projection": 190.1,
+   "projection": 200.8,
    "refLine": 176.5,
    "lean": "over",
    "actual": 238.0,
@@ -557,16 +568,16 @@
   {
    "week": 10,
    "market": "pass_tds",
-   "projection": 1.0,
+   "projection": 0.8,
    "refLine": 0.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 0.0,
    "result": "under"
   },
   {
    "week": 10,
    "market": "pass_yds",
-   "projection": 214.9,
+   "projection": 203.5,
    "refLine": 188.5,
    "lean": "over",
    "actual": 143.0,

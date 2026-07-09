@@ -10,242 +10,202 @@
  "props": [
   {
    "market": "rush_yds",
-   "projection": 27.6,
+   "projection": 24.4,
    "quantiles": {
-    "p10": 1.7,
-    "p25": 8.6,
-    "p50": 21.5,
-    "p75": 54.3,
-    "p90": 66.0
+    "p10": 0.9,
+    "p25": 5.8,
+    "p50": 19.2,
+    "p75": 45.3,
+    "p90": 65.6
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.8817
+     "over": 0.7732
     },
     {
      "line": 5.0,
-     "over": 0.8273
+     "over": 0.6961
     },
     {
      "line": 7.5,
-     "over": 0.773
+     "over": 0.6453
     },
     {
      "line": 10.0,
-     "over": 0.722
+     "over": 0.6054
     },
     {
      "line": 12.5,
-     "over": 0.6736
+     "over": 0.5669
     },
     {
      "line": 15.0,
-     "over": 0.6251
+     "over": 0.5295
     },
     {
      "line": 17.5,
-     "over": 0.5767
+     "over": 0.4929
     },
     {
      "line": 20.0,
-     "over": 0.5282
+     "over": 0.4626
     },
     {
      "line": 22.5,
-     "over": 0.4921
+     "over": 0.4442
     },
     {
      "line": 25.0,
-     "over": 0.473
+     "over": 0.4259
     },
     {
      "line": 27.5,
-     "over": 0.454
+     "over": 0.4075
     },
     {
      "line": 30.0,
-     "over": 0.435
+     "over": 0.389
     },
     {
      "line": 32.5,
-     "over": 0.4159
+     "over": 0.3706
     },
     {
      "line": 35.0,
-     "over": 0.3969
+     "over": 0.352
     },
     {
      "line": 37.5,
-     "over": 0.3779
+     "over": 0.3332
     },
     {
      "line": 40.0,
-     "over": 0.3589
+     "over": 0.3143
     },
     {
      "line": 42.5,
-     "over": 0.3398
+     "over": 0.2952
     },
     {
      "line": 45.0,
-     "over": 0.3208
+     "over": 0.2757
     },
     {
      "line": 47.5,
-     "over": 0.3018
+     "over": 0.26
     },
     {
      "line": 50.0,
-     "over": 0.2827
+     "over": 0.2444
     },
     {
      "line": 52.5,
-     "over": 0.2637
+     "over": 0.2286
     },
     {
      "line": 55.0,
-     "over": 0.241
+     "over": 0.2124
     },
     {
      "line": 57.5,
-     "over": 0.2089
+     "over": 0.1957
     },
     {
      "line": 60.0,
-     "over": 0.1769
+     "over": 0.1787
     },
     {
      "line": 62.5,
-     "over": 0.1448
+     "over": 0.1611
     },
     {
      "line": 65.0,
-     "over": 0.1127
+     "over": 0.1427
     },
     {
      "line": 67.5,
-     "over": 0.097
+     "over": 0.1301
     },
     {
      "line": 70.0,
-     "over": 0.0921
+     "over": 0.119
     },
     {
      "line": 72.5,
-     "over": 0.0871
+     "over": 0.1076
     },
     {
      "line": 75.0,
-     "over": 0.0822
+     "over": 0.0958
     },
     {
      "line": 77.5,
-     "over": 0.0772
+     "over": 0.0833
     },
     {
      "line": 80.0,
-     "over": 0.0723
+     "over": 0.0746
     },
     {
      "line": 82.5,
-     "over": 0.0673
+     "over": 0.0658
     },
     {
      "line": 85.0,
-     "over": 0.0624
+     "over": 0.0564
     },
     {
      "line": 87.5,
-     "over": 0.0574
+     "over": 0.0465
     },
     {
      "line": 90.0,
-     "over": 0.0525
-    },
-    {
-     "line": 92.5,
-     "over": 0.0484
-    },
-    {
-     "line": 95.0,
-     "over": 0.0451
-    },
-    {
-     "line": 97.5,
-     "over": 0.0419
-    },
-    {
-     "line": 100.0,
-     "over": 0.0387
-    },
-    {
-     "line": 102.5,
-     "over": 0.0354
-    },
-    {
-     "line": 105.0,
-     "over": 0.0322
-    },
-    {
-     "line": 107.5,
-     "over": 0.0289
-    },
-    {
-     "line": 110.0,
-     "over": 0.0257
-    },
-    {
-     "line": 112.5,
-     "over": 0.0225
-    },
-    {
-     "line": 115.0,
-     "over": 0.02
+     "over": 0.0413
     }
    ],
    "refLine": 20.5,
-   "overProbAtRef": 0.521,
-   "lean": "neutral",
-   "strength": 4,
+   "overProbAtRef": 0.4589,
+   "lean": "under",
+   "strength": 7,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 28 rushing yards \u2014 it gives Tyler a 52% chance to clear a 20.5-yard line.",
+   "verdict": "The model projects 24 rushing yards \u2014 it gives Tyler a 46% chance to clear a 20.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 6.9,
+     "impact": 6.0,
      "label": "Getting 9.8 touches a game over his last 4",
-     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 7 yards."
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 6 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
-     "impact": -4.1,
+     "impact": -5.1,
      "label": "Seattle gives up 89 rushing yards a game \u2014 2nd fewest in the NFL",
-     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
-    },
-    {
-     "group": "recent_form",
-     "direction": "down",
-     "impact": -1.4,
-     "label": "Averaging 24.7 rushing yards over his last 3 games",
-     "detail": "That's up from 23.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 1 yards."
-    },
-    {
-     "group": "game_environment",
-     "direction": "down",
-     "impact": -1.1,
-     "label": "Vegas pegs this at 44.5 total points, about 19 for the Falcons",
-     "detail": "The expected scoring script nudges the projection down by about 1 yards."
+     "detail": "A matchup this stingy nudges the projection down by about 5 yards."
     },
     {
      "group": "qb_situation",
      "direction": "down",
-     "impact": -0.7,
+     "impact": -4.5,
      "label": "Kirk Cousins has just 3 starts this season \u2014 passing game still unsettled",
-     "detail": "Stability under center nudges the projection down by about 0.7 rushing yards."
+     "detail": "Stability under center nudges the projection down by about 4 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -2.9,
+     "label": "Vegas pegs this at 44.5 total points, about 19 for the Falcons",
+     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.6,
+     "label": "Averaging 24.7 rushing yards over his last 3 games",
+     "detail": "That's up from 23.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.6 rushing yards."
     }
    ],
    "actual": 34.0,
@@ -393,7 +353,7 @@
   {
    "week": 13,
    "market": "rush_yds",
-   "projection": 33.7,
+   "projection": 30.5,
    "refLine": 16.5,
    "lean": "over",
    "actual": 20.0,
@@ -402,16 +362,16 @@
   {
    "week": 12,
    "market": "rush_yds",
-   "projection": 23.7,
+   "projection": 21.2,
    "refLine": 14.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 44.0,
    "result": "over"
   },
   {
    "week": 11,
    "market": "rush_yds",
-   "projection": 24.6,
+   "projection": 24.3,
    "refLine": 20.5,
    "lean": "neutral",
    "actual": 10.0,
@@ -420,7 +380,7 @@
   {
    "week": 10,
    "market": "rush_yds",
-   "projection": 16.7,
+   "projection": 17.4,
    "refLine": 18.5,
    "lean": "under",
    "actual": 57.0,
@@ -429,7 +389,7 @@
   {
    "week": 9,
    "market": "rush_yds",
-   "projection": 19.6,
+   "projection": 20.4,
    "refLine": 20.5,
    "lean": "under",
    "actual": 6.0,
@@ -438,18 +398,18 @@
   {
    "week": 8,
    "market": "rush_yds",
-   "projection": 37.4,
+   "projection": 35.7,
    "refLine": 30.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 4.0,
    "result": "under"
   },
   {
    "week": 7,
    "market": "rush_yds",
-   "projection": 33.2,
+   "projection": 36.7,
    "refLine": 32.5,
-   "lean": "neutral",
+   "lean": "under",
    "actual": 16.0,
    "result": "under"
   },
@@ -458,7 +418,7 @@
    "market": "rush_yds",
    "projection": 30.2,
    "refLine": 30.5,
-   "lean": "neutral",
+   "lean": "under",
    "actual": 32.0,
    "result": "over"
   }

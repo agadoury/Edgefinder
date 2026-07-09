@@ -10,297 +10,285 @@
  "props": [
   {
    "market": "pass_yds",
-   "projection": 212.3,
+   "projection": 230.6,
    "quantiles": {
-    "p10": 119.0,
-    "p25": 149.0,
-    "p50": 200.2,
-    "p75": 224.6,
-    "p90": 348.4
+    "p10": 92.8,
+    "p25": 155.5,
+    "p50": 203.1,
+    "p75": 277.0,
+    "p90": 356.5
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9717
+     "over": 0.9688
     },
     {
      "line": 10.0,
-     "over": 0.9682
+     "over": 0.9645
     },
     {
      "line": 17.5,
-     "over": 0.9647
+     "over": 0.9602
     },
     {
      "line": 25.0,
-     "over": 0.9612
+     "over": 0.9559
     },
     {
      "line": 32.5,
-     "over": 0.9577
+     "over": 0.9516
     },
     {
      "line": 40.0,
-     "over": 0.9542
+     "over": 0.946
     },
     {
      "line": 47.5,
-     "over": 0.9507
+     "over": 0.9395
     },
     {
      "line": 55.0,
-     "over": 0.9457
+     "over": 0.9329
     },
     {
      "line": 62.5,
-     "over": 0.9403
+     "over": 0.9264
     },
     {
      "line": 70.0,
-     "over": 0.935
+     "over": 0.9198
     },
     {
      "line": 77.5,
-     "over": 0.9296
+     "over": 0.9133
     },
     {
      "line": 85.0,
-     "over": 0.9243
+     "over": 0.9068
     },
     {
      "line": 92.5,
-     "over": 0.9189
+     "over": 0.9002
     },
     {
      "line": 100.0,
-     "over": 0.9136
-    },
-    {
-     "line": 107.5,
-     "over": 0.9082
-    },
-    {
-     "line": 115.0,
-     "over": 0.9029
-    },
-    {
-     "line": 122.5,
      "over": 0.8827
     },
     {
+     "line": 107.5,
+     "over": 0.8648
+    },
+    {
+     "line": 115.0,
+     "over": 0.8468
+    },
+    {
+     "line": 122.5,
+     "over": 0.8289
+    },
+    {
      "line": 130.0,
-     "over": 0.8452
+     "over": 0.8109
     },
     {
      "line": 137.5,
-     "over": 0.8076
+     "over": 0.793
     },
     {
      "line": 145.0,
-     "over": 0.7701
+     "over": 0.7751
     },
     {
      "line": 152.5,
-     "over": 0.733
+     "over": 0.7571
     },
     {
      "line": 160.0,
-     "over": 0.6964
+     "over": 0.7263
     },
     {
      "line": 167.5,
-     "over": 0.6598
+     "over": 0.6869
     },
     {
      "line": 175.0,
-     "over": 0.6232
+     "over": 0.6476
     },
     {
      "line": 182.5,
-     "over": 0.5866
+     "over": 0.6083
     },
     {
      "line": 190.0,
-     "over": 0.55
+     "over": 0.5689
     },
     {
      "line": 197.5,
-     "over": 0.5134
+     "over": 0.5296
     },
     {
      "line": 205.0,
-     "over": 0.4512
+     "over": 0.4937
     },
     {
      "line": 212.5,
-     "over": 0.3744
+     "over": 0.4683
     },
     {
      "line": 220.0,
-     "over": 0.2975
+     "over": 0.443
     },
     {
      "line": 227.5,
-     "over": 0.2465
+     "over": 0.4176
     },
     {
      "line": 235.0,
-     "over": 0.2374
+     "over": 0.3922
     },
     {
      "line": 242.5,
-     "over": 0.2284
+     "over": 0.3669
     },
     {
      "line": 250.0,
-     "over": 0.2193
+     "over": 0.3415
     },
     {
      "line": 257.5,
-     "over": 0.2102
+     "over": 0.3161
     },
     {
      "line": 265.0,
-     "over": 0.2011
+     "over": 0.2908
     },
     {
      "line": 272.5,
-     "over": 0.192
+     "over": 0.2654
     },
     {
      "line": 280.0,
-     "over": 0.1829
+     "over": 0.2444
     },
     {
      "line": 287.5,
-     "over": 0.1738
+     "over": 0.2303
     },
     {
      "line": 295.0,
-     "over": 0.1647
+     "over": 0.2161
     },
     {
      "line": 302.5,
-     "over": 0.1557
+     "over": 0.202
     },
     {
      "line": 310.0,
-     "over": 0.1466
+     "over": 0.1878
     },
     {
      "line": 317.5,
-     "over": 0.1375
+     "over": 0.1737
     },
     {
      "line": 325.0,
-     "over": 0.1284
+     "over": 0.1595
     },
     {
      "line": 332.5,
-     "over": 0.1193
+     "over": 0.1454
     },
     {
      "line": 340.0,
-     "over": 0.1102
+     "over": 0.1312
     },
     {
      "line": 347.5,
-     "over": 0.1011
+     "over": 0.1171
     },
     {
      "line": 355.0,
-     "over": 0.0924
+     "over": 0.1029
     },
     {
      "line": 362.5,
-     "over": 0.0838
+     "over": 0.0893
     },
     {
      "line": 370.0,
-     "over": 0.0751
+     "over": 0.0758
     },
     {
      "line": 377.5,
-     "over": 0.0665
+     "over": 0.0623
     },
     {
      "line": 385.0,
-     "over": 0.0578
+     "over": 0.0492
     },
     {
      "line": 392.5,
-     "over": 0.0494
+     "over": 0.0404
     },
     {
      "line": 400.0,
-     "over": 0.0438
+     "over": 0.0316
     },
     {
      "line": 407.5,
-     "over": 0.0381
-    },
-    {
-     "line": 415.0,
-     "over": 0.0324
-    },
-    {
-     "line": 422.5,
-     "over": 0.0268
-    },
-    {
-     "line": 430.0,
-     "over": 0.0211
+     "over": 0.0228
     }
    ],
    "refLine": 182.5,
-   "overProbAtRef": 0.5866,
+   "overProbAtRef": 0.6083,
    "lean": "over",
    "strength": 15,
-   "confidence": "medium",
+   "confidence": "low",
    "confidenceReason": "Only 3 games played this season, so the sample is thin.",
-   "verdict": "The model projects 212 passing yards \u2014 it gives Joe a 59% chance to clear a 182.5-yard line.",
+   "verdict": "The model projects 231 passing yards \u2014 it gives Joe a 61% chance to clear a 182.5-yard line.",
    "factors": [
     {
-     "group": "rest_schedule",
-     "direction": "down",
-     "impact": -15.5,
-     "label": "Missed 3 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 15 yards."
-    },
-    {
-     "group": "weather",
-     "direction": "down",
-     "impact": -14.1,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection down by about 14 yards."
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 24.9,
+     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "detail": "The expected scoring script nudges the projection up by about 25 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 13.7,
+     "impact": 22.2,
      "label": "His offense throws about 39 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 14 yards."
+     "detail": "How often the team drops back nudges the projection up by about 22 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "down",
+     "impact": -21.3,
+     "label": "12 mph winds in the forecast",
+     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection down by about 21 yards."
     },
     {
      "group": "recent_form",
      "direction": "down",
-     "impact": -13.0,
+     "impact": -10.7,
      "label": "Averaging 150.0 passing yards over his last 3 games",
-     "detail": "That's down from 250.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 13 yards."
+     "detail": "That's down from 250.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 11 yards."
     },
     {
-     "group": "home_away",
+     "group": "qb_situation",
      "direction": "down",
-     "impact": -4.2,
-     "label": "On the road at Buffalo",
-     "detail": "The road trip nudges the projection down by about 4 yards."
+     "impact": -3.7,
+     "label": "Only 3 starts this season \u2014 still settling in",
+     "detail": "How settled the QB job is nudges the projection down by about 4 yards."
     },
     {
-     "group": "opp_defense",
-     "direction": "up",
-     "impact": 3.9,
-     "label": "Buffalo gives up 177 passing yards a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 4 yards."
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -3.5,
+     "label": "Missed 3 of the last 5 weeks",
+     "detail": "The stop-start stretch nudges the projection down by about 3 yards."
     }
    ],
    "actual": 284.0,
@@ -308,85 +296,85 @@
   },
   {
    "market": "pass_tds",
-   "projection": 1.8,
+   "projection": 1.4,
    "quantiles": {
-    "p10": 0.3,
-    "p25": 0.8,
-    "p50": 1.5,
-    "p75": 2.4,
-    "p90": 3.5
+    "p10": 0.4,
+    "p25": 0.9,
+    "p50": 1.6,
+    "p75": 2.7,
+    "p90": 3.9
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8657
+     "over": 0.8819
     },
     {
      "line": 1.5,
-     "over": 0.4939
+     "over": 0.5297
     },
     {
      "line": 2.5,
-     "over": 0.2382
+     "over": 0.2865
     },
     {
      "line": 3.5,
-     "over": 0.1029
+     "over": 0.1251
     },
     {
      "line": 4.5,
-     "over": 0.0352
+     "over": 0.0483
     }
    ],
    "refLine": 1.5,
-   "overProbAtRef": 0.4939,
+   "overProbAtRef": 0.5297,
    "lean": "neutral",
-   "strength": 1,
+   "strength": 4,
    "confidence": "low",
    "confidenceReason": "Only 3 games played this season, so the sample is thin.",
-   "verdict": "The model expects 1.8 touchdown passes \u2014 it gives Joe a 49% chance to go over 1.5.",
+   "verdict": "The model expects 1.4 touchdown passes \u2014 it gives Joe a 53% chance to go over 1.5.",
    "factors": [
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.37,
+     "label": "Only 3 starts this season \u2014 still settling in",
+     "detail": "How settled the QB job is nudges the projection down by about 0.37 touchdown passes."
+    },
     {
      "group": "game_environment",
      "direction": "up",
-     "impact": 0.22,
+     "impact": 0.26,
      "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
-     "detail": "The expected scoring script nudges the projection up by about 0.22 touchdown passes."
-    },
-    {
-     "group": "usage_role",
-     "direction": "down",
-     "impact": -0.18,
-     "label": "His offense throws about 39 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 0.18 touchdown passes."
-    },
-    {
-     "group": "weather",
-     "direction": "up",
-     "impact": 0.11,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 0.11 touchdown passes."
+     "detail": "The expected scoring script nudges the projection up by about 0.26 touchdown passes."
     },
     {
      "group": "rest_schedule",
-     "direction": "down",
-     "impact": -0.1,
-     "label": "Missed 3 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 0.10 touchdown passes."
-    },
-    {
-     "group": "home_away",
      "direction": "up",
-     "impact": 0.08,
-     "label": "On the road at Buffalo",
-     "detail": "The road trip nudges the projection up by about 0.08 touchdown passes."
+     "impact": 0.15,
+     "label": "Missed 3 of the last 5 weeks",
+     "detail": "The stop-start stretch nudges the projection up by about 0.15 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "up",
-     "impact": 0.07,
+     "impact": 0.08,
      "label": "Buffalo gives up 1 touchdown passes a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.07 touchdown passes."
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.08 touchdown passes."
+    },
+    {
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.08,
+     "label": "Averaging 1.3 touchdown passes over his last 3 games",
+     "detail": "That's down from 2.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.08 touchdown passes."
+    },
+    {
+     "group": "usage_role",
+     "direction": "up",
+     "impact": 0.06,
+     "label": "His offense throws about 39 passes a game",
+     "detail": "How often the team drops back nudges the projection up by about 0.06 touchdown passes."
     }
    ],
    "actual": 4.0,
@@ -534,7 +522,7 @@
   {
    "week": 13,
    "market": "pass_tds",
-   "projection": 0.4,
+   "projection": 0.5,
    "refLine": 2.5,
    "lean": "under",
    "actual": 2.0,
@@ -543,32 +531,14 @@
   {
    "week": 13,
    "market": "pass_yds",
-   "projection": 201.7,
+   "projection": 172.8,
    "refLine": 173.5,
-   "lean": "over",
+   "lean": "under",
    "actual": 261.0,
    "result": "over"
   },
   {
    "week": 2,
-   "market": "pass_tds",
-   "projection": 2.0,
-   "refLine": 2.5,
-   "lean": "under",
-   "actual": 1.0,
-   "result": "under"
-  },
-  {
-   "week": 2,
-   "market": "pass_yds",
-   "projection": 267.2,
-   "refLine": 192.5,
-   "lean": "over",
-   "actual": 76.0,
-   "result": "under"
-  },
-  {
-   "week": 1,
    "market": "pass_tds",
    "projection": 1.4,
    "refLine": 2.5,
@@ -577,9 +547,27 @@
    "result": "under"
   },
   {
+   "week": 2,
+   "market": "pass_yds",
+   "projection": 276.6,
+   "refLine": 192.5,
+   "lean": "over",
+   "actual": 76.0,
+   "result": "under"
+  },
+  {
+   "week": 1,
+   "market": "pass_tds",
+   "projection": 1.3,
+   "refLine": 2.5,
+   "lean": "under",
+   "actual": 1.0,
+   "result": "under"
+  },
+  {
    "week": 1,
    "market": "pass_yds",
-   "projection": 245.0,
+   "projection": 245.8,
    "refLine": 308.5,
    "lean": "under",
    "actual": 113.0,

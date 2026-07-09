@@ -10,287 +10,265 @@
  "props": [
   {
    "market": "pass_yds",
-   "projection": 218.5,
+   "projection": 216.1,
    "quantiles": {
-    "p10": 119.6,
-    "p25": 163.4,
-    "p50": 203.5,
-    "p75": 273.8,
-    "p90": 316.1
+    "p10": 143.6,
+    "p25": 155.3,
+    "p50": 210.7,
+    "p75": 261.9,
+    "p90": 313.9
    },
    "probCurve": [
     {
-     "line": 67.5,
+     "line": 102.5,
      "over": 0.98
     },
     {
-     "line": 72.5,
-     "over": 0.975
-    },
-    {
-     "line": 77.5,
-     "over": 0.9688
-    },
-    {
-     "line": 82.5,
-     "over": 0.9627
-    },
-    {
-     "line": 87.5,
-     "over": 0.9566
-    },
-    {
-     "line": 92.5,
-     "over": 0.9505
-    },
-    {
-     "line": 97.5,
-     "over": 0.9413
-    },
-    {
-     "line": 102.5,
-     "over": 0.932
-    },
-    {
      "line": 107.5,
-     "over": 0.9226
+     "over": 0.9739
     },
     {
      "line": 112.5,
-     "over": 0.9133
+     "over": 0.966
     },
     {
      "line": 117.5,
-     "over": 0.9039
+     "over": 0.9582
     },
     {
      "line": 122.5,
-     "over": 0.8901
+     "over": 0.9504
     },
     {
      "line": 127.5,
-     "over": 0.873
+     "over": 0.9386
     },
     {
      "line": 132.5,
-     "over": 0.8558
+     "over": 0.9266
     },
     {
      "line": 137.5,
-     "over": 0.8387
+     "over": 0.9146
     },
     {
      "line": 142.5,
-     "over": 0.8216
+     "over": 0.9027
     },
     {
      "line": 147.5,
-     "over": 0.8045
+     "over": 0.8499
     },
     {
      "line": 152.5,
-     "over": 0.7874
+     "over": 0.7856
     },
     {
      "line": 157.5,
-     "over": 0.7703
+     "over": 0.7399
     },
     {
      "line": 162.5,
-     "over": 0.7532
+     "over": 0.7174
     },
     {
      "line": 167.5,
-     "over": 0.7246
+     "over": 0.6949
     },
     {
      "line": 172.5,
-     "over": 0.6934
+     "over": 0.6723
     },
     {
      "line": 177.5,
-     "over": 0.6622
+     "over": 0.6498
     },
     {
      "line": 182.5,
-     "over": 0.631
+     "over": 0.6273
     },
     {
      "line": 187.5,
-     "over": 0.5998
+     "over": 0.6048
     },
     {
      "line": 192.5,
-     "over": 0.5686
+     "over": 0.5822
     },
     {
      "line": 197.5,
-     "over": 0.5374
+     "over": 0.5597
     },
     {
      "line": 202.5,
-     "over": 0.5062
+     "over": 0.5372
     },
     {
      "line": 207.5,
-     "over": 0.4857
+     "over": 0.5146
     },
     {
      "line": 212.5,
-     "over": 0.468
+     "over": 0.4914
     },
     {
      "line": 217.5,
-     "over": 0.4502
+     "over": 0.467
     },
     {
      "line": 222.5,
-     "over": 0.4324
+     "over": 0.4426
     },
     {
      "line": 227.5,
-     "over": 0.4147
+     "over": 0.4181
     },
     {
      "line": 232.5,
-     "over": 0.3969
+     "over": 0.3937
     },
     {
      "line": 237.5,
-     "over": 0.3791
+     "over": 0.3693
     },
     {
      "line": 242.5,
-     "over": 0.3614
+     "over": 0.3448
     },
     {
      "line": 247.5,
-     "over": 0.3436
+     "over": 0.3204
     },
     {
      "line": 252.5,
-     "over": 0.3258
+     "over": 0.296
     },
     {
      "line": 257.5,
-     "over": 0.3081
+     "over": 0.2715
     },
     {
      "line": 262.5,
-     "over": 0.2903
+     "over": 0.2483
     },
     {
      "line": 267.5,
-     "over": 0.2725
+     "over": 0.2339
     },
     {
      "line": 272.5,
-     "over": 0.2548
+     "over": 0.2195
     },
     {
      "line": 277.5,
-     "over": 0.237
+     "over": 0.2051
     },
     {
      "line": 282.5,
-     "over": 0.2192
+     "over": 0.1906
     },
     {
      "line": 287.5,
-     "over": 0.2015
+     "over": 0.1762
     },
     {
      "line": 292.5,
-     "over": 0.1837
+     "over": 0.1618
     },
     {
      "line": 297.5,
-     "over": 0.166
+     "over": 0.1474
     },
     {
      "line": 302.5,
-     "over": 0.1482
+     "over": 0.133
     },
     {
      "line": 307.5,
-     "over": 0.1305
+     "over": 0.1186
     },
     {
      "line": 312.5,
-     "over": 0.1127
+     "over": 0.1042
     },
     {
      "line": 317.5,
-     "over": 0.0965
+     "over": 0.0904
     },
     {
      "line": 322.5,
-     "over": 0.0844
+     "over": 0.0768
     },
     {
      "line": 327.5,
-     "over": 0.0722
+     "over": 0.0632
     },
     {
      "line": 332.5,
-     "over": 0.0601
+     "over": 0.0498
     },
     {
      "line": 337.5,
-     "over": 0.0486
+     "over": 0.0409
     },
     {
      "line": 342.5,
-     "over": 0.0407
+     "over": 0.032
     },
     {
      "line": 347.5,
-     "over": 0.0327
-    },
-    {
-     "line": 352.5,
-     "over": 0.0248
-    },
-    {
-     "line": 357.5,
-     "over": 0.02
+     "over": 0.0231
     }
    ],
    "refLine": 193.5,
-   "overProbAtRef": 0.5624,
+   "overProbAtRef": 0.5777,
    "lean": "over",
-   "strength": 11,
+   "strength": 13,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 219 passing yards \u2014 it gives Jalen a 56% chance to clear a 193.5-yard line.",
+   "verdict": "The model projects 216 passing yards \u2014 it gives Jalen a 58% chance to clear a 193.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "down",
-     "impact": -26.6,
+     "impact": -26.2,
      "label": "His offense throws about 27 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 27 yards."
+     "detail": "How often the team drops back nudges the projection down by about 26 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "up",
+     "impact": 19.0,
+     "label": "Los Angeles gives up 185 passing yards a game \u2014 2nd fewest in the NFL",
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 19 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 22.2,
+     "impact": 16.2,
      "label": "Averaging 218.0 passing yards over his last 3 games",
-     "detail": "That's down from 238.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 22 yards."
+     "detail": "That's down from 238.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
     },
     {
-     "group": "opp_defense",
-     "direction": "down",
-     "impact": -9.6,
-     "label": "Los Angeles gives up 185 passing yards a game \u2014 2nd fewest in the NFL",
-     "detail": "A matchup this stingy nudges the projection down by about 10 yards."
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 15.2,
+     "label": "12 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection up by about 15 yards."
     },
     {
-     "group": "home_away",
+     "group": "rest_schedule",
      "direction": "down",
-     "impact": -5.2,
-     "label": "On the road at Los Angeles",
-     "detail": "The road trip nudges the projection down by about 5 yards."
+     "impact": -6.0,
+     "label": "Standard rest \u2014 10 days between games",
+     "detail": "The rest edge versus Los Angeles nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -4.3,
+     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "detail": "The expected scoring script nudges the projection down by about 4 yards."
     }
    ],
    "actual": 240.0,
@@ -298,85 +276,85 @@
   },
   {
    "market": "pass_tds",
-   "projection": 1.0,
+   "projection": 0.9,
    "quantiles": {
     "p10": 0.0,
-    "p25": 0.3,
-    "p50": 0.9,
-    "p75": 1.7,
-    "p90": 2.5
+    "p25": 0.1,
+    "p50": 0.5,
+    "p75": 1.3,
+    "p90": 2.2
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.6608
+     "over": 0.5058
     },
     {
      "line": 1.5,
-     "over": 0.2884
+     "over": 0.1738
     },
     {
      "line": 2.5,
-     "over": 0.1019
+     "over": 0.0496
     },
     {
      "line": 3.5,
-     "over": 0.0274
+     "over": 0.008
     },
     {
      "line": 4.5,
-     "over": 0.0057
+     "over": 0.0012
     }
    ],
    "refLine": 1.5,
-   "overProbAtRef": 0.2884,
+   "overProbAtRef": 0.1738,
    "lean": "under",
-   "strength": 30,
-   "confidence": "low",
-   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
-   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Jalen a 29% chance to go over 1.5.",
+   "strength": 55,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model expects 0.9 touchdown passes \u2014 it gives Jalen a 17% chance to go over 1.5.",
    "factors": [
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.27,
+     "label": "12 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection down by about 0.27 touchdown passes."
+    },
     {
      "group": "rest_schedule",
      "direction": "down",
-     "impact": -0.25,
+     "impact": -0.24,
      "label": "Standard rest \u2014 10 days between games",
-     "detail": "The rest edge versus Los Angeles nudges the projection down by about 0.25 touchdown passes."
+     "detail": "The rest edge versus Los Angeles nudges the projection down by about 0.24 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "up",
-     "impact": 0.21,
+     "impact": 0.18,
      "label": "Los Angeles gives up 1 touchdown passes a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.21 touchdown passes."
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.18 touchdown passes."
     },
     {
      "group": "usage_role",
-     "direction": "up",
-     "impact": 0.16,
-     "label": "His offense throws about 27 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 0.16 touchdown passes."
-    },
-    {
-     "group": "weather",
      "direction": "down",
-     "impact": -0.07,
-     "label": "Indoor game \u2014 weather is a non-factor",
-     "detail": "Roof's closed, so wind and cold are off the table."
+     "impact": -0.15,
+     "label": "His offense throws about 27 passes a game",
+     "detail": "How often the team drops back nudges the projection down by about 0.15 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "down",
-     "impact": -0.04,
+     "impact": -0.15,
      "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
-     "detail": "The expected scoring script nudges the projection down by about 0.04 touchdown passes."
+     "detail": "The expected scoring script nudges the projection down by about 0.15 touchdown passes."
     },
     {
-     "group": "home_away",
-     "direction": "up",
-     "impact": 0.03,
-     "label": "On the road at Los Angeles",
-     "detail": "The road trip nudges the projection up by about 0.03 touchdown passes."
+     "group": "recent_form",
+     "direction": "down",
+     "impact": -0.03,
+     "label": "Averaging 1.0 touchdown passes over his last 3 games",
+     "detail": "That's down from 1.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.03 touchdown passes."
     }
    ],
    "actual": 0.0,
@@ -384,172 +362,184 @@
   },
   {
    "market": "rush_yds",
-   "projection": 27.1,
+   "projection": 25.9,
    "quantiles": {
-    "p10": 3.5,
-    "p25": 7.9,
-    "p50": 24.5,
-    "p75": 49.3,
-    "p90": 67.3
+    "p10": 0.8,
+    "p25": 7.0,
+    "p50": 20.3,
+    "p75": 42.1,
+    "p90": 68.3
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9171
+     "over": 0.7811
     },
     {
      "line": 5.0,
-     "over": 0.85
+     "over": 0.7191
     },
     {
      "line": 7.5,
-     "over": 0.7639
+     "over": 0.6655
     },
     {
      "line": 10.0,
-     "over": 0.7184
+     "over": 0.6245
     },
     {
      "line": 12.5,
-     "over": 0.6807
+     "over": 0.5853
     },
     {
      "line": 15.0,
-     "over": 0.6429
+     "over": 0.5473
     },
     {
      "line": 17.5,
-     "over": 0.6052
+     "over": 0.5102
     },
     {
      "line": 20.0,
-     "over": 0.5675
+     "over": 0.4738
     },
     {
      "line": 22.5,
-     "over": 0.5298
+     "over": 0.4497
     },
     {
      "line": 25.0,
-     "over": 0.4947
+     "over": 0.4276
     },
     {
      "line": 27.5,
-     "over": 0.4695
+     "over": 0.4056
     },
     {
      "line": 30.0,
-     "over": 0.4444
+     "over": 0.3834
     },
     {
      "line": 32.5,
-     "over": 0.4192
+     "over": 0.3612
     },
     {
      "line": 35.0,
-     "over": 0.3941
+     "over": 0.3388
     },
     {
      "line": 37.5,
-     "over": 0.3689
+     "over": 0.3161
     },
     {
      "line": 40.0,
-     "over": 0.3437
+     "over": 0.2931
     },
     {
      "line": 42.5,
-     "over": 0.3186
+     "over": 0.2716
     },
     {
      "line": 45.0,
-     "over": 0.2934
+     "over": 0.2597
     },
     {
      "line": 47.5,
-     "over": 0.2683
+     "over": 0.2477
     },
     {
      "line": 50.0,
-     "over": 0.2443
+     "over": 0.2355
     },
     {
      "line": 52.5,
-     "over": 0.2234
+     "over": 0.2232
     },
     {
      "line": 55.0,
-     "over": 0.2025
+     "over": 0.2107
     },
     {
      "line": 57.5,
-     "over": 0.1817
+     "over": 0.1978
     },
     {
      "line": 60.0,
-     "over": 0.1608
+     "over": 0.1847
     },
     {
      "line": 62.5,
-     "over": 0.1399
+     "over": 0.1713
     },
     {
      "line": 65.0,
-     "over": 0.1191
+     "over": 0.1575
     },
     {
      "line": 67.5,
-     "over": 0.0983
+     "over": 0.1432
     },
     {
      "line": 70.0,
-     "over": 0.0784
+     "over": 0.1289
     },
     {
      "line": 72.5,
-     "over": 0.0585
+     "over": 0.1143
     },
     {
      "line": 75.0,
-     "over": 0.0426
+     "over": 0.099
     },
     {
      "line": 77.5,
-     "over": 0.0296
+     "over": 0.0827
     },
     {
      "line": 80.0,
-     "over": 0.02
+     "over": 0.0713
+    },
+    {
+     "line": 82.5,
+     "over": 0.0594
+    },
+    {
+     "line": 85.0,
+     "over": 0.0465
+    },
+    {
+     "line": 87.5,
+     "over": 0.0413
     }
    ],
    "refLine": 30.5,
-   "overProbAtRef": 0.4394,
+   "overProbAtRef": 0.379,
    "lean": "under",
-   "strength": 10,
+   "strength": 21,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 27 rushing yards \u2014 it gives Jalen a 44% chance to clear a 30.5-yard line.",
+   "verdict": "The model projects 26 rushing yards \u2014 it gives Jalen a 38% chance to clear a 30.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 6.8,
+     "impact": 4.9,
      "label": "Getting 6.5 touches a game over his last 4",
-     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 7 yards."
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 5 yards."
     },
     {
      "group": "opp_defense",
-     "direction": "down",
-     "impact": -3.1,
+     "direction": "up",
+     "impact": 0.6,
      "label": "Los Angeles gives up 107 rushing yards a game \u2014 13th fewest in the NFL",
-     "detail": "A matchup this stingy nudges the projection down by about 3 yards."
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.6 rushing yards."
     },
     {
-     "group": "recent_form",
-     "direction": "down",
-     "impact": -0.7,
-     "label": "Averaging 31.7 rushing yards over his last 3 games",
-     "detail": "That's up from 18.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.7 rushing yards."
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.4,
+     "label": "12 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection up by about 0.4 rushing yards."
     }
    ],
    "actual": 8.0,
@@ -697,7 +687,7 @@
   {
    "week": 13,
    "market": "pass_tds",
-   "projection": 1.6,
+   "projection": 1.5,
    "refLine": 0.5,
    "lean": "over",
    "actual": 2.0,
@@ -706,7 +696,7 @@
   {
    "week": 13,
    "market": "pass_yds",
-   "projection": 225.4,
+   "projection": 222.9,
    "refLine": 182.5,
    "lean": "over",
    "actual": 230.0,
@@ -715,7 +705,7 @@
   {
    "week": 13,
    "market": "rush_yds",
-   "projection": 27.6,
+   "projection": 25.7,
    "refLine": 26.5,
    "lean": "under",
    "actual": 31.0,
@@ -724,7 +714,7 @@
   {
    "week": 12,
    "market": "pass_tds",
-   "projection": 1.8,
+   "projection": 1.7,
    "refLine": 1.5,
    "lean": "over",
    "actual": 1.0,
@@ -733,7 +723,7 @@
   {
    "week": 12,
    "market": "pass_yds",
-   "projection": 262.2,
+   "projection": 245.1,
    "refLine": 182.5,
    "lean": "over",
    "actual": 289.0,
@@ -742,7 +732,7 @@
   {
    "week": 12,
    "market": "rush_yds",
-   "projection": 20.5,
+   "projection": 19.4,
    "refLine": 23.5,
    "lean": "under",
    "actual": 33.0,
@@ -751,7 +741,7 @@
   {
    "week": 11,
    "market": "pass_tds",
-   "projection": 1.8,
+   "projection": 1.5,
    "refLine": 2.5,
    "lean": "under",
    "actual": 0.0,
@@ -760,7 +750,7 @@
   {
    "week": 11,
    "market": "pass_yds",
-   "projection": 220.4,
+   "projection": 217.8,
    "refLine": 231.5,
    "lean": "under",
    "actual": 135.0,

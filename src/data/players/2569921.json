@@ -10,210 +10,210 @@
  "props": [
   {
    "market": "rec_yds",
-   "projection": 63.7,
+   "projection": 58.6,
    "quantiles": {
-    "p10": 21.8,
-    "p25": 40.1,
-    "p50": 63.9,
-    "p75": 91.7,
-    "p90": 117.8
+    "p10": 0.0,
+    "p25": 44.3,
+    "p50": 62.7,
+    "p75": 88.1,
+    "p90": 109.9
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9443
+     "over": 0.8915
     },
     {
      "line": 5.0,
-     "over": 0.9385
+     "over": 0.8831
     },
     {
      "line": 7.5,
-     "over": 0.9328
+     "over": 0.8746
     },
     {
      "line": 10.0,
-     "over": 0.9271
+     "over": 0.8661
     },
     {
      "line": 12.5,
-     "over": 0.9213
+     "over": 0.8576
     },
     {
      "line": 15.0,
-     "over": 0.9156
+     "over": 0.8492
     },
     {
      "line": 17.5,
-     "over": 0.9099
+     "over": 0.8407
     },
     {
      "line": 20.0,
-     "over": 0.9041
+     "over": 0.8322
     },
     {
      "line": 22.5,
-     "over": 0.8943
+     "over": 0.8237
     },
     {
      "line": 25.0,
-     "over": 0.8737
+     "over": 0.8153
     },
     {
      "line": 27.5,
-     "over": 0.8532
+     "over": 0.8068
     },
     {
      "line": 30.0,
-     "over": 0.8327
+     "over": 0.7983
     },
     {
      "line": 32.5,
-     "over": 0.8122
+     "over": 0.7898
     },
     {
      "line": 35.0,
-     "over": 0.7917
+     "over": 0.7814
     },
     {
      "line": 37.5,
-     "over": 0.7712
+     "over": 0.7729
     },
     {
      "line": 40.0,
-     "over": 0.7506
+     "over": 0.7644
     },
     {
      "line": 42.5,
-     "over": 0.7246
+     "over": 0.7559
     },
     {
      "line": 45.0,
-     "over": 0.6984
+     "over": 0.7399
     },
     {
      "line": 47.5,
-     "over": 0.6722
+     "over": 0.706
     },
     {
      "line": 50.0,
-     "over": 0.6459
+     "over": 0.6721
     },
     {
      "line": 52.5,
-     "over": 0.6197
+     "over": 0.6382
     },
     {
      "line": 55.0,
-     "over": 0.5935
+     "over": 0.6044
     },
     {
      "line": 57.5,
-     "over": 0.5673
+     "over": 0.5705
     },
     {
      "line": 60.0,
-     "over": 0.541
+     "over": 0.5366
     },
     {
      "line": 62.5,
-     "over": 0.5148
+     "over": 0.5027
     },
     {
      "line": 65.0,
-     "over": 0.4902
+     "over": 0.4774
     },
     {
      "line": 67.5,
-     "over": 0.4677
+     "over": 0.4528
     },
     {
      "line": 70.0,
-     "over": 0.4452
+     "over": 0.4282
     },
     {
      "line": 72.5,
-     "over": 0.4227
+     "over": 0.4037
     },
     {
      "line": 75.0,
-     "over": 0.4002
+     "over": 0.3791
     },
     {
      "line": 77.5,
-     "over": 0.3776
+     "over": 0.3545
     },
     {
      "line": 80.0,
-     "over": 0.3551
+     "over": 0.3299
     },
     {
      "line": 82.5,
-     "over": 0.3326
+     "over": 0.3054
     },
     {
      "line": 85.0,
-     "over": 0.3101
+     "over": 0.2808
     },
     {
      "line": 87.5,
-     "over": 0.2876
+     "over": 0.2562
     },
     {
      "line": 90.0,
-     "over": 0.2651
+     "over": 0.2372
     },
     {
      "line": 92.5,
-     "over": 0.2453
+     "over": 0.22
     },
     {
      "line": 95.0,
-     "over": 0.2309
+     "over": 0.2028
     },
     {
      "line": 97.5,
-     "over": 0.2166
+     "over": 0.1856
     },
     {
      "line": 100.0,
-     "over": 0.2022
+     "over": 0.1684
     },
     {
      "line": 102.5,
-     "over": 0.1879
+     "over": 0.1512
     },
     {
      "line": 105.0,
-     "over": 0.1736
+     "over": 0.134
     },
     {
      "line": 107.5,
-     "over": 0.1592
+     "over": 0.1168
     },
     {
      "line": 110.0,
-     "over": 0.1449
+     "over": 0.0999
     },
     {
      "line": 112.5,
-     "over": 0.1305
+     "over": 0.0939
     },
     {
      "line": 115.0,
-     "over": 0.1162
+     "over": 0.088
     },
     {
      "line": 117.5,
-     "over": 0.1018
+     "over": 0.0821
     },
     {
      "line": 120.0,
-     "over": 0.0891
+     "over": 0.0761
     },
     {
      "line": 122.5,
-     "over": 0.0767
+     "over": 0.0702
     },
     {
      "line": 125.0,
@@ -221,74 +221,98 @@
     },
     {
      "line": 127.5,
-     "over": 0.0517
+     "over": 0.0583
     },
     {
      "line": 130.0,
-     "over": 0.043
+     "over": 0.0524
     },
     {
      "line": 132.5,
-     "over": 0.0348
+     "over": 0.0476
     },
     {
      "line": 135.0,
-     "over": 0.0267
+     "over": 0.0438
     },
     {
      "line": 137.5,
+     "over": 0.0399
+    },
+    {
+     "line": 140.0,
+     "over": 0.036
+    },
+    {
+     "line": 142.5,
+     "over": 0.0321
+    },
+    {
+     "line": 145.0,
+     "over": 0.0282
+    },
+    {
+     "line": 147.5,
+     "over": 0.0243
+    },
+    {
+     "line": 150.0,
+     "over": 0.0204
+    },
+    {
+     "line": 152.5,
      "over": 0.02
     }
    ],
    "refLine": 88.5,
-   "overProbAtRef": 0.2786,
+   "overProbAtRef": 0.2486,
    "lean": "under",
-   "strength": 44,
+   "strength": 50,
    "confidence": "high",
    "confidenceReason": "6 games of steady production make this range tight.",
-   "verdict": "The model projects 64 receiving yards \u2014 it gives Rashee a 28% chance to clear a 88.5-yard line.",
+   "verdict": "The model projects 59 receiving yards \u2014 it gives Rashee a 25% chance to clear a 88.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 31.1,
+     "impact": 27.3,
      "label": "Seeing 10.0 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 31 yards."
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 27 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 20.6,
+     "impact": 15.9,
      "label": "Averaging 90.3 receiving yards over his last 3 games",
-     "detail": "That's up from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 21 yards."
-    },
-    {
-     "group": "rest_schedule",
-     "direction": "down",
-     "impact": -7.2,
-     "label": "Extra rest \u2014 10 days since his last game",
-     "detail": "The rest edge versus Houston nudges the projection down by about 7 yards."
-    },
-    {
-     "group": "opp_defense",
-     "direction": "down",
-     "impact": -4.2,
-     "label": "Houston gives up 196 receiving yards a game \u2014 4th fewest in the NFL",
-     "detail": "A matchup this stingy nudges the projection down by about 4 yards."
-    },
-    {
-     "group": "weather",
-     "direction": "down",
-     "impact": -1.8,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection down by about 2 yards."
+     "detail": "That's up from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
     },
     {
      "group": "qb_situation",
      "direction": "down",
-     "impact": -1.6,
+     "impact": -6.1,
      "label": "Patrick Mahomes has made 12 starts this season",
-     "detail": "Stability under center nudges the projection down by about 2 yards."
+     "detail": "Stability under center nudges the projection down by about 6 yards."
+    },
+    {
+     "group": "rest_schedule",
+     "direction": "down",
+     "impact": -5.2,
+     "label": "Extra rest \u2014 10 days since his last game",
+     "detail": "The rest edge versus Houston nudges the projection down by about 5 yards."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -2.8,
+     "label": "Houston gives up 196 receiving yards a game \u2014 4th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "up",
+     "impact": 1.7,
+     "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
+     "detail": "The expected scoring script nudges the projection up by about 2 yards."
     }
    ],
    "actual": 34.0,
@@ -296,182 +320,173 @@
   },
   {
    "market": "receptions",
-   "projection": 6.5,
+   "projection": 6.0,
    "quantiles": {
-    "p10": 2.9,
-    "p25": 4.2,
-    "p50": 6.1,
-    "p75": 8.3,
-    "p90": 11.0
+    "p10": 2.5,
+    "p25": 3.6,
+    "p50": 5.3,
+    "p75": 7.4,
+    "p90": 9.8
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.9971
+     "over": 0.995
     },
     {
      "line": 1.0,
-     "over": 0.9858
+     "over": 0.9736
     },
     {
      "line": 1.5,
-     "over": 0.9858
+     "over": 0.9736
     },
     {
      "line": 2.0,
-     "over": 0.938
+     "over": 0.8976
     },
     {
      "line": 2.5,
-     "over": 0.938
+     "over": 0.8976
     },
     {
      "line": 3.0,
-     "over": 0.8408
+     "over": 0.7689
     },
     {
      "line": 3.5,
-     "over": 0.8408
+     "over": 0.7689
     },
     {
      "line": 4.0,
-     "over": 0.7106
+     "over": 0.6226
     },
     {
      "line": 4.5,
-     "over": 0.7106
+     "over": 0.6226
     },
     {
      "line": 5.0,
-     "over": 0.5811
+     "over": 0.4763
     },
     {
      "line": 5.5,
-     "over": 0.5811
+     "over": 0.4763
     },
     {
      "line": 6.0,
-     "over": 0.4495
+     "over": 0.342
     },
     {
      "line": 6.5,
-     "over": 0.4495
+     "over": 0.342
     },
     {
      "line": 7.0,
-     "over": 0.3267
+     "over": 0.2382
     },
     {
      "line": 7.5,
-     "over": 0.3267
+     "over": 0.2382
     },
     {
      "line": 8.0,
-     "over": 0.236
+     "over": 0.1672
     },
     {
      "line": 8.5,
-     "over": 0.236
+     "over": 0.1672
     },
     {
      "line": 9.0,
-     "over": 0.1716
+     "over": 0.1114
     },
     {
      "line": 9.5,
-     "over": 0.1716
+     "over": 0.1114
     },
     {
      "line": 10.0,
-     "over": 0.1199
+     "over": 0.0743
     },
     {
      "line": 10.5,
-     "over": 0.1199
+     "over": 0.0743
     },
     {
      "line": 11.0,
-     "over": 0.0829
+     "over": 0.0505
     },
     {
      "line": 11.5,
-     "over": 0.0829
+     "over": 0.0505
     },
     {
      "line": 12.0,
-     "over": 0.057
+     "over": 0.0298
     },
     {
      "line": 12.5,
-     "over": 0.057
+     "over": 0.0298
     },
     {
      "line": 13.0,
-     "over": 0.0373
+     "over": 0.017
     },
     {
      "line": 13.5,
-     "over": 0.0373
-    },
-    {
-     "line": 14.0,
-     "over": 0.0235
-    },
-    {
-     "line": 14.5,
-     "over": 0.0235
-    },
-    {
-     "line": 15.0,
-     "over": 0.0143
-    },
-    {
-     "line": 15.5,
-     "over": 0.0143
+     "over": 0.017
     }
    ],
    "refLine": 7.5,
-   "overProbAtRef": 0.3267,
+   "overProbAtRef": 0.2382,
    "lean": "under",
-   "strength": 35,
+   "strength": 52,
    "confidence": "high",
    "confidenceReason": "6 games of steady production make this range tight.",
-   "verdict": "The model projects 6.5 catches \u2014 a 33% chance to beat a 7.5-catch line.",
+   "verdict": "The model projects 6.0 catches \u2014 a 24% chance to beat a 7.5-catch line.",
    "factors": [
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 2.65,
+     "impact": 2.15,
      "label": "Averaging 7.3 catches over his last 3 games",
-     "detail": "That's up from 6.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2.6 catches."
+     "detail": "That's up from 6.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2.1 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 1.74,
+     "impact": 1.58,
      "label": "Seeing 10.0 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.7 catches."
-    },
-    {
-     "group": "weather",
-     "direction": "up",
-     "impact": 0.43,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.4 catches."
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.6 catches."
     },
     {
      "group": "game_environment",
      "direction": "down",
-     "impact": -0.34,
+     "impact": -0.37,
      "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
-     "detail": "The expected scoring script nudges the projection down by about 0.3 catches."
+     "detail": "The expected scoring script nudges the projection down by about 0.4 catches."
     },
     {
      "group": "opp_defense",
      "direction": "up",
-     "impact": 0.32,
+     "impact": 0.36,
      "label": "Houston gives up 18 catches a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.3 catches."
+     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.4 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.17,
+     "label": "Patrick Mahomes has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.2 catches."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.14,
+     "label": "Freezing kickoff \u2014 around 27 degrees",
+     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 4.0,
@@ -618,7 +633,7 @@
   {
    "week": 13,
    "market": "rec_yds",
-   "projection": 78.5,
+   "projection": 65.7,
    "refLine": 80.5,
    "lean": "under",
    "actual": 92.0,
@@ -627,7 +642,7 @@
   {
    "week": 13,
    "market": "receptions",
-   "projection": 7.4,
+   "projection": 6.8,
    "refLine": 6.5,
    "lean": "over",
    "actual": 8.0,
@@ -636,7 +651,7 @@
   {
    "week": 12,
    "market": "rec_yds",
-   "projection": 70.7,
+   "projection": 70.2,
    "refLine": 51.5,
    "lean": "over",
    "actual": 141.0,
@@ -654,7 +669,7 @@
   {
    "week": 11,
    "market": "rec_yds",
-   "projection": 66.5,
+   "projection": 64.4,
    "refLine": 80.5,
    "lean": "under",
    "actual": 38.0,
@@ -663,7 +678,7 @@
   {
    "week": 11,
    "market": "receptions",
-   "projection": 5.4,
+   "projection": 5.3,
    "refLine": 6.5,
    "lean": "under",
    "actual": 6.0,
@@ -672,7 +687,7 @@
   {
    "week": 9,
    "market": "rec_yds",
-   "projection": 81.2,
+   "projection": 72.8,
    "refLine": 71.5,
    "lean": "neutral",
    "actual": 80.0,
@@ -681,7 +696,7 @@
   {
    "week": 9,
    "market": "receptions",
-   "projection": 6.7,
+   "projection": 6.6,
    "refLine": 7.5,
    "lean": "under",
    "actual": 4.0,

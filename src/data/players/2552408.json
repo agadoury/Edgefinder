@@ -10,227 +10,230 @@
  "props": [
   {
    "market": "rec_yds",
-   "projection": 28.6,
+   "projection": 28.4,
    "quantiles": {
-    "p10": 4.6,
-    "p25": 13.7,
-    "p50": 25.1,
-    "p75": 47.6,
-    "p90": 70.1
+    "p10": 0.0,
+    "p25": 12.9,
+    "p50": 27.4,
+    "p75": 46.2,
+    "p90": 66.2
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9229
+     "over": 0.871
     },
     {
      "line": 5.0,
-     "over": 0.8936
+     "over": 0.8421
     },
     {
      "line": 7.5,
-     "over": 0.8522
+     "over": 0.8131
     },
     {
      "line": 10.0,
-     "over": 0.8108
+     "over": 0.7841
     },
     {
      "line": 12.5,
-     "over": 0.7694
+     "over": 0.7551
     },
     {
      "line": 15.0,
-     "over": 0.721
+     "over": 0.7143
     },
     {
      "line": 17.5,
-     "over": 0.6664
+     "over": 0.671
     },
     {
      "line": 20.0,
-     "over": 0.6119
+     "over": 0.6276
     },
     {
      "line": 22.5,
-     "over": 0.5573
+     "over": 0.5843
     },
     {
      "line": 25.0,
-     "over": 0.5028
+     "over": 0.5409
     },
     {
      "line": 27.5,
-     "over": 0.4736
+     "over": 0.4981
     },
     {
      "line": 30.0,
-     "over": 0.4458
+     "over": 0.465
     },
     {
      "line": 32.5,
-     "over": 0.418
+     "over": 0.4319
     },
     {
      "line": 35.0,
-     "over": 0.3902
+     "over": 0.3988
     },
     {
      "line": 37.5,
-     "over": 0.3623
+     "over": 0.3657
     },
     {
      "line": 40.0,
-     "over": 0.3345
+     "over": 0.3326
     },
     {
      "line": 42.5,
-     "over": 0.3067
+     "over": 0.2995
     },
     {
      "line": 45.0,
-     "over": 0.2789
+     "over": 0.2664
     },
     {
      "line": 47.5,
-     "over": 0.2511
+     "over": 0.2405
     },
     {
      "line": 50.0,
-     "over": 0.234
+     "over": 0.2217
     },
     {
      "line": 52.5,
-     "over": 0.2174
+     "over": 0.2028
     },
     {
      "line": 55.0,
-     "over": 0.2007
+     "over": 0.184
     },
     {
      "line": 57.5,
-     "over": 0.1841
+     "over": 0.1652
     },
     {
      "line": 60.0,
-     "over": 0.1674
+     "over": 0.1464
     },
     {
      "line": 62.5,
-     "over": 0.1508
+     "over": 0.1276
     },
     {
      "line": 65.0,
-     "over": 0.1342
+     "over": 0.1087
     },
     {
      "line": 67.5,
-     "over": 0.1175
+     "over": 0.0968
     },
     {
      "line": 70.0,
-     "over": 0.1009
+     "over": 0.0909
     },
     {
      "line": 72.5,
-     "over": 0.0943
+     "over": 0.0851
     },
     {
      "line": 75.0,
-     "over": 0.0882
+     "over": 0.0792
     },
     {
      "line": 77.5,
-     "over": 0.0822
+     "over": 0.0733
     },
     {
      "line": 80.0,
-     "over": 0.0762
+     "over": 0.0674
     },
     {
      "line": 82.5,
-     "over": 0.0701
+     "over": 0.0615
     },
     {
      "line": 85.0,
-     "over": 0.0641
+     "over": 0.0556
     },
     {
      "line": 87.5,
-     "over": 0.058
+     "over": 0.0498
     },
     {
      "line": 90.0,
-     "over": 0.052
+     "over": 0.0459
     },
     {
      "line": 92.5,
-     "over": 0.0474
+     "over": 0.0421
     },
     {
      "line": 95.0,
-     "over": 0.0434
+     "over": 0.0382
     },
     {
      "line": 97.5,
-     "over": 0.0394
+     "over": 0.0344
     },
     {
      "line": 100.0,
-     "over": 0.0355
+     "over": 0.0305
     },
     {
      "line": 102.5,
-     "over": 0.0315
+     "over": 0.0266
     },
     {
      "line": 105.0,
-     "over": 0.0276
+     "over": 0.0228
     },
     {
      "line": 107.5,
-     "over": 0.0236
-    },
-    {
-     "line": 110.0,
      "over": 0.02
     }
    ],
    "refLine": 42.5,
-   "overProbAtRef": 0.3067,
+   "overProbAtRef": 0.2995,
    "lean": "under",
-   "strength": 27,
+   "strength": 28,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 29 receiving yards \u2014 it gives Darren a 31% chance to clear a 42.5-yard line.",
+   "verdict": "The model projects 28 receiving yards \u2014 it gives Darren a 30% chance to clear a 42.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 17.9,
+     "impact": 14.4,
      "label": "Seeing 3.8 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 18 yards."
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 14 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 10.7,
+     "impact": 8.8,
      "label": "Averaging 45.7 receiving yards over his last 3 games",
-     "detail": "That's up from 36.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 11 yards."
+     "detail": "That's up from 36.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 9 yards."
     },
     {
      "group": "rest_schedule",
      "direction": "down",
-     "impact": -2.1,
+     "impact": -3.3,
      "label": "Missed 3 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 2 yards."
+     "detail": "The stop-start stretch nudges the projection down by about 3 yards."
     },
     {
      "group": "home_away",
      "direction": "down",
-     "impact": -0.9,
+     "impact": -2.0,
      "label": "On the road at New York",
-     "detail": "The road trip nudges the projection down by about 0.9 receiving yards."
+     "detail": "The road trip nudges the projection down by about 2 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -1.1,
+     "label": "Tua Tagovailoa has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 1 yards."
     },
     {
      "group": "opp_defense",
@@ -245,104 +248,118 @@
   },
   {
    "market": "receptions",
-   "projection": 2.5,
+   "projection": 2.4,
    "quantiles": {
     "p10": 0.6,
     "p25": 1.2,
-    "p50": 2.3,
-    "p75": 3.5,
-    "p90": 5.0
+    "p50": 2.2,
+    "p75": 3.4,
+    "p90": 4.9
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.9206
+     "over": 0.9169
     },
     {
      "line": 1.0,
-     "over": 0.6847
+     "over": 0.6787
     },
     {
      "line": 1.5,
-     "over": 0.6847
+     "over": 0.6787
     },
     {
      "line": 2.0,
-     "over": 0.44
+     "over": 0.4272
     },
     {
      "line": 2.5,
-     "over": 0.44
+     "over": 0.4272
     },
     {
      "line": 3.0,
-     "over": 0.2436
+     "over": 0.2347
     },
     {
      "line": 3.5,
-     "over": 0.2436
+     "over": 0.2347
     },
     {
      "line": 4.0,
-     "over": 0.1343
+     "over": 0.1263
     },
     {
      "line": 4.5,
-     "over": 0.1343
+     "over": 0.1263
     },
     {
      "line": 5.0,
-     "over": 0.0697
+     "over": 0.0646
     },
     {
      "line": 5.5,
-     "over": 0.0697
+     "over": 0.0646
     },
     {
      "line": 6.0,
-     "over": 0.0336
+     "over": 0.0299
     },
     {
      "line": 6.5,
-     "over": 0.0336
+     "over": 0.0299
     },
     {
      "line": 7.0,
-     "over": 0.0144
+     "over": 0.012
     },
     {
      "line": 7.5,
-     "over": 0.0144
+     "over": 0.012
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.44,
+   "overProbAtRef": 0.4272,
    "lean": "under",
-   "strength": 8,
+   "strength": 10,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 2.5 catches \u2014 a 44% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 2.4 catches \u2014 a 43% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 0.45,
+     "impact": 0.56,
      "label": "Seeing 3.8 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
+     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.6 catches."
     },
     {
      "group": "rest_schedule",
      "direction": "down",
-     "impact": -0.41,
+     "impact": -0.44,
      "label": "Missed 3 of the last 5 weeks",
      "detail": "The stop-start stretch nudges the projection down by about 0.4 catches."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 0.36,
+     "impact": 0.41,
      "label": "Averaging 3.0 catches over his last 3 games",
      "detail": "That's up from 3.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.4 catches."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "down",
+     "impact": -0.14,
+     "label": "Tua Tagovailoa has made 12 starts this season",
+     "detail": "Stability under center nudges the projection down by about 0.1 catches."
+    },
+    {
+     "group": "opp_defense",
+     "direction": "down",
+     "impact": -0.11,
+     "label": "New York gives up 19 catches a game \u2014 7th fewest in the NFL",
+     "detail": "A matchup this stingy nudges the projection down by about 0.1 catches."
     }
    ],
    "actual": 1.0,
@@ -489,7 +506,7 @@
   {
    "week": 13,
    "market": "rec_yds",
-   "projection": 29.5,
+   "projection": 31.4,
    "refLine": 29.5,
    "lean": "neutral",
    "actual": 47.0,
@@ -498,16 +515,16 @@
   {
    "week": 13,
    "market": "receptions",
-   "projection": 3.1,
+   "projection": 2.8,
    "refLine": 2.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 2.0,
    "result": "under"
   },
   {
    "week": 6,
    "market": "rec_yds",
-   "projection": 35.3,
+   "projection": 34.7,
    "refLine": 46.5,
    "lean": "under",
    "actual": 12.0,
@@ -525,7 +542,7 @@
   {
    "week": 5,
    "market": "rec_yds",
-   "projection": 33.2,
+   "projection": 35.3,
    "refLine": 29.5,
    "lean": "neutral",
    "actual": 78.0,
@@ -534,7 +551,7 @@
   {
    "week": 5,
    "market": "receptions",
-   "projection": 4.0,
+   "projection": 4.2,
    "refLine": 2.5,
    "lean": "over",
    "actual": 5.0,
@@ -543,7 +560,7 @@
   {
    "week": 4,
    "market": "rec_yds",
-   "projection": 20.1,
+   "projection": 20.8,
    "refLine": 40.5,
    "lean": "under",
    "actual": 27.0,
@@ -552,7 +569,7 @@
   {
    "week": 4,
    "market": "receptions",
-   "projection": 2.9,
+   "projection": 3.0,
    "refLine": 4.5,
    "lean": "under",
    "actual": 3.0,

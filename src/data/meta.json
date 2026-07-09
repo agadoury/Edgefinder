@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T16:42:03Z",
+ "generatedAt": "2026-07-09T19:09:17Z",
  "season": 2025,
  "week": 14,
  "mode": "backtest_replay",
@@ -68,231 +68,231 @@
   "byMarket": {
    "pass_yds": {
     "n": 435,
-    "mae": 59.3,
+    "mae": 56.77,
     "baselineMae": 69.17,
-    "coverage80": 0.846,
-    "strongCallHitRate": 0.9,
+    "coverage80": 0.821,
+    "strongCallHitRate": 1.0,
     "strongCallN": 10,
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.24,
-      "actual": 0.243,
-      "n": 70
+      "predicted": 0.226,
+      "actual": 0.213,
+      "n": 75
      },
      {
       "bucketMid": 0.35,
       "predicted": 0.352,
-      "actual": 0.355,
-      "n": 76
+      "actual": 0.351,
+      "n": 77
      },
      {
       "bucketMid": 0.45,
-      "predicted": 0.453,
-      "actual": 0.514,
-      "n": 74
+      "predicted": 0.455,
+      "actual": 0.475,
+      "n": 80
      },
      {
       "bucketMid": 0.55,
-      "predicted": 0.552,
-      "actual": 0.478,
-      "n": 90
+      "predicted": 0.549,
+      "actual": 0.543,
+      "n": 70
      },
      {
       "bucketMid": 0.65,
-      "predicted": 0.651,
-      "actual": 0.694,
-      "n": 62
+      "predicted": 0.643,
+      "actual": 0.667,
+      "n": 66
      },
      {
       "bucketMid": 0.85,
-      "predicted": 0.787,
-      "actual": 0.841,
-      "n": 63
+      "predicted": 0.791,
+      "actual": 0.866,
+      "n": 67
      }
     ]
    },
    "pass_tds": {
     "n": 435,
-    "mae": 0.85,
+    "mae": 0.86,
     "baselineMae": 0.95,
-    "coverage80": 0.789,
-    "strongCallHitRate": 0.872,
-    "strongCallN": 47,
+    "coverage80": 0.809,
+    "strongCallHitRate": 0.939,
+    "strongCallN": 49,
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.189,
-      "actual": 0.192,
-      "n": 151
+      "predicted": 0.179,
+      "actual": 0.176,
+      "n": 136
      },
      {
       "bucketMid": 0.35,
-      "predicted": 0.352,
-      "actual": 0.349,
-      "n": 63
+      "predicted": 0.348,
+      "actual": 0.303,
+      "n": 76
      },
      {
       "bucketMid": 0.45,
-      "predicted": 0.451,
-      "actual": 0.574,
+      "predicted": 0.447,
+      "actual": 0.553,
       "n": 47
      },
      {
       "bucketMid": 0.55,
-      "predicted": 0.544,
-      "actual": 0.59,
-      "n": 39
+      "predicted": 0.546,
+      "actual": 0.55,
+      "n": 40
      },
      {
       "bucketMid": 0.65,
-      "predicted": 0.648,
-      "actual": 0.556,
-      "n": 45
+      "predicted": 0.658,
+      "actual": 0.788,
+      "n": 33
      },
      {
       "bucketMid": 0.85,
-      "predicted": 0.803,
-      "actual": 0.833,
-      "n": 90
+      "predicted": 0.804,
+      "actual": 0.777,
+      "n": 103
      }
     ]
    },
    "rush_yds": {
     "n": 1226,
-    "mae": 18.7,
+    "mae": 18.59,
     "baselineMae": 19.32,
-    "coverage80": 0.834,
-    "strongCallHitRate": 0.889,
-    "strongCallN": 9,
+    "coverage80": 0.83,
+    "strongCallHitRate": 1.0,
+    "strongCallN": 1,
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.238,
-      "actual": 0.328,
-      "n": 125
+      "predicted": 0.254,
+      "actual": 0.193,
+      "n": 57
      },
      {
       "bucketMid": 0.35,
       "predicted": 0.359,
-      "actual": 0.31,
-      "n": 232
+      "actual": 0.347,
+      "n": 317
      },
      {
       "bucketMid": 0.45,
-      "predicted": 0.451,
-      "actual": 0.441,
-      "n": 397
+      "predicted": 0.445,
+      "actual": 0.461,
+      "n": 499
      },
      {
       "bucketMid": 0.55,
-      "predicted": 0.549,
-      "actual": 0.55,
-      "n": 222
+      "predicted": 0.546,
+      "actual": 0.573,
+      "n": 232
      },
      {
       "bucketMid": 0.65,
-      "predicted": 0.644,
-      "actual": 0.582,
-      "n": 170
+      "predicted": 0.636,
+      "actual": 0.6,
+      "n": 110
      },
      {
       "bucketMid": 0.85,
-      "predicted": 0.744,
-      "actual": 0.637,
-      "n": 80
+      "predicted": 0.723,
+      "actual": 0.909,
+      "n": 11
      }
     ]
    },
    "rec_yds": {
     "n": 2766,
-    "mae": 18.4,
+    "mae": 18.36,
     "baselineMae": 19.25,
-    "coverage80": 0.829,
-    "strongCallHitRate": 0.65,
-    "strongCallN": 20,
+    "coverage80": 0.903,
+    "strongCallHitRate": 0.889,
+    "strongCallN": 9,
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.231,
-      "actual": 0.249,
-      "n": 245
+      "predicted": 0.243,
+      "actual": 0.211,
+      "n": 209
      },
      {
       "bucketMid": 0.35,
       "predicted": 0.358,
-      "actual": 0.285,
-      "n": 397
+      "actual": 0.307,
+      "n": 398
      },
      {
       "bucketMid": 0.45,
       "predicted": 0.452,
-      "actual": 0.429,
-      "n": 869
+      "actual": 0.419,
+      "n": 911
      },
      {
       "bucketMid": 0.55,
       "predicted": 0.547,
-      "actual": 0.538,
-      "n": 660
+      "actual": 0.539,
+      "n": 670
      },
      {
       "bucketMid": 0.65,
-      "predicted": 0.646,
+      "predicted": 0.644,
       "actual": 0.592,
-      "n": 466
+      "n": 448
      },
      {
       "bucketMid": 0.85,
-      "predicted": 0.744,
-      "actual": 0.651,
-      "n": 129
+      "predicted": 0.741,
+      "actual": 0.677,
+      "n": 130
      }
     ]
    },
    "receptions": {
     "n": 2766,
-    "mae": 1.38,
+    "mae": 1.39,
     "baselineMae": 1.41,
-    "coverage80": 0.817,
-    "strongCallHitRate": 0.814,
-    "strongCallN": 86,
+    "coverage80": 0.809,
+    "strongCallHitRate": 0.872,
+    "strongCallN": 94,
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.221,
-      "actual": 0.225,
-      "n": 435
+      "predicted": 0.218,
+      "actual": 0.236,
+      "n": 444
      },
      {
       "bucketMid": 0.35,
-      "predicted": 0.353,
-      "actual": 0.35,
-      "n": 457
+      "predicted": 0.351,
+      "actual": 0.355,
+      "n": 414
      },
      {
       "bucketMid": 0.45,
-      "predicted": 0.45,
-      "actual": 0.47,
-      "n": 517
+      "predicted": 0.452,
+      "actual": 0.458,
+      "n": 552
      },
      {
       "bucketMid": 0.55,
-      "predicted": 0.546,
-      "actual": 0.515,
-      "n": 487
+      "predicted": 0.547,
+      "actual": 0.511,
+      "n": 495
      },
      {
       "bucketMid": 0.65,
-      "predicted": 0.647,
-      "actual": 0.569,
-      "n": 441
+      "predicted": 0.649,
+      "actual": 0.57,
+      "n": 407
      },
      {
       "bucketMid": 0.85,
-      "predicted": 0.783,
-      "actual": 0.734,
-      "n": 429
+      "predicted": 0.78,
+      "actual": 0.722,
+      "n": 454
      }
     ]
    }
