@@ -49,8 +49,21 @@ RECENCY_HALF_LIFE: float | None = 3.0
 
 #: M11 log1p target transform for the quantile models of these markets
 #: (quantiles are equivariant under monotone maps, so back-transforming
-#: with expm1 is exact). Membership decided on 2024 validation only.
-LOG1P_QUANTILE_MARKETS: frozenset[str] = frozenset()
+#: with expm1 is exact). Membership decided on 2024 validation only
+#: (validation.py --exp quantreg): pass_yds improved (CRPS -0.38%, MAE
+#: -0.65%); rush_yds (+1.86% CRPS) and rec_yds (+0.36% CRPS) regressed
+#: and stay untransformed.
+LOG1P_QUANTILE_MARKETS: frozenset[str] = frozenset({"pass_yds"})
+
+#: M11 early stopping (validation_fraction=0.15, n_iter_no_change=25) for
+#: the QUANTILE models of these markets only (the mean model never
+#: early-stops — the all-model ES variant hurt the pass_tds mean/lambda
+#: on 2024). Membership from the 2024 marginal-effect run, kept where
+#: dCRPS <= 0 and dMAE <= +0.1% given the rest of the M11 config:
+#: pass_yds (-1.42% MAE, -0.56% CRPS) and rush_yds (-0.12%, -0.09%) kept;
+#: pass_tds (+1.33%/+1.35%), rec_yds (dCRPS +0.07%) and receptions
+#: (dMAE +0.21%) dropped.
+QUANTILE_ES_MARKETS: frozenset[str] = frozenset({"pass_yds", "rush_yds"})
 
 #: M11 depth grids for the per-loss probes (scored on the 2024 holdout:
 #: MAE for the mean model, mean pinball at q10/q90 for the quantile models)
@@ -186,7 +199,7 @@ def train_market(
     train_seasons: tuple[int, ...] = TRAIN_SEASONS,
     half_life: float | None = RECENCY_HALF_LIFE,
     log1p: bool | None = None,
-    early_stopping: bool = False,
+    early_stopping: bool | None = None,
     mean_depth: int | None = None,
     quantile_depth: int | None = None,
 ) -> MarketModel:
@@ -197,12 +210,18 @@ def train_market(
     the quantile depth by mean pinball at q=0.10/0.90 (QUANTILE_DEPTH_GRID).
     The winners are refit on all ``train_seasons``. Recency weights (M8)
     and the log1p quantile transform (M11) apply to probes and final fits
-    alike. Explicit ``mean_depth``/``quantile_depth`` skip the probes —
-    used by the validation harness to isolate single factors.
+    alike. ``early_stopping`` regularizes the QUANTILE models only (M11's
+    scope) — the mean model always trains without it, because the 2024
+    experiment showed ES helping the quantile losses while nudging the
+    count-market mean (and therefore the NB lambda) the wrong way.
+    Explicit ``mean_depth``/``quantile_depth`` skip the probes — used by
+    the validation harness to isolate single factors.
     """
     features = list(FEATURES) if features is None else list(features)
     if log1p is None:
         log1p = market in LOG1P_QUANTILE_MARKETS
+    if early_stopping is None:
+        early_stopping = market in QUANTILE_ES_MARKETS
     rows = frame[training_mask(frame, train_seasons)]
     X, y = rows[features], rows["y"].to_numpy()
     w = recency_weights(rows["season"], half_life)
@@ -217,7 +236,7 @@ def train_market(
         mean_depth, best_mae = 5, math.inf
         if can_probe:
             for depth in MEAN_DEPTH_GRID:
-                probe = _hgb("squared_error", depth, early_stopping=early_stopping)
+                probe = _hgb("squared_error", depth)
                 probe.fit(Xf, yf, sample_weight=wf)
                 mae = mean_absolute_error(yh, probe.predict(Xh))
                 if mae < best_mae:
@@ -241,8 +260,7 @@ def train_market(
                 if pin < best_pin:
                     quantile_depth, best_pin = depth, pin
 
-    mean_model = _hgb("squared_error", mean_depth,
-                      early_stopping=early_stopping).fit(X, y, sample_weight=w)
+    mean_model = _hgb("squared_error", mean_depth).fit(X, y, sample_weight=w)
     quantile_models = fit_quantile_models(
         X, y, quantile_depth, weights=w, log1p=log1p,
         early_stopping=early_stopping,

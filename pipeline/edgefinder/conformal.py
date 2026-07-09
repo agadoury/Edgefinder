@@ -209,7 +209,7 @@ def _fit_platt(p: np.ndarray, o: np.ndarray) -> tuple[float, float]:
     from sklearn.linear_model import LogisticRegression
 
     x = _logit(np.clip(p, 1e-4, 1.0 - 1e-4)).reshape(-1, 1)
-    lr = LogisticRegression(penalty=None, solver="lbfgs", max_iter=1000)
+    lr = LogisticRegression(C=np.inf, solver="lbfgs", max_iter=1000)
     lr.fit(x, o.astype(int))
     return float(lr.intercept_[0]), float(lr.coef_[0][0])
 
@@ -276,8 +276,8 @@ def fit_conformal(
         w = recency_weights(tr["season"], half_life)
 
         if market in COUNT_MARKETS:
-            mean_model = _hgb("squared_error", depth,
-                              early_stopping=early_stopping).fit(
+            # the mean model never early-stops (mirrors train.train_market)
+            mean_model = _hgb("squared_error", depth).fit(
                 X, y_tr, sample_weight=w)
             mean_pred = np.clip(mean_model.predict(Xc), 0.0, None)
             qpred = None
