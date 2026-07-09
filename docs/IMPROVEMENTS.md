@@ -1,5 +1,7 @@
 # EdgeFinder — Prioritized Improvement Roadmap
 
+> **Status (2026-07-09):** the Top 10 below is fully shipped — conformal interval calibration, pass-TD lambda fix, discrete receptions layer, portal tooltips, P(over) column + lean-consistent deltas, strength tiers, My Players watchlist, your-book's-line input, model fair line + alt-line ladder, Pick 'Em Before You Peek, game hub pages, the filtered-record fix, and live coverage copy.
+
 *Synthesis of four expert lens reviews: **engagement-loops**, **ux-friction**, **ml-accuracy**, **predictive-value**. Every item below traces to a lens report; merged duplicates note all sources. Compiled 2026-07-09.*
 
 ---

@@ -31,6 +31,10 @@ export function InfoTip({
   const id = useId();
   const btnRef = useRef<HTMLButtonElement>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
+  // Whether the tip was open when the current press started. A tap fires
+  // focus (which opens) before click — resolving click against the pre-press
+  // state keeps "tap to open, tap again to close" honest on touch.
+  const pressWasOpen = useRef<boolean | null>(null);
 
   // Callback ref: position the bubble the moment it hits the DOM (no
   // setState-in-effect, no flash — it mounts hidden and is placed once
@@ -79,8 +83,14 @@ export function InfoTip({
   return (
     <span
       className="relative inline-flex align-middle"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      // Hover only for real mice — on touch, the synthesized mouseenter would
+      // open the tip an instant before the tap's click toggled it shut again.
+      onPointerEnter={(e) => {
+        if (e.pointerType === "mouse") setOpen(true);
+      }}
+      onPointerLeave={(e) => {
+        if (e.pointerType === "mouse") setOpen(false);
+      }}
     >
       <button
         ref={btnRef}
@@ -88,7 +98,14 @@ export function InfoTip({
         aria-label={label}
         aria-describedby={open ? id : undefined}
         aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
+        onPointerDown={() => {
+          pressWasOpen.current = open;
+        }}
+        onClick={() => {
+          const wasOpen = pressWasOpen.current;
+          pressWasOpen.current = null;
+          setOpen(wasOpen === null ? (v) => !v : !wasOpen);
+        }}
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
         className="inline-flex h-4 w-4 items-center justify-center rounded-full text-ink3 transition-colors hover:text-accent2"

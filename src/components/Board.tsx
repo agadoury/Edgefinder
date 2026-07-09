@@ -474,7 +474,7 @@ export function Board({
                     </td>
                     <td className="px-3 py-3 font-medium text-ink2">{MARKET_SHORT[r.market]}</td>
                     <td className="px-3 py-3">
-                      <span className="flex items-center gap-1.5">
+                      <span className="flex items-center gap-1.5 whitespace-nowrap">
                         <span className="tnum text-[15px] font-bold">{fmtStat(r.projection)}</span>
                         <span className="tnum text-xs text-ink3">vs {fmtLine(r.refLine)}</span>
                         <span className={`tnum text-[11px] font-semibold ${leanTone(r.lean)}`}>
