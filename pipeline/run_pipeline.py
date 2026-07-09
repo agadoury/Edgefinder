@@ -21,6 +21,7 @@ PIPELINE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(PIPELINE_DIR))
 
 from edgefinder import backtest as bt  # noqa: E402
+from edgefinder import conformal  # noqa: E402
 from edgefinder import export as ex  # noqa: E402
 from edgefinder import features, load, train, validate  # noqa: E402
 from edgefinder.download import download_all  # noqa: E402
@@ -55,28 +56,36 @@ def main() -> int:
 
     print("== train ==")
     models = train.load_models() if not args.retrain else {}
-    if set(models) != set(features.MARKETS):
+    retrained = set(models) != set(features.MARKETS)
+    if retrained:
         models = train.train_all(frames)
     else:
         print("using cached models from", train.MODELS_DIR)
+
+    print("== conformal calibration (2024 split) ==")
+    if retrained or not conformal.params_path().exists():
+        calib = conformal.fit_conformal(frames, models)
+    else:
+        calib = conformal.load_calibrator()
+        print("using cached conformal params from", conformal.params_path())
 
     print("== demo week ==")
     demo_week = ex.choose_demo_week(pw, games, args.demo_week)
     print(f"demo week: 2025 week {demo_week}")
 
     print("== backtest ==")
-    by_market = bt.run_backtest(frames, models, demo_week)
+    by_market = bt.run_backtest(frames, models, demo_week, calib)
     bt.print_report(by_market)
     thresholds = train.load_conf_thresholds()
 
     print("\n== export ==")
     counts = ex.run_export(pw, games, frames, models, by_market, demo_week,
-                           thresholds, export_dir=args.export_dir)
+                           thresholds, calib, export_dir=args.export_dir)
 
     print("\n== validate ==")
     rc = validate.validate(args.export_dir)
     ex.write_report(by_market, counts, demo_week, rc == 0,
-                    export_dir=args.export_dir)
+                    export_dir=args.export_dir, calib=calib)
     print(f"\npipeline finished in {time.time() - t0:.0f}s "
           f"({counts['games']} games / {counts['players']} players / "
           f"{counts['props']} props); validation "

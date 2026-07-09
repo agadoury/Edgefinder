@@ -41,9 +41,22 @@ python3 -m pytest pipeline/tests            # leakage-sensitive unit tests
 * **Models.** Per market: `HistGradientBoostingRegressor` mean model +
   quantile models at 0.05..0.95 (row-sorted for monotonicity), trained on
   2021-2024. Projection = 0.5·(mean + p50), floored at 0. Yards curves are
-  a piecewise-linear CDF through the quantiles with exponential-ish tails;
-  receptions sample the CDF on 0.5 steps; pass TDs use
-  Poisson(λ = max(0.05, projection)) at half-lines.
+  a piecewise-linear CDF through the (calibrated) quantiles with
+  exponential-ish tails; count markets (receptions, pass TDs) use a
+  calibrated discrete Poisson/negative-binomial layer with
+  λ = mean-model expectation × a 2024-fit scale (NOT the mean/median
+  blend, whose count median ran ~0.15 TD low).
+* **Interval calibration (split conformal, 2024-only).** A second copy of
+  each market's models is fit on 2021-2023 and scored on held-out 2024
+  (features are as-of, so those predictions are walk-forward); the fixed
+  adjustments are then applied unchanged to the 2025 backtest and the demo
+  slate — conformity scores never come from 2025. Yardage markets get
+  per-quantile additive deltas (finite-sample-corrected residual
+  quantiles, re-sorted and floored at 0); count markets get the discrete
+  layer above plus a mid-PIT conformal level map, with quantiles/curves
+  read off the continuity-corrected CDF on half-integer support — so low
+  quantiles vary by player instead of collapsing to 0, and integer lines
+  exclude the push mass. Params: `pipeline/data/models/conformal.json`.
 * **refLine** = 50/50 blend of trailing-5-played median and season-to-date
   median, snapped to a .5 line ("what a typical fan expects").
   `overProbAtRef` is read off the exported curve itself, so the contract's

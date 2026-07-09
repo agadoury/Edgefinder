@@ -4,13 +4,16 @@ Each market gets a squared-error HistGradientBoostingRegressor (point) and
 seven quantile models (q = 0.05 ... 0.95). Quantiles are made monotone by
 per-row sorting; the final projection is 0.5 * (mean + p50), floored at 0.
 
-Probability curves:
+The curve builders here are the RAW (uncalibrated) primitives:
     yards      -- piecewise-linear CDF through the quantile points with
                   exponential-ish tails, sampled on the market's line step
     receptions -- same CDF machinery sampled on 0.5 steps
-    pass_tds   -- Poisson(lambda = max(0.05, projection)) at half-lines
-`overProbAtRef` is always read off the exported curve itself, so the
-contract's interpolation invariant holds by construction.
+    pass_tds   -- Poisson(lambda) survival at half-lines
+Production quantiles/curves go through conformal.Calibrator (split
+conformal, fit on held-out 2024), which reuses yards_prob_curve on the
+adjusted quantiles and replaces the count-market curves with a calibrated
+discrete layer. `overProbAtRef` is always read off the exported curve
+itself, so the contract's interpolation invariant holds by construction.
 """
 
 from __future__ import annotations

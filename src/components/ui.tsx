@@ -2,6 +2,7 @@
 import type { Confidence, Lean, PropResult } from "../lib/data";
 import { initials, monogramInk, team } from "../lib/teams";
 import { fmtStat, leanLabel, resultLabel } from "../lib/format";
+import { strengthTier } from "../lib/tiers";
 import { ArrowDown, ArrowUp, Check, Minus, X } from "lucide-react";
 
 export function MonogramAvatar({
@@ -73,7 +74,11 @@ export function ConfidenceBadge({ confidence }: { confidence: Confidence }) {
   );
 }
 
-/** Meter: gradient fill on a same-ramp dim track. 0–100 = how hard the model leans. */
+/**
+ * Meter: gradient fill on a same-ramp dim track. 0–100 = how hard the model
+ * leans. A naked number means nothing to a casual, so the value always ships
+ * with its plain-English tier: "Strong · 64".
+ */
 export function StrengthMeter({
   value,
   showValue = true,
@@ -83,6 +88,7 @@ export function StrengthMeter({
   showValue?: boolean;
   width?: number;
 }) {
+  const tier = strengthTier(value);
   return (
     <span className="inline-flex items-center gap-2">
       <span
@@ -90,8 +96,8 @@ export function StrengthMeter({
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={value}
-        aria-label={`Lean strength ${value} out of 100`}
-        className="relative inline-block h-1.5 overflow-hidden rounded-full bg-accentdeep/20"
+        aria-label={`Lean strength ${value} out of 100 — ${tier.label}`}
+        className="relative inline-block h-1.5 shrink-0 overflow-hidden rounded-full bg-accentdeep/20"
         style={{ width }}
       >
         <span
@@ -99,7 +105,11 @@ export function StrengthMeter({
           style={{ width: `${Math.max(3, value)}%` }}
         />
       </span>
-      {showValue && <span className="tnum text-xs font-semibold text-ink2">{value}</span>}
+      {showValue && (
+        <span className="text-xs font-semibold whitespace-nowrap text-ink2">
+          {tier.label} · <span className="tnum">{value}</span>
+        </span>
+      )}
     </span>
   );
 }

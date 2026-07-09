@@ -72,8 +72,9 @@ export default function Home() {
             <dt className="flex items-center gap-1 text-xs text-ink3">
               Range coverage
               <InfoTip label="What does range coverage mean?">
-                About 8 times out of 10, the real number lands inside the projected range we show
-                on every player page.
+                About {Math.round((passYds?.coverage80 ?? 0) * 10)} times out of 10 this season,
+                the real passing-yards number landed inside the projected range we show on every
+                player page. Other stats vary — the report card has each one.
               </InfoTip>
             </dt>
             <dd className="tnum mt-1 text-2xl font-bold">
@@ -128,11 +129,15 @@ export default function Home() {
       <section aria-label="This week's games" className="mt-12">
         <div className="mb-4 flex items-baseline justify-between">
           <h2 className="text-lg font-bold tracking-tight">Week {meta.week} slate</h2>
-          <span className="text-xs text-ink3">All times Eastern</span>
+          <span className="text-xs text-ink3">Tap a game for its calls · all times Eastern</span>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {slate.games.map((g) => (
-            <GameCard key={g.gameId} game={g} />
+            <GameCard
+              key={g.gameId}
+              game={g}
+              callCount={slate.props.filter((p) => p.gameId === g.gameId).length}
+            />
           ))}
         </div>
       </section>

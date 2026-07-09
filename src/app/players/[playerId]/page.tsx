@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, CalendarDays, MapPin } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarDays, MapPin } from "lucide-react";
 import {
   getGame,
   getHeadshots,
@@ -15,6 +15,8 @@ import { PlayerAvatar } from "../../../components/PlayerAvatar";
 import { WeatherChip } from "../../../components/GameCard";
 import { MarketCard } from "../../../components/MarketCard";
 import { Receipts } from "../../../components/Receipts";
+import { StarButton } from "../../../components/Star";
+import { PickemPanel } from "../../../components/Pickem";
 import { InfoTip } from "../../../components/Tooltip";
 
 export function generateStaticParams() {
@@ -76,7 +78,10 @@ export default async function PlayerPage({
           src={getHeadshots()[player.playerId]}
         />
         <div className="min-w-0 flex-1">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{player.name}</h1>
+          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            {player.name}
+            <StarButton playerId={player.playerId} name={player.name} size={20} className="mt-1" />
+          </h1>
           <p className="mt-1 text-sm text-ink2">
             {player.pos} · {teamFullName(player.team)}{" "}
             <span className="text-ink3">
@@ -85,6 +90,14 @@ export default async function PlayerPage({
             </span>
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-2">
+            <Link
+              href={`/games/${player.gameId}`}
+              className="chip font-semibold transition-colors hover:border-accent/40 hover:text-ink"
+              aria-label={`All calls for ${game.away} at ${game.home}`}
+            >
+              {game.away} @ {game.home} · game hub
+              <ArrowRight className="h-3 w-3 text-accent2" aria-hidden />
+            </Link>
             <span className="chip">
               <CalendarDays className="h-3 w-3 text-accent2" aria-hidden />
               {fmtKickoff(game.kickoff)}
@@ -112,15 +125,22 @@ export default async function PlayerPage({
         </div>
       </header>
 
+      {/* ---------- pick 'em ---------- */}
+      <div className="mt-8">
+        <PickemPanel />
+      </div>
+
       {/* ---------- market cards ---------- */}
-      <div className="mt-8 grid gap-6">
+      <div className="mt-6 grid gap-6">
         {player.props.map((prop) => (
           <MarketCard
             key={prop.market}
             prop={prop}
             market={getMarketMeta(prop.market)}
             first={first}
+            playerId={player.playerId}
             recentGames={player.recentGames}
+            coverage80={meta.backtest.byMarket[prop.market]?.coverage80 ?? null}
           />
         ))}
 

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowDown, ArrowUp, ArrowUpDown, EyeOff } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, EyeOff, Star } from "lucide-react";
 import type { Game, MarketMeta, SlateProp } from "../lib/data";
 import {
   MARKET_SHORT,
@@ -14,6 +14,8 @@ import {
   fmtStat,
   leanLabel,
 } from "../lib/format";
+import { TIER_SCALE_COPY } from "../lib/tiers";
+import { useWatchlist } from "../lib/store";
 import { useReveal } from "./RevealContext";
 import {
   ConfidenceBadge,
@@ -23,9 +25,11 @@ import {
   StrengthMeter,
 } from "./ui";
 import { PlayerAvatar } from "./PlayerAvatar";
+import { StarButton } from "./Star";
+import { PickemBoardToggle } from "./Pickem";
 import { InfoTip } from "./Tooltip";
 
-type SortKey = "strength" | "name" | "market" | "confidence";
+type SortKey = "strength" | "name" | "market" | "confidence" | "pover";
 
 const CONF_RANK = { high: 3, medium: 2, low: 1 } as const;
 const LEAN_RANK = { over: 3, under: 2, neutral: 1 } as const;
@@ -143,6 +147,16 @@ function FilterPills<T extends string>({
   );
 }
 
+/** Delta and P(over) read in the LEAN's color, so the row never argues with itself. */
+function leanTone(lean: SlateProp["lean"]): string {
+  return lean === "over" ? "text-over" : lean === "under" ? "text-under" : "text-ink3";
+}
+
+const CONTRADICTION_TIP = {
+  label: "Why can the projection sit on the other side of the line from the lean?",
+  body: "The projection is the middle-of-the-road outcome; the lean comes from the whole range of outcomes. A lopsided range can put the middle on one side of the line while most outcomes still land on the other — trust the percentage.",
+};
+
 export function Board({
   rows,
   games,
@@ -156,19 +170,26 @@ export function Board({
 }) {
   const router = useRouter();
   const { revealed } = useReveal();
+  const watchlist = useWatchlist();
   const [pos, setPos] = useState<string>("ALL");
   const [market, setMarket] = useState<string>("ALL");
   const [teamF, setTeamF] = useState<string>("ALL");
   const [leanF, setLeanF] = useState<string>("ALL");
+  const [mine, setMine] = useState(false);
   const [sortKey, setSortKey] = useState<SortKey>("strength");
   const [sortDir, setSortDir] = useState<1 | -1>(-1);
   // paging state resets whenever the filter combination changes
-  const filterKey = `${pos}|${market}|${teamF}|${leanF}`;
+  const filterKey = `${pos}|${market}|${teamF}|${leanF}|${mine}`;
   const [paging, setPaging] = useState({ key: filterKey, n: PAGE_SIZE });
   const visible = paging.key === filterKey ? paging.n : PAGE_SIZE;
   const setVisible = (n: number) => setPaging({ key: filterKey, n });
 
   const teams = useMemo(() => [...new Set(rows.map((r) => r.team))].sort(), [rows]);
+  const starredHere = useMemo(
+    () => new Set(rows.filter((r) => watchlist.ids.includes(r.playerId)).map((r) => r.playerId))
+      .size,
+    [rows, watchlist.ids]
+  );
 
   const filtered = useMemo(() => {
     const out = rows.filter(
@@ -176,11 +197,13 @@ export function Board({
         (pos === "ALL" || r.pos === pos) &&
         (market === "ALL" || r.market === market) &&
         (teamF === "ALL" || r.team === teamF) &&
-        (leanF === "ALL" || r.lean === leanF)
+        (leanF === "ALL" || r.lean === leanF) &&
+        (!mine || watchlist.ids.includes(r.playerId))
     );
     out.sort((a, b) => {
       let d = 0;
       if (sortKey === "strength") d = a.strength - b.strength;
+      else if (sortKey === "pover") d = a.overProbAtRef - b.overProbAtRef;
       else if (sortKey === "name") d = a.name.localeCompare(b.name) * -1;
       else if (sortKey === "market") d = a.market.localeCompare(b.market) * -1;
       else if (sortKey === "confidence")
@@ -190,17 +213,28 @@ export function Board({
       return d * sortDir;
     });
     return out;
-  }, [rows, pos, market, teamF, leanF, sortKey, sortDir]);
+  }, [rows, pos, market, teamF, leanF, mine, watchlist.ids, sortKey, sortDir]);
 
   const shown = filtered.slice(0, visible);
   const hiddenCount = filtered.length - shown.length;
+  const filtersActive =
+    pos !== "ALL" || market !== "ALL" || teamF !== "ALL" || leanF !== "ALL" || mine;
 
+  const clearFilters = () => {
+    setPos("ALL");
+    setMarket("ALL");
+    setTeamF("ALL");
+    setLeanF("ALL");
+    setMine(false);
+  };
+
+  // The record honors the active filters — it grades exactly the rows in view.
   const record = useMemo(() => {
     let hit = 0,
       miss = 0,
       push = 0,
       dnp = 0;
-    for (const r of rows) {
+    for (const r of filtered) {
       const o = callOutcome(r.lean, r.result);
       if (o === "hit") hit++;
       else if (o === "miss") miss++;
@@ -208,7 +242,7 @@ export function Board({
       else if (o === "dnp") dnp++;
     }
     return { hit, miss, push, dnp };
-  }, [rows]);
+  }, [filtered]);
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) setSortDir((d) => (d === 1 ? -1 : 1));
@@ -221,8 +255,30 @@ export function Board({
   const rowMatchup = (r: SlateProp) => (r.home ? `vs ${r.opponent}` : `@ ${r.opponent}`);
   const th = { sortKey, sortDir, onSort: toggleSort };
 
+  const emptyMessage =
+    mine && watchlist.ids.length === 0 ? (
+      <>
+        <p className="font-medium text-ink2">No starred players yet.</p>
+        <p className="mt-1">
+          Tap the <Star className="inline h-3.5 w-3.5 align-[-2px]" aria-hidden /> next to any
+          player to build your list — it sticks around in this browser.
+        </p>
+      </>
+    ) : (
+      <>
+        <p>No calls match those filters.</p>
+        <button
+          type="button"
+          onClick={clearFilters}
+          className="mt-3 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold text-ink2 transition-colors hover:bg-white/10 hover:text-ink"
+        >
+          Clear filters
+        </button>
+      </>
+    );
+
   return (
-    <section id="board" aria-label="This week's top calls">
+    <section aria-label="This week's top calls">
       {/* filter row */}
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <FilterPills
@@ -247,6 +303,20 @@ export function Board({
             { value: "under", label: "Under" },
           ]}
         />
+        <button
+          type="button"
+          aria-pressed={mine}
+          onClick={() => setMine((v) => !v)}
+          title="Only show players you starred"
+          className={`inline-flex h-8 items-center gap-1.5 rounded-full border px-3 text-xs font-semibold transition-colors ${
+            mine
+              ? "border-push/40 bg-push/10 text-push"
+              : "border-white/8 bg-white/3 text-ink2 hover:text-ink"
+          }`}
+        >
+          <Star className="h-3.5 w-3.5" fill={mine ? "currentColor" : "none"} aria-hidden />
+          My players{starredHere > 0 ? ` (${starredHere})` : ""}
+        </button>
         <label className="sr-only" htmlFor="market-filter">
           Filter by market
         </label>
@@ -263,26 +333,42 @@ export function Board({
             </option>
           ))}
         </select>
-        <label className="sr-only" htmlFor="team-filter">
-          Filter by team
-        </label>
-        <select
-          id="team-filter"
-          value={teamF}
-          onChange={(e) => setTeamF(e.target.value)}
-          className="h-8 rounded-full border border-white/8 bg-white/3 px-3 text-xs font-semibold text-ink2 hover:text-ink"
-        >
-          <option value="ALL">All teams</option>
-          {teams.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
+        {teams.length <= 3 ? (
+          <FilterPills
+            label="Filter by team"
+            value={teamF}
+            onChange={setTeamF}
+            options={[
+              { value: "ALL", label: "Both teams" },
+              ...teams.map((t) => ({ value: t, label: t })),
+            ]}
+          />
+        ) : (
+          <>
+            <label className="sr-only" htmlFor="team-filter">
+              Filter by team
+            </label>
+            <select
+              id="team-filter"
+              value={teamF}
+              onChange={(e) => setTeamF(e.target.value)}
+              className="h-8 rounded-full border border-white/8 bg-white/3 px-3 text-xs font-semibold text-ink2 hover:text-ink"
+            >
+              <option value="ALL">All teams</option>
+              {teams.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
+        <PickemBoardToggle />
 
         <span className="ml-auto text-xs text-ink3">
           {revealed ? (
-            <span className="fade-up inline-flex items-center gap-1.5 font-medium">
+            <span className="fade-up inline-flex flex-wrap items-center gap-1.5 font-medium">
+              {filtersActive && <span className="tnum">{filtered.length} in this view:</span>}
               <span className="text-over">{record.hit} hits</span>·
               <span className="text-under">{record.miss} misses</span>·
               <span>
@@ -308,7 +394,7 @@ export function Board({
                   label="Projection"
                   tip={{
                     label: "What is a projection?",
-                    body: "Our model's single best estimate for this stat in this exact matchup — shown against our reference line.",
+                    body: "Our model's single best estimate for this stat in this exact matchup — shown against our reference line, with the gap colored by which side the model actually takes.",
                   }}
                 />
                 <HeaderCell
@@ -321,11 +407,20 @@ export function Board({
                 />
                 <HeaderCell
                   {...th}
+                  label="P(over)"
+                  k="pover"
+                  tip={{
+                    label: "What is P(over)?",
+                    body: "The model's chance this player clears the reference line, from its full range of outcomes. 58% means 58 times in 100; below 50% favors the under.",
+                  }}
+                />
+                <HeaderCell
+                  {...th}
                   label="Strength"
                   k="strength"
                   tip={{
                     label: "What is strength?",
-                    body: "How hard the model leans, 0–100. It measures conviction versus our line — not value against a sportsbook.",
+                    body: `How hard the model leans, 0–100, in plain words: ${TIER_SCALE_COPY}. It measures conviction versus our line — not value against a sportsbook.`,
                   }}
                 />
                 <HeaderCell
@@ -351,16 +446,19 @@ export function Board({
             <tbody>
               {shown.map((r) => {
                 const delta = r.projection - r.refLine;
+                const contradicts =
+                  (r.lean === "over" && delta < 0) || (r.lean === "under" && delta > 0);
                 return (
                   <tr
                     key={`${r.playerId}-${r.market}`}
                     onClick={() => router.push(`/players/${r.playerId}`)}
                     className="group cursor-pointer border-b border-white/5 transition-colors last:border-0 hover:bg-white/3"
                   >
-                    <td className="py-3 pr-3 pl-4">
-                      <span className="flex items-center gap-3">
+                    <td className="py-3 pr-3 pl-2">
+                      <span className="flex items-center gap-1.5">
+                        <StarButton playerId={r.playerId} name={r.name} size={15} />
                         <PlayerAvatar name={r.name} teamCode={r.team} size={34} src={headshots[r.playerId]} />
-                        <span>
+                        <span className="ml-1.5">
                           <Link
                             href={`/players/${r.playerId}`}
                             onClick={(e) => e.stopPropagation()}
@@ -376,23 +474,31 @@ export function Board({
                     </td>
                     <td className="px-3 py-3 font-medium text-ink2">{MARKET_SHORT[r.market]}</td>
                     <td className="px-3 py-3">
-                      <span className="flex items-baseline gap-1.5">
+                      <span className="flex items-center gap-1.5">
                         <span className="tnum text-[15px] font-bold">{fmtStat(r.projection)}</span>
                         <span className="tnum text-xs text-ink3">vs {fmtLine(r.refLine)}</span>
-                        <span
-                          className={`tnum text-[11px] font-semibold ${
-                            delta > 0 ? "text-over" : delta < 0 ? "text-under" : "text-ink3"
-                          }`}
-                        >
+                        <span className={`tnum text-[11px] font-semibold ${leanTone(r.lean)}`}>
                           {fmtSigned(delta)}
                         </span>
+                        {contradicts && (
+                          <span onClick={(e) => e.stopPropagation()} className="inline-flex">
+                            <InfoTip label={CONTRADICTION_TIP.label}>
+                              {CONTRADICTION_TIP.body}
+                            </InfoTip>
+                          </span>
+                        )}
                       </span>
                     </td>
                     <td className="px-3 py-3">
                       <LeanPill lean={r.lean} size="sm" />
                     </td>
                     <td className="px-3 py-3">
-                      <StrengthMeter value={r.strength} />
+                      <span className={`tnum text-sm font-semibold ${leanTone(r.lean)}`}>
+                        {Math.round(r.overProbAtRef * 100)}%
+                      </span>
+                    </td>
+                    <td className="px-3 py-3">
+                      <StrengthMeter value={r.strength} width={56} />
                     </td>
                     <td className="px-3 py-3">
                       <ConfidenceBadge confidence={r.confidence} />
@@ -405,8 +511,8 @@ export function Board({
               })}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="px-4 py-10 text-center text-sm text-ink3">
-                    No calls match those filters.
+                  <td colSpan={8} className="px-4 py-10 text-center text-sm text-ink3">
+                    {emptyMessage}
                   </td>
                 </tr>
               )}
@@ -417,38 +523,54 @@ export function Board({
 
       {/* mobile cards */}
       <ul className="grid gap-3 md:hidden">
-        {shown.map((r) => (
-          <li key={`${r.playerId}-${r.market}`}>
-            <Link
-              href={`/players/${r.playerId}`}
-              className="card card-hover block p-4"
-              aria-label={`${r.name} ${MARKET_SHORT[r.market]}, projected ${fmtStat(
-                r.projection
-              )} versus line ${fmtLine(r.refLine)}, lean ${leanLabel(r.lean)}`}
-            >
-              <span className="flex items-center gap-3">
-                <PlayerAvatar name={r.name} teamCode={r.team} size={38} src={headshots[r.playerId]} />
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-semibold">{r.name}</span>
-                  <span className="block text-xs text-ink3">
-                    {r.pos} · {r.team} {rowMatchup(r)} · {MARKET_SHORT[r.market]}
+        {shown.map((r) => {
+          const delta = r.projection - r.refLine;
+          return (
+            <li key={`${r.playerId}-${r.market}`}>
+              <Link
+                href={`/players/${r.playerId}`}
+                className="card card-hover block p-4"
+                aria-label={`${r.name} ${MARKET_SHORT[r.market]}, projected ${fmtStat(
+                  r.projection
+                )} versus line ${fmtLine(r.refLine)}, lean ${leanLabel(r.lean)}, ${Math.round(
+                  r.overProbAtRef * 100
+                )} percent to go over`}
+              >
+                <span className="flex items-center gap-2.5">
+                  <PlayerAvatar name={r.name} teamCode={r.team} size={38} src={headshots[r.playerId]} />
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-semibold">{r.name}</span>
+                    <span className="block text-xs text-ink3">
+                      {r.pos} · {r.team} {rowMatchup(r)} · {MARKET_SHORT[r.market]}
+                    </span>
+                  </span>
+                  <StarButton playerId={r.playerId} name={r.name} size={15} />
+                  <LeanPill lean={r.lean} size="sm" />
+                </span>
+                <span className="mt-3 flex items-baseline justify-between gap-3">
+                  <span className="flex items-baseline gap-1.5">
+                    <span className="tnum text-lg font-bold">{fmtStat(r.projection)}</span>
+                    <span className="tnum text-xs text-ink3">vs {fmtLine(r.refLine)}</span>
+                    <span className={`tnum text-[11px] font-semibold ${leanTone(r.lean)}`}>
+                      {fmtSigned(delta)}
+                    </span>
+                  </span>
+                  <span className={`tnum text-xs font-semibold ${leanTone(r.lean)}`}>
+                    {Math.round(r.overProbAtRef * 100)}%{" "}
+                    <span className="font-medium text-ink3">over</span>
                   </span>
                 </span>
-                <LeanPill lean={r.lean} size="sm" />
-              </span>
-              <span className="mt-3 flex items-center justify-between gap-3">
-                <span className="flex items-baseline gap-1.5">
-                  <span className="tnum text-lg font-bold">{fmtStat(r.projection)}</span>
-                  <span className="tnum text-xs text-ink3">vs {fmtLine(r.refLine)}</span>
+                <span className="mt-2.5 flex items-center justify-between gap-3 border-t border-white/6 pt-2.5">
+                  <StrengthMeter value={r.strength} width={48} />
+                  <ConfidenceBadge confidence={r.confidence} />
+                  <ResultCell row={r} />
                 </span>
-                <StrengthMeter value={r.strength} width={56} />
-                <ResultCell row={r} />
-              </span>
-            </Link>
-          </li>
-        ))}
+              </Link>
+            </li>
+          );
+        })}
         {filtered.length === 0 && (
-          <li className="card p-8 text-center text-sm text-ink3">No calls match those filters.</li>
+          <li className="card p-8 text-center text-sm text-ink3">{emptyMessage}</li>
         )}
       </ul>
       {hiddenCount > 0 && (
@@ -470,7 +592,8 @@ export function Board({
         </div>
       )}
       <p className="mt-3 text-xs text-ink3">
-        {games.length} games · {rows.length} calls · tap any row for the full breakdown
+        {games.length} {games.length === 1 ? "game" : "games"} · {rows.length} calls · tap any row
+        for the full breakdown
       </p>
     </section>
   );

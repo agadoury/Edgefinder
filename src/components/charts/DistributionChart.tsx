@@ -17,6 +17,7 @@ export function DistributionChart({
   refLine,
   lineStep,
   onChange,
+  fairLine = null,
   actual,
   actualColor,
   showActual,
@@ -27,6 +28,8 @@ export function DistributionChart({
   refLine: number;
   lineStep: number;
   onChange: (v: number) => void;
+  /** The model's 50/50 line — rendered as a labeled dashed marker. */
+  fairLine?: number | null;
   actual: number | null;
   actualColor: string;
   showActual: boolean;
@@ -201,6 +204,33 @@ export function DistributionChart({
           ref
         </text>
       </g>
+
+      {/* model fair line marker — where the curve crosses 50/50 */}
+      {fairLine !== null && fairLine >= lo && fairLine <= hi && (
+        <g aria-label={`Model fair line ${fmtLine(fairLine)}`}>
+          <line
+            x1={x(fairLine)}
+            x2={x(fairLine)}
+            y1={PAD_T + 10}
+            y2={plotBottom}
+            stroke="#a5b4fc"
+            strokeWidth={1.25}
+            strokeDasharray="2 4"
+            opacity={0.85}
+          />
+          <text
+            x={x(fairLine)}
+            y={PAD_T + 4}
+            textAnchor="middle"
+            fontSize={9.5}
+            fontWeight={600}
+            fill="#a5b4fc"
+            style={{ fontVariantNumeric: "tabular-nums" }}
+          >
+            fair {fmtLine(fairLine)}
+          </text>
+        </g>
+      )}
 
       {/* actual outcome marker (revealed) */}
       {showActual && actual !== null && (

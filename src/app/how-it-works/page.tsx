@@ -9,6 +9,7 @@ import {
 import { getMeta, type CalibrationBucket, type MarketId } from "../../lib/data";
 import { CalibrationChart } from "../../components/charts/CalibrationChart";
 import { MARKET_LONG, UNIT_SHORT } from "../../lib/format";
+import { TIER_SCALE_COPY } from "../../lib/tiers";
 
 export const metadata: Metadata = {
   title: "How it works — EdgeFinder",
@@ -49,15 +50,15 @@ const GLOSSARY = [
   },
   {
     term: "Strength",
-    def: "How hard the model leans, from 0 to 100. Conviction against our line — not betting value.",
+    def: `How hard the model leans, from 0 to 100 — in plain words, ${TIER_SCALE_COPY}. Conviction against our line — not betting value.`,
   },
   {
     term: "Confidence",
     def: "How much trustworthy signal the model had. Steady playing time raises it; injury doubt and small samples lower it.",
   },
   {
-    term: "Projected range",
-    def: "The band we expect the real number to land in about 8 times out of 10.",
+    term: "P(over)",
+    def: "The model's chance a player clears the line, from its full range of outcomes. Below 50% favors the under.",
   },
 ];
 
@@ -72,6 +73,20 @@ export default function HowItWorks() {
     if (entry) calibration[m.id] = entry.calibration;
   }
   const labels = Object.fromEntries(meta.markets.map((m) => [m.id, m.label]));
+
+  // Range copy is derived from the shipped backtest so it can never overstate the model.
+  const coverages = meta.markets
+    .map((m) => bm[m.id]?.coverage80)
+    .filter((c): c is number => c != null);
+  const covLo = Math.round(Math.min(...coverages) * 100);
+  const covHi = Math.round(Math.max(...coverages) * 100);
+  const glossary = [
+    ...GLOSSARY,
+    {
+      term: "Projected range",
+      def: `The band we expect the real number to land in most weeks. In this season's backtest it caught the real number ${covLo}–${covHi}% of the time, depending on the stat — each market's exact figure is in the report card above.`,
+    },
+  ];
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-14 sm:px-6">
@@ -123,8 +138,11 @@ export default function HowItWorks() {
           zero peeking. In plain words: our passing-yards call lands within about{" "}
           <strong className="text-ink">{Math.round(passYds?.mae ?? 0)} yards</strong> of the real
           number on average, and about{" "}
-          <strong className="text-ink">8 times out of 10</strong> the real number lands inside our
-          projected range.
+          <strong className="text-ink">
+            {Math.round((passYds?.coverage80 ?? 0) * 10)} times out of 10
+          </strong>{" "}
+          the real passing-yards number lands inside our projected range — every market&apos;s
+          exact figure is in the table below.
         </p>
 
         <div className="card mt-6 overflow-hidden">
@@ -216,7 +234,7 @@ export default function HowItWorks() {
       <section aria-label="Glossary" className="mt-16">
         <h2 className="text-2xl font-bold tracking-tight">The words we use</h2>
         <dl className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {GLOSSARY.map((g) => (
+          {glossary.map((g) => (
             <div key={g.term} className="card p-4">
               <dt className="text-sm font-bold text-accent">{g.term}</dt>
               <dd className="mt-1.5 text-sm leading-relaxed text-ink2">{g.def}</dd>

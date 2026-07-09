@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Eye, EyeOff, Zap } from "lucide-react";
 import { useReveal } from "./RevealContext";
+import { PickemHeaderChip } from "./Pickem";
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   const pathname = usePathname();
@@ -37,6 +38,7 @@ export function Header({ season, week }: { season: number; week: number }) {
           <span className="h-1.5 w-1.5 rounded-full bg-accent2" aria-hidden />
           Replay · {season} Wk {week}
         </span>
+        <PickemHeaderChip />
 
         <nav className="ml-auto flex items-center gap-1" aria-label="Main">
           <NavLink href="/">This week</NavLink>

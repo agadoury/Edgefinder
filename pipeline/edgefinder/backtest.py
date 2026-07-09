@@ -3,8 +3,10 @@
 Rows evaluated: 2025 REG weeks 1..(demo_week-1), played + eligible, with at
 least MIN_PRIOR_PLAYED prior career games and a computable reference line.
 Features are as-of by construction, so 2025 history enters only from
-earlier weeks. Also calibrates the per-market confidence thresholds
-(roughly 25/50/25) and persists per-row predictions for `modelHistory`.
+earlier weeks. Intervals and probability curves go through the split
+conformal calibrator (fit on 2024 only -- see conformal.py); 2025 is pure
+evaluation. Also calibrates the per-market confidence thresholds (roughly
+25/50/25) and persists per-row predictions for `modelHistory`.
 """
 
 from __future__ import annotations
@@ -14,13 +16,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from edgefinder.conformal import Calibrator
 from edgefinder.features import FEATURES
 from edgefinder.train import (
     MODELS_DIR,
     MIN_PRIOR_PLAYED,
     MarketModel,
     Q_INDEX,
-    build_prob_curve,
     calibrate_conf_thresholds,
     confidence_of,
     interp_over,
@@ -45,13 +47,23 @@ def eval_mask(frame: pd.DataFrame, demo_week: int) -> pd.Series:
     )
 
 
-def predict_rows(rows: pd.DataFrame, model: MarketModel, market: str) -> pd.DataFrame:
-    """Projection, quantiles, curve prob at ref line, and raw width per row."""
-    quantiles = model.predict_quantiles(rows[FEATURES])
-    projection = model.predict_projection(rows[FEATURES], quantiles)
+def predict_rows(
+    rows: pd.DataFrame, model: MarketModel, market: str, calib: Calibrator
+) -> pd.DataFrame:
+    """Projection, calibrated quantiles/curve prob at ref, raw width per row.
+
+    The point projection stays the raw mean/median blend (untouched by
+    interval calibration); quantiles and curves are the conformal-adjusted
+    ones. Count-market curves take the mean-model expectation as lambda,
+    not the blend (the blend's count median runs ~0.15 TD low).
+    """
+    raw_q = model.predict_quantiles(rows[FEATURES])
+    projection = model.predict_projection(rows[FEATURES], raw_q)
+    mean_pred = np.clip(model.mean_model.predict(rows[FEATURES]), 0.0, None)
+    quantiles = calib.quantile_matrix(market, raw_q, mean_pred)
     over_ref = np.empty(len(rows))
     for i, (_, row) in enumerate(rows.iterrows()):
-        curve = build_prob_curve(market, quantiles[i], projection[i])
+        curve = calib.prob_curve(market, quantiles[i], mean_pred[i])
         over_ref[i] = interp_over(curve, float(row["ref_line"]))
     out = rows[["season", "week", "player_id", "name", "pos", "team", "opp",
                 "game_id", "y", "ref_line", "ref_blend",
@@ -113,6 +125,7 @@ def run_backtest(
     frames: dict[str, pd.DataFrame],
     models: dict[str, MarketModel],
     demo_week: int,
+    calib: Calibrator,
     models_dir: Path = MODELS_DIR,
 ) -> dict:
     """Evaluate every market; persist thresholds + per-row predictions.
@@ -125,7 +138,7 @@ def run_backtest(
 
     for market, frame in frames.items():
         rows = frame[eval_mask(frame, demo_week)]
-        preds = predict_rows(rows, models[market], market)
+        preds = predict_rows(rows, models[market], market, calib)
         thresholds[market] = calibrate_conf_thresholds(preds["rw"].to_numpy())
         preds["confidence"] = [
             confidence_of(rw, gp, thresholds[market])

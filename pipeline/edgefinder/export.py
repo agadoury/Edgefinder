@@ -25,12 +25,12 @@ import numpy as np
 import pandas as pd
 
 from edgefinder import __version__
+from edgefinder.conformal import Calibrator
 from edgefinder.features import FEATURES, MARKETS
 from edgefinder.train import (
     MODELS_DIR,
     MarketModel,
     Q_INDEX,
-    build_prob_curve,
     confidence_of,
     interp_over,
     lean_of,
@@ -182,14 +182,17 @@ def _round(x: float, dp: int = 1) -> float:
 
 def _prop_for(
     row: pd.Series, model: MarketModel, market: str,
-    thresholds: tuple[float, float],
+    thresholds: tuple[float, float], calib: Calibrator,
 ) -> dict:
     """Full prop dict (detail form) for one player+market frame row."""
     X = row[FEATURES].astype(float).to_frame().T
-    quantiles = model.predict_quantiles(X)
-    projection = float(model.predict_projection(X, quantiles)[0])
+    raw_q = model.predict_quantiles(X)
+    projection = float(model.predict_projection(X, raw_q)[0])
+    mean_pred = float(np.clip(model.mean_model.predict(X[model.features]),
+                              0.0, None)[0])
+    quantiles = calib.quantile_matrix(market, raw_q, np.array([mean_pred]))
     q = quantiles[0]
-    curve = build_prob_curve(market, q, projection)
+    curve = calib.prob_curve(market, q, mean_pred)
     ref_line = float(row["ref_line"])
     over_prob = interp_over(curve, ref_line)
     rw = float(relative_width(quantiles)[0])
@@ -306,6 +309,7 @@ def run_export(
     by_market: dict,
     demo_week: int,
     thresholds: dict[str, tuple[float, float]],
+    calib: Calibrator,
     export_dir: Path = EXPORT_DIR,
     models_dir: Path = MODELS_DIR,
 ) -> dict:
@@ -373,7 +377,8 @@ def run_export(
             if pd.isna(row["ref_line"]):
                 skipped.append((pid, market, "no reference line"))
                 continue
-            prop = _prop_for(row, models[market], market, thresholds[market])
+            prop = _prop_for(row, models[market], market, thresholds[market],
+                             calib)
             pdict["props"].append(prop)
             props_index.append({
                 "playerId": pid,
@@ -435,19 +440,55 @@ def run_export(
     return counts
 
 
+def _conformal_lines(calib: Calibrator | None) -> list[str]:
+    if calib is None:
+        return []
+    lines = [
+        "## Interval calibration (split conformal, 2024)",
+        "",
+        "Models refit on 2021-2023 were scored on held-out 2024 "
+        "(walk-forward by construction); the fixed adjustments below are "
+        "applied unchanged to the 2025 backtest and the demo slate. "
+        "Conformity scores never come from 2025.",
+        "",
+    ]
+    for market, p in calib.markets.items():
+        if p["method"] == "additive":
+            d = p["deltas"]
+            lines.append(
+                f"* **{market}** — additive per-quantile deltas "
+                f"(n={p['nCal']}): p10 {float(d['0.10']):+.1f}, "
+                f"p50 {float(d['0.50']):+.1f}, p90 {float(d['0.90']):+.1f} "
+                "(units of the stat)."
+            )
+        else:
+            dist = "Poisson" if p["alpha"] == 0 else f"NB(alpha={p['alpha']})"
+            lines.append(
+                f"* **{market}** — discrete {dist} layer on half-integer "
+                f"support (n={p['nCal']}): lambda = mean-model expectation "
+                f"x {p['lambdaScale']:.4f}, plus a mid-PIT conformal level "
+                "map; quantiles/curves come from the continuity-corrected "
+                "CDF, so low quantiles vary by player."
+            )
+    lines.append("")
+    return lines
+
+
 def write_report(
     by_market: dict,
     counts: dict,
     demo_week: int,
     validation_passed: bool,
     export_dir: Path = EXPORT_DIR,
+    calib: Calibrator | None = None,
 ) -> None:
     """Human-readable run summary next to the export JSON."""
     lines = [
         "# EdgeFinder pipeline run report",
         "",
         f"Generated {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%MZ} — "
-        f"model v{__version__}, trained on 2021-2024 REG.",
+        f"model v{__version__}, trained on 2021-2024 REG; intervals "
+        "conformalized on a held-out 2024 split.",
         "",
         f"* **Demo slate:** 2025 week {demo_week} "
         f"({counts['games']} games, {counts['players']} players, "
@@ -470,6 +511,9 @@ def write_report(
         "Baseline = the refLine blend (trailing-5 median x season median). "
         "The model beats it on every market.",
         "",
+    ]
+    lines += _conformal_lines(calib)
+    lines += [
         "## Data quirks",
         "",
         "* hvpkod has no week-18 files for 2021-2024 (404 upstream); those "
