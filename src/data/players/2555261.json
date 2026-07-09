@@ -12,253 +12,289 @@
    "market": "pass_yds",
    "projection": 262.3,
    "quantiles": {
-    "p10": 147.2,
-    "p25": 213.0,
-    "p50": 255.0,
-    "p75": 288.0,
-    "p90": 304.5
+    "p10": 137.1,
+    "p25": 199.6,
+    "p50": 247.2,
+    "p75": 292.2,
+    "p90": 324.0
    },
    "probCurve": [
     {
-     "line": 75.0,
+     "line": 62.5,
      "over": 0.98
     },
     {
-     "line": 80.0,
-     "over": 0.9759
+     "line": 67.5,
+     "over": 0.9767
     },
     {
-     "line": 85.0,
-     "over": 0.9715
+     "line": 72.5,
+     "over": 0.9724
     },
     {
-     "line": 90.0,
-     "over": 0.9672
+     "line": 77.5,
+     "over": 0.9681
     },
     {
-     "line": 95.0,
-     "over": 0.9628
+     "line": 82.5,
+     "over": 0.9639
     },
     {
-     "line": 100.0,
-     "over": 0.9585
+     "line": 87.5,
+     "over": 0.9596
     },
     {
-     "line": 105.0,
-     "over": 0.9541
+     "line": 92.5,
+     "over": 0.9553
     },
     {
-     "line": 110.0,
-     "over": 0.9496
+     "line": 97.5,
+     "over": 0.9511
     },
     {
-     "line": 115.0,
-     "over": 0.9429
+     "line": 102.5,
+     "over": 0.9451
     },
     {
-     "line": 120.0,
-     "over": 0.9363
+     "line": 107.5,
+     "over": 0.9386
     },
     {
-     "line": 125.0,
-     "over": 0.9296
+     "line": 112.5,
+     "over": 0.9321
     },
     {
-     "line": 130.0,
-     "over": 0.923
+     "line": 117.5,
+     "over": 0.9256
     },
     {
-     "line": 135.0,
-     "over": 0.9163
+     "line": 122.5,
+     "over": 0.919
     },
     {
-     "line": 140.0,
-     "over": 0.9096
+     "line": 127.5,
+     "over": 0.9125
     },
     {
-     "line": 145.0,
-     "over": 0.903
+     "line": 132.5,
+     "over": 0.906
     },
     {
-     "line": 150.0,
-     "over": 0.8937
+     "line": 137.5,
+     "over": 0.8991
     },
     {
-     "line": 155.0,
-     "over": 0.8823
+     "line": 142.5,
+     "over": 0.8871
     },
     {
-     "line": 160.0,
-     "over": 0.8709
+     "line": 147.5,
+     "over": 0.8751
     },
     {
-     "line": 165.0,
-     "over": 0.8595
+     "line": 152.5,
+     "over": 0.8631
     },
     {
-     "line": 170.0,
-     "over": 0.8481
+     "line": 157.5,
+     "over": 0.8511
     },
     {
-     "line": 175.0,
-     "over": 0.8367
+     "line": 162.5,
+     "over": 0.8391
     },
     {
-     "line": 180.0,
-     "over": 0.8253
+     "line": 167.5,
+     "over": 0.8271
     },
     {
-     "line": 185.0,
-     "over": 0.8139
+     "line": 172.5,
+     "over": 0.815
     },
     {
-     "line": 190.0,
-     "over": 0.8025
+     "line": 177.5,
+     "over": 0.803
     },
     {
-     "line": 195.0,
-     "over": 0.7911
+     "line": 182.5,
+     "over": 0.791
     },
     {
-     "line": 200.0,
-     "over": 0.7797
+     "line": 187.5,
+     "over": 0.779
     },
     {
-     "line": 205.0,
-     "over": 0.7683
+     "line": 192.5,
+     "over": 0.767
     },
     {
-     "line": 210.0,
-     "over": 0.757
+     "line": 197.5,
+     "over": 0.755
     },
     {
-     "line": 215.0,
-     "over": 0.7384
+     "line": 202.5,
+     "over": 0.7347
     },
     {
-     "line": 220.0,
-     "over": 0.7086
+     "line": 207.5,
+     "over": 0.7084
     },
     {
-     "line": 225.0,
-     "over": 0.6788
+     "line": 212.5,
+     "over": 0.6822
     },
     {
-     "line": 230.0,
-     "over": 0.649
+     "line": 217.5,
+     "over": 0.6559
     },
     {
-     "line": 235.0,
-     "over": 0.6192
+     "line": 222.5,
+     "over": 0.6296
     },
     {
-     "line": 240.0,
-     "over": 0.5895
+     "line": 227.5,
+     "over": 0.6033
     },
     {
-     "line": 245.0,
-     "over": 0.5597
+     "line": 232.5,
+     "over": 0.577
     },
     {
-     "line": 250.0,
-     "over": 0.5299
+     "line": 237.5,
+     "over": 0.5507
     },
     {
-     "line": 255.0,
-     "over": 0.5001
+     "line": 242.5,
+     "over": 0.5245
     },
     {
-     "line": 260.0,
-     "over": 0.4623
+     "line": 247.5,
+     "over": 0.4981
     },
     {
-     "line": 265.0,
-     "over": 0.4244
+     "line": 252.5,
+     "over": 0.4703
     },
     {
-     "line": 270.0,
-     "over": 0.3866
+     "line": 257.5,
+     "over": 0.4426
     },
     {
-     "line": 275.0,
-     "over": 0.3487
+     "line": 262.5,
+     "over": 0.4149
     },
     {
-     "line": 280.0,
-     "over": 0.3108
+     "line": 267.5,
+     "over": 0.3871
     },
     {
-     "line": 285.0,
-     "over": 0.273
+     "line": 272.5,
+     "over": 0.3594
     },
     {
-     "line": 290.0,
-     "over": 0.2321
+     "line": 277.5,
+     "over": 0.3317
     },
     {
-     "line": 295.0,
-     "over": 0.1867
+     "line": 282.5,
+     "over": 0.3039
     },
     {
-     "line": 300.0,
-     "over": 0.1412
+     "line": 287.5,
+     "over": 0.2762
     },
     {
-     "line": 305.0,
-     "over": 0.0992
+     "line": 292.5,
+     "over": 0.2487
     },
     {
-     "line": 310.0,
-     "over": 0.0902
+     "line": 297.5,
+     "over": 0.2251
     },
     {
-     "line": 315.0,
-     "over": 0.0812
+     "line": 302.5,
+     "over": 0.2015
     },
     {
-     "line": 320.0,
-     "over": 0.0722
+     "line": 307.5,
+     "over": 0.1779
     },
     {
-     "line": 325.0,
-     "over": 0.0633
+     "line": 312.5,
+     "over": 0.1543
     },
     {
-     "line": 330.0,
-     "over": 0.0543
+     "line": 317.5,
+     "over": 0.1307
     },
     {
-     "line": 335.0,
-     "over": 0.047
+     "line": 322.5,
+     "over": 0.1071
     },
     {
-     "line": 340.0,
-     "over": 0.0411
+     "line": 327.5,
+     "over": 0.095
     },
     {
-     "line": 345.0,
-     "over": 0.0352
+     "line": 332.5,
+     "over": 0.0879
     },
     {
-     "line": 350.0,
-     "over": 0.0293
+     "line": 337.5,
+     "over": 0.0808
     },
     {
-     "line": 355.0,
+     "line": 342.5,
+     "over": 0.0737
+    },
+    {
+     "line": 347.5,
+     "over": 0.0665
+    },
+    {
+     "line": 352.5,
+     "over": 0.0594
+    },
+    {
+     "line": 357.5,
+     "over": 0.0523
+    },
+    {
+     "line": 362.5,
+     "over": 0.0468
+    },
+    {
+     "line": 367.5,
+     "over": 0.0422
+    },
+    {
+     "line": 372.5,
+     "over": 0.0375
+    },
+    {
+     "line": 377.5,
+     "over": 0.0329
+    },
+    {
+     "line": 382.5,
+     "over": 0.0282
+    },
+    {
+     "line": 387.5,
      "over": 0.0235
     },
     {
-     "line": 360.0,
+     "line": 392.5,
      "over": 0.02
     }
    ],
    "refLine": 295.5,
-   "overProbAtRef": 0.1822,
+   "overProbAtRef": 0.2345,
    "lean": "under",
-   "strength": 64,
+   "strength": 53,
    "confidence": "high",
    "confidenceReason": "8 games of steady production make this range tight.",
-   "verdict": "The model projects 262 passing yards \u2014 it gives Jacoby a 18% chance to clear a 295.5-yard line.",
+   "verdict": "The model projects 262 passing yards \u2014 it gives Jacoby a 23% chance to clear a 295.5-yard line.",
    "factors": [
     {
      "group": "recent_form",
@@ -297,40 +333,40 @@
    "projection": 1.0,
    "quantiles": {
     "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.0,
-    "p75": 1.9,
-    "p90": 2.6
+    "p25": 0.3,
+    "p50": 0.9,
+    "p75": 1.6,
+    "p90": 2.5
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.6424
+     "over": 0.6568
     },
     {
      "line": 1.5,
-     "over": 0.2747
+     "over": 0.2844
     },
     {
      "line": 2.5,
-     "over": 0.0856
+     "over": 0.1
     },
     {
      "line": 3.5,
-     "over": 0.0208
+     "over": 0.0266
     },
     {
      "line": 4.5,
-     "over": 0.0041
+     "over": 0.0055
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.0856,
+   "overProbAtRef": 0.1,
    "lean": "under",
-   "strength": 70,
-   "confidence": "medium",
-   "confidenceReason": "Decent 8-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Jacoby a 9% chance to go over 2.5.",
+   "strength": 56,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Jacoby a 10% chance to go over 2.5.",
    "factors": [
     {
      "group": "game_environment",

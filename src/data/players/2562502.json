@@ -12,11 +12,11 @@
    "market": "rush_yds",
    "projection": 31.5,
    "quantiles": {
-    "p10": 6.1,
-    "p25": 13.8,
-    "p50": 25.6,
-    "p75": 46.7,
-    "p90": 76.2
+    "p10": 5.6,
+    "p25": 13.5,
+    "p50": 25.4,
+    "p75": 49.2,
+    "p90": 82.0
    },
    "probCurve": [
     {
@@ -25,184 +25,196 @@
     },
     {
      "line": 5.0,
-     "over": 0.9702
+     "over": 0.9375
     },
     {
      "line": 7.5,
-     "over": 0.8724
+     "over": 0.8641
     },
     {
      "line": 10.0,
-     "over": 0.8237
+     "over": 0.8169
     },
     {
      "line": 12.5,
-     "over": 0.7749
+     "over": 0.7696
     },
     {
      "line": 15.0,
-     "over": 0.7241
+     "over": 0.7192
     },
     {
      "line": 17.5,
-     "over": 0.6711
+     "over": 0.6666
     },
     {
      "line": 20.0,
-     "over": 0.618
+     "over": 0.614
     },
     {
      "line": 22.5,
-     "over": 0.565
+     "over": 0.5615
     },
     {
      "line": 25.0,
-     "over": 0.512
+     "over": 0.5089
     },
     {
      "line": 27.5,
-     "over": 0.4771
+     "over": 0.4782
     },
     {
      "line": 30.0,
-     "over": 0.4475
+     "over": 0.4519
     },
     {
      "line": 32.5,
-     "over": 0.418
+     "over": 0.4257
     },
     {
      "line": 35.0,
-     "over": 0.3884
+     "over": 0.3994
     },
     {
      "line": 37.5,
-     "over": 0.3588
+     "over": 0.3732
     },
     {
      "line": 40.0,
-     "over": 0.3292
+     "over": 0.347
     },
     {
      "line": 42.5,
-     "over": 0.2996
+     "over": 0.3207
     },
     {
      "line": 45.0,
-     "over": 0.2701
+     "over": 0.2945
     },
     {
      "line": 47.5,
-     "over": 0.2459
+     "over": 0.2682
     },
     {
      "line": 50.0,
-     "over": 0.2332
+     "over": 0.2465
     },
     {
      "line": 52.5,
-     "over": 0.2204
+     "over": 0.235
     },
     {
      "line": 55.0,
-     "over": 0.2077
+     "over": 0.2236
     },
     {
      "line": 57.5,
-     "over": 0.195
+     "over": 0.2121
     },
     {
      "line": 60.0,
-     "over": 0.1823
+     "over": 0.2007
     },
     {
      "line": 62.5,
-     "over": 0.1695
+     "over": 0.1892
     },
     {
      "line": 65.0,
-     "over": 0.1568
+     "over": 0.1777
     },
     {
      "line": 67.5,
-     "over": 0.1441
+     "over": 0.1663
     },
     {
      "line": 70.0,
-     "over": 0.1313
+     "over": 0.1548
     },
     {
      "line": 72.5,
-     "over": 0.1186
+     "over": 0.1434
     },
     {
      "line": 75.0,
-     "over": 0.1059
+     "over": 0.1319
     },
     {
      "line": 77.5,
-     "over": 0.0959
+     "over": 0.1205
     },
     {
      "line": 80.0,
-     "over": 0.0883
+     "over": 0.109
     },
     {
      "line": 82.5,
-     "over": 0.0807
+     "over": 0.0984
     },
     {
      "line": 85.0,
-     "over": 0.0731
+     "over": 0.0912
     },
     {
      "line": 87.5,
-     "over": 0.0655
+     "over": 0.084
     },
     {
      "line": 90.0,
-     "over": 0.0579
+     "over": 0.0768
     },
     {
      "line": 92.5,
-     "over": 0.0503
+     "over": 0.0696
     },
     {
      "line": 95.0,
-     "over": 0.0452
+     "over": 0.0624
     },
     {
      "line": 97.5,
-     "over": 0.0402
+     "over": 0.0551
     },
     {
      "line": 100.0,
-     "over": 0.0353
+     "over": 0.0486
     },
     {
      "line": 102.5,
-     "over": 0.0303
+     "over": 0.0439
     },
     {
      "line": 105.0,
-     "over": 0.0253
+     "over": 0.0392
     },
     {
      "line": 107.5,
-     "over": 0.0203
+     "over": 0.0345
     },
     {
      "line": 110.0,
+     "over": 0.0297
+    },
+    {
+     "line": 112.5,
+     "over": 0.025
+    },
+    {
+     "line": 115.0,
+     "over": 0.0203
+    },
+    {
+     "line": 117.5,
      "over": 0.02
     }
    ],
    "refLine": 30.5,
-   "overProbAtRef": 0.4416,
+   "overProbAtRef": 0.4467,
    "lean": "under",
-   "strength": 10,
+   "strength": 9,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 32 rushing yards \u2014 it gives David a 44% chance to clear a 30.5-yard line.",
+   "verdict": "The model projects 32 rushing yards \u2014 it gives David a 45% chance to clear a 30.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -407,7 +419,7 @@
    "market": "receptions",
    "projection": 1.9,
    "refLine": 1.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 1.0,
    "result": "under"
   },

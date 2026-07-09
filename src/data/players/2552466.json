@@ -12,245 +12,277 @@
    "market": "pass_yds",
    "projection": 199.4,
    "quantiles": {
-    "p10": 110.6,
-    "p25": 175.7,
-    "p50": 198.7,
-    "p75": 241.4,
-    "p90": 297.4
+    "p10": 100.4,
+    "p25": 162.3,
+    "p50": 190.9,
+    "p75": 245.6,
+    "p90": 316.9
    },
    "probCurve": [
     {
-     "line": 60.0,
+     "line": 47.5,
      "over": 0.98
     },
     {
-     "line": 65.0,
-     "over": 0.9746
+     "line": 52.5,
+     "over": 0.9757
     },
     {
-     "line": 70.0,
-     "over": 0.9683
+     "line": 57.5,
+     "over": 0.9696
     },
     {
-     "line": 75.0,
-     "over": 0.962
+     "line": 62.5,
+     "over": 0.9635
     },
     {
-     "line": 80.0,
-     "over": 0.9557
+     "line": 67.5,
+     "over": 0.9574
     },
     {
-     "line": 85.0,
-     "over": 0.9491
+     "line": 72.5,
+     "over": 0.9513
     },
     {
-     "line": 90.0,
-     "over": 0.9395
+     "line": 77.5,
+     "over": 0.9427
     },
     {
-     "line": 95.0,
-     "over": 0.9299
+     "line": 82.5,
+     "over": 0.9334
     },
     {
-     "line": 100.0,
-     "over": 0.9203
+     "line": 87.5,
+     "over": 0.9241
     },
     {
-     "line": 105.0,
-     "over": 0.9107
+     "line": 92.5,
+     "over": 0.9148
     },
     {
-     "line": 110.0,
-     "over": 0.9011
+     "line": 97.5,
+     "over": 0.9055
     },
     {
-     "line": 115.0,
-     "over": 0.8898
+     "line": 102.5,
+     "over": 0.895
     },
     {
-     "line": 120.0,
-     "over": 0.8783
+     "line": 107.5,
+     "over": 0.8829
     },
     {
-     "line": 125.0,
-     "over": 0.8668
+     "line": 112.5,
+     "over": 0.8708
     },
     {
-     "line": 130.0,
-     "over": 0.8553
+     "line": 117.5,
+     "over": 0.8586
     },
     {
-     "line": 135.0,
-     "over": 0.8437
+     "line": 122.5,
+     "over": 0.8465
     },
     {
-     "line": 140.0,
-     "over": 0.8322
+     "line": 127.5,
+     "over": 0.8343
     },
     {
-     "line": 145.0,
-     "over": 0.8207
+     "line": 132.5,
+     "over": 0.8222
     },
     {
-     "line": 150.0,
-     "over": 0.8092
+     "line": 137.5,
+     "over": 0.8101
     },
     {
-     "line": 155.0,
-     "over": 0.7977
+     "line": 142.5,
+     "over": 0.7979
     },
     {
-     "line": 160.0,
-     "over": 0.7862
+     "line": 147.5,
+     "over": 0.7858
     },
     {
-     "line": 165.0,
-     "over": 0.7747
+     "line": 152.5,
+     "over": 0.7737
     },
     {
-     "line": 170.0,
-     "over": 0.7631
+     "line": 157.5,
+     "over": 0.7615
     },
     {
-     "line": 175.0,
-     "over": 0.7516
+     "line": 162.5,
+     "over": 0.7479
     },
     {
-     "line": 180.0,
-     "over": 0.7034
+     "line": 167.5,
+     "over": 0.7042
     },
     {
-     "line": 185.0,
-     "over": 0.6491
+     "line": 172.5,
+     "over": 0.6605
     },
     {
-     "line": 190.0,
-     "over": 0.5949
+     "line": 177.5,
+     "over": 0.6168
     },
     {
-     "line": 195.0,
-     "over": 0.5406
+     "line": 182.5,
+     "over": 0.5731
     },
     {
-     "line": 200.0,
+     "line": 187.5,
+     "over": 0.5295
+    },
+    {
+     "line": 192.5,
      "over": 0.4926
     },
     {
-     "line": 205.0,
-     "over": 0.4633
+     "line": 197.5,
+     "over": 0.4697
     },
     {
-     "line": 210.0,
-     "over": 0.4341
+     "line": 202.5,
+     "over": 0.4469
     },
     {
-     "line": 215.0,
-     "over": 0.4048
+     "line": 207.5,
+     "over": 0.4241
     },
     {
-     "line": 220.0,
-     "over": 0.3755
+     "line": 212.5,
+     "over": 0.4013
     },
     {
-     "line": 225.0,
-     "over": 0.3462
+     "line": 217.5,
+     "over": 0.3784
     },
     {
-     "line": 230.0,
-     "over": 0.317
+     "line": 222.5,
+     "over": 0.3556
     },
     {
-     "line": 235.0,
-     "over": 0.2877
+     "line": 227.5,
+     "over": 0.3328
     },
     {
-     "line": 240.0,
-     "over": 0.2584
+     "line": 232.5,
+     "over": 0.3099
     },
     {
-     "line": 245.0,
-     "over": 0.2405
+     "line": 237.5,
+     "over": 0.2871
     },
     {
-     "line": 250.0,
-     "over": 0.2271
+     "line": 242.5,
+     "over": 0.2643
     },
     {
-     "line": 255.0,
-     "over": 0.2137
+     "line": 247.5,
+     "over": 0.2461
     },
     {
-     "line": 260.0,
-     "over": 0.2003
+     "line": 252.5,
+     "over": 0.2355
     },
     {
-     "line": 265.0,
-     "over": 0.1869
+     "line": 257.5,
+     "over": 0.225
     },
     {
-     "line": 270.0,
-     "over": 0.1735
+     "line": 262.5,
+     "over": 0.2145
     },
     {
-     "line": 275.0,
-     "over": 0.1601
+     "line": 267.5,
+     "over": 0.204
     },
     {
-     "line": 280.0,
-     "over": 0.1467
+     "line": 272.5,
+     "over": 0.1934
     },
     {
-     "line": 285.0,
-     "over": 0.1333
+     "line": 277.5,
+     "over": 0.1829
     },
     {
-     "line": 290.0,
-     "over": 0.1199
+     "line": 282.5,
+     "over": 0.1724
     },
     {
-     "line": 295.0,
-     "over": 0.1065
+     "line": 287.5,
+     "over": 0.1618
     },
     {
-     "line": 300.0,
-     "over": 0.0934
+     "line": 292.5,
+     "over": 0.1513
     },
     {
-     "line": 305.0,
-     "over": 0.0806
+     "line": 297.5,
+     "over": 0.1408
     },
     {
-     "line": 310.0,
-     "over": 0.0679
+     "line": 302.5,
+     "over": 0.1303
     },
     {
-     "line": 315.0,
-     "over": 0.0551
+     "line": 307.5,
+     "over": 0.1197
     },
     {
-     "line": 320.0,
-     "over": 0.045
+     "line": 312.5,
+     "over": 0.1092
     },
     {
-     "line": 325.0,
-     "over": 0.0366
+     "line": 317.5,
+     "over": 0.0988
     },
     {
-     "line": 330.0,
-     "over": 0.0283
+     "line": 322.5,
+     "over": 0.0887
     },
     {
-     "line": 335.0,
-     "over": 0.02
+     "line": 327.5,
+     "over": 0.0787
+    },
+    {
+     "line": 332.5,
+     "over": 0.0687
+    },
+    {
+     "line": 337.5,
+     "over": 0.0587
+    },
+    {
+     "line": 342.5,
+     "over": 0.0491
+    },
+    {
+     "line": 347.5,
+     "over": 0.0425
+    },
+    {
+     "line": 352.5,
+     "over": 0.036
+    },
+    {
+     "line": 357.5,
+     "over": 0.0294
+    },
+    {
+     "line": 362.5,
+     "over": 0.0228
     }
    ],
    "refLine": 212.5,
-   "overProbAtRef": 0.4194,
+   "overProbAtRef": 0.4013,
    "lean": "under",
-   "strength": 14,
+   "strength": 17,
    "confidence": "medium",
    "confidenceReason": "Decent 7-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 199 passing yards \u2014 it gives Marcus a 42% chance to clear a 212.5-yard line.",
+   "verdict": "The model projects 199 passing yards \u2014 it gives Marcus a 40% chance to clear a 212.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -289,40 +321,40 @@
    "projection": 1.0,
    "quantiles": {
     "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.0,
-    "p75": 1.9,
-    "p90": 2.4
+    "p25": 0.3,
+    "p50": 0.9,
+    "p75": 1.7,
+    "p90": 2.6
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.6463
+     "over": 0.6664
     },
     {
      "line": 1.5,
-     "over": 0.2787
+     "over": 0.2942
     },
     {
      "line": 2.5,
-     "over": 0.0876
+     "over": 0.1048
     },
     {
      "line": 3.5,
-     "over": 0.0215
+     "over": 0.0285
     },
     {
      "line": 4.5,
-     "over": 0.0043
+     "over": 0.0059
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.6463,
+   "overProbAtRef": 0.6664,
    "lean": "over",
-   "strength": 25,
-   "confidence": "medium",
-   "confidenceReason": "Decent 7-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Marcus a 65% chance to go over 0.5.",
+   "strength": 23,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Marcus a 67% chance to go over 0.5.",
    "factors": [
     {
      "group": "usage_role",
@@ -367,169 +399,181 @@
    "market": "rush_yds",
    "projection": 25.2,
    "quantiles": {
-    "p10": 4.5,
-    "p25": 10.1,
-    "p50": 22.5,
-    "p75": 39.9,
-    "p90": 54.9
+    "p10": 4.0,
+    "p25": 9.9,
+    "p50": 22.4,
+    "p75": 42.5,
+    "p90": 60.7
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9448
+     "over": 0.9319
     },
     {
      "line": 5.0,
-     "over": 0.8861
+     "over": 0.8743
     },
     {
      "line": 7.5,
-     "over": 0.8193
+     "over": 0.8102
     },
     {
      "line": 10.0,
-     "over": 0.7524
+     "over": 0.747
     },
     {
      "line": 12.5,
-     "over": 0.7015
+     "over": 0.6971
     },
     {
      "line": 15.0,
-     "over": 0.6511
+     "over": 0.6471
     },
     {
      "line": 17.5,
-     "over": 0.6008
+     "over": 0.5972
     },
     {
      "line": 20.0,
-     "over": 0.5505
+     "over": 0.5472
     },
     {
      "line": 22.5,
-     "over": 0.5002
+     "over": 0.4983
     },
     {
      "line": 25.0,
-     "over": 0.4642
+     "over": 0.4672
     },
     {
      "line": 27.5,
-     "over": 0.4283
+     "over": 0.4361
     },
     {
      "line": 30.0,
-     "over": 0.3924
+     "over": 0.405
     },
     {
      "line": 32.5,
-     "over": 0.3565
+     "over": 0.3738
     },
     {
      "line": 35.0,
-     "over": 0.3205
+     "over": 0.3427
     },
     {
      "line": 37.5,
-     "over": 0.2846
+     "over": 0.3116
     },
     {
      "line": 40.0,
-     "over": 0.2491
+     "over": 0.2805
     },
     {
      "line": 42.5,
-     "over": 0.2241
+     "over": 0.2496
     },
     {
      "line": 45.0,
-     "over": 0.1991
+     "over": 0.2291
     },
     {
      "line": 47.5,
-     "over": 0.174
+     "over": 0.2085
     },
     {
      "line": 50.0,
-     "over": 0.149
+     "over": 0.188
     },
     {
      "line": 52.5,
-     "over": 0.124
+     "over": 0.1674
     },
     {
      "line": 55.0,
-     "over": 0.0997
+     "over": 0.1469
     },
     {
      "line": 57.5,
-     "over": 0.0932
+     "over": 0.1263
     },
     {
      "line": 60.0,
-     "over": 0.0867
+     "over": 0.1058
     },
     {
      "line": 62.5,
-     "over": 0.0802
+     "over": 0.0955
     },
     {
      "line": 65.0,
-     "over": 0.0737
+     "over": 0.0893
     },
     {
      "line": 67.5,
-     "over": 0.0671
+     "over": 0.0831
     },
     {
      "line": 70.0,
-     "over": 0.0606
+     "over": 0.0768
     },
     {
      "line": 72.5,
-     "over": 0.0541
+     "over": 0.0706
     },
     {
      "line": 75.0,
-     "over": 0.0484
+     "over": 0.0643
     },
     {
      "line": 77.5,
-     "over": 0.0442
+     "over": 0.0581
     },
     {
      "line": 80.0,
-     "over": 0.0399
+     "over": 0.0519
     },
     {
      "line": 82.5,
-     "over": 0.0356
+     "over": 0.0471
     },
     {
      "line": 85.0,
-     "over": 0.0313
+     "over": 0.0431
     },
     {
      "line": 87.5,
-     "over": 0.0271
+     "over": 0.039
     },
     {
      "line": 90.0,
-     "over": 0.0228
+     "over": 0.0349
     },
     {
      "line": 92.5,
+     "over": 0.0308
+    },
+    {
+     "line": 95.0,
+     "over": 0.0267
+    },
+    {
+     "line": 97.5,
+     "over": 0.0227
+    },
+    {
+     "line": 100.0,
      "over": 0.02
     }
    ],
    "refLine": 34.5,
-   "overProbAtRef": 0.3277,
+   "overProbAtRef": 0.3489,
    "lean": "under",
-   "strength": 29,
+   "strength": 26,
    "confidence": "medium",
    "confidenceReason": "Decent 7-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 25 rushing yards \u2014 it gives Marcus a 33% chance to clear a 34.5-yard line.",
+   "verdict": "The model projects 25 rushing yards \u2014 it gives Marcus a 35% chance to clear a 34.5-yard line.",
    "factors": [
     {
      "group": "recent_form",
@@ -714,7 +758,7 @@
    "market": "pass_tds",
    "projection": 0.8,
    "refLine": 0.5,
-   "lean": "over",
+   "lean": "under",
    "actual": 2.0,
    "result": "over"
   },
@@ -768,7 +812,7 @@
    "market": "pass_tds",
    "projection": 0.5,
    "refLine": 0.5,
-   "lean": "under",
+   "lean": "over",
    "actual": 2.0,
    "result": "over"
   },

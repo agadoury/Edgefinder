@@ -12,209 +12,245 @@
    "market": "pass_yds",
    "projection": 246.6,
    "quantiles": {
-    "p10": 161.2,
-    "p25": 215.3,
-    "p50": 252.1,
-    "p75": 264.2,
-    "p90": 296.0
+    "p10": 151.1,
+    "p25": 201.8,
+    "p50": 244.3,
+    "p75": 268.3,
+    "p90": 315.4
    },
    "probCurve": [
     {
-     "line": 105.0,
+     "line": 92.5,
      "over": 0.98
     },
     {
-     "line": 110.0,
-     "over": 0.9747
+     "line": 97.5,
+     "over": 0.9757
     },
     {
-     "line": 115.0,
-     "over": 0.9691
+     "line": 102.5,
+     "over": 0.9702
     },
     {
-     "line": 120.0,
-     "over": 0.9635
+     "line": 107.5,
+     "over": 0.9648
     },
     {
-     "line": 125.0,
-     "over": 0.9579
+     "line": 112.5,
+     "over": 0.9593
     },
     {
-     "line": 130.0,
-     "over": 0.9523
+     "line": 117.5,
+     "over": 0.9539
     },
     {
-     "line": 135.0,
-     "over": 0.9449
+     "line": 122.5,
+     "over": 0.9476
     },
     {
-     "line": 140.0,
-     "over": 0.9363
+     "line": 127.5,
+     "over": 0.9393
     },
     {
-     "line": 145.0,
-     "over": 0.9278
+     "line": 132.5,
+     "over": 0.931
     },
     {
-     "line": 150.0,
-     "over": 0.9192
+     "line": 137.5,
+     "over": 0.9226
     },
     {
-     "line": 155.0,
-     "over": 0.9106
+     "line": 142.5,
+     "over": 0.9143
     },
     {
-     "line": 160.0,
-     "over": 0.9021
+     "line": 147.5,
+     "over": 0.906
     },
     {
-     "line": 165.0,
-     "over": 0.8895
+     "line": 152.5,
+     "over": 0.8958
     },
     {
-     "line": 170.0,
-     "over": 0.8756
+     "line": 157.5,
+     "over": 0.8811
     },
     {
-     "line": 175.0,
-     "over": 0.8618
+     "line": 162.5,
+     "over": 0.8663
     },
     {
-     "line": 180.0,
-     "over": 0.8479
+     "line": 167.5,
+     "over": 0.8515
     },
     {
-     "line": 185.0,
-     "over": 0.834
+     "line": 172.5,
+     "over": 0.8367
     },
     {
-     "line": 190.0,
-     "over": 0.8201
+     "line": 177.5,
+     "over": 0.8219
     },
     {
-     "line": 195.0,
-     "over": 0.8063
+     "line": 182.5,
+     "over": 0.8072
     },
     {
-     "line": 200.0,
+     "line": 187.5,
      "over": 0.7924
     },
     {
-     "line": 205.0,
-     "over": 0.7785
+     "line": 192.5,
+     "over": 0.7776
     },
     {
-     "line": 210.0,
-     "over": 0.7647
+     "line": 197.5,
+     "over": 0.7628
     },
     {
-     "line": 215.0,
-     "over": 0.7508
+     "line": 202.5,
+     "over": 0.7461
     },
     {
-     "line": 220.0,
-     "over": 0.718
+     "line": 207.5,
+     "over": 0.7166
     },
     {
-     "line": 225.0,
-     "over": 0.6841
+     "line": 212.5,
+     "over": 0.6871
     },
     {
-     "line": 230.0,
-     "over": 0.6501
+     "line": 217.5,
+     "over": 0.6577
     },
     {
-     "line": 235.0,
-     "over": 0.6162
+     "line": 222.5,
+     "over": 0.6282
     },
     {
-     "line": 240.0,
-     "over": 0.5823
+     "line": 227.5,
+     "over": 0.5987
     },
     {
-     "line": 245.0,
-     "over": 0.5483
+     "line": 232.5,
+     "over": 0.5693
     },
     {
-     "line": 250.0,
-     "over": 0.5144
+     "line": 237.5,
+     "over": 0.5398
     },
     {
-     "line": 255.0,
-     "over": 0.4401
+     "line": 242.5,
+     "over": 0.5103
     },
     {
-     "line": 260.0,
-     "over": 0.3363
+     "line": 247.5,
+     "over": 0.4663
     },
     {
-     "line": 265.0,
-     "over": 0.246
+     "line": 252.5,
+     "over": 0.4144
     },
     {
-     "line": 270.0,
-     "over": 0.2225
+     "line": 257.5,
+     "over": 0.3625
     },
     {
-     "line": 275.0,
-     "over": 0.1989
+     "line": 262.5,
+     "over": 0.3106
     },
     {
-     "line": 280.0,
-     "over": 0.1753
+     "line": 267.5,
+     "over": 0.2588
     },
     {
-     "line": 285.0,
-     "over": 0.1518
+     "line": 272.5,
+     "over": 0.2368
     },
     {
-     "line": 290.0,
-     "over": 0.1282
+     "line": 277.5,
+     "over": 0.2208
     },
     {
-     "line": 295.0,
-     "over": 0.1046
+     "line": 282.5,
+     "over": 0.2049
     },
     {
-     "line": 300.0,
-     "over": 0.0895
+     "line": 287.5,
+     "over": 0.189
     },
     {
-     "line": 305.0,
-     "over": 0.0765
+     "line": 292.5,
+     "over": 0.1731
     },
     {
-     "line": 310.0,
-     "over": 0.0634
+     "line": 297.5,
+     "over": 0.1572
     },
     {
-     "line": 315.0,
-     "over": 0.0504
+     "line": 302.5,
+     "over": 0.1412
     },
     {
-     "line": 320.0,
-     "over": 0.0417
+     "line": 307.5,
+     "over": 0.1253
     },
     {
-     "line": 325.0,
-     "over": 0.0332
+     "line": 312.5,
+     "over": 0.1094
     },
     {
-     "line": 330.0,
-     "over": 0.0246
+     "line": 317.5,
+     "over": 0.0961
     },
     {
-     "line": 335.0,
+     "line": 322.5,
+     "over": 0.0866
+    },
+    {
+     "line": 327.5,
+     "over": 0.0772
+    },
+    {
+     "line": 332.5,
+     "over": 0.0677
+    },
+    {
+     "line": 337.5,
+     "over": 0.0582
+    },
+    {
+     "line": 342.5,
+     "over": 0.0492
+    },
+    {
+     "line": 347.5,
+     "over": 0.043
+    },
+    {
+     "line": 352.5,
+     "over": 0.0368
+    },
+    {
+     "line": 357.5,
+     "over": 0.0306
+    },
+    {
+     "line": 362.5,
+     "over": 0.0244
+    },
+    {
+     "line": 367.5,
      "over": 0.02
     }
    ],
    "refLine": 235.5,
-   "overProbAtRef": 0.6128,
+   "overProbAtRef": 0.5516,
    "lean": "over",
-   "strength": 23,
+   "strength": 10,
    "confidence": "high",
    "confidenceReason": "12 games of steady production make this range tight.",
-   "verdict": "The model projects 247 passing yards \u2014 it gives Bo a 61% chance to clear a 235.5-yard line.",
+   "verdict": "The model projects 247 passing yards \u2014 it gives Bo a 55% chance to clear a 235.5-yard line.",
    "factors": [
     {
      "group": "game_environment",
@@ -245,41 +281,41 @@
    "market": "pass_tds",
    "projection": 1.8,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.9,
-    "p75": 2.0,
-    "p90": 2.5
+    "p10": 0.4,
+    "p25": 0.8,
+    "p50": 1.6,
+    "p75": 2.5,
+    "p90": 3.7
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8419
+     "over": 0.88
     },
     {
      "line": 1.5,
-     "over": 0.5504
+     "over": 0.5123
     },
     {
      "line": 2.5,
-     "over": 0.2814
+     "over": 0.2543
     },
     {
      "line": 3.5,
-     "over": 0.116
+     "over": 0.1141
     },
     {
      "line": 4.5,
-     "over": 0.0397
+     "over": 0.0404
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.8419,
+   "overProbAtRef": 0.88,
    "lean": "over",
-   "strength": 68,
-   "confidence": "high",
-   "confidenceReason": "12 games of steady production make this range tight.",
-   "verdict": "The model expects 1.8 touchdown passes \u2014 it gives Bo a 84% chance to go over 0.5.",
+   "strength": 65,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model expects 1.8 touchdown passes \u2014 it gives Bo a 88% chance to go over 0.5.",
    "factors": [
     {
      "group": "recent_form",
@@ -311,124 +347,136 @@
    "projection": 13.4,
    "quantiles": {
     "p10": 0.0,
-    "p25": 4.5,
-    "p50": 11.7,
-    "p75": 22.8,
-    "p90": 42.9
+    "p25": 4.2,
+    "p50": 11.6,
+    "p75": 25.3,
+    "p90": 48.7
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.8163
+     "over": 0.8116
     },
     {
      "line": 5.0,
-     "over": 0.7321
+     "over": 0.7242
     },
     {
      "line": 7.5,
-     "over": 0.6461
+     "over": 0.6393
     },
     {
      "line": 10.0,
-     "over": 0.5601
+     "over": 0.5543
     },
     {
      "line": 12.5,
-     "over": 0.4829
+     "over": 0.4836
     },
     {
      "line": 15.0,
-     "over": 0.4263
+     "over": 0.438
     },
     {
      "line": 17.5,
-     "over": 0.3696
+     "over": 0.3925
     },
     {
      "line": 20.0,
-     "over": 0.313
+     "over": 0.3469
     },
     {
      "line": 22.5,
-     "over": 0.2563
+     "over": 0.3014
     },
     {
      "line": 25.0,
-     "over": 0.2335
+     "over": 0.2558
     },
     {
      "line": 27.5,
-     "over": 0.2148
+     "over": 0.236
     },
     {
      "line": 30.0,
-     "over": 0.1962
+     "over": 0.22
     },
     {
      "line": 32.5,
-     "over": 0.1776
+     "over": 0.204
     },
     {
      "line": 35.0,
-     "over": 0.159
+     "over": 0.188
     },
     {
      "line": 37.5,
-     "over": 0.1404
+     "over": 0.1719
     },
     {
      "line": 40.0,
-     "over": 0.1217
+     "over": 0.1559
     },
     {
      "line": 42.5,
-     "over": 0.1031
+     "over": 0.1399
     },
     {
      "line": 45.0,
-     "over": 0.0909
+     "over": 0.1239
     },
     {
      "line": 47.5,
-     "over": 0.0799
+     "over": 0.1078
     },
     {
      "line": 50.0,
-     "over": 0.0689
+     "over": 0.0948
     },
     {
      "line": 52.5,
-     "over": 0.0579
+     "over": 0.0846
     },
     {
      "line": 55.0,
-     "over": 0.048
+     "over": 0.0744
     },
     {
      "line": 57.5,
-     "over": 0.0408
+     "over": 0.0642
     },
     {
      "line": 60.0,
-     "over": 0.0336
+     "over": 0.054
     },
     {
      "line": 62.5,
-     "over": 0.0264
+     "over": 0.0459
     },
     {
      "line": 65.0,
+     "over": 0.0393
+    },
+    {
+     "line": 67.5,
+     "over": 0.0326
+    },
+    {
+     "line": 70.0,
+     "over": 0.0259
+    },
+    {
+     "line": 72.5,
      "over": 0.02
     }
    ],
    "refLine": 13.5,
-   "overProbAtRef": 0.4603,
+   "overProbAtRef": 0.4654,
    "lean": "neutral",
-   "strength": 7,
+   "strength": 6,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 13 rushing yards \u2014 it gives Bo a 46% chance to clear a 13.5-yard line.",
+   "verdict": "The model projects 13 rushing yards \u2014 it gives Bo a 47% chance to clear a 13.5-yard line.",
    "factors": [
     {
      "group": "recent_form",
@@ -599,7 +647,7 @@
    "market": "pass_tds",
    "projection": 1.7,
    "refLine": 1.5,
-   "lean": "neutral",
+   "lean": "under",
    "actual": 1.0,
    "result": "under"
   },

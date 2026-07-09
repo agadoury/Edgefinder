@@ -12,237 +12,269 @@
    "market": "pass_yds",
    "projection": 224.5,
    "quantiles": {
-    "p10": 126.4,
-    "p25": 166.8,
-    "p50": 233.4,
-    "p75": 254.7,
-    "p90": 302.3
+    "p10": 116.3,
+    "p25": 153.4,
+    "p50": 225.5,
+    "p75": 258.9,
+    "p90": 321.8
    },
    "probCurve": [
     {
-     "line": 67.5,
+     "line": 57.5,
      "over": 0.98
     },
     {
+     "line": 62.5,
+     "over": 0.9751
+    },
+    {
+     "line": 67.5,
+     "over": 0.9697
+    },
+    {
      "line": 72.5,
-     "over": 0.9768
+     "over": 0.9643
     },
     {
      "line": 77.5,
-     "over": 0.9713
+     "over": 0.959
     },
     {
      "line": 82.5,
-     "over": 0.9658
+     "over": 0.9536
     },
     {
      "line": 87.5,
-     "over": 0.9603
+     "over": 0.9473
     },
     {
      "line": 92.5,
-     "over": 0.9547
+     "over": 0.9391
     },
     {
      "line": 97.5,
-     "over": 0.9488
+     "over": 0.9309
     },
     {
      "line": 102.5,
-     "over": 0.9404
+     "over": 0.9227
     },
     {
      "line": 107.5,
-     "over": 0.9319
+     "over": 0.9145
     },
     {
      "line": 112.5,
-     "over": 0.9235
+     "over": 0.9063
     },
     {
      "line": 117.5,
-     "over": 0.9151
+     "over": 0.8952
     },
     {
      "line": 122.5,
-     "over": 0.9066
+     "over": 0.875
     },
     {
      "line": 127.5,
-     "over": 0.8961
+     "over": 0.8547
     },
     {
      "line": 132.5,
-     "over": 0.8775
+     "over": 0.8345
     },
     {
      "line": 137.5,
-     "over": 0.8589
+     "over": 0.8143
     },
     {
      "line": 142.5,
-     "over": 0.8404
+     "over": 0.794
     },
     {
      "line": 147.5,
-     "over": 0.8218
+     "over": 0.7738
     },
     {
      "line": 152.5,
-     "over": 0.8032
+     "over": 0.7535
     },
     {
      "line": 157.5,
-     "over": 0.7847
+     "over": 0.7357
     },
     {
      "line": 162.5,
-     "over": 0.7661
+     "over": 0.7184
     },
     {
      "line": 167.5,
-     "over": 0.7475
+     "over": 0.701
     },
     {
      "line": 172.5,
-     "over": 0.7287
+     "over": 0.6837
     },
     {
      "line": 177.5,
-     "over": 0.7099
+     "over": 0.6664
     },
     {
      "line": 182.5,
-     "over": 0.6911
+     "over": 0.649
     },
     {
      "line": 187.5,
-     "over": 0.6723
+     "over": 0.6317
     },
     {
      "line": 192.5,
-     "over": 0.6535
+     "over": 0.6144
     },
     {
      "line": 197.5,
-     "over": 0.6348
+     "over": 0.597
     },
     {
      "line": 202.5,
-     "over": 0.616
+     "over": 0.5797
     },
     {
      "line": 207.5,
-     "over": 0.5972
+     "over": 0.5624
     },
     {
      "line": 212.5,
-     "over": 0.5784
+     "over": 0.545
     },
     {
      "line": 217.5,
-     "over": 0.5596
+     "over": 0.5277
     },
     {
      "line": 222.5,
-     "over": 0.5408
+     "over": 0.5104
     },
     {
      "line": 227.5,
-     "over": 0.522
+     "over": 0.485
     },
     {
      "line": 232.5,
-     "over": 0.5032
+     "over": 0.4476
     },
     {
      "line": 237.5,
-     "over": 0.4516
+     "over": 0.4102
     },
     {
      "line": 242.5,
-     "over": 0.3931
+     "over": 0.3728
     },
     {
      "line": 247.5,
-     "over": 0.3347
+     "over": 0.3354
     },
     {
      "line": 252.5,
-     "over": 0.2762
+     "over": 0.298
     },
     {
      "line": 257.5,
-     "over": 0.2413
+     "over": 0.2607
     },
     {
      "line": 262.5,
-     "over": 0.2255
+     "over": 0.2415
     },
     {
      "line": 267.5,
-     "over": 0.2098
+     "over": 0.2295
     },
     {
      "line": 272.5,
-     "over": 0.194
+     "over": 0.2176
     },
     {
      "line": 277.5,
-     "over": 0.1782
+     "over": 0.2057
     },
     {
      "line": 282.5,
-     "over": 0.1625
+     "over": 0.1937
     },
     {
      "line": 287.5,
-     "over": 0.1467
+     "over": 0.1818
     },
     {
      "line": 292.5,
-     "over": 0.1309
+     "over": 0.1699
     },
     {
      "line": 297.5,
-     "over": 0.1152
+     "over": 0.1579
     },
     {
      "line": 302.5,
-     "over": 0.0994
+     "over": 0.146
     },
     {
      "line": 307.5,
-     "over": 0.0844
+     "over": 0.1341
     },
     {
      "line": 312.5,
-     "over": 0.0694
+     "over": 0.1222
     },
     {
      "line": 317.5,
-     "over": 0.0544
+     "over": 0.1102
     },
     {
      "line": 322.5,
-     "over": 0.0431
+     "over": 0.0984
     },
     {
      "line": 327.5,
-     "over": 0.0332
+     "over": 0.087
     },
     {
      "line": 332.5,
-     "over": 0.0234
+     "over": 0.0756
+    },
+    {
+     "line": 337.5,
+     "over": 0.0643
+    },
+    {
+     "line": 342.5,
+     "over": 0.0529
+    },
+    {
+     "line": 347.5,
+     "over": 0.0445
+    },
+    {
+     "line": 352.5,
+     "over": 0.037
+    },
+    {
+     "line": 357.5,
+     "over": 0.0296
+    },
+    {
+     "line": 362.5,
+     "over": 0.0221
     }
    ],
    "refLine": 174.5,
-   "overProbAtRef": 0.7212,
+   "overProbAtRef": 0.6768,
    "lean": "over",
-   "strength": 38,
+   "strength": 30,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 224 passing yards \u2014 it gives Tua a 72% chance to clear a 174.5-yard line.",
+   "verdict": "The model projects 224 passing yards \u2014 it gives Tua a 68% chance to clear a 174.5-yard line.",
    "factors": [
     {
      "group": "game_environment",
@@ -287,41 +319,41 @@
    "market": "pass_tds",
    "projection": 1.3,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.0,
-    "p75": 2.0,
-    "p90": 2.3
+    "p10": 0.3,
+    "p25": 0.7,
+    "p50": 1.4,
+    "p75": 2.3,
+    "p90": 3.4
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.7258
+     "over": 0.8403
     },
     {
      "line": 1.5,
-     "over": 0.371
+     "over": 0.4559
     },
     {
      "line": 2.5,
-     "over": 0.1415
+     "over": 0.2136
     },
     {
      "line": 3.5,
-     "over": 0.0425
+     "over": 0.0868
     },
     {
      "line": 4.5,
-     "over": 0.0105
+     "over": 0.0275
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.7258,
+   "overProbAtRef": 0.8403,
    "lean": "over",
-   "strength": 32,
-   "confidence": "low",
-   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
-   "verdict": "The model expects 1.3 touchdown passes \u2014 it gives Tua a 73% chance to go over 0.5.",
+   "strength": 58,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
+   "verdict": "The model expects 1.3 touchdown passes \u2014 it gives Tua a 84% chance to go over 0.5.",
    "factors": [
     {
      "group": "usage_role",
@@ -517,7 +549,7 @@
    "market": "pass_tds",
    "projection": 1.7,
    "refLine": 1.5,
-   "lean": "neutral",
+   "lean": "under",
    "actual": 0.0,
    "result": "under"
   },
@@ -535,7 +567,7 @@
    "market": "pass_tds",
    "projection": 1.3,
    "refLine": 1.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 2.0,
    "result": "over"
   },

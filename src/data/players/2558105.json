@@ -15,8 +15,8 @@
     "p10": 11.2,
     "p25": 21.0,
     "p50": 39.4,
-    "p75": 68.9,
-    "p90": 92.1
+    "p75": 70.5,
+    "p90": 95.9
    },
    "probCurve": [
     {
@@ -45,7 +45,7 @@
     },
     {
      "line": 17.5,
-     "over": 0.8039
+     "over": 0.8038
     },
     {
      "line": 20.0,
@@ -53,163 +53,179 @@
     },
     {
      "line": 22.5,
-     "over": 0.73
+     "over": 0.7299
     },
     {
      "line": 25.0,
-     "over": 0.6961
+     "over": 0.6959
     },
     {
      "line": 27.5,
-     "over": 0.6621
+     "over": 0.6618
     },
     {
      "line": 30.0,
-     "over": 0.6281
+     "over": 0.6278
     },
     {
      "line": 32.5,
-     "over": 0.5942
+     "over": 0.5938
     },
     {
      "line": 35.0,
-     "over": 0.5602
+     "over": 0.5597
     },
     {
      "line": 37.5,
-     "over": 0.5263
+     "over": 0.5257
     },
     {
      "line": 40.0,
-     "over": 0.4952
+     "over": 0.4951
     },
     {
      "line": 42.5,
-     "over": 0.474
+     "over": 0.475
     },
     {
      "line": 45.0,
-     "over": 0.4528
+     "over": 0.4549
     },
     {
      "line": 47.5,
-     "over": 0.4316
+     "over": 0.4348
     },
     {
      "line": 50.0,
-     "over": 0.4104
+     "over": 0.4148
     },
     {
      "line": 52.5,
-     "over": 0.3892
+     "over": 0.3947
     },
     {
      "line": 55.0,
-     "over": 0.3679
+     "over": 0.3746
     },
     {
      "line": 57.5,
-     "over": 0.3467
+     "over": 0.3546
     },
     {
      "line": 60.0,
-     "over": 0.3255
+     "over": 0.3345
     },
     {
      "line": 62.5,
-     "over": 0.3043
+     "over": 0.3144
     },
     {
      "line": 65.0,
-     "over": 0.2831
+     "over": 0.2943
     },
     {
      "line": 67.5,
-     "over": 0.2619
+     "over": 0.2743
     },
     {
      "line": 70.0,
-     "over": 0.2429
+     "over": 0.2542
     },
     {
      "line": 72.5,
-     "over": 0.2267
+     "over": 0.2383
     },
     {
      "line": 75.0,
-     "over": 0.2105
+     "over": 0.2235
     },
     {
      "line": 77.5,
-     "over": 0.1943
+     "over": 0.2087
     },
     {
      "line": 80.0,
-     "over": 0.1782
+     "over": 0.1939
     },
     {
      "line": 82.5,
-     "over": 0.162
+     "over": 0.1791
     },
     {
      "line": 85.0,
-     "over": 0.1458
+     "over": 0.1643
     },
     {
      "line": 87.5,
-     "over": 0.1296
+     "over": 0.1495
     },
     {
      "line": 90.0,
-     "over": 0.1135
+     "over": 0.1347
     },
     {
      "line": 92.5,
-     "over": 0.0983
+     "over": 0.1199
     },
     {
      "line": 95.0,
-     "over": 0.0885
+     "over": 0.1052
     },
     {
      "line": 97.5,
-     "over": 0.0787
+     "over": 0.0947
     },
     {
      "line": 100.0,
-     "over": 0.0688
+     "over": 0.0866
     },
     {
      "line": 102.5,
-     "over": 0.059
+     "over": 0.0785
     },
     {
      "line": 105.0,
-     "over": 0.0494
+     "over": 0.0704
     },
     {
      "line": 107.5,
-     "over": 0.043
+     "over": 0.0624
     },
     {
      "line": 110.0,
-     "over": 0.0365
+     "over": 0.0543
     },
     {
      "line": 112.5,
-     "over": 0.0301
+     "over": 0.0475
     },
     {
      "line": 115.0,
-     "over": 0.0236
+     "over": 0.0422
     },
     {
      "line": 117.5,
+     "over": 0.0369
+    },
+    {
+     "line": 120.0,
+     "over": 0.0316
+    },
+    {
+     "line": 122.5,
+     "over": 0.0263
+    },
+    {
+     "line": 125.0,
+     "over": 0.021
+    },
+    {
+     "line": 127.5,
      "over": 0.02
     }
    ],
    "refLine": 26.5,
-   "overProbAtRef": 0.6757,
+   "overProbAtRef": 0.6754,
    "lean": "over",
    "strength": 25,
    "confidence": "low",
@@ -252,97 +268,113 @@
    "market": "receptions",
    "projection": 4.3,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 2.1,
+    "p10": 1.7,
+    "p25": 2.7,
     "p50": 4.2,
-    "p75": 6.1,
-    "p90": 6.5
+    "p75": 5.9,
+    "p90": 8.1
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8649
+     "over": 0.9895
     },
     {
      "line": 1.0,
-     "over": 0.8298
+     "over": 0.9273
     },
     {
      "line": 1.5,
-     "over": 0.7947
+     "over": 0.9273
     },
     {
      "line": 2.0,
-     "over": 0.7596
+     "over": 0.7872
     },
     {
      "line": 2.5,
-     "over": 0.7055
+     "over": 0.7872
     },
     {
      "line": 3.0,
-     "over": 0.6443
+     "over": 0.6154
     },
     {
      "line": 3.5,
-     "over": 0.583
+     "over": 0.6154
     },
     {
      "line": 4.0,
-     "over": 0.5218
+     "over": 0.4453
     },
     {
      "line": 4.5,
-     "over": 0.4583
+     "over": 0.4453
     },
     {
      "line": 5.0,
-     "over": 0.3936
+     "over": 0.2953
     },
     {
      "line": 5.5,
-     "over": 0.3288
+     "over": 0.2953
     },
     {
      "line": 6.0,
-     "over": 0.2641
+     "over": 0.1988
     },
     {
      "line": 6.5,
-     "over": 0.0985
+     "over": 0.1988
     },
     {
      "line": 7.0,
-     "over": 0.0828
+     "over": 0.1263
     },
     {
      "line": 7.5,
-     "over": 0.067
+     "over": 0.1263
     },
     {
      "line": 8.0,
-     "over": 0.0513
+     "over": 0.0792
     },
     {
      "line": 8.5,
-     "over": 0.0406
+     "over": 0.0792
     },
     {
      "line": 9.0,
-     "over": 0.0303
+     "over": 0.0492
     },
     {
      "line": 9.5,
-     "over": 0.02
+     "over": 0.0492
+    },
+    {
+     "line": 10.0,
+     "over": 0.0276
+    },
+    {
+     "line": 10.5,
+     "over": 0.0276
+    },
+    {
+     "line": 11.0,
+     "over": 0.0149
+    },
+    {
+     "line": 11.5,
+     "over": 0.0149
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.7055,
+   "overProbAtRef": 0.7872,
    "lean": "over",
-   "strength": 29,
-   "confidence": "low",
+   "strength": 49,
+   "confidence": "medium",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 4.3 catches \u2014 a 71% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 4.3 catches \u2014 a 79% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "recent_form",

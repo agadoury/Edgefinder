@@ -12,181 +12,193 @@
    "market": "rush_yds",
    "projection": 33.6,
    "quantiles": {
-    "p10": 5.7,
-    "p25": 17.8,
-    "p50": 31.5,
-    "p75": 51.7,
-    "p90": 78.8
+    "p10": 5.2,
+    "p25": 17.6,
+    "p50": 31.3,
+    "p75": 54.3,
+    "p90": 84.6
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9524
+     "over": 0.9435
     },
     {
      "line": 5.0,
-     "over": 0.9115
+     "over": 0.9032
     },
     {
      "line": 7.5,
-     "over": 0.8776
+     "over": 0.8722
     },
     {
      "line": 10.0,
-     "over": 0.8467
+     "over": 0.8419
     },
     {
      "line": 12.5,
-     "over": 0.8158
+     "over": 0.8116
     },
     {
      "line": 15.0,
-     "over": 0.7849
+     "over": 0.7814
     },
     {
      "line": 17.5,
-     "over": 0.7541
+     "over": 0.7511
     },
     {
      "line": 20.0,
-     "over": 0.7103
+     "over": 0.7062
     },
     {
      "line": 22.5,
-     "over": 0.6645
+     "over": 0.6607
     },
     {
      "line": 25.0,
-     "over": 0.6187
+     "over": 0.6153
     },
     {
      "line": 27.5,
-     "over": 0.573
+     "over": 0.5698
     },
     {
      "line": 30.0,
-     "over": 0.5272
+     "over": 0.5244
     },
     {
      "line": 32.5,
-     "over": 0.4875
+     "over": 0.4874
     },
     {
      "line": 35.0,
-     "over": 0.4566
+     "over": 0.4601
     },
     {
      "line": 37.5,
-     "over": 0.4257
+     "over": 0.4328
     },
     {
      "line": 40.0,
-     "over": 0.3948
+     "over": 0.4056
     },
     {
      "line": 42.5,
-     "over": 0.364
+     "over": 0.3783
     },
     {
      "line": 45.0,
-     "over": 0.3331
+     "over": 0.3511
     },
     {
      "line": 47.5,
-     "over": 0.3022
+     "over": 0.3238
     },
     {
      "line": 50.0,
-     "over": 0.2713
+     "over": 0.2965
     },
     {
      "line": 52.5,
-     "over": 0.2457
+     "over": 0.2693
     },
     {
      "line": 55.0,
-     "over": 0.2319
+     "over": 0.2464
     },
     {
      "line": 57.5,
-     "over": 0.218
+     "over": 0.234
     },
     {
      "line": 60.0,
-     "over": 0.2042
+     "over": 0.2217
     },
     {
      "line": 62.5,
-     "over": 0.1903
+     "over": 0.2093
     },
     {
      "line": 65.0,
-     "over": 0.1765
+     "over": 0.1969
     },
     {
      "line": 67.5,
-     "over": 0.1626
+     "over": 0.1846
     },
     {
      "line": 70.0,
-     "over": 0.1488
+     "over": 0.1722
     },
     {
      "line": 72.5,
-     "over": 0.1349
+     "over": 0.1599
     },
     {
      "line": 75.0,
-     "over": 0.1211
+     "over": 0.1475
     },
     {
      "line": 77.5,
-     "over": 0.1072
+     "over": 0.1351
     },
     {
      "line": 80.0,
-     "over": 0.0945
+     "over": 0.1228
     },
     {
      "line": 82.5,
-     "over": 0.0831
+     "over": 0.1104
     },
     {
      "line": 85.0,
-     "over": 0.0717
+     "over": 0.0983
     },
     {
      "line": 87.5,
-     "over": 0.0603
+     "over": 0.0878
     },
     {
      "line": 90.0,
-     "over": 0.0492
+     "over": 0.0772
     },
     {
      "line": 92.5,
-     "over": 0.0418
+     "over": 0.0666
     },
     {
      "line": 95.0,
-     "over": 0.0343
+     "over": 0.056
     },
     {
      "line": 97.5,
-     "over": 0.0268
+     "over": 0.047
     },
     {
      "line": 100.0,
+     "over": 0.0401
+    },
+    {
+     "line": 102.5,
+     "over": 0.0332
+    },
+    {
+     "line": 105.0,
+     "over": 0.0262
+    },
+    {
+     "line": 107.5,
      "over": 0.02
     }
    ],
    "refLine": 40.5,
-   "overProbAtRef": 0.3886,
+   "overProbAtRef": 0.4001,
    "lean": "under",
-   "strength": 19,
+   "strength": 17,
    "confidence": "medium",
    "confidenceReason": "Decent 9-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 34 rushing yards \u2014 it gives Chris a 39% chance to clear a 40.5-yard line.",
+   "verdict": "The model projects 34 rushing yards \u2014 it gives Chris a 40% chance to clear a 40.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -409,7 +421,7 @@
    "market": "rush_yds",
    "projection": 28.8,
    "refLine": 22.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 12.0,
    "result": "under"
   },

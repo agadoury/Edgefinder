@@ -12,185 +12,197 @@
    "market": "rush_yds",
    "projection": 31.3,
    "quantiles": {
-    "p10": 7.7,
-    "p25": 19.1,
-    "p50": 32.0,
-    "p75": 51.5,
-    "p90": 80.8
+    "p10": 7.2,
+    "p25": 18.9,
+    "p50": 31.8,
+    "p75": 54.1,
+    "p90": 86.6
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9626
+     "over": 0.9569
     },
     {
      "line": 5.0,
-     "over": 0.9357
+     "over": 0.9282
     },
     {
      "line": 7.5,
-     "over": 0.9022
+     "over": 0.8959
     },
     {
      "line": 10.0,
-     "over": 0.8694
+     "over": 0.8638
     },
     {
      "line": 12.5,
-     "over": 0.8367
+     "over": 0.8318
     },
     {
      "line": 15.0,
-     "over": 0.804
+     "over": 0.7998
     },
     {
      "line": 17.5,
-     "over": 0.7713
+     "over": 0.7678
     },
     {
      "line": 20.0,
-     "over": 0.733
+     "over": 0.7285
     },
     {
      "line": 22.5,
-     "over": 0.6843
+     "over": 0.6801
     },
     {
      "line": 25.0,
-     "over": 0.6356
+     "over": 0.6318
     },
     {
      "line": 27.5,
-     "over": 0.5869
+     "over": 0.5835
     },
     {
      "line": 30.0,
-     "over": 0.5383
+     "over": 0.5352
     },
     {
      "line": 32.5,
-     "over": 0.4932
+     "over": 0.4924
     },
     {
      "line": 35.0,
-     "over": 0.4612
+     "over": 0.4643
     },
     {
      "line": 37.5,
-     "over": 0.4293
+     "over": 0.4362
     },
     {
      "line": 40.0,
-     "over": 0.3974
+     "over": 0.4081
     },
     {
      "line": 42.5,
-     "over": 0.3655
+     "over": 0.3801
     },
     {
      "line": 45.0,
-     "over": 0.3335
+     "over": 0.352
     },
     {
      "line": 47.5,
-     "over": 0.3016
+     "over": 0.3239
     },
     {
      "line": 50.0,
-     "over": 0.2697
+     "over": 0.2959
     },
     {
      "line": 52.5,
-     "over": 0.2451
+     "over": 0.2678
     },
     {
      "line": 55.0,
-     "over": 0.2323
+     "over": 0.2458
     },
     {
      "line": 57.5,
-     "over": 0.2194
+     "over": 0.2342
     },
     {
      "line": 60.0,
-     "over": 0.2066
+     "over": 0.2227
     },
     {
      "line": 62.5,
-     "over": 0.1938
+     "over": 0.2112
     },
     {
      "line": 65.0,
-     "over": 0.181
+     "over": 0.1996
     },
     {
      "line": 67.5,
-     "over": 0.1681
+     "over": 0.1881
     },
     {
      "line": 70.0,
-     "over": 0.1553
+     "over": 0.1765
     },
     {
      "line": 72.5,
-     "over": 0.1425
+     "over": 0.165
     },
     {
      "line": 75.0,
-     "over": 0.1297
+     "over": 0.1535
     },
     {
      "line": 77.5,
-     "over": 0.1168
+     "over": 0.1419
     },
     {
      "line": 80.0,
-     "over": 0.104
+     "over": 0.1304
     },
     {
      "line": 82.5,
-     "over": 0.0921
+     "over": 0.1189
     },
     {
      "line": 85.0,
-     "over": 0.0807
+     "over": 0.1073
     },
     {
      "line": 87.5,
-     "over": 0.0693
+     "over": 0.0961
     },
     {
      "line": 90.0,
-     "over": 0.0578
+     "over": 0.0855
     },
     {
      "line": 92.5,
-     "over": 0.0476
+     "over": 0.0749
     },
     {
      "line": 95.0,
-     "over": 0.0401
+     "over": 0.0643
     },
     {
      "line": 97.5,
-     "over": 0.0326
+     "over": 0.0538
     },
     {
      "line": 100.0,
-     "over": 0.0251
+     "over": 0.0455
     },
     {
      "line": 102.5,
+     "over": 0.0386
+    },
+    {
+     "line": 105.0,
+     "over": 0.0317
+    },
+    {
+     "line": 107.5,
+     "over": 0.0247
+    },
+    {
+     "line": 110.0,
      "over": 0.02
     }
    ],
    "refLine": 43.5,
-   "overProbAtRef": 0.3527,
+   "overProbAtRef": 0.3689,
    "lean": "under",
-   "strength": 25,
+   "strength": 22,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 31 rushing yards \u2014 it gives Blake a 35% chance to clear a 43.5-yard line.",
+   "verdict": "The model projects 31 rushing yards \u2014 it gives Blake a 37% chance to clear a 43.5-yard line.",
    "factors": [
     {
      "group": "game_environment",
@@ -424,7 +436,7 @@
    "market": "rush_yds",
    "projection": 29.5,
    "refLine": 26.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 13.0,
    "result": "under"
   }

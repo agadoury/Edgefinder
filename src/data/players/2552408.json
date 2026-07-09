@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 4.6,
     "p25": 13.7,
-    "p50": 25.2,
-    "p75": 46.0,
-    "p90": 66.3
+    "p50": 25.1,
+    "p75": 47.6,
+    "p90": 70.1
    },
    "probCurve": [
     {
@@ -41,156 +41,168 @@
     },
     {
      "line": 15.0,
-     "over": 0.7211
+     "over": 0.721
     },
     {
      "line": 17.5,
-     "over": 0.6668
+     "over": 0.6664
     },
     {
      "line": 20.0,
-     "over": 0.6125
+     "over": 0.6119
     },
     {
      "line": 22.5,
-     "over": 0.5582
+     "over": 0.5573
     },
     {
      "line": 25.0,
-     "over": 0.5039
+     "over": 0.5028
     },
     {
      "line": 27.5,
-     "over": 0.4721
+     "over": 0.4736
     },
     {
      "line": 30.0,
-     "over": 0.442
+     "over": 0.4458
     },
     {
      "line": 32.5,
-     "over": 0.412
+     "over": 0.418
     },
     {
      "line": 35.0,
-     "over": 0.3819
+     "over": 0.3902
     },
     {
      "line": 37.5,
-     "over": 0.3519
+     "over": 0.3623
     },
     {
      "line": 40.0,
-     "over": 0.3218
+     "over": 0.3345
     },
     {
      "line": 42.5,
-     "over": 0.2918
+     "over": 0.3067
     },
     {
      "line": 45.0,
-     "over": 0.2617
+     "over": 0.2789
     },
     {
      "line": 47.5,
-     "over": 0.2388
+     "over": 0.2511
     },
     {
      "line": 50.0,
-     "over": 0.2204
+     "over": 0.234
     },
     {
      "line": 52.5,
-     "over": 0.2019
+     "over": 0.2174
     },
     {
      "line": 55.0,
-     "over": 0.1835
+     "over": 0.2007
     },
     {
      "line": 57.5,
-     "over": 0.1651
+     "over": 0.1841
     },
     {
      "line": 60.0,
-     "over": 0.1467
+     "over": 0.1674
     },
     {
      "line": 62.5,
-     "over": 0.1283
+     "over": 0.1508
     },
     {
      "line": 65.0,
-     "over": 0.1099
+     "over": 0.1342
     },
     {
      "line": 67.5,
-     "over": 0.0968
+     "over": 0.1175
     },
     {
      "line": 70.0,
-     "over": 0.0898
+     "over": 0.1009
     },
     {
      "line": 72.5,
-     "over": 0.0828
+     "over": 0.0943
     },
     {
      "line": 75.0,
-     "over": 0.0759
+     "over": 0.0882
     },
     {
      "line": 77.5,
-     "over": 0.0689
+     "over": 0.0822
     },
     {
      "line": 80.0,
-     "over": 0.062
+     "over": 0.0762
     },
     {
      "line": 82.5,
-     "over": 0.055
+     "over": 0.0701
     },
     {
      "line": 85.0,
-     "over": 0.0487
+     "over": 0.0641
     },
     {
      "line": 87.5,
-     "over": 0.0441
+     "over": 0.058
     },
     {
      "line": 90.0,
-     "over": 0.0396
+     "over": 0.052
     },
     {
      "line": 92.5,
-     "over": 0.035
+     "over": 0.0474
     },
     {
      "line": 95.0,
-     "over": 0.0305
+     "over": 0.0434
     },
     {
      "line": 97.5,
-     "over": 0.0259
+     "over": 0.0394
     },
     {
      "line": 100.0,
-     "over": 0.0213
+     "over": 0.0355
     },
     {
      "line": 102.5,
+     "over": 0.0315
+    },
+    {
+     "line": 105.0,
+     "over": 0.0276
+    },
+    {
+     "line": 107.5,
+     "over": 0.0236
+    },
+    {
+     "line": 110.0,
      "over": 0.02
     }
    ],
    "refLine": 42.5,
-   "overProbAtRef": 0.2918,
+   "overProbAtRef": 0.3067,
    "lean": "under",
-   "strength": 29,
+   "strength": 27,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 29 receiving yards \u2014 it gives Darren a 29% chance to clear a 42.5-yard line.",
+   "verdict": "The model projects 29 receiving yards \u2014 it gives Darren a 31% chance to clear a 42.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -235,85 +247,81 @@
    "market": "receptions",
    "projection": 2.5,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 1.0,
-    "p50": 2.4,
-    "p75": 3.6,
+    "p10": 0.6,
+    "p25": 1.2,
+    "p50": 2.3,
+    "p75": 3.5,
     "p90": 5.0
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8254
+     "over": 0.9206
     },
     {
      "line": 1.0,
-     "over": 0.7509
+     "over": 0.6847
     },
     {
      "line": 1.5,
-     "over": 0.6618
+     "over": 0.6847
     },
     {
      "line": 2.0,
-     "over": 0.5726
+     "over": 0.44
     },
     {
      "line": 2.5,
-     "over": 0.4805
+     "over": 0.44
     },
     {
      "line": 3.0,
-     "over": 0.3759
+     "over": 0.2436
     },
     {
      "line": 3.5,
-     "over": 0.2714
+     "over": 0.2436
     },
     {
      "line": 4.0,
-     "over": 0.2069
+     "over": 0.1343
     },
     {
      "line": 4.5,
-     "over": 0.1528
+     "over": 0.1343
     },
     {
      "line": 5.0,
-     "over": 0.0996
+     "over": 0.0697
     },
     {
      "line": 5.5,
-     "over": 0.0834
+     "over": 0.0697
     },
     {
      "line": 6.0,
-     "over": 0.0672
+     "over": 0.0336
     },
     {
      "line": 6.5,
-     "over": 0.051
+     "over": 0.0336
     },
     {
      "line": 7.0,
-     "over": 0.0401
+     "over": 0.0144
     },
     {
      "line": 7.5,
-     "over": 0.0295
-    },
-    {
-     "line": 8.0,
-     "over": 0.02
+     "over": 0.0144
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.4805,
-   "lean": "neutral",
-   "strength": 3,
+   "overProbAtRef": 0.44,
+   "lean": "under",
+   "strength": 8,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 2.5 catches \u2014 a 48% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 2.5 catches \u2014 a 44% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "usage_role",

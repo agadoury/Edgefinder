@@ -12,192 +12,204 @@
    "market": "rush_yds",
    "projection": 27.6,
    "quantiles": {
-    "p10": 2.1,
-    "p25": 8.8,
-    "p50": 21.6,
-    "p75": 51.8,
-    "p90": 60.2
+    "p10": 1.7,
+    "p25": 8.6,
+    "p50": 21.5,
+    "p75": 54.3,
+    "p90": 66.0
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.892
+     "over": 0.8817
     },
     {
      "line": 5.0,
-     "over": 0.8356
+     "over": 0.8273
     },
     {
      "line": 7.5,
-     "over": 0.7792
+     "over": 0.773
     },
     {
      "line": 10.0,
-     "over": 0.7265
+     "over": 0.722
     },
     {
      "line": 12.5,
-     "over": 0.6777
+     "over": 0.6736
     },
     {
      "line": 15.0,
-     "over": 0.6289
+     "over": 0.6251
     },
     {
      "line": 17.5,
-     "over": 0.5801
+     "over": 0.5767
     },
     {
      "line": 20.0,
-     "over": 0.5313
+     "over": 0.5282
     },
     {
      "line": 22.5,
-     "over": 0.4926
+     "over": 0.4921
     },
     {
      "line": 25.0,
-     "over": 0.4718
+     "over": 0.473
     },
     {
      "line": 27.5,
-     "over": 0.4511
+     "over": 0.454
     },
     {
      "line": 30.0,
-     "over": 0.4304
+     "over": 0.435
     },
     {
      "line": 32.5,
-     "over": 0.4097
+     "over": 0.4159
     },
     {
      "line": 35.0,
-     "over": 0.3889
+     "over": 0.3969
     },
     {
      "line": 37.5,
-     "over": 0.3682
+     "over": 0.3779
     },
     {
      "line": 40.0,
-     "over": 0.3475
+     "over": 0.3589
     },
     {
      "line": 42.5,
-     "over": 0.3268
+     "over": 0.3398
     },
     {
      "line": 45.0,
-     "over": 0.306
+     "over": 0.3208
     },
     {
      "line": 47.5,
-     "over": 0.2853
+     "over": 0.3018
     },
     {
      "line": 50.0,
-     "over": 0.2646
+     "over": 0.2827
     },
     {
      "line": 52.5,
-     "over": 0.2368
+     "over": 0.2637
     },
     {
      "line": 55.0,
-     "over": 0.1923
+     "over": 0.241
     },
     {
      "line": 57.5,
-     "over": 0.1478
+     "over": 0.2089
     },
     {
      "line": 60.0,
-     "over": 0.1033
+     "over": 0.1769
     },
     {
      "line": 62.5,
-     "over": 0.0953
+     "over": 0.1448
     },
     {
      "line": 65.0,
-     "over": 0.0901
+     "over": 0.1127
     },
     {
      "line": 67.5,
-     "over": 0.085
+     "over": 0.097
     },
     {
      "line": 70.0,
-     "over": 0.0799
+     "over": 0.0921
     },
     {
      "line": 72.5,
-     "over": 0.0747
+     "over": 0.0871
     },
     {
      "line": 75.0,
-     "over": 0.0696
+     "over": 0.0822
     },
     {
      "line": 77.5,
-     "over": 0.0645
+     "over": 0.0772
     },
     {
      "line": 80.0,
-     "over": 0.0594
+     "over": 0.0723
     },
     {
      "line": 82.5,
-     "over": 0.0542
+     "over": 0.0673
     },
     {
      "line": 85.0,
-     "over": 0.0494
+     "over": 0.0624
     },
     {
      "line": 87.5,
-     "over": 0.0461
+     "over": 0.0574
     },
     {
      "line": 90.0,
-     "over": 0.0427
+     "over": 0.0525
     },
     {
      "line": 92.5,
-     "over": 0.0394
+     "over": 0.0484
     },
     {
      "line": 95.0,
-     "over": 0.036
+     "over": 0.0451
     },
     {
      "line": 97.5,
-     "over": 0.0326
+     "over": 0.0419
     },
     {
      "line": 100.0,
-     "over": 0.0293
+     "over": 0.0387
     },
     {
      "line": 102.5,
-     "over": 0.0259
+     "over": 0.0354
     },
     {
      "line": 105.0,
-     "over": 0.0226
+     "over": 0.0322
     },
     {
      "line": 107.5,
+     "over": 0.0289
+    },
+    {
+     "line": 110.0,
+     "over": 0.0257
+    },
+    {
+     "line": 112.5,
+     "over": 0.0225
+    },
+    {
+     "line": 115.0,
      "over": 0.02
     }
    ],
    "refLine": 20.5,
-   "overProbAtRef": 0.5236,
+   "overProbAtRef": 0.521,
    "lean": "neutral",
-   "strength": 3,
-   "confidence": "low",
-   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "strength": 4,
+   "confidence": "medium",
+   "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
    "verdict": "The model projects 28 rushing yards \u2014 it gives Tyler a 52% chance to clear a 20.5-yard line.",
    "factors": [
     {

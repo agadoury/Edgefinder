@@ -12,193 +12,205 @@
    "market": "rush_yds",
    "projection": 44.7,
    "quantiles": {
-    "p10": 9.0,
-    "p25": 23.8,
-    "p50": 45.8,
-    "p75": 62.0,
-    "p90": 79.8
+    "p10": 8.5,
+    "p25": 23.6,
+    "p50": 45.7,
+    "p75": 64.5,
+    "p90": 85.6
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9582
+     "over": 0.9541
     },
     {
      "line": 5.0,
-     "over": 0.9383
+     "over": 0.9327
     },
     {
      "line": 7.5,
-     "over": 0.9141
+     "over": 0.9091
     },
     {
      "line": 10.0,
-     "over": 0.8894
+     "over": 0.8848
     },
     {
      "line": 12.5,
-     "over": 0.8642
+     "over": 0.8599
     },
     {
      "line": 15.0,
-     "over": 0.8389
+     "over": 0.8351
     },
     {
      "line": 17.5,
-     "over": 0.8137
+     "over": 0.8103
     },
     {
      "line": 20.0,
-     "over": 0.7884
+     "over": 0.7854
     },
     {
      "line": 22.5,
-     "over": 0.7632
+     "over": 0.7606
     },
     {
      "line": 25.0,
-     "over": 0.7364
+     "over": 0.7338
     },
     {
      "line": 27.5,
-     "over": 0.708
+     "over": 0.7055
     },
     {
      "line": 30.0,
-     "over": 0.6796
+     "over": 0.6772
     },
     {
      "line": 32.5,
-     "over": 0.6512
+     "over": 0.6489
     },
     {
      "line": 35.0,
-     "over": 0.6227
+     "over": 0.6206
     },
     {
      "line": 37.5,
-     "over": 0.5943
+     "over": 0.5923
     },
     {
      "line": 40.0,
-     "over": 0.5659
+     "over": 0.564
     },
     {
      "line": 42.5,
-     "over": 0.5375
+     "over": 0.5357
     },
     {
      "line": 45.0,
-     "over": 0.5091
+     "over": 0.5074
     },
     {
      "line": 47.5,
-     "over": 0.4737
+     "over": 0.4755
     },
     {
      "line": 50.0,
-     "over": 0.435
+     "over": 0.4423
     },
     {
      "line": 52.5,
-     "over": 0.3963
+     "over": 0.4092
     },
     {
      "line": 55.0,
-     "over": 0.3577
+     "over": 0.376
     },
     {
      "line": 57.5,
-     "over": 0.319
+     "over": 0.3429
     },
     {
      "line": 60.0,
-     "over": 0.2803
+     "over": 0.3097
     },
     {
      "line": 62.5,
-     "over": 0.2455
+     "over": 0.2766
     },
     {
      "line": 65.0,
-     "over": 0.2245
+     "over": 0.2465
     },
     {
      "line": 67.5,
-     "over": 0.2034
+     "over": 0.2287
     },
     {
      "line": 70.0,
-     "over": 0.1824
+     "over": 0.2109
     },
     {
      "line": 72.5,
-     "over": 0.1614
+     "over": 0.1932
     },
     {
      "line": 75.0,
-     "over": 0.1404
+     "over": 0.1754
     },
     {
      "line": 77.5,
-     "over": 0.1194
+     "over": 0.1576
     },
     {
      "line": 80.0,
-     "over": 0.0993
+     "over": 0.1399
     },
     {
      "line": 82.5,
-     "over": 0.0898
+     "over": 0.1221
     },
     {
      "line": 85.0,
-     "over": 0.0803
+     "over": 0.1043
     },
     {
      "line": 87.5,
-     "over": 0.0708
+     "over": 0.0933
     },
     {
      "line": 90.0,
-     "over": 0.0613
+     "over": 0.0844
     },
     {
      "line": 92.5,
-     "over": 0.0519
+     "over": 0.0755
     },
     {
      "line": 95.0,
-     "over": 0.045
+     "over": 0.0666
     },
     {
      "line": 97.5,
-     "over": 0.0388
+     "over": 0.0577
     },
     {
      "line": 100.0,
-     "over": 0.0326
+     "over": 0.0492
     },
     {
      "line": 102.5,
-     "over": 0.0264
+     "over": 0.0434
     },
     {
      "line": 105.0,
-     "over": 0.0202
+     "over": 0.0376
     },
     {
      "line": 107.5,
+     "over": 0.0318
+    },
+    {
+     "line": 110.0,
+     "over": 0.026
+    },
+    {
+     "line": 112.5,
+     "over": 0.0201
+    },
+    {
+     "line": 115.0,
      "over": 0.02
     }
    ],
    "refLine": 36.5,
-   "overProbAtRef": 0.6057,
+   "overProbAtRef": 0.6036,
    "lean": "over",
    "strength": 21,
    "confidence": "high",
    "confidenceReason": "11 games of steady production make this range tight.",
-   "verdict": "The model projects 45 rushing yards \u2014 it gives Zach a 61% chance to clear a 36.5-yard line.",
+   "verdict": "The model projects 45 rushing yards \u2014 it gives Zach a 60% chance to clear a 36.5-yard line.",
    "factors": [
     {
      "group": "recent_form",

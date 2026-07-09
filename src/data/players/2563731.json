@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 9.7,
     "p25": 21.7,
-    "p50": 37.9,
-    "p75": 62.1,
-    "p90": 100.1
+    "p50": 37.8,
+    "p75": 63.7,
+    "p90": 103.9
    },
    "probCurve": [
     {
@@ -53,184 +53,192 @@
     },
     {
      "line": 22.5,
-     "over": 0.7382
+     "over": 0.7381
     },
     {
      "line": 25.0,
-     "over": 0.6995
+     "over": 0.6993
     },
     {
      "line": 27.5,
-     "over": 0.6608
+     "over": 0.6605
     },
     {
      "line": 30.0,
-     "over": 0.6221
+     "over": 0.6217
     },
     {
      "line": 32.5,
-     "over": 0.5835
+     "over": 0.5829
     },
     {
      "line": 35.0,
-     "over": 0.5448
+     "over": 0.5441
     },
     {
      "line": 37.5,
-     "over": 0.5061
+     "over": 0.5053
     },
     {
      "line": 40.0,
-     "over": 0.4782
+     "over": 0.4791
     },
     {
      "line": 42.5,
-     "over": 0.4523
+     "over": 0.4549
     },
     {
      "line": 45.0,
-     "over": 0.4265
+     "over": 0.4307
     },
     {
      "line": 47.5,
-     "over": 0.4006
+     "over": 0.4065
     },
     {
      "line": 50.0,
-     "over": 0.3747
+     "over": 0.3823
     },
     {
      "line": 52.5,
-     "over": 0.3488
+     "over": 0.3581
     },
     {
      "line": 55.0,
-     "over": 0.323
+     "over": 0.3339
     },
     {
      "line": 57.5,
-     "over": 0.2971
+     "over": 0.3098
     },
     {
      "line": 60.0,
-     "over": 0.2712
+     "over": 0.2856
     },
     {
      "line": 62.5,
-     "over": 0.2482
+     "over": 0.2614
     },
     {
      "line": 65.0,
-     "over": 0.2384
+     "over": 0.2451
     },
     {
      "line": 67.5,
-     "over": 0.2285
+     "over": 0.2357
     },
     {
      "line": 70.0,
-     "over": 0.2186
+     "over": 0.2264
     },
     {
      "line": 72.5,
-     "over": 0.2088
+     "over": 0.2171
     },
     {
      "line": 75.0,
-     "over": 0.1989
+     "over": 0.2077
     },
     {
      "line": 77.5,
-     "over": 0.1891
+     "over": 0.1984
     },
     {
      "line": 80.0,
-     "over": 0.1792
+     "over": 0.1891
     },
     {
      "line": 82.5,
-     "over": 0.1693
+     "over": 0.1797
     },
     {
      "line": 85.0,
-     "over": 0.1595
+     "over": 0.1704
     },
     {
      "line": 87.5,
-     "over": 0.1496
+     "over": 0.1611
     },
     {
      "line": 90.0,
-     "over": 0.1397
+     "over": 0.1518
     },
     {
      "line": 92.5,
-     "over": 0.1299
+     "over": 0.1424
     },
     {
      "line": 95.0,
-     "over": 0.12
+     "over": 0.1331
     },
     {
      "line": 97.5,
-     "over": 0.1102
+     "over": 0.1238
     },
     {
      "line": 100.0,
-     "over": 0.1003
+     "over": 0.1144
     },
     {
      "line": 102.5,
-     "over": 0.0909
+     "over": 0.1051
     },
     {
      "line": 105.0,
-     "over": 0.0815
+     "over": 0.096
     },
     {
      "line": 107.5,
-     "over": 0.0721
+     "over": 0.0871
     },
     {
      "line": 110.0,
-     "over": 0.0627
+     "over": 0.0782
     },
     {
      "line": 112.5,
-     "over": 0.0533
+     "over": 0.0693
     },
     {
      "line": 115.0,
-     "over": 0.046
+     "over": 0.0604
     },
     {
      "line": 117.5,
-     "over": 0.0399
+     "over": 0.0515
     },
     {
      "line": 120.0,
-     "over": 0.0337
+     "over": 0.0452
     },
     {
      "line": 122.5,
-     "over": 0.0276
+     "over": 0.0394
     },
     {
      "line": 125.0,
-     "over": 0.0214
+     "over": 0.0336
     },
     {
      "line": 127.5,
+     "over": 0.0277
+    },
+    {
+     "line": 130.0,
+     "over": 0.0219
+    },
+    {
+     "line": 132.5,
      "over": 0.02
     }
    ],
    "refLine": 53.5,
-   "overProbAtRef": 0.3385,
+   "overProbAtRef": 0.3484,
    "lean": "under",
-   "strength": 32,
+   "strength": 30,
    "confidence": "high",
    "confidenceReason": "11 games of steady production make this range tight.",
-   "verdict": "The model projects 39 receiving yards \u2014 it gives Tee a 34% chance to clear a 53.5-yard line.",
+   "verdict": "The model projects 39 receiving yards \u2014 it gives Tee a 35% chance to clear a 53.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -282,101 +290,89 @@
    "market": "receptions",
    "projection": 3.1,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 2.0,
-    "p50": 3.2,
-    "p75": 4.8,
-    "p90": 5.4
+    "p10": 0.9,
+    "p25": 1.7,
+    "p50": 2.9,
+    "p75": 4.2,
+    "p90": 6.0
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8631
+     "over": 0.961
     },
     {
      "line": 1.0,
-     "over": 0.8262
+     "over": 0.792
     },
     {
      "line": 1.5,
-     "over": 0.7893
+     "over": 0.792
     },
     {
      "line": 2.0,
-     "over": 0.7524
+     "over": 0.5707
     },
     {
      "line": 2.5,
-     "over": 0.6466
+     "over": 0.5707
     },
     {
      "line": 3.0,
-     "over": 0.5358
+     "over": 0.3598
     },
     {
      "line": 3.5,
-     "over": 0.4468
+     "over": 0.3598
     },
     {
      "line": 4.0,
-     "over": 0.3682
+     "over": 0.2164
     },
     {
      "line": 4.5,
-     "over": 0.2896
+     "over": 0.2164
     },
     {
      "line": 5.0,
-     "over": 0.1933
+     "over": 0.1249
     },
     {
      "line": 5.5,
-     "over": 0.0981
+     "over": 0.1249
     },
     {
      "line": 6.0,
-     "over": 0.0876
+     "over": 0.0696
     },
     {
      "line": 6.5,
-     "over": 0.077
+     "over": 0.0696
     },
     {
      "line": 7.0,
-     "over": 0.0665
+     "over": 0.0367
     },
     {
      "line": 7.5,
-     "over": 0.056
+     "over": 0.0367
     },
     {
      "line": 8.0,
-     "over": 0.047
+     "over": 0.0175
     },
     {
      "line": 8.5,
-     "over": 0.0401
-    },
-    {
-     "line": 9.0,
-     "over": 0.0333
-    },
-    {
-     "line": 9.5,
-     "over": 0.0264
-    },
-    {
-     "line": 10.0,
-     "over": 0.02
+     "over": 0.0175
     }
    ],
    "refLine": 4.5,
-   "overProbAtRef": 0.2896,
+   "overProbAtRef": 0.2164,
    "lean": "under",
-   "strength": 36,
+   "strength": 48,
    "confidence": "medium",
    "confidenceReason": "Decent 11-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 3.1 catches \u2014 a 29% chance to beat a 4.5-catch line.",
+   "verdict": "The model projects 3.1 catches \u2014 a 22% chance to beat a 4.5-catch line.",
    "factors": [
     {
      "group": "opp_defense",

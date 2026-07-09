@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 14.5,
     "p25": 35.8,
-    "p50": 56.7,
-    "p75": 80.0,
-    "p90": 110.4
+    "p50": 56.6,
+    "p75": 81.6,
+    "p90": 114.2
    },
    "probCurve": [
     {
@@ -77,168 +77,180 @@
     },
     {
      "line": 37.5,
-     "over": 0.7297
+     "over": 0.7296
     },
     {
      "line": 40.0,
-     "over": 0.6997
+     "over": 0.6996
     },
     {
      "line": 42.5,
-     "over": 0.6698
+     "over": 0.6696
     },
     {
      "line": 45.0,
-     "over": 0.6399
+     "over": 0.6396
     },
     {
      "line": 47.5,
-     "over": 0.6099
+     "over": 0.6096
     },
     {
      "line": 50.0,
-     "over": 0.58
+     "over": 0.5796
     },
     {
      "line": 52.5,
-     "over": 0.5501
+     "over": 0.5496
     },
     {
      "line": 55.0,
-     "over": 0.5201
+     "over": 0.5196
     },
     {
      "line": 57.5,
-     "over": 0.4912
+     "over": 0.4913
     },
     {
      "line": 60.0,
-     "over": 0.4645
+     "over": 0.4663
     },
     {
      "line": 62.5,
-     "over": 0.4377
+     "over": 0.4413
     },
     {
      "line": 65.0,
-     "over": 0.4109
+     "over": 0.4164
     },
     {
      "line": 67.5,
-     "over": 0.3841
+     "over": 0.3914
     },
     {
      "line": 70.0,
-     "over": 0.3573
+     "over": 0.3664
     },
     {
      "line": 72.5,
-     "over": 0.3306
+     "over": 0.3414
     },
     {
      "line": 75.0,
-     "over": 0.3038
+     "over": 0.3164
     },
     {
      "line": 77.5,
-     "over": 0.277
+     "over": 0.2914
     },
     {
      "line": 80.0,
-     "over": 0.2502
+     "over": 0.2664
     },
     {
      "line": 82.5,
-     "over": 0.2378
+     "over": 0.246
     },
     {
      "line": 85.0,
-     "over": 0.2254
+     "over": 0.2345
     },
     {
      "line": 87.5,
-     "over": 0.2131
+     "over": 0.223
     },
     {
      "line": 90.0,
-     "over": 0.2007
+     "over": 0.2115
     },
     {
      "line": 92.5,
-     "over": 0.1884
+     "over": 0.2
     },
     {
      "line": 95.0,
-     "over": 0.1761
+     "over": 0.1885
     },
     {
      "line": 97.5,
-     "over": 0.1637
+     "over": 0.1769
     },
     {
      "line": 100.0,
-     "over": 0.1514
+     "over": 0.1654
     },
     {
      "line": 102.5,
-     "over": 0.139
+     "over": 0.1539
     },
     {
      "line": 105.0,
-     "over": 0.1267
+     "over": 0.1424
     },
     {
      "line": 107.5,
-     "over": 0.1144
+     "over": 0.1309
     },
     {
      "line": 110.0,
-     "over": 0.102
+     "over": 0.1194
     },
     {
      "line": 112.5,
-     "over": 0.0913
+     "over": 0.1078
     },
     {
      "line": 115.0,
-     "over": 0.0809
+     "over": 0.0973
     },
     {
      "line": 117.5,
-     "over": 0.0705
+     "over": 0.0888
     },
     {
      "line": 120.0,
-     "over": 0.06
+     "over": 0.0803
     },
     {
      "line": 122.5,
-     "over": 0.0498
+     "over": 0.0719
     },
     {
      "line": 125.0,
-     "over": 0.0429
+     "over": 0.0634
     },
     {
      "line": 127.5,
-     "over": 0.0361
+     "over": 0.0549
     },
     {
      "line": 130.0,
-     "over": 0.0293
+     "over": 0.0477
     },
     {
      "line": 132.5,
-     "over": 0.0225
+     "over": 0.0421
     },
     {
      "line": 135.0,
+     "over": 0.0366
+    },
+    {
+     "line": 137.5,
+     "over": 0.031
+    },
+    {
+     "line": 140.0,
+     "over": 0.0255
+    },
+    {
+     "line": 142.5,
      "over": 0.02
     }
    ],
    "refLine": 60.5,
-   "overProbAtRef": 0.4591,
-   "lean": "under",
+   "overProbAtRef": 0.4613,
+   "lean": "neutral",
    "strength": 8,
    "confidence": "high",
    "confidenceReason": "10 games of steady production make this range tight.",
@@ -273,109 +285,105 @@
    "market": "receptions",
    "projection": 3.8,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 1.7,
-    "p50": 3.5,
-    "p75": 5.5,
-    "p90": 6.4
+    "p10": 1.4,
+    "p25": 2.3,
+    "p50": 3.7,
+    "p75": 5.3,
+    "p90": 7.3
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8558
+     "over": 0.9852
     },
     {
      "line": 1.0,
-     "over": 0.8117
+     "over": 0.8927
     },
     {
      "line": 1.5,
-     "over": 0.7675
+     "over": 0.8927
     },
     {
      "line": 2.0,
-     "over": 0.7091
+     "over": 0.72
     },
     {
      "line": 2.5,
-     "over": 0.6413
+     "over": 0.72
     },
     {
      "line": 3.0,
-     "over": 0.5736
+     "over": 0.5369
     },
     {
      "line": 3.5,
-     "over": 0.5058
+     "over": 0.5369
     },
     {
      "line": 4.0,
-     "over": 0.442
+     "over": 0.3586
     },
     {
      "line": 4.5,
-     "over": 0.3785
+     "over": 0.3586
     },
     {
      "line": 5.0,
-     "over": 0.3149
+     "over": 0.2307
     },
     {
      "line": 5.5,
-     "over": 0.2514
+     "over": 0.2307
     },
     {
      "line": 6.0,
-     "over": 0.1675
+     "over": 0.1463
     },
     {
      "line": 6.5,
-     "over": 0.0978
+     "over": 0.1463
     },
     {
      "line": 7.0,
-     "over": 0.0869
+     "over": 0.0892
     },
     {
      "line": 7.5,
-     "over": 0.076
+     "over": 0.0892
     },
     {
      "line": 8.0,
-     "over": 0.0651
+     "over": 0.0537
     },
     {
      "line": 8.5,
-     "over": 0.0541
+     "over": 0.0537
     },
     {
      "line": 9.0,
-     "over": 0.0456
+     "over": 0.0294
     },
     {
      "line": 9.5,
-     "over": 0.0384
+     "over": 0.0294
     },
     {
      "line": 10.0,
-     "over": 0.0313
+     "over": 0.0153
     },
     {
      "line": 10.5,
-     "over": 0.0241
-    },
-    {
-     "line": 11.0,
-     "over": 0.02
+     "over": 0.0153
     }
    ],
    "refLine": 3.5,
-   "overProbAtRef": 0.5058,
+   "overProbAtRef": 0.5369,
    "lean": "neutral",
-   "strength": 1,
-   "confidence": "medium",
-   "confidenceReason": "Decent 10-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 3.8 catches \u2014 a 51% chance to beat a 3.5-catch line.",
+   "strength": 7,
+   "confidence": "high",
+   "confidenceReason": "10 games of steady production make this range tight.",
+   "verdict": "The model projects 3.8 catches \u2014 a 54% chance to beat a 3.5-catch line.",
    "factors": [
     {
      "group": "recent_form",
@@ -554,7 +562,7 @@
    "market": "receptions",
    "projection": 3.0,
    "refLine": 2.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 6.0,
    "result": "over"
   },

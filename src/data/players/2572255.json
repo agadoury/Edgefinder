@@ -15,8 +15,8 @@
     "p10": 4.0,
     "p25": 8.4,
     "p50": 22.8,
-    "p75": 48.4,
-    "p90": 69.5
+    "p75": 50.0,
+    "p90": 73.3
    },
    "probCurve": [
     {
@@ -25,164 +25,180 @@
     },
     {
      "line": 5.0,
-     "over": 0.8646
+     "over": 0.8645
     },
     {
      "line": 7.5,
-     "over": 0.7799
+     "over": 0.7798
     },
     {
      "line": 10.0,
-     "over": 0.722
+     "over": 0.7218
     },
     {
      "line": 12.5,
-     "over": 0.6786
+     "over": 0.6784
     },
     {
      "line": 15.0,
-     "over": 0.6353
+     "over": 0.6349
     },
     {
      "line": 17.5,
-     "over": 0.592
+     "over": 0.5914
     },
     {
      "line": 20.0,
-     "over": 0.5486
+     "over": 0.5479
     },
     {
      "line": 22.5,
-     "over": 0.5053
+     "over": 0.5045
     },
     {
      "line": 25.0,
-     "over": 0.4785
+     "over": 0.4794
     },
     {
      "line": 27.5,
-     "over": 0.4541
+     "over": 0.4565
     },
     {
      "line": 30.0,
-     "over": 0.4296
+     "over": 0.4335
     },
     {
      "line": 32.5,
-     "over": 0.4052
+     "over": 0.4106
     },
     {
      "line": 35.0,
-     "over": 0.3807
+     "over": 0.3876
     },
     {
      "line": 37.5,
-     "over": 0.3563
+     "over": 0.3647
     },
     {
      "line": 40.0,
-     "over": 0.3319
+     "over": 0.3417
     },
     {
      "line": 42.5,
-     "over": 0.3074
+     "over": 0.3188
     },
     {
      "line": 45.0,
-     "over": 0.283
+     "over": 0.2958
     },
     {
      "line": 47.5,
-     "over": 0.2585
+     "over": 0.2729
     },
     {
      "line": 50.0,
-     "over": 0.2385
+     "over": 0.2499
     },
     {
      "line": 52.5,
-     "over": 0.2207
+     "over": 0.2339
     },
     {
      "line": 55.0,
-     "over": 0.203
+     "over": 0.2178
     },
     {
      "line": 57.5,
-     "over": 0.1853
+     "over": 0.2018
     },
     {
      "line": 60.0,
-     "over": 0.1676
+     "over": 0.1857
     },
     {
      "line": 62.5,
-     "over": 0.1499
+     "over": 0.1696
     },
     {
      "line": 65.0,
-     "over": 0.1322
+     "over": 0.1536
     },
     {
      "line": 67.5,
-     "over": 0.1145
+     "over": 0.1375
     },
     {
      "line": 70.0,
-     "over": 0.0984
+     "over": 0.1214
     },
     {
      "line": 72.5,
-     "over": 0.0895
+     "over": 0.1054
     },
     {
      "line": 75.0,
-     "over": 0.0807
+     "over": 0.0951
     },
     {
      "line": 77.5,
-     "over": 0.0718
+     "over": 0.0877
     },
     {
      "line": 80.0,
-     "over": 0.063
+     "over": 0.0803
     },
     {
      "line": 82.5,
-     "over": 0.0542
+     "over": 0.0729
     },
     {
      "line": 85.0,
-     "over": 0.0469
+     "over": 0.0654
     },
     {
      "line": 87.5,
-     "over": 0.0411
+     "over": 0.058
     },
     {
      "line": 90.0,
-     "over": 0.0353
+     "over": 0.0506
     },
     {
      "line": 92.5,
-     "over": 0.0295
+     "over": 0.0456
     },
     {
      "line": 95.0,
-     "over": 0.0238
+     "over": 0.0407
     },
     {
      "line": 97.5,
+     "over": 0.0359
+    },
+    {
+     "line": 100.0,
+     "over": 0.031
+    },
+    {
+     "line": 102.5,
+     "over": 0.0262
+    },
+    {
+     "line": 105.0,
+     "over": 0.0213
+    },
+    {
+     "line": 107.5,
      "over": 0.02
     }
    ],
    "refLine": 28.5,
-   "overProbAtRef": 0.4443,
+   "overProbAtRef": 0.4473,
    "lean": "under",
    "strength": 9,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 27 receiving yards \u2014 it gives Malik a 44% chance to clear a 28.5-yard line.",
+   "verdict": "The model projects 27 receiving yards \u2014 it gives Malik a 45% chance to clear a 28.5-yard line.",
    "factors": [
     {
      "group": "recent_form",
@@ -213,85 +229,97 @@
    "market": "receptions",
    "projection": 3.1,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 1.3,
-    "p50": 2.9,
-    "p75": 4.2,
-    "p90": 5.7
+    "p10": 1.0,
+    "p25": 1.8,
+    "p50": 3.0,
+    "p75": 4.4,
+    "p90": 6.2
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8405
+     "over": 0.968
     },
     {
      "line": 1.0,
-     "over": 0.781
+     "over": 0.8141
     },
     {
      "line": 1.5,
-     "over": 0.7126
+     "over": 0.8141
     },
     {
      "line": 2.0,
-     "over": 0.6345
+     "over": 0.6022
     },
     {
      "line": 2.5,
-     "over": 0.5564
+     "over": 0.6022
     },
     {
      "line": 3.0,
-     "over": 0.474
+     "over": 0.3922
     },
     {
      "line": 3.5,
-     "over": 0.3806
+     "over": 0.3922
     },
     {
      "line": 4.0,
-     "over": 0.2872
+     "over": 0.2371
     },
     {
      "line": 4.5,
-     "over": 0.2204
+     "over": 0.2371
     },
     {
      "line": 5.0,
-     "over": 0.1712
+     "over": 0.1419
     },
     {
      "line": 5.5,
-     "over": 0.122
+     "over": 0.1419
     },
     {
      "line": 6.0,
-     "over": 0.0856
+     "over": 0.0809
     },
     {
      "line": 6.5,
-     "over": 0.0596
+     "over": 0.0809
     },
     {
      "line": 7.0,
-     "over": 0.0392
+     "over": 0.0449
     },
     {
      "line": 7.5,
-     "over": 0.0222
+     "over": 0.0449
     },
     {
      "line": 8.0,
-     "over": 0.02
+     "over": 0.0222
+    },
+    {
+     "line": 8.5,
+     "over": 0.0222
+    },
+    {
+     "line": 9.0,
+     "over": 0.0102
+    },
+    {
+     "line": 9.5,
+     "over": 0.0102
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.5564,
+   "overProbAtRef": 0.6022,
    "lean": "over",
-   "strength": 10,
+   "strength": 17,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 3.1 catches \u2014 a 56% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 3.1 catches \u2014 a 60% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "recent_form",
@@ -524,7 +552,7 @@
    "market": "receptions",
    "projection": 3.6,
    "refLine": 3.5,
-   "lean": "under",
+   "lean": "over",
    "actual": 3.0,
    "result": "under"
   }

@@ -12,233 +12,269 @@
    "market": "pass_yds",
    "projection": 234.4,
    "quantiles": {
-    "p10": 148.6,
-    "p25": 194.9,
-    "p50": 237.6,
-    "p75": 276.0,
-    "p90": 292.6
+    "p10": 138.5,
+    "p25": 181.4,
+    "p50": 229.7,
+    "p75": 280.2,
+    "p90": 312.1
    },
    "probCurve": [
     {
-     "line": 80.0,
+     "line": 70.0,
      "over": 0.98
     },
     {
+     "line": 75.0,
+     "over": 0.9759
+    },
+    {
+     "line": 80.0,
+     "over": 0.9713
+    },
+    {
      "line": 85.0,
-     "over": 0.9774
+     "over": 0.9666
     },
     {
      "line": 90.0,
-     "over": 0.9727
+     "over": 0.962
     },
     {
      "line": 95.0,
-     "over": 0.968
+     "over": 0.9574
     },
     {
      "line": 100.0,
-     "over": 0.9632
+     "over": 0.9528
     },
     {
      "line": 105.0,
-     "over": 0.9585
+     "over": 0.9472
     },
     {
      "line": 110.0,
-     "over": 0.9538
+     "over": 0.9402
     },
     {
      "line": 115.0,
-     "over": 0.9486
+     "over": 0.9331
     },
     {
      "line": 120.0,
-     "over": 0.9413
+     "over": 0.9261
     },
     {
      "line": 125.0,
-     "over": 0.9341
+     "over": 0.9191
     },
     {
      "line": 130.0,
-     "over": 0.9269
+     "over": 0.912
     },
     {
      "line": 135.0,
-     "over": 0.9197
+     "over": 0.905
     },
     {
      "line": 140.0,
-     "over": 0.9125
+     "over": 0.8948
     },
     {
      "line": 145.0,
-     "over": 0.9053
+     "over": 0.8774
     },
     {
      "line": 150.0,
-     "over": 0.8956
+     "over": 0.8599
     },
     {
      "line": 155.0,
-     "over": 0.8794
+     "over": 0.8424
     },
     {
      "line": 160.0,
-     "over": 0.8632
+     "over": 0.8249
     },
     {
      "line": 165.0,
-     "over": 0.8469
+     "over": 0.8075
     },
     {
      "line": 170.0,
-     "over": 0.8307
+     "over": 0.79
     },
     {
      "line": 175.0,
-     "over": 0.8145
+     "over": 0.7725
     },
     {
      "line": 180.0,
-     "over": 0.7983
+     "over": 0.755
     },
     {
      "line": 185.0,
-     "over": 0.7821
+     "over": 0.7315
     },
     {
      "line": 190.0,
-     "over": 0.7659
+     "over": 0.7056
     },
     {
      "line": 195.0,
-     "over": 0.7494
+     "over": 0.6798
     },
     {
      "line": 200.0,
-     "over": 0.7201
+     "over": 0.6539
     },
     {
      "line": 205.0,
-     "over": 0.6908
+     "over": 0.628
     },
     {
      "line": 210.0,
-     "over": 0.6615
+     "over": 0.6021
     },
     {
      "line": 215.0,
-     "over": 0.6322
+     "over": 0.5762
     },
     {
      "line": 220.0,
-     "over": 0.6029
+     "over": 0.5503
     },
     {
      "line": 225.0,
-     "over": 0.5737
+     "over": 0.5244
     },
     {
      "line": 230.0,
-     "over": 0.5444
+     "over": 0.4986
     },
     {
      "line": 235.0,
-     "over": 0.5151
+     "over": 0.4738
     },
     {
      "line": 240.0,
-     "over": 0.4842
+     "over": 0.4491
     },
     {
      "line": 245.0,
-     "over": 0.4517
+     "over": 0.4243
     },
     {
      "line": 250.0,
-     "over": 0.4192
+     "over": 0.3996
     },
     {
      "line": 255.0,
-     "over": 0.3867
+     "over": 0.3748
     },
     {
      "line": 260.0,
-     "over": 0.3542
+     "over": 0.3501
     },
     {
      "line": 265.0,
-     "over": 0.3217
+     "over": 0.3253
     },
     {
      "line": 270.0,
-     "over": 0.2892
+     "over": 0.3006
     },
     {
      "line": 275.0,
-     "over": 0.2567
+     "over": 0.2758
     },
     {
      "line": 280.0,
-     "over": 0.2141
+     "over": 0.2511
     },
     {
      "line": 285.0,
-     "over": 0.1689
+     "over": 0.2275
     },
     {
      "line": 290.0,
-     "over": 0.1236
+     "over": 0.204
     },
     {
      "line": 295.0,
-     "over": 0.0953
+     "over": 0.1804
     },
     {
      "line": 300.0,
-     "over": 0.0854
+     "over": 0.1569
     },
     {
      "line": 305.0,
-     "over": 0.0755
+     "over": 0.1333
     },
     {
      "line": 310.0,
-     "over": 0.0657
+     "over": 0.1098
     },
     {
      "line": 315.0,
-     "over": 0.0558
+     "over": 0.0955
     },
     {
      "line": 320.0,
-     "over": 0.0473
+     "over": 0.0878
     },
     {
      "line": 325.0,
-     "over": 0.0409
+     "over": 0.0802
     },
     {
      "line": 330.0,
-     "over": 0.0344
+     "over": 0.0725
     },
     {
      "line": 335.0,
-     "over": 0.0279
+     "over": 0.0648
     },
     {
      "line": 340.0,
-     "over": 0.0215
+     "over": 0.0571
+    },
+    {
+     "line": 345.0,
+     "over": 0.0496
+    },
+    {
+     "line": 350.0,
+     "over": 0.0446
+    },
+    {
+     "line": 355.0,
+     "over": 0.0396
+    },
+    {
+     "line": 360.0,
+     "over": 0.0345
+    },
+    {
+     "line": 365.0,
+     "over": 0.0295
+    },
+    {
+     "line": 370.0,
+     "over": 0.0245
+    },
+    {
+     "line": 375.0,
+     "over": 0.02
     }
    ],
    "refLine": 193.5,
-   "overProbAtRef": 0.7543,
+   "overProbAtRef": 0.6875,
    "lean": "over",
-   "strength": 43,
+   "strength": 32,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 234 passing yards \u2014 it gives Jordan a 75% chance to clear a 193.5-yard line.",
+   "verdict": "The model projects 234 passing yards \u2014 it gives Jordan a 69% chance to clear a 193.5-yard line.",
    "factors": [
     {
      "group": "weather",
@@ -269,41 +305,41 @@
    "market": "pass_tds",
    "projection": 1.7,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.8,
-    "p75": 2.2,
-    "p90": 3.0
+    "p10": 0.4,
+    "p25": 0.8,
+    "p50": 1.5,
+    "p75": 2.5,
+    "p90": 3.6
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8258
+     "over": 0.8679
     },
     {
      "line": 1.5,
-     "over": 0.5214
+     "over": 0.4971
     },
     {
      "line": 2.5,
-     "over": 0.2554
+     "over": 0.2404
     },
     {
      "line": 3.5,
-     "over": 0.1005
+     "over": 0.1045
     },
     {
      "line": 4.5,
-     "over": 0.0327
+     "over": 0.036
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.8258,
+   "overProbAtRef": 0.8679,
    "lean": "over",
-   "strength": 55,
+   "strength": 63,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.7 touchdown passes \u2014 it gives Jordan a 83% chance to go over 0.5.",
+   "verdict": "The model expects 1.7 touchdown passes \u2014 it gives Jordan a 87% chance to go over 0.5.",
    "factors": [
     {
      "group": "rest_schedule",

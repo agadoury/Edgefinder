@@ -12,186 +12,198 @@
    "market": "rush_yds",
    "projection": 24.9,
    "quantiles": {
-    "p10": 3.2,
-    "p25": 8.4,
-    "p50": 19.2,
-    "p75": 41.0,
-    "p90": 62.9
+    "p10": 2.8,
+    "p25": 8.2,
+    "p50": 19.1,
+    "p75": 43.5,
+    "p90": 68.7
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9149
+     "over": 0.9048
     },
     {
      "line": 5.0,
-     "over": 0.8489
+     "over": 0.8378
     },
     {
      "line": 7.5,
-     "over": 0.7765
+     "over": 0.7687
     },
     {
      "line": 10.0,
-     "over": 0.7134
+     "over": 0.7082
     },
     {
      "line": 12.5,
-     "over": 0.6555
+     "over": 0.6509
     },
     {
      "line": 15.0,
-     "over": 0.5977
+     "over": 0.5935
     },
     {
      "line": 17.5,
-     "over": 0.5399
+     "over": 0.5362
     },
     {
      "line": 20.0,
-     "over": 0.4911
+     "over": 0.4906
     },
     {
      "line": 22.5,
-     "over": 0.4624
+     "over": 0.465
     },
     {
      "line": 25.0,
-     "over": 0.4337
+     "over": 0.4395
     },
     {
      "line": 27.5,
-     "over": 0.405
+     "over": 0.4139
     },
     {
      "line": 30.0,
-     "over": 0.3763
+     "over": 0.3884
     },
     {
      "line": 32.5,
-     "over": 0.3476
+     "over": 0.3628
     },
     {
      "line": 35.0,
-     "over": 0.3189
+     "over": 0.3373
     },
     {
      "line": 37.5,
-     "over": 0.2902
+     "over": 0.3117
     },
     {
      "line": 40.0,
-     "over": 0.2615
+     "over": 0.2862
     },
     {
      "line": 42.5,
-     "over": 0.2397
+     "over": 0.2606
     },
     {
      "line": 45.0,
-     "over": 0.2226
+     "over": 0.2413
     },
     {
      "line": 47.5,
-     "over": 0.2055
+     "over": 0.2264
     },
     {
      "line": 50.0,
-     "over": 0.1883
+     "over": 0.2115
     },
     {
      "line": 52.5,
-     "over": 0.1712
+     "over": 0.1966
     },
     {
      "line": 55.0,
-     "over": 0.1541
+     "over": 0.1817
     },
     {
      "line": 57.5,
-     "over": 0.1369
+     "over": 0.1668
     },
     {
      "line": 60.0,
-     "over": 0.1198
+     "over": 0.1518
     },
     {
      "line": 62.5,
-     "over": 0.1027
+     "over": 0.1369
     },
     {
      "line": 65.0,
-     "over": 0.0951
+     "over": 0.122
     },
     {
      "line": 67.5,
-     "over": 0.0894
+     "over": 0.1071
     },
     {
      "line": 70.0,
-     "over": 0.0836
+     "over": 0.0971
     },
     {
      "line": 72.5,
-     "over": 0.0779
+     "over": 0.0916
     },
     {
      "line": 75.0,
-     "over": 0.0721
+     "over": 0.0861
     },
     {
      "line": 77.5,
-     "over": 0.0664
+     "over": 0.0805
     },
     {
      "line": 80.0,
-     "over": 0.0606
+     "over": 0.075
     },
     {
      "line": 82.5,
-     "over": 0.0549
+     "over": 0.0695
     },
     {
      "line": 85.0,
-     "over": 0.0494
+     "over": 0.0639
     },
     {
      "line": 87.5,
-     "over": 0.0457
+     "over": 0.0584
     },
     {
      "line": 90.0,
-     "over": 0.0419
+     "over": 0.0529
     },
     {
      "line": 92.5,
-     "over": 0.0381
+     "over": 0.0483
     },
     {
      "line": 95.0,
-     "over": 0.0344
+     "over": 0.0446
     },
     {
      "line": 97.5,
-     "over": 0.0306
+     "over": 0.041
     },
     {
      "line": 100.0,
-     "over": 0.0268
+     "over": 0.0374
     },
     {
      "line": 102.5,
-     "over": 0.0231
+     "over": 0.0338
     },
     {
      "line": 105.0,
+     "over": 0.0302
+    },
+    {
+     "line": 107.5,
+     "over": 0.0266
+    },
+    {
+     "line": 110.0,
+     "over": 0.0229
+    },
+    {
+     "line": 112.5,
      "over": 0.02
     }
    ],
    "refLine": 16.5,
-   "overProbAtRef": 0.563,
+   "overProbAtRef": 0.5591,
    "lean": "over",
-   "strength": 11,
+   "strength": 10,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
    "verdict": "The model projects 25 rushing yards \u2014 it gives Bhayshul a 56% chance to clear a 16.5-yard line.",

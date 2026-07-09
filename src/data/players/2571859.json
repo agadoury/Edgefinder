@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 2.4,
     "p25": 10.2,
-    "p50": 25.8,
-    "p75": 46.8,
-    "p90": 59.9
+    "p50": 25.7,
+    "p75": 48.5,
+    "p90": 63.7
    },
    "probCurve": [
     {
@@ -29,143 +29,155 @@
     },
     {
      "line": 7.5,
-     "over": 0.8012
+     "over": 0.8011
     },
     {
      "line": 10.0,
-     "over": 0.753
+     "over": 0.7529
     },
     {
      "line": 12.5,
-     "over": 0.7124
+     "over": 0.7123
     },
     {
      "line": 15.0,
-     "over": 0.6724
+     "over": 0.6721
     },
     {
      "line": 17.5,
-     "over": 0.6324
+     "over": 0.632
     },
     {
      "line": 20.0,
-     "over": 0.5924
+     "over": 0.5919
     },
     {
      "line": 22.5,
-     "over": 0.5524
+     "over": 0.5517
     },
     {
      "line": 25.0,
-     "over": 0.5124
+     "over": 0.5116
     },
     {
      "line": 27.5,
-     "over": 0.4795
+     "over": 0.4805
     },
     {
      "line": 30.0,
-     "over": 0.4498
+     "over": 0.453
     },
     {
      "line": 32.5,
-     "over": 0.4202
+     "over": 0.4255
     },
     {
      "line": 35.0,
-     "over": 0.3905
+     "over": 0.398
     },
     {
      "line": 37.5,
-     "over": 0.3609
+     "over": 0.3705
     },
     {
      "line": 40.0,
-     "over": 0.3312
+     "over": 0.343
     },
     {
      "line": 42.5,
-     "over": 0.3015
+     "over": 0.3156
     },
     {
      "line": 45.0,
-     "over": 0.2719
+     "over": 0.2881
     },
     {
      "line": 47.5,
-     "over": 0.2424
+     "over": 0.2606
     },
     {
      "line": 50.0,
-     "over": 0.2137
+     "over": 0.2349
     },
     {
      "line": 52.5,
-     "over": 0.1849
+     "over": 0.2102
     },
     {
      "line": 55.0,
-     "over": 0.1561
+     "over": 0.1855
     },
     {
      "line": 57.5,
-     "over": 0.1274
+     "over": 0.1609
     },
     {
      "line": 60.0,
-     "over": 0.0996
+     "over": 0.1362
     },
     {
      "line": 62.5,
-     "over": 0.0911
+     "over": 0.1116
     },
     {
      "line": 65.0,
-     "over": 0.0825
+     "over": 0.0962
     },
     {
      "line": 67.5,
-     "over": 0.074
+     "over": 0.089
     },
     {
      "line": 70.0,
-     "over": 0.0655
+     "over": 0.0818
     },
     {
      "line": 72.5,
-     "over": 0.057
+     "over": 0.0746
     },
     {
      "line": 75.0,
-     "over": 0.049
+     "over": 0.0675
     },
     {
      "line": 77.5,
-     "over": 0.0434
+     "over": 0.0603
     },
     {
      "line": 80.0,
-     "over": 0.0378
+     "over": 0.0531
     },
     {
      "line": 82.5,
-     "over": 0.0322
+     "over": 0.0473
     },
     {
      "line": 85.0,
-     "over": 0.0266
+     "over": 0.0426
     },
     {
      "line": 87.5,
-     "over": 0.0211
+     "over": 0.0379
     },
     {
      "line": 90.0,
+     "over": 0.0332
+    },
+    {
+     "line": 92.5,
+     "over": 0.0285
+    },
+    {
+     "line": 95.0,
+     "over": 0.0238
+    },
+    {
+     "line": 97.5,
      "over": 0.02
     }
    ],
    "refLine": 20.5,
-   "overProbAtRef": 0.5844,
+   "overProbAtRef": 0.5839,
    "lean": "over",
    "strength": 14,
    "confidence": "medium",
@@ -222,81 +234,89 @@
    "market": "receptions",
    "projection": 3.0,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 1.3,
-    "p50": 3.1,
-    "p75": 4.3,
+    "p10": 0.7,
+    "p25": 1.5,
+    "p50": 2.6,
+    "p75": 3.9,
     "p90": 5.5
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8438
+     "over": 0.9457
     },
     {
      "line": 1.0,
-     "over": 0.7876
+     "over": 0.7444
     },
     {
      "line": 1.5,
-     "over": 0.7267
+     "over": 0.7444
     },
     {
      "line": 2.0,
-     "over": 0.6565
+     "over": 0.5144
     },
     {
      "line": 2.5,
-     "over": 0.5863
+     "over": 0.5144
     },
     {
      "line": 3.0,
-     "over": 0.5161
+     "over": 0.3044
     },
     {
      "line": 3.5,
-     "over": 0.4205
+     "over": 0.3044
     },
     {
      "line": 4.0,
-     "over": 0.3173
+     "over": 0.1777
     },
     {
      "line": 4.5,
-     "over": 0.227
+     "over": 0.1777
     },
     {
      "line": 5.0,
-     "over": 0.1608
+     "over": 0.0973
     },
     {
      "line": 5.5,
-     "over": 0.0977
+     "over": 0.0973
     },
     {
      "line": 6.0,
-     "over": 0.069
+     "over": 0.0523
     },
     {
      "line": 6.5,
-     "over": 0.0437
+     "over": 0.0523
     },
     {
      "line": 7.0,
-     "over": 0.025
+     "over": 0.0247
     },
     {
      "line": 7.5,
-     "over": 0.02
+     "over": 0.0247
+    },
+    {
+     "line": 8.0,
+     "over": 0.0108
+    },
+    {
+     "line": 8.5,
+     "over": 0.0108
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.5863,
-   "lean": "over",
-   "strength": 15,
+   "overProbAtRef": 0.5144,
+   "lean": "neutral",
+   "strength": 2,
    "confidence": "medium",
    "confidenceReason": "Decent 10-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 3.0 catches \u2014 a 59% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 3.0 catches \u2014 a 51% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "recent_form",
@@ -496,7 +516,7 @@
    "market": "receptions",
    "projection": 2.6,
    "refLine": 2.5,
-   "lean": "over",
+   "lean": "under",
    "actual": 2.0,
    "result": "under"
   },

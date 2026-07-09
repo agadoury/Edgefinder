@@ -12,253 +12,285 @@
    "market": "pass_yds",
    "projection": 225.2,
    "quantiles": {
-    "p10": 96.5,
-    "p25": 168.8,
-    "p50": 230.8,
-    "p75": 245.2,
-    "p90": 279.2
+    "p10": 86.4,
+    "p25": 155.3,
+    "p50": 222.9,
+    "p75": 249.3,
+    "p90": 298.7
    },
    "probCurve": [
     {
-     "line": 15.0,
+     "line": 5.0,
      "over": 0.98
     },
     {
+     "line": 10.0,
+     "over": 0.9765
+    },
+    {
+     "line": 15.0,
+     "over": 0.9727
+    },
+    {
      "line": 20.0,
-     "over": 0.9778
+     "over": 0.9688
     },
     {
      "line": 25.0,
-     "over": 0.9739
+     "over": 0.9649
     },
     {
      "line": 30.0,
-     "over": 0.9699
+     "over": 0.961
     },
     {
      "line": 35.0,
-     "over": 0.966
+     "over": 0.9571
     },
     {
      "line": 40.0,
-     "over": 0.962
+     "over": 0.9533
     },
     {
      "line": 45.0,
-     "over": 0.958
+     "over": 0.949
     },
     {
      "line": 50.0,
-     "over": 0.9541
+     "over": 0.9431
     },
     {
      "line": 55.0,
-     "over": 0.9501
+     "over": 0.9372
     },
     {
      "line": 60.0,
-     "over": 0.9441
+     "over": 0.9313
     },
     {
      "line": 65.0,
-     "over": 0.9381
+     "over": 0.9253
     },
     {
      "line": 70.0,
-     "over": 0.932
+     "over": 0.9194
     },
     {
      "line": 75.0,
-     "over": 0.926
+     "over": 0.9135
     },
     {
      "line": 80.0,
-     "over": 0.9199
+     "over": 0.9075
     },
     {
      "line": 85.0,
-     "over": 0.9139
+     "over": 0.9016
     },
     {
      "line": 90.0,
-     "over": 0.9078
+     "over": 0.8921
     },
     {
      "line": 95.0,
-     "over": 0.9018
+     "over": 0.8812
     },
     {
      "line": 100.0,
-     "over": 0.8927
+     "over": 0.8704
     },
     {
      "line": 105.0,
-     "over": 0.8823
+     "over": 0.8595
     },
     {
      "line": 110.0,
-     "over": 0.872
+     "over": 0.8486
     },
     {
      "line": 115.0,
-     "over": 0.8616
+     "over": 0.8377
     },
     {
      "line": 120.0,
-     "over": 0.8512
+     "over": 0.8269
     },
     {
      "line": 125.0,
-     "over": 0.8409
+     "over": 0.816
     },
     {
      "line": 130.0,
-     "over": 0.8305
+     "over": 0.8051
     },
     {
      "line": 135.0,
-     "over": 0.8201
+     "over": 0.7942
     },
     {
      "line": 140.0,
-     "over": 0.8097
+     "over": 0.7834
     },
     {
      "line": 145.0,
-     "over": 0.7994
+     "over": 0.7725
     },
     {
      "line": 150.0,
-     "over": 0.789
+     "over": 0.7616
     },
     {
      "line": 155.0,
-     "over": 0.7786
+     "over": 0.7508
     },
     {
      "line": 160.0,
-     "over": 0.7683
+     "over": 0.7328
     },
     {
      "line": 165.0,
-     "over": 0.7579
+     "over": 0.7143
     },
     {
      "line": 170.0,
-     "over": 0.7452
+     "over": 0.6958
     },
     {
      "line": 175.0,
-     "over": 0.725
+     "over": 0.6773
     },
     {
      "line": 180.0,
-     "over": 0.7048
+     "over": 0.6588
     },
     {
      "line": 185.0,
-     "over": 0.6847
+     "over": 0.6403
     },
     {
      "line": 190.0,
-     "over": 0.6645
+     "over": 0.6218
     },
     {
      "line": 195.0,
-     "over": 0.6444
+     "over": 0.6033
     },
     {
      "line": 200.0,
-     "over": 0.6242
+     "over": 0.5848
     },
     {
      "line": 205.0,
-     "over": 0.604
+     "over": 0.5664
     },
     {
      "line": 210.0,
-     "over": 0.5839
+     "over": 0.5479
     },
     {
      "line": 215.0,
-     "over": 0.5637
+     "over": 0.5294
     },
     {
      "line": 220.0,
-     "over": 0.5436
+     "over": 0.5109
     },
     {
      "line": 225.0,
-     "over": 0.5234
+     "over": 0.4805
     },
     {
      "line": 230.0,
-     "over": 0.5033
+     "over": 0.4331
     },
     {
      "line": 235.0,
-     "over": 0.4269
+     "over": 0.3858
     },
     {
      "line": 240.0,
-     "over": 0.3398
+     "over": 0.3384
     },
     {
      "line": 245.0,
-     "over": 0.2526
+     "over": 0.2911
     },
     {
      "line": 250.0,
-     "over": 0.2286
+     "over": 0.248
     },
     {
      "line": 255.0,
-     "over": 0.2066
+     "over": 0.2328
     },
     {
      "line": 260.0,
-     "over": 0.1846
+     "over": 0.2176
     },
     {
      "line": 265.0,
-     "over": 0.1626
+     "over": 0.2024
     },
     {
      "line": 270.0,
-     "over": 0.1406
+     "over": 0.1872
     },
     {
      "line": 275.0,
-     "over": 0.1185
+     "over": 0.172
     },
     {
      "line": 280.0,
-     "over": 0.0967
+     "over": 0.1568
     },
     {
      "line": 285.0,
-     "over": 0.0757
+     "over": 0.1416
     },
     {
      "line": 290.0,
-     "over": 0.0547
+     "over": 0.1264
     },
     {
      "line": 295.0,
-     "over": 0.0394
+     "over": 0.1112
     },
     {
      "line": 300.0,
-     "over": 0.0256
+     "over": 0.0962
+    },
+    {
+     "line": 305.0,
+     "over": 0.0817
+    },
+    {
+     "line": 310.0,
+     "over": 0.0672
+    },
+    {
+     "line": 315.0,
+     "over": 0.0527
+    },
+    {
+     "line": 320.0,
+     "over": 0.0423
+    },
+    {
+     "line": 325.0,
+     "over": 0.0328
+    },
+    {
+     "line": 330.0,
+     "over": 0.0234
     }
    ],
    "refLine": 172.5,
-   "overProbAtRef": 0.7351,
+   "overProbAtRef": 0.6865,
    "lean": "over",
-   "strength": 40,
+   "strength": 32,
    "confidence": "medium",
    "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 225 passing yards \u2014 it gives Kirk a 74% chance to clear a 172.5-yard line.",
+   "verdict": "The model projects 225 passing yards \u2014 it gives Kirk a 69% chance to clear a 172.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -296,41 +328,41 @@
    "market": "pass_tds",
    "projection": 1.1,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.0,
-    "p75": 1.5,
-    "p90": 1.7
+    "p10": 0.1,
+    "p25": 0.5,
+    "p50": 1.1,
+    "p75": 2.0,
+    "p90": 3.0
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.6822
+     "over": 0.753
     },
     {
      "line": 1.5,
-     "over": 0.3179
+     "over": 0.3719
     },
     {
      "line": 2.5,
-     "over": 0.1091
+     "over": 0.155
     },
     {
      "line": 3.5,
-     "over": 0.0293
+     "over": 0.0505
     },
     {
      "line": 4.5,
-     "over": 0.0064
+     "over": 0.0123
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.6822,
+   "overProbAtRef": 0.753,
    "lean": "over",
-   "strength": 31,
-   "confidence": "medium",
-   "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.1 touchdown passes \u2014 it gives Kirk a 68% chance to go over 0.5.",
+   "strength": 35,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model expects 1.1 touchdown passes \u2014 it gives Kirk a 75% chance to go over 0.5.",
    "factors": [
     {
      "group": "usage_role",
@@ -533,7 +565,7 @@
    "market": "pass_tds",
    "projection": 0.4,
    "refLine": 0.5,
-   "lean": "under",
+   "lean": "over",
    "actual": 2.0,
    "result": "over"
   },
@@ -551,7 +583,7 @@
    "market": "pass_tds",
    "projection": 0.3,
    "refLine": 0.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 0.0,
    "result": "under"
   },

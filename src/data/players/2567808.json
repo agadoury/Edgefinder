@@ -12,189 +12,201 @@
    "market": "rush_yds",
    "projection": 35.3,
    "quantiles": {
-    "p10": 4.5,
-    "p25": 17.4,
-    "p50": 35.8,
-    "p75": 51.6,
-    "p90": 77.9
+    "p10": 4.0,
+    "p25": 17.2,
+    "p50": 35.6,
+    "p75": 54.1,
+    "p90": 83.7
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9515
+     "over": 0.9368
     },
     {
      "line": 5.0,
-     "over": 0.8937
+     "over": 0.8883
     },
     {
      "line": 7.5,
-     "over": 0.8648
+     "over": 0.8599
     },
     {
      "line": 10.0,
-     "over": 0.8359
+     "over": 0.8316
     },
     {
      "line": 12.5,
-     "over": 0.8069
+     "over": 0.8032
     },
     {
      "line": 15.0,
-     "over": 0.778
+     "over": 0.7748
     },
     {
      "line": 17.5,
-     "over": 0.7489
+     "over": 0.7457
     },
     {
      "line": 20.0,
-     "over": 0.7148
+     "over": 0.7118
     },
     {
      "line": 22.5,
-     "over": 0.6808
+     "over": 0.6779
     },
     {
      "line": 25.0,
-     "over": 0.6467
+     "over": 0.644
     },
     {
      "line": 27.5,
-     "over": 0.6126
+     "over": 0.6101
     },
     {
      "line": 30.0,
-     "over": 0.5786
+     "over": 0.5762
     },
     {
      "line": 32.5,
-     "over": 0.5445
+     "over": 0.5423
     },
     {
      "line": 35.0,
-     "over": 0.5104
+     "over": 0.5084
     },
     {
      "line": 37.5,
-     "over": 0.4726
+     "over": 0.4746
     },
     {
      "line": 40.0,
-     "over": 0.433
+     "over": 0.4408
     },
     {
      "line": 42.5,
-     "over": 0.3935
+     "over": 0.407
     },
     {
      "line": 45.0,
-     "over": 0.3539
+     "over": 0.3732
     },
     {
      "line": 47.5,
-     "over": 0.3144
+     "over": 0.3394
     },
     {
      "line": 50.0,
-     "over": 0.2748
+     "over": 0.3056
     },
     {
      "line": 52.5,
-     "over": 0.2447
+     "over": 0.2718
     },
     {
      "line": 55.0,
-     "over": 0.2305
+     "over": 0.2455
     },
     {
      "line": 57.5,
-     "over": 0.2163
+     "over": 0.2329
     },
     {
      "line": 60.0,
-     "over": 0.2021
+     "over": 0.2202
     },
     {
      "line": 62.5,
-     "over": 0.1878
+     "over": 0.2075
     },
     {
      "line": 65.0,
-     "over": 0.1736
+     "over": 0.1949
     },
     {
      "line": 67.5,
-     "over": 0.1594
+     "over": 0.1822
     },
     {
      "line": 70.0,
-     "over": 0.1452
+     "over": 0.1696
     },
     {
      "line": 72.5,
-     "over": 0.131
+     "over": 0.1569
     },
     {
      "line": 75.0,
-     "over": 0.1167
+     "over": 0.1443
     },
     {
      "line": 77.5,
-     "over": 0.1025
+     "over": 0.1316
     },
     {
      "line": 80.0,
-     "over": 0.0923
+     "over": 0.119
     },
     {
      "line": 82.5,
-     "over": 0.083
+     "over": 0.1063
     },
     {
      "line": 85.0,
-     "over": 0.0736
+     "over": 0.0956
     },
     {
      "line": 87.5,
-     "over": 0.0643
+     "over": 0.0868
     },
     {
      "line": 90.0,
-     "over": 0.0549
+     "over": 0.0781
     },
     {
      "line": 92.5,
-     "over": 0.0471
+     "over": 0.0693
     },
     {
      "line": 95.0,
-     "over": 0.041
+     "over": 0.0605
     },
     {
      "line": 97.5,
-     "over": 0.0349
+     "over": 0.0517
     },
     {
      "line": 100.0,
-     "over": 0.0287
+     "over": 0.0454
     },
     {
      "line": 102.5,
-     "over": 0.0226
+     "over": 0.0396
     },
     {
      "line": 105.0,
+     "over": 0.0339
+    },
+    {
+     "line": 107.5,
+     "over": 0.0282
+    },
+    {
+     "line": 110.0,
+     "over": 0.0224
+    },
+    {
+     "line": 112.5,
      "over": 0.02
     }
    ],
    "refLine": 43.5,
-   "overProbAtRef": 0.3777,
+   "overProbAtRef": 0.3935,
    "lean": "under",
-   "strength": 21,
+   "strength": 18,
    "confidence": "medium",
    "confidenceReason": "Decent 9-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 35 rushing yards \u2014 it gives Isiah a 38% chance to clear a 43.5-yard line.",
+   "verdict": "The model projects 35 rushing yards \u2014 it gives Isiah a 39% chance to clear a 43.5-yard line.",
    "factors": [
     {
      "group": "usage_role",

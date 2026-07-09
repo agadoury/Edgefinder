@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 18.1,
     "p25": 28.2,
-    "p50": 54.2,
-    "p75": 86.2,
-    "p90": 115.0
+    "p50": 54.1,
+    "p75": 87.8,
+    "p90": 118.8
    },
    "probCurve": [
     {
@@ -57,7 +57,7 @@
     },
     {
      "line": 25.0,
-     "over": 0.7979
+     "over": 0.7978
     },
     {
      "line": 27.5,
@@ -65,43 +65,43 @@
     },
     {
      "line": 30.0,
-     "over": 0.7329
+     "over": 0.7328
     },
     {
      "line": 32.5,
-     "over": 0.7088
+     "over": 0.7087
     },
     {
      "line": 35.0,
-     "over": 0.6847
+     "over": 0.6846
     },
     {
      "line": 37.5,
-     "over": 0.6606
+     "over": 0.6605
     },
     {
      "line": 40.0,
-     "over": 0.6366
+     "over": 0.6363
     },
     {
      "line": 42.5,
-     "over": 0.6125
+     "over": 0.6122
     },
     {
      "line": 45.0,
-     "over": 0.5884
+     "over": 0.5881
     },
     {
      "line": 47.5,
-     "over": 0.5644
+     "over": 0.564
     },
     {
      "line": 50.0,
-     "over": 0.5403
+     "over": 0.5399
     },
     {
      "line": 52.5,
-     "over": 0.5162
+     "over": 0.5158
     },
     {
      "line": 55.0,
@@ -109,140 +109,148 @@
     },
     {
      "line": 57.5,
-     "over": 0.4741
+     "over": 0.475
     },
     {
      "line": 60.0,
-     "over": 0.4545
+     "over": 0.4564
     },
     {
      "line": 62.5,
-     "over": 0.435
+     "over": 0.4378
     },
     {
      "line": 65.0,
-     "over": 0.4154
+     "over": 0.4193
     },
     {
      "line": 67.5,
-     "over": 0.3959
+     "over": 0.4007
     },
     {
      "line": 70.0,
-     "over": 0.3763
+     "over": 0.3821
     },
     {
      "line": 72.5,
-     "over": 0.3568
+     "over": 0.3635
     },
     {
      "line": 75.0,
-     "over": 0.3372
+     "over": 0.3449
     },
     {
      "line": 77.5,
-     "over": 0.3177
+     "over": 0.3264
     },
     {
      "line": 80.0,
-     "over": 0.2981
+     "over": 0.3078
     },
     {
      "line": 82.5,
-     "over": 0.2786
+     "over": 0.2892
     },
     {
      "line": 85.0,
-     "over": 0.259
+     "over": 0.2706
     },
     {
      "line": 87.5,
-     "over": 0.243
+     "over": 0.252
     },
     {
      "line": 90.0,
-     "over": 0.23
+     "over": 0.2392
     },
     {
      "line": 92.5,
-     "over": 0.217
+     "over": 0.2271
     },
     {
      "line": 95.0,
-     "over": 0.204
+     "over": 0.215
     },
     {
      "line": 97.5,
-     "over": 0.191
+     "over": 0.2029
     },
     {
      "line": 100.0,
-     "over": 0.178
+     "over": 0.1908
     },
     {
      "line": 102.5,
-     "over": 0.1649
+     "over": 0.1787
     },
     {
      "line": 105.0,
-     "over": 0.1519
+     "over": 0.1667
     },
     {
      "line": 107.5,
-     "over": 0.1389
+     "over": 0.1546
     },
     {
      "line": 110.0,
-     "over": 0.1259
+     "over": 0.1425
     },
     {
      "line": 112.5,
-     "over": 0.1129
+     "over": 0.1304
     },
     {
      "line": 115.0,
-     "over": 0.0999
+     "over": 0.1183
     },
     {
      "line": 117.5,
-     "over": 0.0875
+     "over": 0.1062
     },
     {
      "line": 120.0,
-     "over": 0.0751
+     "over": 0.0944
     },
     {
      "line": 122.5,
-     "over": 0.0628
+     "over": 0.0828
     },
     {
      "line": 125.0,
-     "over": 0.0504
+     "over": 0.0713
     },
     {
      "line": 127.5,
-     "over": 0.0421
+     "over": 0.0598
     },
     {
      "line": 130.0,
-     "over": 0.034
+     "over": 0.0489
     },
     {
      "line": 132.5,
-     "over": 0.0259
+     "over": 0.0413
     },
     {
      "line": 135.0,
+     "over": 0.0338
+    },
+    {
+     "line": 137.5,
+     "over": 0.0262
+    },
+    {
+     "line": 140.0,
      "over": 0.02
     }
    ],
    "refLine": 66.5,
-   "overProbAtRef": 0.4037,
+   "overProbAtRef": 0.4081,
    "lean": "under",
-   "strength": 19,
+   "strength": 18,
    "confidence": "high",
    "confidenceReason": "12 games of steady production make this range tight.",
-   "verdict": "The model projects 61 receiving yards \u2014 it gives Zay a 40% chance to clear a 66.5-yard line.",
+   "verdict": "The model projects 61 receiving yards \u2014 it gives Zay a 41% chance to clear a 66.5-yard line.",
    "factors": [
     {
      "group": "recent_form",
@@ -287,97 +295,121 @@
    "market": "receptions",
    "projection": 4.6,
    "quantiles": {
-    "p10": 0.0,
+    "p10": 2.0,
     "p25": 3.1,
-    "p50": 4.2,
-    "p75": 6.1,
-    "p90": 7.9
+    "p50": 4.7,
+    "p75": 6.5,
+    "p90": 8.8
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8757
+     "over": 0.9925
     },
     {
      "line": 1.0,
-     "over": 0.8514
+     "over": 0.9533
     },
     {
      "line": 1.5,
-     "over": 0.827
+     "over": 0.9533
     },
     {
      "line": 2.0,
-     "over": 0.8027
+     "over": 0.8396
     },
     {
      "line": 2.5,
-     "over": 0.7784
+     "over": 0.8396
     },
     {
      "line": 3.0,
-     "over": 0.7541
+     "over": 0.682
     },
     {
      "line": 3.5,
-     "over": 0.6592
+     "over": 0.682
     },
     {
      "line": 4.0,
-     "over": 0.5502
+     "over": 0.5254
     },
     {
      "line": 4.5,
-     "over": 0.4634
+     "over": 0.5254
     },
     {
      "line": 5.0,
-     "over": 0.3955
+     "over": 0.3694
     },
     {
      "line": 5.5,
-     "over": 0.3277
+     "over": 0.3694
     },
     {
      "line": 6.0,
-     "over": 0.2598
+     "over": 0.2494
     },
     {
      "line": 6.5,
-     "over": 0.2148
+     "over": 0.2494
     },
     {
      "line": 7.0,
-     "over": 0.1736
+     "over": 0.1718
     },
     {
      "line": 7.5,
-     "over": 0.1324
+     "over": 0.1718
     },
     {
      "line": 8.0,
-     "over": 0.0916
+     "over": 0.1121
     },
     {
      "line": 8.5,
-     "over": 0.0523
+     "over": 0.1121
     },
     {
      "line": 9.0,
-     "over": 0.0258
+     "over": 0.0721
     },
     {
      "line": 9.5,
-     "over": 0.02
+     "over": 0.0721
+    },
+    {
+     "line": 10.0,
+     "over": 0.0456
+    },
+    {
+     "line": 10.5,
+     "over": 0.0456
+    },
+    {
+     "line": 11.0,
+     "over": 0.0265
+    },
+    {
+     "line": 11.5,
+     "over": 0.0265
+    },
+    {
+     "line": 12.0,
+     "over": 0.0149
+    },
+    {
+     "line": 12.5,
+     "over": 0.0149
     }
    ],
    "refLine": 4.5,
-   "overProbAtRef": 0.4634,
+   "overProbAtRef": 0.5254,
    "lean": "neutral",
-   "strength": 7,
+   "strength": 5,
    "confidence": "high",
    "confidenceReason": "12 games of steady production make this range tight.",
-   "verdict": "The model projects 4.6 catches \u2014 a 46% chance to beat a 4.5-catch line.",
+   "verdict": "The model projects 4.6 catches \u2014 a 53% chance to beat a 4.5-catch line.",
    "factors": [
     {
      "group": "recent_form",
@@ -610,7 +642,7 @@
    "market": "receptions",
    "projection": 6.4,
    "refLine": 6.5,
-   "lean": "under",
+   "lean": "neutral",
    "actual": 4.0,
    "result": "under"
   }

@@ -14,127 +14,143 @@
    "quantiles": {
     "p10": 0.2,
     "p25": 3.6,
-    "p50": 9.4,
-    "p75": 19.6,
-    "p90": 37.6
+    "p50": 9.3,
+    "p75": 21.3,
+    "p90": 41.4
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.7996
+     "over": 0.7995
     },
     {
      "line": 5.0,
-     "over": 0.6911
+     "over": 0.6905
     },
     {
      "line": 7.5,
-     "over": 0.5825
+     "over": 0.581
     },
     {
      "line": 10.0,
-     "over": 0.4853
+     "over": 0.4863
     },
     {
      "line": 12.5,
-     "over": 0.4242
+     "over": 0.4338
     },
     {
      "line": 15.0,
-     "over": 0.3632
+     "over": 0.3813
     },
     {
      "line": 17.5,
-     "over": 0.3021
+     "over": 0.3288
     },
     {
      "line": 20.0,
-     "over": 0.2469
+     "over": 0.2763
     },
     {
      "line": 22.5,
-     "over": 0.2261
+     "over": 0.2407
     },
     {
      "line": 25.0,
-     "over": 0.2052
+     "over": 0.2221
     },
     {
      "line": 27.5,
-     "over": 0.1843
+     "over": 0.2035
     },
     {
      "line": 30.0,
-     "over": 0.1635
+     "over": 0.1849
     },
     {
      "line": 32.5,
-     "over": 0.1426
+     "over": 0.1662
     },
     {
      "line": 35.0,
-     "over": 0.1217
+     "over": 0.1476
     },
     {
      "line": 37.5,
-     "over": 0.1009
+     "over": 0.129
     },
     {
      "line": 40.0,
-     "over": 0.0921
+     "over": 0.1104
     },
     {
      "line": 42.5,
-     "over": 0.0838
+     "over": 0.0969
     },
     {
      "line": 45.0,
-     "over": 0.0755
+     "over": 0.0899
     },
     {
      "line": 47.5,
-     "over": 0.0672
+     "over": 0.0829
     },
     {
      "line": 50.0,
-     "over": 0.0589
+     "over": 0.0759
     },
     {
      "line": 52.5,
-     "over": 0.0506
+     "over": 0.0688
     },
     {
      "line": 55.0,
-     "over": 0.045
+     "over": 0.0618
     },
     {
      "line": 57.5,
-     "over": 0.0395
+     "over": 0.0548
     },
     {
      "line": 60.0,
-     "over": 0.0341
+     "over": 0.0486
     },
     {
      "line": 62.5,
-     "over": 0.0287
+     "over": 0.044
     },
     {
      "line": 65.0,
-     "over": 0.0232
+     "over": 0.0394
     },
     {
      "line": 67.5,
+     "over": 0.0348
+    },
+    {
+     "line": 70.0,
+     "over": 0.0302
+    },
+    {
+     "line": 72.5,
+     "over": 0.0256
+    },
+    {
+     "line": 75.0,
+     "over": 0.021
+    },
+    {
+     "line": 77.5,
      "over": 0.02
     }
    ],
    "refLine": 14.5,
-   "overProbAtRef": 0.3754,
+   "overProbAtRef": 0.3918,
    "lean": "under",
-   "strength": 21,
+   "strength": 18,
    "confidence": "medium",
    "confidenceReason": "Decent 9-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 13 receiving yards \u2014 it gives Michael a 38% chance to clear a 14.5-yard line.",
+   "verdict": "The model projects 13 receiving yards \u2014 it gives Michael a 39% chance to clear a 14.5-yard line.",
    "factors": [
     {
      "group": "rest_schedule",
@@ -186,73 +202,73 @@
    "market": "receptions",
    "projection": 1.7,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.9,
-    "p50": 1.5,
-    "p75": 3.2,
-    "p90": 4.2
+    "p10": 0.2,
+    "p25": 0.8,
+    "p50": 1.7,
+    "p75": 2.7,
+    "p90": 4.1
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8203
+     "over": 0.8459
     },
     {
      "line": 1.0,
-     "over": 0.7255
+     "over": 0.5456
     },
     {
      "line": 1.5,
-     "over": 0.5184
+     "over": 0.5456
     },
     {
      "line": 2.0,
-     "over": 0.4323
+     "over": 0.2854
     },
     {
      "line": 2.5,
-     "over": 0.3581
+     "over": 0.2854
     },
     {
      "line": 3.0,
-     "over": 0.2839
+     "over": 0.1431
     },
     {
      "line": 3.5,
-     "over": 0.2088
+     "over": 0.1431
     },
     {
      "line": 4.0,
-     "over": 0.1329
+     "over": 0.0671
     },
     {
      "line": 4.5,
-     "over": 0.0851
+     "over": 0.0671
     },
     {
      "line": 5.0,
-     "over": 0.0587
+     "over": 0.0283
     },
     {
      "line": 5.5,
-     "over": 0.0384
+     "over": 0.0283
     },
     {
      "line": 6.0,
-     "over": 0.0212
+     "over": 0.0104
     },
     {
      "line": 6.5,
-     "over": 0.02
+     "over": 0.0104
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.3581,
+   "overProbAtRef": 0.2854,
    "lean": "under",
-   "strength": 20,
-   "confidence": "low",
-   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
-   "verdict": "The model projects 1.7 catches \u2014 a 36% chance to beat a 2.5-catch line.",
+   "strength": 36,
+   "confidence": "medium",
+   "confidenceReason": "Decent 9-game sample, but with some week-to-week swing.",
+   "verdict": "The model projects 1.7 catches \u2014 a 29% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "rest_schedule",

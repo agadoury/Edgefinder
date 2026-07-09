@@ -12,221 +12,253 @@
    "market": "pass_yds",
    "projection": 185.9,
    "quantiles": {
-    "p10": 100.7,
-    "p25": 157.3,
-    "p50": 196.1,
-    "p75": 261.4,
-    "p90": 279.6
+    "p10": 90.6,
+    "p25": 143.8,
+    "p50": 188.2,
+    "p75": 265.6,
+    "p90": 299.0
    },
    "probCurve": [
     {
-     "line": 67.5,
+     "line": 57.5,
      "over": 0.98
     },
     {
+     "line": 62.5,
+     "over": 0.9715
+    },
+    {
+     "line": 67.5,
+     "over": 0.9618
+    },
+    {
      "line": 72.5,
-     "over": 0.9745
+     "over": 0.9522
     },
     {
      "line": 77.5,
-     "over": 0.9644
+     "over": 0.9386
     },
     {
      "line": 82.5,
-     "over": 0.9542
+     "over": 0.9239
     },
     {
      "line": 87.5,
-     "over": 0.941
+     "over": 0.9091
     },
     {
      "line": 92.5,
-     "over": 0.9255
+     "over": 0.8947
     },
     {
      "line": 97.5,
-     "over": 0.91
+     "over": 0.8806
     },
     {
      "line": 102.5,
-     "over": 0.8953
+     "over": 0.8665
     },
     {
      "line": 107.5,
-     "over": 0.882
+     "over": 0.8524
     },
     {
      "line": 112.5,
-     "over": 0.8688
+     "over": 0.8383
     },
     {
      "line": 117.5,
-     "over": 0.8555
+     "over": 0.8242
     },
     {
      "line": 122.5,
-     "over": 0.8422
+     "over": 0.8101
     },
     {
      "line": 127.5,
-     "over": 0.8289
+     "over": 0.796
     },
     {
      "line": 132.5,
-     "over": 0.8157
+     "over": 0.7819
     },
     {
      "line": 137.5,
-     "over": 0.8024
+     "over": 0.7678
     },
     {
      "line": 142.5,
-     "over": 0.7891
+     "over": 0.7537
     },
     {
      "line": 147.5,
-     "over": 0.7759
+     "over": 0.7292
     },
     {
      "line": 152.5,
-     "over": 0.7626
+     "over": 0.701
     },
     {
      "line": 157.5,
-     "over": 0.7484
+     "over": 0.6728
     },
     {
      "line": 162.5,
-     "over": 0.7162
+     "over": 0.6447
     },
     {
      "line": 167.5,
-     "over": 0.684
+     "over": 0.6165
     },
     {
      "line": 172.5,
-     "over": 0.6518
+     "over": 0.5884
     },
     {
      "line": 177.5,
-     "over": 0.6196
+     "over": 0.5602
     },
     {
      "line": 182.5,
-     "over": 0.5874
+     "over": 0.5321
     },
     {
      "line": 187.5,
-     "over": 0.5551
+     "over": 0.5039
     },
     {
      "line": 192.5,
-     "over": 0.5229
+     "over": 0.4861
     },
     {
      "line": 197.5,
-     "over": 0.4945
+     "over": 0.4699
     },
     {
      "line": 202.5,
-     "over": 0.4754
+     "over": 0.4538
     },
     {
      "line": 207.5,
-     "over": 0.4562
+     "over": 0.4376
     },
     {
      "line": 212.5,
-     "over": 0.4371
+     "over": 0.4215
     },
     {
      "line": 217.5,
-     "over": 0.418
+     "over": 0.4053
     },
     {
      "line": 222.5,
-     "over": 0.3988
+     "over": 0.3892
     },
     {
      "line": 227.5,
-     "over": 0.3797
+     "over": 0.373
     },
     {
      "line": 232.5,
-     "over": 0.3606
+     "over": 0.3569
     },
     {
      "line": 237.5,
-     "over": 0.3414
+     "over": 0.3407
     },
     {
      "line": 242.5,
-     "over": 0.3223
+     "over": 0.3246
     },
     {
      "line": 247.5,
-     "over": 0.3032
+     "over": 0.3084
     },
     {
      "line": 252.5,
-     "over": 0.284
+     "over": 0.2922
     },
     {
      "line": 257.5,
-     "over": 0.2649
+     "over": 0.2761
     },
     {
      "line": 262.5,
-     "over": 0.2409
+     "over": 0.2599
     },
     {
      "line": 267.5,
-     "over": 0.1996
+     "over": 0.2414
     },
     {
      "line": 272.5,
-     "over": 0.1584
+     "over": 0.219
     },
     {
      "line": 277.5,
-     "over": 0.1171
+     "over": 0.1966
     },
     {
      "line": 282.5,
-     "over": 0.091
+     "over": 0.1741
     },
     {
      "line": 287.5,
-     "over": 0.0757
+     "over": 0.1517
     },
     {
      "line": 292.5,
-     "over": 0.0604
+     "over": 0.1293
     },
     {
      "line": 297.5,
-     "over": 0.0468
+     "over": 0.1069
     },
     {
      "line": 302.5,
-     "over": 0.0368
+     "over": 0.0927
     },
     {
      "line": 307.5,
-     "over": 0.0267
+     "over": 0.0821
     },
     {
      "line": 312.5,
-     "over": 0.02
+     "over": 0.0714
+    },
+    {
+     "line": 317.5,
+     "over": 0.0608
+    },
+    {
+     "line": 322.5,
+     "over": 0.0502
+    },
+    {
+     "line": 327.5,
+     "over": 0.0432
+    },
+    {
+     "line": 332.5,
+     "over": 0.0363
+    },
+    {
+     "line": 337.5,
+     "over": 0.0293
+    },
+    {
+     "line": 342.5,
+     "over": 0.0224
     }
    ],
    "refLine": 218.5,
-   "overProbAtRef": 0.4142,
+   "overProbAtRef": 0.4021,
    "lean": "under",
-   "strength": 12,
+   "strength": 14,
    "confidence": "low",
    "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
-   "verdict": "The model projects 186 passing yards \u2014 it gives Caleb a 41% chance to clear a 218.5-yard line.",
+   "verdict": "The model projects 186 passing yards \u2014 it gives Caleb a 40% chance to clear a 218.5-yard line.",
    "factors": [
     {
      "group": "opp_defense",
@@ -278,41 +310,41 @@
    "market": "pass_tds",
    "projection": 1.2,
    "quantiles": {
-    "p10": 0.0,
-    "p25": 0.0,
-    "p50": 1.0,
-    "p75": 1.9,
-    "p90": 2.7
+    "p10": 0.2,
+    "p25": 0.6,
+    "p50": 1.2,
+    "p75": 2.2,
+    "p90": 3.2
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.7068
+     "over": 0.8059
     },
     {
      "line": 1.5,
-     "over": 0.3471
+     "over": 0.4154
     },
     {
      "line": 2.5,
-     "over": 0.1264
+     "over": 0.1854
     },
     {
      "line": 3.5,
-     "over": 0.0361
+     "over": 0.0689
     },
     {
      "line": 4.5,
-     "over": 0.0085
+     "over": 0.0194
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.7068,
+   "overProbAtRef": 0.8059,
    "lean": "over",
-   "strength": 35,
+   "strength": 52,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model expects 1.2 touchdown passes \u2014 it gives Caleb a 71% chance to go over 0.5.",
+   "verdict": "The model expects 1.2 touchdown passes \u2014 it gives Caleb a 81% chance to go over 0.5.",
    "factors": [
     {
      "group": "weather",
@@ -357,117 +389,129 @@
    "market": "rush_yds",
    "projection": 15.3,
    "quantiles": {
-    "p10": 2.9,
-    "p25": 8.4,
-    "p50": 14.9,
-    "p75": 23.8,
-    "p90": 34.2
+    "p10": 2.5,
+    "p25": 8.2,
+    "p50": 14.8,
+    "p75": 26.4,
+    "p90": 40.0
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.9129
+     "over": 0.8989
     },
     {
      "line": 5.0,
-     "over": 0.8436
+     "over": 0.8333
     },
     {
      "line": 7.5,
-     "over": 0.7751
+     "over": 0.7677
     },
     {
      "line": 10.0,
-     "over": 0.689
+     "over": 0.6808
     },
     {
      "line": 12.5,
-     "over": 0.593
+     "over": 0.5861
     },
     {
      "line": 15.0,
-     "over": 0.4977
+     "over": 0.4951
     },
     {
      "line": 17.5,
-     "over": 0.4275
+     "over": 0.4412
     },
     {
      "line": 20.0,
-     "over": 0.3572
+     "over": 0.3872
     },
     {
      "line": 22.5,
-     "over": 0.287
+     "over": 0.3333
     },
     {
      "line": 25.0,
-     "over": 0.2329
+     "over": 0.2793
     },
     {
      "line": 27.5,
-     "over": 0.1969
+     "over": 0.2375
     },
     {
      "line": 30.0,
-     "over": 0.1608
+     "over": 0.21
     },
     {
      "line": 32.5,
-     "over": 0.1248
+     "over": 0.1826
     },
     {
      "line": 35.0,
-     "over": 0.0971
+     "over": 0.1551
     },
     {
      "line": 37.5,
-     "over": 0.0876
+     "over": 0.1277
     },
     {
      "line": 40.0,
-     "over": 0.0782
+     "over": 0.1002
     },
     {
      "line": 42.5,
-     "over": 0.0688
+     "over": 0.0912
     },
     {
      "line": 45.0,
-     "over": 0.0594
+     "over": 0.0824
     },
     {
      "line": 47.5,
-     "over": 0.05
+     "over": 0.0736
     },
     {
      "line": 50.0,
-     "over": 0.0438
+     "over": 0.0647
     },
     {
      "line": 52.5,
-     "over": 0.0377
+     "over": 0.0559
     },
     {
      "line": 55.0,
-     "over": 0.0315
+     "over": 0.0481
     },
     {
      "line": 57.5,
-     "over": 0.0253
+     "over": 0.0423
     },
     {
      "line": 60.0,
+     "over": 0.0365
+    },
+    {
+     "line": 62.5,
+     "over": 0.0307
+    },
+    {
+     "line": 65.0,
+     "over": 0.0249
+    },
+    {
+     "line": 67.5,
      "over": 0.02
     }
    ],
    "refLine": 24.5,
-   "overProbAtRef": 0.2437,
+   "overProbAtRef": 0.2901,
    "lean": "under",
-   "strength": 44,
+   "strength": 36,
    "confidence": "medium",
    "confidenceReason": "Decent 12-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 15 rushing yards \u2014 it gives Caleb a 24% chance to clear a 24.5-yard line.",
+   "verdict": "The model projects 15 rushing yards \u2014 it gives Caleb a 29% chance to clear a 24.5-yard line.",
    "factors": [
     {
      "group": "usage_role",
@@ -645,7 +689,7 @@
    "market": "pass_tds",
    "projection": 0.9,
    "refLine": 0.5,
-   "lean": "over",
+   "lean": "neutral",
    "actual": 1.0,
    "result": "over"
   },
@@ -708,7 +752,7 @@
    "market": "pass_yds",
    "projection": 226.0,
    "refLine": 236.5,
-   "lean": "neutral",
+   "lean": "under",
    "actual": 193.0,
    "result": "under"
   }

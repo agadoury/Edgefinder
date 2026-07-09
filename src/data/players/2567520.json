@@ -14,9 +14,9 @@
    "quantiles": {
     "p10": 0.4,
     "p25": 7.8,
-    "p50": 20.4,
-    "p75": 36.2,
-    "p90": 50.9
+    "p50": 20.3,
+    "p75": 37.8,
+    "p90": 54.7
    },
    "probCurve": [
     {
@@ -33,125 +33,137 @@
     },
     {
      "line": 10.0,
-     "over": 0.7056
+     "over": 0.7054
     },
     {
      "line": 12.5,
-     "over": 0.656
+     "over": 0.6556
     },
     {
      "line": 15.0,
-     "over": 0.6063
+     "over": 0.6057
     },
     {
      "line": 17.5,
-     "over": 0.5567
+     "over": 0.5559
     },
     {
      "line": 20.0,
-     "over": 0.507
+     "over": 0.5061
     },
     {
      "line": 22.5,
-     "over": 0.4661
+     "over": 0.4686
     },
     {
      "line": 25.0,
-     "over": 0.4266
+     "over": 0.4329
     },
     {
      "line": 27.5,
-     "over": 0.3871
+     "over": 0.3971
     },
     {
      "line": 30.0,
-     "over": 0.3475
+     "over": 0.3614
     },
     {
      "line": 32.5,
-     "over": 0.308
+     "over": 0.3257
     },
     {
      "line": 35.0,
-     "over": 0.2685
+     "over": 0.2899
     },
     {
      "line": 37.5,
-     "over": 0.2365
+     "over": 0.2542
     },
     {
      "line": 40.0,
-     "over": 0.211
+     "over": 0.2304
     },
     {
      "line": 42.5,
-     "over": 0.1856
+     "over": 0.2082
     },
     {
      "line": 45.0,
-     "over": 0.1601
+     "over": 0.186
     },
     {
      "line": 47.5,
-     "over": 0.1346
+     "over": 0.1639
     },
     {
      "line": 50.0,
-     "over": 0.1092
+     "over": 0.1417
     },
     {
      "line": 52.5,
-     "over": 0.0943
+     "over": 0.1195
     },
     {
      "line": 55.0,
-     "over": 0.0854
+     "over": 0.0991
     },
     {
      "line": 57.5,
-     "over": 0.0765
+     "over": 0.0916
     },
     {
      "line": 60.0,
-     "over": 0.0676
+     "over": 0.0842
     },
     {
      "line": 62.5,
-     "over": 0.0587
+     "over": 0.0767
     },
     {
      "line": 65.0,
-     "over": 0.0498
+     "over": 0.0693
     },
     {
      "line": 67.5,
-     "over": 0.044
+     "over": 0.0618
     },
     {
      "line": 70.0,
-     "over": 0.0382
+     "over": 0.0544
     },
     {
      "line": 72.5,
-     "over": 0.0323
+     "over": 0.048
     },
     {
      "line": 75.0,
-     "over": 0.0265
+     "over": 0.0431
     },
     {
      "line": 77.5,
-     "over": 0.0206
+     "over": 0.0382
     },
     {
      "line": 80.0,
+     "over": 0.0333
+    },
+    {
+     "line": 82.5,
+     "over": 0.0285
+    },
+    {
+     "line": 85.0,
+     "over": 0.0236
+    },
+    {
+     "line": 87.5,
      "over": 0.02
     }
    ],
    "refLine": 22.5,
-   "overProbAtRef": 0.4661,
+   "overProbAtRef": 0.4686,
    "lean": "neutral",
-   "strength": 5,
+   "strength": 4,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
    "verdict": "The model projects 23 receiving yards \u2014 it gives Greg a 47% chance to clear a 22.5-yard line.",
@@ -185,73 +197,81 @@
    "market": "receptions",
    "projection": 2.1,
    "quantiles": {
-    "p10": 0.0,
+    "p10": 0.5,
     "p25": 1.0,
-    "p50": 1.9,
-    "p75": 3.4,
-    "p90": 4.1
+    "p50": 2.0,
+    "p75": 3.2,
+    "p90": 4.5
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.8255
+     "over": 0.8928
     },
     {
      "line": 1.0,
-     "over": 0.751
+     "over": 0.6303
     },
     {
      "line": 1.5,
-     "over": 0.6159
+     "over": 0.6303
     },
     {
      "line": 2.0,
-     "over": 0.4878
+     "over": 0.3697
     },
     {
      "line": 2.5,
-     "over": 0.4054
+     "over": 0.3697
     },
     {
      "line": 3.0,
-     "over": 0.323
+     "over": 0.2013
     },
     {
      "line": 3.5,
-     "over": 0.2376
+     "over": 0.2013
     },
     {
      "line": 4.0,
-     "over": 0.1298
+     "over": 0.102
     },
     {
      "line": 4.5,
-     "over": 0.0822
+     "over": 0.102
     },
     {
      "line": 5.0,
-     "over": 0.0575
+     "over": 0.0505
     },
     {
      "line": 5.5,
-     "over": 0.0388
+     "over": 0.0505
     },
     {
      "line": 6.0,
-     "over": 0.0226
+     "over": 0.0214
     },
     {
      "line": 6.5,
-     "over": 0.02
+     "over": 0.0214
+    },
+    {
+     "line": 7.0,
+     "over": 0.0082
+    },
+    {
+     "line": 7.5,
+     "over": 0.0082
     }
    ],
    "refLine": 2.5,
-   "overProbAtRef": 0.4054,
+   "overProbAtRef": 0.3697,
    "lean": "under",
-   "strength": 13,
+   "strength": 18,
    "confidence": "low",
    "confidenceReason": "Only 4 games played this season, so the sample is thin.",
-   "verdict": "The model projects 2.1 catches \u2014 a 41% chance to beat a 2.5-catch line.",
+   "verdict": "The model projects 2.1 catches \u2014 a 37% chance to beat a 2.5-catch line.",
    "factors": [
     {
      "group": "usage_role",
