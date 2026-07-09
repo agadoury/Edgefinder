@@ -62,21 +62,26 @@ def main() -> int:
     else:
         print("using cached models from", train.MODELS_DIR)
 
-    print("== conformal calibration (2024 split) ==")
-    if retrained or not conformal.params_path().exists():
+    print("== conformal calibration + thresholds (2024 split) ==")
+    calib = None
+    if not retrained and conformal.params_path().exists():
+        try:  # cached params must include the 2024-fit thresholds (M12)
+            thresholds = train.load_conf_thresholds()
+            calib = conformal.load_calibrator()
+            print("using cached conformal params from", conformal.params_path())
+        except (ValueError, FileNotFoundError, KeyError) as err:
+            print(f"cached calibration unusable ({err}); refitting")
+    if calib is None:
         calib = conformal.fit_conformal(frames, models)
-    else:
-        calib = conformal.load_calibrator()
-        print("using cached conformal params from", conformal.params_path())
+        thresholds = train.load_conf_thresholds()
 
     print("== demo week ==")
     demo_week = ex.choose_demo_week(pw, games, args.demo_week)
     print(f"demo week: 2025 week {demo_week}")
 
     print("== backtest ==")
-    by_market = bt.run_backtest(frames, models, demo_week, calib)
+    by_market = bt.run_backtest(frames, models, demo_week, calib, thresholds)
     bt.print_report(by_market)
-    thresholds = train.load_conf_thresholds()
 
     print("\n== export ==")
     counts = ex.run_export(pw, games, frames, models, by_market, demo_week,

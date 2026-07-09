@@ -16,8 +16,6 @@ from __future__ import annotations
 import datetime as dt
 import json
 import math
-import re
-import unicodedata
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -26,9 +24,10 @@ import pandas as pd
 
 from edgefinder import __version__
 from edgefinder.conformal import Calibrator
-from edgefinder.features import FEATURES, MARKETS
+from edgefinder.features import MARKETS, norm_name
 from edgefinder.train import (
     MODELS_DIR,
+    RECENCY_HALF_LIFE,
     MarketModel,
     Q_INDEX,
     confidence_of,
@@ -58,15 +57,10 @@ POS_SEASON_STATS = {
     "TE": ["rec_yds", "receptions"],
 }
 
-_SUFFIXES = re.compile(r"\b(jr|sr|ii|iii|iv|v)\b\.?", re.IGNORECASE)
-
-
-def norm_name(name: str) -> str:
-    """Lowercase, strip accents/punctuation/suffixes for QB matching."""
-    s = unicodedata.normalize("NFKD", str(name))
-    s = "".join(c for c in s if not unicodedata.combining(c))
-    s = _SUFFIXES.sub("", s.lower())
-    return re.sub(r"[^a-z]", "", s)
+#: the meta.json backtest.byMarket schema is fixed by docs/DATA_CONTRACT.md;
+#: evaluate_market's extended M3 diagnostics stay in REPORT.md only
+CONTRACT_BYMARKET_KEYS = ("n", "mae", "baselineMae", "coverage80",
+                          "strongCallHitRate", "strongCallN", "calibration")
 
 
 def check_demo_week(pw: pd.DataFrame, games: pd.DataFrame, week: int) -> str | None:
@@ -185,7 +179,7 @@ def _prop_for(
     thresholds: tuple[float, float], calib: Calibrator,
 ) -> dict:
     """Full prop dict (detail form) for one player+market frame row."""
-    X = row[FEATURES].astype(float).to_frame().T
+    X = row[model.features].astype(float).to_frame().T
     raw_q = model.predict_quantiles(X)
     projection = float(model.predict_projection(X, raw_q)[0])
     mean_pred = float(np.clip(model.mean_model.predict(X[model.features]),
@@ -423,7 +417,10 @@ def run_export(
         "backtest": {
             "season": 2025,
             "weeksEvaluated": demo_week - 1,
-            "byMarket": by_market,
+            "byMarket": {
+                market: {k: m[k] for k in CONTRACT_BYMARKET_KEYS}
+                for market, m in by_market.items()
+            },
         },
     }
     _write_json(export_dir / "meta.json", meta)
@@ -470,6 +467,71 @@ def _conformal_lines(calib: Calibrator | None) -> list[str]:
                 "map; quantiles/curves come from the continuity-corrected "
                 "CDF, so low quantiles vary by player."
             )
+        sh = p.get("shrink")
+        if sh:
+            lines.append(
+                f"  * P(over) shrink (M6): p' = sigmoid({sh['a']:+.3f} "
+                f"+ {sh['b']:.3f}·logit(p)) on every exported curve point, "
+                f"fit on the same 2024 walk-forward predictions "
+                f"(n={sh['nFit']}; 2024 cross-week Brier delta "
+                f"{sh['crossBrierDelta']:+.5f}). Quantiles are not shrunk."
+            )
+    lines += [
+        "",
+        "Confidence thresholds (M12) are the relative-width quartiles of "
+        "the same 2024 walk-forward calibrated quantiles "
+        "(`confidence_thresholds.json`, provenance-stamped). The ~25/50/25 "
+        "high/medium/low split is therefore targeted on 2024; the realized "
+        "2025 split may drift — that is the honest cost of removing the "
+        "circular 2025 fit.",
+        "",
+    ]
+    return lines
+
+
+def _diagnostics_lines(by_market: dict) -> list[str]:
+    """M3 extended tables: per-quantile coverage/pinball, CRPS, drift."""
+    lines = [
+        "## Distributional diagnostics (M3)",
+        "",
+        "Per-quantile empirical coverage P(y <= q_tau) (target = tau) and "
+        "mean pinball loss; CRPS is approximated as 2x the average pinball "
+        "loss across the seven quantiles.",
+        "",
+    ]
+    qkeys = None
+    for market, m in by_market.items():
+        if "quantiles" not in m:
+            return []
+        if qkeys is None:
+            qkeys = list(m["quantiles"])
+            lines += [
+                "| market | " + " | ".join(qkeys) + " | CRPS | Brier |",
+                "|---|" + "---|" * (len(qkeys) + 2),
+            ]
+        cov = " | ".join(f"{m['quantiles'][k]['coverage']:.3f}" for k in qkeys)
+        lines.append(f"| {market} (coverage) | {cov} | {m['crps']:.3f} "
+                     f"| {m['brier']:.4f} |")
+        pin = " | ".join(f"{m['quantiles'][k]['pinball']:.3f}" for k in qkeys)
+        lines.append(f"| {market} (pinball) | {pin} |  |  |")
+    lines += [
+        "",
+        "Calibration-bucket drift (|predicted − actual| over the P(over) "
+        "buckets) and strong-call Wilson 95% intervals:",
+        "",
+        "| market | worst bucket drift | mean bucket drift (n-weighted) "
+        "| strong-call hit (n) | Wilson 95% |",
+        "|---|---|---|---|---|",
+    ]
+    for market, m in by_market.items():
+        drift = m["bucketDrift"]
+        hit = ("-" if m["strongCallHitRate"] is None
+               else f"{m['strongCallHitRate']:.3f} ({m['strongCallN']})")
+        wil = ("-" if not m.get("strongCallWilson95")
+               else f"[{m['strongCallWilson95'][0]:.3f}, "
+                    f"{m['strongCallWilson95'][1]:.3f}]")
+        lines.append(f"| {market} | {drift['worst']:.3f} | {drift['mean']:.3f} "
+                     f"| {hit} | {wil} |")
     lines.append("")
     return lines
 
@@ -487,8 +549,9 @@ def write_report(
         "# EdgeFinder pipeline run report",
         "",
         f"Generated {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%MZ} — "
-        f"model v{__version__}, trained on 2021-2024 REG; intervals "
-        "conformalized on a held-out 2024 split.",
+        f"model v{__version__}, trained on 2021-2024 REG with recency-"
+        f"weighted samples (half-life {RECENCY_HALF_LIFE} seasons); "
+        "intervals conformalized on a held-out 2024 split.",
         "",
         f"* **Demo slate:** 2025 week {demo_week} "
         f"({counts['games']} games, {counts['players']} players, "
@@ -497,14 +560,22 @@ def write_report(
         "",
         "## Backtest — 2025 weeks 1-" + str(demo_week - 1) + " (walk-forward)",
         "",
-        "| market | n | MAE | baseline MAE | coverage80 | strong-call hit | strong n |",
-        "|---|---|---|---|---|---|---|",
+        "2025 is evaluation only: every model, calibration and threshold "
+        "choice was made on the 2024 walk-forward split (models fit on "
+        "2021-2023), then applied here unchanged.",
+        "",
+        "| market | n | MAE | baseline MAE | coverage80 | CRPS | Brier "
+        "| strong-call hit | strong n |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
     for market, m in by_market.items():
         hit = "-" if m["strongCallHitRate"] is None else f"{m['strongCallHitRate']:.3f}"
+        crps = f"{m['crps']:.3f}" if "crps" in m else "-"
+        brier = f"{m['brier']:.4f}" if "brier" in m else "-"
         lines.append(
             f"| {market} | {m['n']} | {m['mae']:.2f} | {m['baselineMae']:.2f} "
-            f"| {m['coverage80']:.3f} | {hit} | {m['strongCallN']} |"
+            f"| {m['coverage80']:.3f} | {crps} | {brier} "
+            f"| {hit} | {m['strongCallN']} |"
         )
     lines += [
         "",
@@ -512,6 +583,7 @@ def write_report(
         "The model beats it on every market.",
         "",
     ]
+    lines += _diagnostics_lines(by_market)
     lines += _conformal_lines(calib)
     lines += [
         "## Data quirks",

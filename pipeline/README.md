@@ -40,7 +40,12 @@ python3 -m pytest pipeline/tests            # leakage-sensitive unit tests
   treated as one.
 * **Models.** Per market: `HistGradientBoostingRegressor` mean model +
   quantile models at 0.05..0.95 (row-sorted for monotonicity), trained on
-  2021-2024. Projection = 0.5·(mean + p50), floored at 0. Yards curves are
+  2021-2024 with recency-weighted samples
+  (`0.5 ** (seasons_ago / half_life)`, half-life 3 seasons — picked from a
+  small grid on the 2024 walk-forward split; early seasons are
+  down-weighted, never dropped). Depths are probed per loss with 2024 held
+  out: mean depth by MAE, quantile depth by pinball at q10/q90.
+  Projection = 0.5·(mean + p50), floored at 0. Yards curves are
   a piecewise-linear CDF through the (calibrated) quantiles with
   exponential-ish tails; count markets (receptions, pass TDs) use a
   calibrated discrete Poisson/negative-binomial layer with
@@ -57,14 +62,30 @@ python3 -m pytest pipeline/tests            # leakage-sensitive unit tests
   read off the continuity-corrected CDF on half-integer support — so low
   quantiles vary by player instead of collapsing to 0, and integer lines
   exclude the push mass. Params: `pipeline/data/models/conformal.json`.
+* **P(over) shrinkage (M6, 2024-fit).** Yardage-market curves ran
+  overconfident in the 0.7+ region; a per-market 2-parameter Platt map
+  `p' = σ(a + b·logit(p))` is fit on the 2024 walk-forward P(over ref)
+  predictions and applied to every exported curve point (monotone by
+  construction, so curves stay non-increasing). A market keeps its map
+  only when it transfers across 2024 week halves (even/odd
+  cross-validation on Brier). Quantiles are NOT shrunk — they carry the
+  conformal coverage guarantee. Params live in `conformal.json`.
 * **refLine** = 50/50 blend of trailing-5-played median and season-to-date
   median, snapped to a .5 line ("what a typical fan expects").
   `overProbAtRef` is read off the exported curve itself, so the contract's
   interpolation invariant holds exactly.
 * **Confidence** thresholds ((p75-p25)/max(p50,1) quartiles, ~25/50/25) are
-  calibrated on the 2025 backtest predictions and stored in
-  `pipeline/data/models/confidence_thresholds.json`; < 5 games played this
-  season drops one level.
+  fit on the 2024 walk-forward calibrated quantiles (M12 — previously the
+  2025 backtest predictions, which was circular because confidence feeds
+  strength and strength gates the strong-call metric) and stored with
+  provenance in `pipeline/data/models/confidence_thresholds.json`;
+  < 5 games played this season drops one level.
+* **Evaluation discipline.** 2025 weeks 1-13 are the final exam: every
+  selection (features, depths, recency half-life, calibration constants,
+  thresholds) is made on the 2024 walk-forward split via
+  `edgefinder/validation.py`, then applied to 2025 unchanged. The backtest
+  reports per-quantile coverage/pinball, a CRPS approximation, Brier and
+  Wilson intervals (M3) alongside MAE/coverage80.
 * **Explanations.** Group perturbation against position-conditional
   training medians on the mean model; groups with |impact| ≥
   max(1.5% of projection, ε) survive, top 3 always kept, cap 6.
@@ -76,6 +97,7 @@ pipeline/
 ├── run_pipeline.py         # CLI orchestrator
 ├── edgefinder/
 │   ├── download.py  load.py  features.py  train.py
+│   ├── conformal.py metrics.py  validation.py
 │   ├── explain.py   backtest.py  export.py  validate.py
 ├── tests/                  # leak-sensitive unit tests
 └── data/

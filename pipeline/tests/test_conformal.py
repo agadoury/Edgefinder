@@ -166,3 +166,99 @@ def test_fs_quantile_order_statistics():
     scores = np.arange(1.0, 101.0)          # 1..100
     assert conformal._fs_quantile(scores, 0.90) == 91.0  # ceil(101*.9)=91
     assert conformal._fs_quantile(scores, 0.10) == 10.0  # floor(101*.1)=10
+
+
+# --- M6: P(over) shrink ----------------------------------------------------
+
+def test_apply_platt_monotone_and_endpoint_preserving():
+    p = np.linspace(0.0, 1.0, 41)
+    out = conformal._apply_platt(p, a=-0.1, b=0.7)
+    assert out[0] == 0.0 and out[-1] == 1.0   # exact endpoints preserved
+    assert (np.diff(out) >= 0).all()           # monotone for b > 0
+    # b < 1 shrinks confident probabilities toward the middle
+    assert conformal._apply_platt(np.array([0.8]), 0.0, 0.7)[0] < 0.8
+    assert conformal._apply_platt(np.array([0.2]), 0.0, 0.7)[0] > 0.2
+
+
+def test_shrink_curve_preserves_contract_invariants():
+    """Shrunk probCurve must stay non-increasing in [0,1] on the same lines."""
+    from edgefinder.train import interp_over, yards_prob_curve
+
+    q = np.array([20.0, 28.0, 45.0, 66.0, 88.0, 108.0, 121.0])
+    raw = yards_prob_curve(q, 2.5)
+    params = {"method": "additive", "shrink": {"a": -0.05, "b": 0.75}}
+    shrunk = conformal.Calibrator._shrink_curve(params, raw)
+    assert [p["line"] for p in shrunk] == [p["line"] for p in raw]
+    overs = [p["over"] for p in shrunk]
+    assert all(a >= b for a, b in zip(overs, overs[1:]))
+    assert all(0.0 <= o <= 1.0 for o in overs)
+    # high-confidence region softened toward 0.5, low buckets not inflated
+    for r, s in zip(raw, shrunk):
+        if r["over"] >= 0.7:
+            assert s["over"] <= r["over"] + 1e-9
+    # invariant 5 holds by construction: overProbAtRef is read off the curve
+    ref = 66.0
+    assert interp_over(shrunk, ref) == pytest.approx(
+        float(np.interp(ref, [p["line"] for p in shrunk], overs)))
+
+
+def test_shrink_curve_noop_without_params():
+    from edgefinder.train import yards_prob_curve
+
+    q = np.array([20.0, 28.0, 45.0, 66.0, 88.0, 108.0, 121.0])
+    raw = yards_prob_curve(q, 2.5)
+    assert conformal.Calibrator._shrink_curve({"method": "additive"}, raw) == raw
+
+
+def test_fit_shrink_recovers_overconfidence():
+    """Synthetic overconfident P(over) must be shrunk (kept, b < 1)."""
+    rng = np.random.default_rng(11)
+    true_p = rng.uniform(0.1, 0.9, 1200)
+    o = (rng.uniform(size=len(true_p)) < true_p).astype(float)
+    logit = np.log(true_p / (1 - true_p))
+    p_over = 1 / (1 + np.exp(-1.8 * logit))   # overconfident by construction
+    weeks = np.tile(np.arange(1, 19), len(p_over) // 18 + 1)[: len(p_over)]
+    sh = conformal._fit_shrink(weeks, p_over, o)
+    assert sh is not None
+    assert 0 < sh["b"] < 1.0                   # it shrinks
+    assert sh["crossBrierDelta"] < 0           # and transfers across weeks
+    adj = conformal._apply_platt(p_over, sh["a"], sh["b"])
+    assert np.mean((adj - o) ** 2) < np.mean((p_over - o) ** 2)
+
+
+def test_fit_shrink_dropped_when_calibrated():
+    """Well-calibrated predictions should usually keep no shrink map."""
+    rng = np.random.default_rng(5)
+    true_p = rng.uniform(0.1, 0.9, 1200)
+    o = (rng.uniform(size=len(true_p)) < true_p).astype(float)
+    weeks = np.tile(np.arange(1, 19), len(true_p) // 18 + 1)[: len(true_p)]
+    sh = conformal._fit_shrink(weeks, true_p, o)
+    if sh is not None:  # noise can sneak a tiny map through; it must be mild
+        assert 0.8 < sh["b"] < 1.25
+        assert abs(sh["a"]) < 0.25
+
+
+def test_fit_shrink_requires_enough_rows():
+    weeks = np.arange(1, 41)
+    p = np.full(40, 0.6)
+    o = np.ones(40)
+    assert conformal._fit_shrink(weeks, p, o) is None
+
+
+# --- M12: thresholds fit inside the 2024 split ------------------------------
+
+def test_fit_conformal_writes_2024_provenance_thresholds(tmp_path):
+    from edgefinder.train import load_conf_thresholds
+
+    fr = _frame(np.random.default_rng(21))
+    cnt = _frame(np.random.default_rng(22), count=True)
+    models = {
+        "pass_yds": SimpleNamespace(train_info={"max_depth": 3}),
+        "receptions": SimpleNamespace(train_info={"max_depth": 3}),
+    }
+    conformal.fit_conformal({"pass_yds": fr, "receptions": cnt}, models,
+                            models_dir=tmp_path)
+    thresholds = load_conf_thresholds(tmp_path)  # raises on bad provenance
+    assert set(thresholds) == {"pass_yds", "receptions"}
+    for lo, hi in thresholds.values():
+        assert 0.0 <= lo <= hi

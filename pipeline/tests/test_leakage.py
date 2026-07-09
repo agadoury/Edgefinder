@@ -8,6 +8,7 @@ from edgefinder.features import (
     defense_events,
     defense_rank_table,
     player_form_events,
+    qb_form_events,
 )
 
 
@@ -46,6 +47,29 @@ def test_dnp_games_are_not_form_events():
     got = asof_join(base, ev, ["player_id"], ["form_mean3"])
     # week 4 sees played weeks 1,2 only -> mean(100,200)
     assert got["form_mean3"].iloc[3] == 150.0
+
+
+def test_qb_form_features_are_strictly_prior():
+    """M7: the starting QB's trailing form must exclude the current week."""
+    pw = pd.DataFrame({
+        "player_id": ["q1"] * 4,
+        "name": ["Joe Slinger Jr."] * 4,
+        "pos": ["QB"] * 4,
+        "season": [2023] * 4,
+        "week": [1, 2, 3, 4],
+        "pass_yds": [100.0, 200.0, 300.0, 400.0],
+        "pass_tds": [1.0, 2.0, 3.0, 4.0],
+        "played": [True] * 4,
+    })
+    ev = qb_form_events(pw)
+    assert set(ev["qb_norm"]) == {"joeslinger"}  # suffix stripped
+    # a pass-catcher row whose listed starter is Joe, week 3
+    base = pd.DataFrame({"qb_norm": ["joeslinger"], "season": [2023],
+                         "week": [3]})
+    base["ord"] = base["season"] * 100 + base["week"]
+    got = asof_join(base, ev, ["qb_norm"], ["qb_pass_yds_l5", "qb_pass_tds_l5"])
+    assert got["qb_pass_yds_l5"].iloc[0] == 150.0  # mean(100, 200), no wk3
+    assert got["qb_pass_tds_l5"].iloc[0] == 1.5
 
 
 def _mini_def_pw() -> pd.DataFrame:

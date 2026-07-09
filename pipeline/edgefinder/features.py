@@ -14,8 +14,21 @@ than 2 prior played career games are dropped from training and backtest.
 
 from __future__ import annotations
 
+import re
+import unicodedata
+
 import numpy as np
 import pandas as pd
+
+_SUFFIXES = re.compile(r"\b(jr|sr|ii|iii|iv|v)\b\.?", re.IGNORECASE)
+
+
+def norm_name(name: str) -> str:
+    """Lowercase, strip accents/punctuation/suffixes — for QB name matching."""
+    s = unicodedata.normalize("NFKD", str(name))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = _SUFFIXES.sub("", s.lower())
+    return re.sub(r"[^a-z]", "", s)
 
 #: market id -> (stat column, positions modeled, line step)
 MARKETS: dict[str, dict] = {
@@ -48,9 +61,19 @@ FACTOR_GROUPS: dict[str, list[str]] = {
                 "wind_missing"],
     "rest_schedule": ["rest_days", "rest_diff", "dnp_last_week",
                       "games_missed_l5"],
-    "qb_situation": ["qb_prior_starts", "qb_unsettled"],
+    "qb_situation": ["qb_prior_starts", "qb_unsettled", "qb_pass_yds_l5",
+                     "qb_pass_tds_l5", "team_pass_yds_l5"],
     "home_away": ["is_home_f"],
 }
+
+#: M4 position indicators for the pooled markets (rush pools QB+RB, the
+#: receiving markets pool WR/TE/RB). The columns are built (build_base) and
+#: were evaluated on the 2024 walk-forward split, where they moved MAE/CRPS
+#: by < +-0.15% on every pooled market — pure noise, so they are NOT in
+#: FEATURES (and per-position models are a fortiori unjustified). The
+#: usage/form features evidently already encode position. Kept buildable
+#: so validation.py can re-run the experiment.
+POSITION_FLAGS: list[str] = ["pos_qb", "pos_rb", "pos_wr", "pos_te"]
 
 FEATURES: list[str] = [c for cols in FACTOR_GROUPS.values() for c in cols]
 
@@ -137,7 +160,8 @@ def team_events(pw: pd.DataFrame) -> pd.DataFrame:
         .groupby(["season", "week", "team"], as_index=False)
         .agg(team_targets=("targets", "sum"),
              team_carries=("carries", "sum"),
-             team_touches=("touches", "sum"))
+             team_touches=("touches", "sum"),
+             team_pass_yds=("pass_yds", "sum"))
     )
     scores = (
         pw.loc[pw["has_game"], ["season", "week", "team", "team_score"]]
@@ -149,7 +173,8 @@ def team_events(pw: pd.DataFrame) -> pd.DataFrame:
     for col, out in [("team_targets", "team_targets_l5"),
                      ("team_carries", "team_carries_l5"),
                      ("team_touches", "team_touches_l5"),
-                     ("team_score", "team_points_l5")]:
+                     ("team_score", "team_points_l5"),
+                     ("team_pass_yds", "team_pass_yds_l5")]:
         ev[out] = _roll(ev.groupby("team")[col], 5, "mean")
     for col, out in [("team_targets", "team_targets_l4"),
                      ("team_touches", "team_touches_l4")]:
@@ -158,6 +183,28 @@ def team_events(pw: pd.DataFrame) -> pd.DataFrame:
         ev["team_targets_l5"] + ev["team_carries_l5"]
     ).replace(0, np.nan)
     return ev
+
+
+def qb_form_events(pw: pd.DataFrame) -> pd.DataFrame:
+    """Per played QB game: trailing-5 passing form, keyed by normalized name.
+
+    games.csv names each game's starting QB pre-kickoff; joining his own
+    trailing production onto a pass-catcher's row gives the M7 "QB quality"
+    signal. Events include the game they describe — consumers must as-of
+    join with strict inequality (like every other event table here).
+    Normalized-name keying matches ``_qb_starts``; the rare same-week
+    name collision keeps the higher-volume row.
+    """
+    qb = pw.loc[(pw["pos"] == "QB") & pw["played"],
+                ["name", "season", "week", "pass_yds", "pass_tds"]].copy()
+    qb["qb_norm"] = qb["name"].map(norm_name)
+    qb["ord"] = _ord(qb["season"], qb["week"])
+    qb = (qb.sort_values("pass_yds")
+            .drop_duplicates(["qb_norm", "ord"], keep="last")
+            .sort_values(["qb_norm", "ord"]))
+    qb["qb_pass_yds_l5"] = _roll(qb.groupby("qb_norm")["pass_yds"], 5, "mean")
+    qb["qb_pass_tds_l5"] = _roll(qb.groupby("qb_norm")["pass_tds"], 5, "mean")
+    return qb
 
 
 def defense_events(pw: pd.DataFrame, stat: str) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -302,7 +349,7 @@ def build_base(pw: pd.DataFrame, games: pd.DataFrame) -> pd.DataFrame:
     # -- team offense context -------------------------------------------
     tev = team_events(pw)
     tcols = ["team_targets_l5", "team_carries_l5", "team_touches_l5",
-             "team_points_l5", "team_pass_share_l5",
+             "team_points_l5", "team_pass_share_l5", "team_pass_yds_l5",
              "team_targets_l4", "team_touches_l4"]
     base[tcols] = asof_join(base, tev, ["team"], tcols)
     base["target_share_l4"] = base["targets_m4"] / base["team_targets_l4"].replace(0, np.nan)
@@ -333,6 +380,20 @@ def build_base(pw: pd.DataFrame, games: pd.DataFrame) -> pd.DataFrame:
     is_qb = base["pos"] == "QB"
     base["qb_prior_starts"] = starts.where(~is_qb, base["games_played_season"])
     base["qb_unsettled"] = (base["qb_prior_starts"] <= 3).astype(float)
+
+    # M7: the listed starter's own trailing passing form (as-of, strictly
+    # earlier weeks), matched by normalized name like _qb_starts.
+    qev = qb_form_events(pw)
+    base["qb_norm"] = base["qb_name"].map(
+        lambda n: norm_name(n) if pd.notna(n) else ""  # "" never matches
+    )
+    qcols = ["qb_pass_yds_l5", "qb_pass_tds_l5"]
+    base[qcols] = asof_join(base, qev, ["qb_norm"], qcols)
+    base = base.drop(columns=["qb_norm"])
+
+    # M4: position indicators for the pooled markets
+    for p in ("QB", "RB", "WR", "TE"):
+        base[f"pos_{p.lower()}"] = (base["pos"] == p).astype(float)
 
     return base
 

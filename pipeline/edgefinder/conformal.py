@@ -29,8 +29,30 @@ Two methods, chosen by market type:
   by player instead of collapsing to 0 and integer lines correctly
   exclude the push mass (P(over k) = P(Y >= k+1)).
 
-Conformity scores are drawn from 2024 rows only -- never 2025. That is
-enforced by ``calibration_mask`` and covered by tests/test_conformal.py.
+On top of the interval calibration, two more 2024-fit layers (both applied
+unchanged downstream, like the conformal adjustments):
+
+* P(over) shrinkage (M6) -- yardage markets' exported curves run
+  overconfident in the high-P(over) region (2025 pre-fix: rush_yds 0.7-1.0
+  bucket predicted 0.74, realized 0.64). A 2-parameter Platt map
+  p' = sigmoid(a + b*logit(p)) is fit per yardage market on the 2024
+  walk-forward P(over ref) predictions and applied to every exported curve
+  point, so probCurve / overProbAtRef / lean / strength soften together.
+  Keep/drop is decided by 2024-internal cross-validation (fit on even
+  weeks, score Brier on odd weeks, and vice versa) -- a market keeps its
+  shrink only when the map transfers across 2024 week halves. The map is
+  strictly monotone (b > 0), so curves stay non-increasing; quantiles are
+  NOT shrunk (they carry the conformal coverage guarantee).
+
+* Confidence thresholds (M12) -- the (p75-p25)/max(p50,1) quartile cuts
+  were previously calibrated on the 2025 backtest predictions (circular:
+  confidence feeds strength, strength gates the reported strong-call
+  sample). They are now fit here, on the 2024 walk-forward calibrated
+  quantiles, persisted with provenance, and applied unchanged to 2025.
+
+Conformity scores, shrink parameters and confidence thresholds are drawn
+from 2024 rows only -- never 2025. That is enforced by
+``calibration_mask`` and covered by tests/test_conformal.py.
 """
 
 from __future__ import annotations
@@ -50,12 +72,22 @@ from edgefinder.train import (
     QUANTILES,
     Q_INDEX,
     _hgb,
+    calibrate_conf_thresholds,
+    fit_quantile_models,
+    interp_over,
+    recency_weights,
+    relative_width,
+    save_conf_thresholds,
     yards_prob_curve,
 )
 
 CAL_SEASON = 2024
 CAL_TRAIN_SEASONS = (2021, 2022, 2023)
 COUNT_MARKETS = ("receptions", "pass_tds")
+#: markets whose exported P(over) curve gets the M6 Platt shrink candidate
+#: (count markets already carry the mid-PIT level map)
+SHRINK_MARKETS = ("pass_yds", "rush_yds", "rec_yds")
+SHRINK_MIN_B = 1e-3  # monotonicity guard on the fitted slope
 
 LAM_FLOOR = 0.05
 ALPHA_GRID = (0.0, 0.005, 0.01, 0.02, 0.03, 0.05, 0.075,
@@ -160,45 +192,153 @@ def _fit_count(y: np.ndarray, mean_pred: np.ndarray) -> dict:
     }
 
 
+def _logit(p: np.ndarray) -> np.ndarray:
+    return np.log(p / (1.0 - p))
+
+
+def _apply_platt(p: np.ndarray, a: float, b: float) -> np.ndarray:
+    """sigmoid(a + b*logit(p)) with exact 0/1 preserved at the endpoints."""
+    p = np.asarray(p, dtype=float)
+    clipped = np.clip(p, 1e-6, 1.0 - 1e-6)
+    out = 1.0 / (1.0 + np.exp(-(a + max(b, SHRINK_MIN_B) * _logit(clipped))))
+    return np.where(p <= 0.0, 0.0, np.where(p >= 1.0, 1.0, out))
+
+
+def _fit_platt(p: np.ndarray, o: np.ndarray) -> tuple[float, float]:
+    """Unpenalized 2-parameter logistic recalibration on the logit scale."""
+    from sklearn.linear_model import LogisticRegression
+
+    x = _logit(np.clip(p, 1e-4, 1.0 - 1e-4)).reshape(-1, 1)
+    lr = LogisticRegression(penalty=None, solver="lbfgs", max_iter=1000)
+    lr.fit(x, o.astype(int))
+    return float(lr.intercept_[0]), float(lr.coef_[0][0])
+
+
+def _fit_shrink(weeks: np.ndarray, p: np.ndarray, o: np.ndarray) -> dict | None:
+    """M6 shrink fit with a 2024-internal transfer test.
+
+    Pre-registered keep/drop rule: fit the Platt map on one week-parity
+    half of 2024 and score Brier on the other, both directions; keep the
+    market's shrink only when the mean out-of-half Brier delta improves.
+    Returns the map refit on all of 2024, or None when dropped.
+    """
+    deltas = []
+    for parity in (0, 1):
+        fit_m = (weeks % 2) == parity
+        if fit_m.sum() < 50 or (~fit_m).sum() < 50:
+            return None
+        a, b = _fit_platt(p[fit_m], o[fit_m])
+        adj = _apply_platt(p[~fit_m], a, b)
+        base = float(np.mean((p[~fit_m] - o[~fit_m]) ** 2))
+        deltas.append(float(np.mean((adj - o[~fit_m]) ** 2)) - base)
+    cross_delta = float(np.mean(deltas))
+    if cross_delta >= 0.0:
+        return None
+    a, b = _fit_platt(p, o)
+    return {"a": round(a, 4), "b": round(max(b, SHRINK_MIN_B), 4),
+            "nFit": int(len(p)), "crossBrierDelta": round(cross_delta, 6)}
+
+
 def fit_conformal(
     frames: dict[str, pd.DataFrame],
     models: dict,
     models_dir: Path = MODELS_DIR,
 ) -> "Calibrator":
-    """Fit 2021-2023 models, score 2024, persist + return the calibrator."""
+    """Fit 2021-2023 models, score 2024, persist + return the calibrator.
+
+    The calibration-model fits mirror the production training config
+    (features, per-loss depths, recency half-life, log1p transform, early
+    stopping) recorded in each model's train_info, so the 2024 conformity
+    scores measure the same model family that ships. Also fits and
+    persists the M12 confidence thresholds and the M6 P(over) shrink from
+    the same 2024 walk-forward predictions.
+    """
     params: dict = {
         "calSeason": CAL_SEASON,
         "calTrainSeasons": list(CAL_TRAIN_SEASONS),
         "markets": {},
     }
+    cal_rows: dict[str, dict] = {}  # per-market 2024 arrays for M6/M12
     for market, frame in frames.items():
-        depth = models[market].train_info.get("max_depth", 5)
+        model = models[market]
+        info = getattr(model, "train_info", {}) or {}
+        feats = list(getattr(model, "features", None) or FEATURES)
+        depth = info.get("max_depth", 5)
+        qdepth = info.get("quantile_depth", depth)
+        half_life = info.get("half_life")
+        log1p = bool(getattr(model, "log1p_quantiles", False))
+        early_stopping = bool(info.get("early_stopping", False))
+
         tr = frame[calibration_train_mask(frame)]
         cal = frame[calibration_mask(frame)]
-        X, y_tr = tr[FEATURES], tr["y"].to_numpy()
-        Xc, yc = cal[FEATURES], cal["y"].to_numpy()
+        X, y_tr = tr[feats], tr["y"].to_numpy()
+        Xc, yc = cal[feats], cal["y"].to_numpy()
+        w = recency_weights(tr["season"], half_life)
 
         if market in COUNT_MARKETS:
-            mean_model = _hgb("squared_error", depth).fit(X, y_tr)
-            mp = _fit_count(yc, np.clip(mean_model.predict(Xc), 0.0, None))
+            mean_model = _hgb("squared_error", depth,
+                              early_stopping=early_stopping).fit(
+                X, y_tr, sample_weight=w)
+            mean_pred = np.clip(mean_model.predict(Xc), 0.0, None)
+            qpred = None
+            mp = _fit_count(yc, mean_pred)
             detail = (f"lam_scale={mp['lambdaScale']:.4f} "
                       f"alpha={mp['alpha']}")
         else:
-            qpred = np.column_stack([
-                _hgb("quantile", depth, quantile=q).fit(X, y_tr).predict(Xc)
-                for q in QUANTILES
-            ])
+            mean_pred = None  # additive path never consumes it
+            qmodels = fit_quantile_models(X, y_tr, qdepth, weights=w,
+                                          log1p=log1p,
+                                          early_stopping=early_stopping)
+            qpred = np.column_stack([qmodels[q].predict(Xc)
+                                     for q in QUANTILES])
+            if log1p:
+                qpred = np.expm1(qpred)
             qpred = np.sort(np.clip(qpred, 0.0, None), axis=1)
             mp = _fit_yards(yc, qpred)
             detail = (f"d10={mp['deltas']['0.10']:+.2f} "
                       f"d90={mp['deltas']['0.90']:+.2f}")
         mp["nCal"] = int(len(cal))
         params["markets"][market] = mp
+        cal_rows[market] = {
+            "qpred": qpred,
+            "mean_pred": mean_pred,
+            "y": yc,
+            "week": cal["week"].to_numpy(),
+            "ref_line": cal["ref_line"].to_numpy(dtype=float)
+            if "ref_line" in cal else np.full(len(cal), np.nan),
+        }
         print(f"conformal {market}: n_cal={mp['nCal']} "
               f"method={mp['method']} {detail}")
 
+    # -- M12 confidence thresholds + M6 shrink, both from the same 2024
+    #    walk-forward predictions the conformal layer was fit on ---------
+    calib = Calibrator(params)
+    thresholds: dict[str, tuple[float, float]] = {}
+    for market, arr in cal_rows.items():
+        quantiles = calib.quantile_matrix(market, arr["qpred"],
+                                          arr["mean_pred"])
+        thresholds[market] = calibrate_conf_thresholds(
+            relative_width(quantiles))
+        if market in SHRINK_MARKETS:
+            has_ref = np.isfinite(arr["ref_line"])
+            over = np.empty(int(has_ref.sum()))
+            refs = arr["ref_line"][has_ref]
+            for i, idx in enumerate(np.flatnonzero(has_ref)):
+                curve = calib.prob_curve(market, quantiles[idx], None)
+                over[i] = interp_over(curve, refs[i])
+            went_over = (arr["y"][has_ref] > refs).astype(float)
+            shrink = _fit_shrink(arr["week"][has_ref], over, went_over)
+            if shrink is not None:
+                params["markets"][market]["shrink"] = shrink
+                print(f"shrink {market}: a={shrink['a']:+.3f} "
+                      f"b={shrink['b']:.3f} "
+                      f"crossBrierDelta={shrink['crossBrierDelta']:+.5f}")
+            else:
+                print(f"shrink {market}: dropped (no 2024 cross-week gain)")
+
     models_dir.mkdir(parents=True, exist_ok=True)
     params_path(models_dir).write_text(json.dumps(params, indent=2))
+    save_conf_thresholds(thresholds, models_dir)
     return Calibrator(params)
 
 
@@ -261,14 +401,33 @@ class Calibrator:
 
     def prob_curve(self, market: str, qadj_row: np.ndarray,
                    mean_pred_i: float) -> list[dict]:
-        """Calibrated P(over line) curve for one row."""
+        """Calibrated P(over line) curve for one row (incl. M6 shrink)."""
         p = self.markets[market]
         if p["method"] == "additive":
-            return yards_prob_curve(qadj_row, MARKETS[market]["step"])
+            curve = yards_prob_curve(qadj_row, MARKETS[market]["step"])
+            return self._shrink_curve(p, curve)
         lam = float(self._lam(p, mean_pred_i))
         if market == "pass_tds":
             return self._pass_tds_curve(lam, p)
         return self._count_curve(lam, p)
+
+    @staticmethod
+    def _shrink_curve(p: dict, curve: list[dict]) -> list[dict]:
+        """Apply the market's Platt map to every curve point.
+
+        The map is strictly increasing (b > 0), so the non-increasing
+        curve invariant survives; re-rounding is followed by a cumulative
+        min to keep it exact after 4-dp rounding. overProbAtRef is always
+        read off the exported curve, so invariant 5 holds by construction.
+        """
+        sh = p.get("shrink")
+        if not sh:
+            return curve
+        overs = _apply_platt(np.array([pt["over"] for pt in curve]),
+                             sh["a"], sh["b"])
+        overs = np.clip(np.minimum.accumulate(np.round(overs, 4)), 0.0, 1.0)
+        return [{"line": pt["line"], "over": float(o)}
+                for pt, o in zip(curve, overs)]
 
     def _survival(self, p: dict, dist, k: int) -> float:
         """Calibrated P(Y > k) = P(Y >= k+1)."""
