@@ -24,7 +24,7 @@ raw NFL data (2021–2025) ──► feature builder (leak-free, as-of-kickoff)
                                    │
               backtest on the 2025 season, walk-forward
                                    │
-        JSON export ──► Next.js app (this repo, web/)
+        JSON export ──► Next.js app (this repo, root)
 ```
 
 - **Data**: weekly player box-score lines (fantasy.nfl.com via the
@@ -49,10 +49,12 @@ list lives in [`BACKLOG.md`](BACKLOG.md).
 ### Web app (uses the committed data export — no Python needed)
 
 ```bash
-cd web
 npm install
 npm run dev        # http://localhost:3000
 ```
+
+The Next.js app lives at the repo root, so Vercel (and similar hosts)
+auto-detect it with zero configuration — import the repo and deploy.
 
 ### Rebuilding the data + models
 
@@ -63,7 +65,7 @@ python3 pipeline/run_pipeline.py     # download → features → train → backt
 
 Raw data caches under `pipeline/data/raw/` (gitignored). The validated
 export is written to `pipeline/data/export/` and copied into
-`web/src/data/`, which **is** committed so the app runs out of the box.
+`src/data/`, which **is** committed so the app runs out of the box.
 
 See [`pipeline/README.md`](pipeline/README.md) for pipeline details and
 module layout.
@@ -71,8 +73,10 @@ module layout.
 ## Repo layout
 
 ```
+src/, public/, package.json, next.config.ts
+            Next.js app at the repo root (App Router, TypeScript,
+            Tailwind; all charts hand-rolled SVG)
 pipeline/   Python ML pipeline (download, features, train, backtest, explain, export, validate)
-web/        Next.js app (App Router, TypeScript, Tailwind; all charts hand-rolled SVG)
 docs/       DATA_CONTRACT.md — the single source of truth between the two
 BACKLOG.md  everything deliberately deferred to v2+
 ```

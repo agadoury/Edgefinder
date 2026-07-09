@@ -1,8 +1,8 @@
 # EdgeFinder data contract — pipeline → web
 
-The Python pipeline (`pipeline/`) is the only writer of `web/src/data/`.
-The Next.js app (`web/`) is the only reader. Neither side may deviate from
-this document; change the contract first, then both sides.
+The Python pipeline (`pipeline/`) is the only writer of `src/data/`.
+The Next.js app (repo root, `src/`) is the only reader. Neither side may
+deviate from this document; change the contract first, then both sides.
 
 All JSON is UTF-8, camelCase keys. Probabilities are floats in [0, 1].
 Projections/yardage numbers are rounded to 1 decimal. Team codes are
@@ -12,7 +12,7 @@ the pipeline normalizes any source codes into these.
 ## Files
 
 ```
-web/src/data/
+src/data/
 ├── meta.json              # season/week, markets, model card numbers
 ├── slate.json             # demo-week games + player-prop index rows
 ├── players/{playerId}.json  # one file per slate player: full detail

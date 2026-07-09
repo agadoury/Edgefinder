@@ -7,14 +7,27 @@ __pycache__/
 pipeline/data/raw/
 pipeline/data/processed/
 pipeline/data/models/
+pipeline/data/export/
 
-# Node / Next.js
-node_modules/
-web/.next/
-web/out/
+# Node / Next.js (app lives at the repo root)
+/node_modules
+/.next/
+/out/
+/build
+/coverage
 *.tsbuildinfo
+next-env.d.ts
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (opt in explicitly if ever needed)
+.env*
+
+# vercel
+.vercel
 
 # Misc
 .DS_Store
-pipeline/data/export/
+*.pem

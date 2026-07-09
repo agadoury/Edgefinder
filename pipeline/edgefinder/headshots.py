@@ -14,7 +14,7 @@ simply keep their monogram avatar.
 
 Usage:
     python3 pipeline/edgefinder/headshots.py \
-        [--export-dir pipeline/data/export] [--out web/src/data/headshots.json]
+        [--export-dir pipeline/data/export] [--out src/data/headshots.json]
 """
 
 from __future__ import annotations
@@ -105,7 +105,7 @@ def build_map(export_dir: Path) -> tuple[dict[str, str], list[str]]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--export-dir", type=Path, default=ROOT / "pipeline" / "data" / "export")
-    parser.add_argument("--out", type=Path, default=ROOT / "web" / "src" / "data" / "headshots.json")
+    parser.add_argument("--out", type=Path, default=ROOT / "src" / "data" / "headshots.json")
     args = parser.parse_args()
 
     mapping, unmatched = build_map(args.export_dir)

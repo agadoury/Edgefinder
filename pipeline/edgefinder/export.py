@@ -1,6 +1,6 @@
 """Write the contract JSON (meta.json, slate.json, players/{id}.json).
 
-Staging dir is pipeline/data/export — NOT web/src/data; publishing to the
+Staging dir is pipeline/data/export — NOT src/data; publishing to the
 web app is a separate copy step owned by the web side.
 
 Demo-slate eligibility (per the spec):

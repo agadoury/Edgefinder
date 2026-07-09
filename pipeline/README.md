@@ -68,5 +68,5 @@ pipeline/
 └── data/
     ├── raw/                # cached source CSVs
     ├── models/             # joblib models + thresholds + backtest preds
-    └── export/             # contract JSON staging (NOT web/src/data)
+    └── export/             # contract JSON staging (NOT src/data)
 ```
