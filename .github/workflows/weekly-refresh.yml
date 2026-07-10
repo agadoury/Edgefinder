@@ -1,0 +1,66 @@
+name: Weekly data refresh
+
+# Retrains the model and republishes the app data using free public
+# sources (hvpkod/NFL-Data weekly stats, nflverse games.csv, nflverse
+# enrichment releases). GitHub-hosted runners have open internet, so the
+# nflverse release assets that a sandboxed dev environment may block
+# download normally here. Free on GitHub's standard Actions allowance.
+#
+# During the offseason this is effectively a no-op (identical export ->
+# no commit). Once 2026 weekly data flows, this becomes the live-mode
+# refresh: bump SEASONS/demo-week handling in the pipeline first (see
+# BACKLOG.md "2026 live-season readiness").
+
+on:
+  schedule:
+    - cron: "0 10 * * 2" # Tuesdays 10:00 UTC, after MNF stats settle
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Fetch enrichment datasets (snap counts, injuries, NGS)
+        run: python pipeline/edgefinder/enrich.py
+
+      - name: Run pipeline (download -> train -> backtest -> export -> validate)
+        run: python pipeline/run_pipeline.py --retrain
+
+      - name: Publish export to the app
+        run: |
+          rm -rf src/data/players
+          cp -r pipeline/data/export/players src/data/players
+          cp pipeline/data/export/meta.json pipeline/data/export/slate.json src/data/
+          cp pipeline/data/export/REPORT.md docs/BACKTEST_REPORT.md
+          python pipeline/edgefinder/headshots.py
+
+      - name: Validate published data
+        run: python pipeline/edgefinder/validate.py src/data
+
+      - name: Run pipeline tests
+        run: python -m pytest pipeline/tests/ -q
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "edgefinder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data docs/BACKTEST_REPORT.md
+          if git diff --cached --quiet; then
+            echo "No data changes this week."
+          else
+            git commit -m "Weekly data refresh (automated)"
+            git push
+          fi
