@@ -160,6 +160,15 @@ HEADLINE_TEMPLATES: dict[str, HeadlineTemplate] = {
     "wx_neutral": _T("Weather is a wildcard here — {stat}; nets out about "
                      "{net}", NEUTRAL),
     # rest_schedule ---------------------------------------------------------
+    # M10: current-week injury-report stories (pre-kickoff info)
+    "inj_listed": _T("Listed {status} on this week's injury report", DOWN),
+    "inj_listed_neutral": _T("Listed {status} this week — could cut either "
+                             "way; nets out about {net}", NEUTRAL),
+    "inj_top_out": _T("{n} of his team's top targets ruled out this week — "
+                      "more work to go around", UP),
+    "inj_top_out_neutral": _T("{n} of his team's top targets ruled out this "
+                              "week — shakes up the game plan; nets out "
+                              "about {net}", NEUTRAL),
     "rest_dnp": _T("Sat out last week", DOWN),
     "rest_dnp_neutral": _T("Back in after a week off — could cut either "
                            "way; nets out about {net}", NEUTRAL),
@@ -635,6 +644,39 @@ def _render_rest(
     net = _net(impact, market)
     up = impact > 0
     rest, diff = row.get("rest_days"), row.get("rest_diff")
+
+    # M10: the current week's injury report outranks schedule stories.
+    # Emitted-by-construction polarity: the "listed" framing implies down,
+    # the teammates-out framing implies up; each flips to its neutral
+    # variant when the group's net impact contradicts the framing.
+    if row.get("inj_doubtful") == 1.0 or row.get("inj_questionable") == 1.0:
+        status = "Doubtful" if row.get("inj_doubtful") == 1.0 else "Questionable"
+        practice = ("he didn't practice" if row.get("practice_dnp") == 1.0
+                    else "he was limited in practice"
+                    if row.get("practice_limited") == 1.0
+                    else "practice participation was normal")
+        if up:
+            label, pol = _emit("inj_listed_neutral", status=status, net=net)
+            detail = (f"{status} tag this week ({practice}) — the rest of "
+                      f"his profile carries it; on balance the situation "
+                      f"{nudge}.")
+        else:
+            label, pol = _emit("inj_listed", status=status)
+            detail = f"The {status} tag ({practice}) {nudge}."
+        return label, pol, detail
+    top_out = row.get("top3_targets_out")
+    if pd.notna(top_out) and top_out >= 1.0:
+        n = int(top_out)
+        if up:
+            label, pol = _emit("inj_top_out", n=n)
+            detail = (f"Vacated targets have to land somewhere — the "
+                      f"redistribution {nudge}.")
+        else:
+            label, pol = _emit("inj_top_out_neutral", n=n, net=net)
+            detail = (f"Losing a top target shuffles the whole plan — on "
+                      f"balance it {nudge}.")
+        return label, pol, detail
+
     if row.get("dnp_last_week") == 1.0:
         if up:  # missed-game framing implies down; nothing here explains up
             label, pol = _emit("rest_dnp_neutral", net=net)

@@ -1,0 +1,427 @@
+{
+ "playerId": "2570149",
+ "name": "Kendre Miller",
+ "team": "NO",
+ "pos": "RB",
+ "opponent": "TB",
+ "home": false,
+ "gameId": "2025_14_NO_TB",
+ "gamesPlayed2025": 7,
+ "props": [
+  {
+   "market": "rush_yds",
+   "projection": 13.8,
+   "quantiles": {
+    "p10": 0.3,
+    "p25": 4.3,
+    "p50": 11.1,
+    "p75": 30.3,
+    "p90": 52.8
+   },
+   "probCurve": [
+    {
+     "line": 2.5,
+     "over": 0.7615
+    },
+    {
+     "line": 5.0,
+     "over": 0.6697
+    },
+    {
+     "line": 7.5,
+     "over": 0.5854
+    },
+    {
+     "line": 10.0,
+     "over": 0.5053
+    },
+    {
+     "line": 12.5,
+     "over": 0.4563
+    },
+    {
+     "line": 15.0,
+     "over": 0.4291
+    },
+    {
+     "line": 17.5,
+     "over": 0.4019
+    },
+    {
+     "line": 20.0,
+     "over": 0.3747
+    },
+    {
+     "line": 22.5,
+     "over": 0.3475
+    },
+    {
+     "line": 25.0,
+     "over": 0.3201
+    },
+    {
+     "line": 27.5,
+     "over": 0.2924
+    },
+    {
+     "line": 30.0,
+     "over": 0.2644
+    },
+    {
+     "line": 32.5,
+     "over": 0.2483
+    },
+    {
+     "line": 35.0,
+     "over": 0.2336
+    },
+    {
+     "line": 37.5,
+     "over": 0.2189
+    },
+    {
+     "line": 40.0,
+     "over": 0.2038
+    },
+    {
+     "line": 42.5,
+     "over": 0.1886
+    },
+    {
+     "line": 45.0,
+     "over": 0.1732
+    },
+    {
+     "line": 47.5,
+     "over": 0.1575
+    },
+    {
+     "line": 50.0,
+     "over": 0.1413
+    },
+    {
+     "line": 52.5,
+     "over": 0.1248
+    },
+    {
+     "line": 55.0,
+     "over": 0.1185
+    },
+    {
+     "line": 57.5,
+     "over": 0.1138
+    },
+    {
+     "line": 60.0,
+     "over": 0.1089
+    },
+    {
+     "line": 62.5,
+     "over": 0.104
+    },
+    {
+     "line": 65.0,
+     "over": 0.0992
+    },
+    {
+     "line": 67.5,
+     "over": 0.0942
+    },
+    {
+     "line": 70.0,
+     "over": 0.0891
+    },
+    {
+     "line": 72.5,
+     "over": 0.0841
+    },
+    {
+     "line": 75.0,
+     "over": 0.0789
+    },
+    {
+     "line": 77.5,
+     "over": 0.0736
+    },
+    {
+     "line": 80.0,
+     "over": 0.0686
+    },
+    {
+     "line": 82.5,
+     "over": 0.0652
+    },
+    {
+     "line": 85.0,
+     "over": 0.0615
+    },
+    {
+     "line": 87.5,
+     "over": 0.0579
+    },
+    {
+     "line": 90.0,
+     "over": 0.0543
+    },
+    {
+     "line": 92.5,
+     "over": 0.0505
+    },
+    {
+     "line": 95.0,
+     "over": 0.0468
+    },
+    {
+     "line": 97.5,
+     "over": 0.0429
+    },
+    {
+     "line": 100.0,
+     "over": 0.039
+    },
+    {
+     "line": 102.5,
+     "over": 0.035
+    },
+    {
+     "line": 105.0,
+     "over": 0.0323
+    }
+   ],
+   "refLine": 25.5,
+   "overProbAtRef": 0.3146,
+   "lean": "under",
+   "strength": 26,
+   "confidence": "low",
+   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
+   "verdict": "The model projects 14 rushing yards \u2014 it gives Kendre a 31% chance to clear a 25.5-yard line.",
+   "factors": [
+    {
+     "group": "usage_role",
+     "direction": "down",
+     "impact": -11.1,
+     "label": "Getting 8.0 touches a game over his last 4",
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 11 yards."
+    },
+    {
+     "group": "game_environment",
+     "direction": "down",
+     "impact": -3.4,
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 17 for the Saints",
+     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 1.1,
+     "label": "Tyler Shough has made 4 starts this season",
+     "detail": "Stability under center nudges the projection up by about 1 yards."
+    }
+   ],
+   "actual": null,
+   "result": "dnp"
+  }
+ ],
+ "recentGames": [
+  {
+   "season": 2025,
+   "week": 7,
+   "opponent": "CHI",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 7.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "opponent": "NE",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 21.0,
+    "rec_yds": 11.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "opponent": "NYG",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 41.0,
+    "rec_yds": 8.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "opponent": "BUF",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 65.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "opponent": "SEA",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 27.0,
+    "rec_yds": 9.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 2,
+   "opponent": "SF",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 8.0,
+    "rec_yds": 2.0,
+    "receptions": 1.0
+   }
+  },
+  {
+   "season": 2025,
+   "week": 1,
+   "opponent": "ARI",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 24.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 16,
+   "opponent": "GB",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 15.0,
+    "rec_yds": 16.0,
+    "receptions": 2.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 15,
+   "opponent": "WAS",
+   "home": true,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 46.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  },
+  {
+   "season": 2024,
+   "week": 14,
+   "opponent": "NYG",
+   "home": false,
+   "stats": {
+    "pass_yds": 0.0,
+    "pass_tds": 0.0,
+    "rush_yds": 32.0,
+    "rec_yds": 0.0,
+    "receptions": 0.0
+   }
+  }
+ ],
+ "seasonAvgs": {
+  "rush_yds": 27.6,
+  "rec_yds": 4.3,
+  "receptions": 0.7
+ },
+ "modelHistory": [
+  {
+   "week": 7,
+   "market": "rush_yds",
+   "projection": 35.7,
+   "refLine": 26.5,
+   "lean": "over",
+   "actual": 7.0,
+   "result": "under"
+  },
+  {
+   "week": 6,
+   "market": "rush_yds",
+   "projection": 31.3,
+   "refLine": 26.5,
+   "lean": "neutral",
+   "actual": 21.0,
+   "result": "under"
+  },
+  {
+   "week": 5,
+   "market": "rush_yds",
+   "projection": 27.7,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 41.0,
+   "result": "over"
+  },
+  {
+   "week": 4,
+   "market": "rush_yds",
+   "projection": 19.5,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 65.0,
+   "result": "over"
+  },
+  {
+   "week": 3,
+   "market": "rush_yds",
+   "projection": 14.7,
+   "refLine": 20.5,
+   "lean": "under",
+   "actual": 27.0,
+   "result": "over"
+  },
+  {
+   "week": 2,
+   "market": "rush_yds",
+   "projection": 12.9,
+   "refLine": 24.5,
+   "lean": "under",
+   "actual": 8.0,
+   "result": "under"
+  },
+  {
+   "week": 1,
+   "market": "rush_yds",
+   "projection": 25.7,
+   "refLine": 32.5,
+   "lean": "under",
+   "actual": 24.0,
+   "result": "under"
+  }
+ ]
+}

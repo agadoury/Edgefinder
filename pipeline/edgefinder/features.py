@@ -90,6 +90,12 @@ SNAP_FEATURES: list[str] = [
 #: * air yards / true usage (M9) — rolling target share, air-yards share,
 #:   WOPR, aDOT and RACR from nflverse stats_player_week, plus the QB's
 #:   rolling passing air yards. Strictly as-of (past games only).
+#:   DROPPED on 2024 (mean dMAE +0.09%, dCRPS +0.17%): it does improve its
+#:   target market — rec_yds MAE -0.50%, CRPS -0.71% — but degrades
+#:   pass/rush, and the shared-feature-list architecture prices bundles on
+#:   the mean across markets. Kept buildable (like POSITION_FLAGS) so the
+#:   experiment can be re-run; a per-market feature list is the obvious
+#:   follow-up if rec markets ever get their own config.
 AIR_FEATURES: list[str] = [
     "tgt_share_m3", "tgt_share_m5", "tgt_share_m8", "ay_share_m5",
     "wopr_m3", "wopr_m5", "adot_m5", "racr_m5", "pass_air_m5",
@@ -107,6 +113,18 @@ INJURY_FEATURES: list[str] = [
     "pos_teammates_out", "top3_targets_out",
 ]
 ENRICH_CANDIDATES: list[str] = SNAP_FEATURES + AIR_FEATURES + INJURY_FEATURES
+
+#: 2024 keep/drop outcomes (validation.py --exp enrich; fit 2021-2023,
+#: scored on held-out 2024; pre-registered rule in exp_enrich):
+#:   snaps     KEEP (mean dMAE -1.20%, mean dCRPS -0.75%)
+#:   air_yards DROP (mean dMAE +0.09%, mean dCRPS +0.17%)
+#:   injuries  KEEP (mean dMAE -0.09%, mean dCRPS -0.21%)
+#: joint snaps+injuries confirmed on 2024: mean dMAE -1.20%, dCRPS -0.88%.
+#: Groups are reused (contract's group list is frozen): snap share is a
+#: role/usage signal, injury status an availability/schedule signal.
+FACTOR_GROUPS["usage_role"] = FACTOR_GROUPS["usage_role"] + SNAP_FEATURES
+FACTOR_GROUPS["rest_schedule"] = (FACTOR_GROUPS["rest_schedule"]
+                                  + INJURY_FEATURES)
 
 FEATURES: list[str] = [c for cols in FACTOR_GROUPS.values() for c in cols]
 

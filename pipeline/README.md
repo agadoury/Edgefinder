@@ -60,7 +60,31 @@ missing indicator — never silent zeros.
 
 * **Leak-freedom.** Every feature comes from strictly earlier weeks via
   backward as-of joins with `allow_exact_matches=False`; opponent ranks are
-  recomputed as-of each week.
+  recomputed as-of each week. One documented exception: injury-report
+  features (M10) join EXACTLY on the predicted week, because game-status
+  and practice designations are published before kickoff — never a future
+  week (leak tests assert both directions).
+* **Enrichment features (M9/M10).** Candidate bundles were validated
+  bundle-wise on the 2024 split (`validation.py --exp enrich`,
+  pre-registered rule in `exp_enrich`): **snap share KEPT** (rolling
+  offense_pct 3/5/8 + last game + trend/delta → `usage_role`; 2024 mean
+  dMAE -1.20%, dCRPS -0.75%), **injuries KEPT** (own
+  Questionable/Doubtful + practice status + same-position and top-3-target
+  teammates-Out counts → `rest_schedule`; mean dMAE -0.09%, dCRPS
+  -0.21%), **air yards DROPPED** (mean dMAE +0.09%, dCRPS +0.17% — it
+  helps rec_yds (-0.50% MAE, -0.71% CRPS) but degrades pass/rush; kept
+  buildable, like the M4 position flags, for a future per-market
+  feature-list experiment). Players ruled **Out** on the week's report
+  never make the demo slate.
+* **FanDuel benchmark (M13, evaluation only).** `fanduel_benchmark.py`
+  matches archived FanDuel near-closing snapshots (pass yds +
+  receptions) to the 2025 backtest by normalized name +
+  schedule-derived week and reports model-vs-line MAE, P(over FD line)
+  calibration, and lean hit rates with Wilson intervals in REPORT.md /
+  docs/BACKTEST_REPORT.md. Deliberately NOT exported to meta.json (the
+  app contract stays frozen). Honest headline: the model does not beat
+  the closing line as a point predictor, and lean hit rates sit near the
+  -110 break-even — no market-edge claims anywhere.
 * **Cold starts.** Player form/usage windows roll across season boundaries
   (last-N *played* games), season-to-date columns reset each season, and
   rows with < 2 prior played career games are excluded from training and
@@ -139,12 +163,13 @@ missing indicator — never silent zeros.
 pipeline/
 ├── run_pipeline.py         # CLI orchestrator
 ├── edgefinder/
-│   ├── download.py  load.py  features.py  train.py
-│   ├── conformal.py metrics.py  validation.py
-│   ├── explain.py   backtest.py  export.py  validate.py
+│   ├── download.py  enrich.py  load.py  enrich_join.py
+│   ├── features.py  train.py  conformal.py  metrics.py  validation.py
+│   ├── explain.py   backtest.py  fanduel_benchmark.py
+│   ├── export.py    validate.py  headshots.py
 ├── tests/                  # leak-sensitive unit tests
 └── data/
-    ├── raw/                # cached source CSVs
+    ├── raw/                # cached source CSVs (+ raw/enrichment/)
     ├── models/             # joblib models + thresholds + backtest preds
     └── export/             # contract JSON staging (NOT src/data)
 ```

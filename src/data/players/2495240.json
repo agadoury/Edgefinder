@@ -10,13 +10,13 @@
  "props": [
   {
    "market": "pass_yds",
-   "projection": 204.1,
+   "projection": 181.0,
    "quantiles": {
-    "p10": 96.9,
-    "p25": 143.1,
-    "p50": 190.8,
-    "p75": 224.8,
-    "p90": 285.8
+    "p10": 56.8,
+    "p25": 143.6,
+    "p50": 180.4,
+    "p75": 221.4,
+    "p90": 283.6
    },
    "probCurve": [
     {
@@ -25,306 +25,294 @@
     },
     {
      "line": 30.0,
-     "over": 0.9769
+     "over": 0.9723
     },
     {
      "line": 35.0,
-     "over": 0.9724
+     "over": 0.962
     },
     {
      "line": 40.0,
-     "over": 0.968
+     "over": 0.9517
     },
     {
      "line": 45.0,
-     "over": 0.9635
+     "over": 0.9369
     },
     {
      "line": 50.0,
-     "over": 0.9591
+     "over": 0.9213
     },
     {
      "line": 55.0,
-     "over": 0.9546
+     "over": 0.9056
     },
     {
      "line": 60.0,
-     "over": 0.9502
+     "over": 0.8944
     },
     {
      "line": 65.0,
-     "over": 0.9434
+     "over": 0.8858
     },
     {
      "line": 70.0,
-     "over": 0.9366
+     "over": 0.8771
     },
     {
      "line": 75.0,
-     "over": 0.9298
+     "over": 0.8685
     },
     {
      "line": 80.0,
-     "over": 0.923
+     "over": 0.8599
     },
     {
      "line": 85.0,
-     "over": 0.9162
+     "over": 0.8512
     },
     {
      "line": 90.0,
-     "over": 0.9094
+     "over": 0.8426
     },
     {
      "line": 95.0,
-     "over": 0.9026
+     "over": 0.8339
     },
     {
      "line": 100.0,
-     "over": 0.8899
+     "over": 0.8253
     },
     {
      "line": 105.0,
-     "over": 0.8737
+     "over": 0.8166
     },
     {
      "line": 110.0,
-     "over": 0.8574
+     "over": 0.808
     },
     {
      "line": 115.0,
-     "over": 0.8412
+     "over": 0.7994
     },
     {
      "line": 120.0,
-     "over": 0.825
+     "over": 0.7907
     },
     {
      "line": 125.0,
-     "over": 0.8088
+     "over": 0.7821
     },
     {
      "line": 130.0,
-     "over": 0.7926
+     "over": 0.7734
     },
     {
      "line": 135.0,
-     "over": 0.7763
+     "over": 0.7648
     },
     {
      "line": 140.0,
-     "over": 0.7601
+     "over": 0.7561
     },
     {
      "line": 145.0,
-     "over": 0.7401
+     "over": 0.7402
     },
     {
      "line": 150.0,
-     "over": 0.7139
+     "over": 0.7063
     },
     {
      "line": 155.0,
-     "over": 0.6877
+     "over": 0.6724
     },
     {
      "line": 160.0,
-     "over": 0.6615
+     "over": 0.6385
     },
     {
      "line": 165.0,
-     "over": 0.6353
+     "over": 0.6045
     },
     {
      "line": 170.0,
-     "over": 0.6091
+     "over": 0.5706
     },
     {
      "line": 175.0,
-     "over": 0.5829
+     "over": 0.5367
     },
     {
      "line": 180.0,
-     "over": 0.5568
+     "over": 0.5028
     },
     {
      "line": 185.0,
-     "over": 0.5306
+     "over": 0.472
     },
     {
      "line": 190.0,
-     "over": 0.5044
+     "over": 0.4415
     },
     {
      "line": 195.0,
-     "over": 0.4694
+     "over": 0.411
     },
     {
      "line": 200.0,
-     "over": 0.4326
+     "over": 0.3805
     },
     {
      "line": 205.0,
-     "over": 0.3959
+     "over": 0.35
     },
     {
      "line": 210.0,
-     "over": 0.3591
+     "over": 0.3195
     },
     {
      "line": 215.0,
-     "over": 0.3224
+     "over": 0.289
     },
     {
      "line": 220.0,
-     "over": 0.2856
+     "over": 0.2585
     },
     {
      "line": 225.0,
-     "over": 0.2496
+     "over": 0.2413
     },
     {
      "line": 230.0,
-     "over": 0.2373
+     "over": 0.2293
     },
     {
      "line": 235.0,
-     "over": 0.225
+     "over": 0.2172
     },
     {
      "line": 240.0,
-     "over": 0.2127
+     "over": 0.2051
     },
     {
      "line": 245.0,
-     "over": 0.2004
+     "over": 0.1931
     },
     {
      "line": 250.0,
-     "over": 0.1881
+     "over": 0.181
     },
     {
      "line": 255.0,
-     "over": 0.1758
+     "over": 0.169
     },
     {
      "line": 260.0,
-     "over": 0.1635
+     "over": 0.1569
     },
     {
      "line": 265.0,
-     "over": 0.1512
+     "over": 0.1448
     },
     {
      "line": 270.0,
-     "over": 0.1389
+     "over": 0.1328
     },
     {
      "line": 275.0,
-     "over": 0.1266
+     "over": 0.1207
     },
     {
      "line": 280.0,
-     "over": 0.1143
+     "over": 0.1087
     },
     {
      "line": 285.0,
-     "over": 0.102
+     "over": 0.0968
     },
     {
      "line": 290.0,
-     "over": 0.0926
+     "over": 0.0853
     },
     {
      "line": 295.0,
-     "over": 0.0837
+     "over": 0.0738
     },
     {
      "line": 300.0,
-     "over": 0.0749
+     "over": 0.0623
     },
     {
      "line": 305.0,
-     "over": 0.066
+     "over": 0.0508
     },
     {
      "line": 310.0,
-     "over": 0.0572
+     "over": 0.043
     },
     {
      "line": 315.0,
-     "over": 0.0489
+     "over": 0.0355
     },
     {
      "line": 320.0,
-     "over": 0.0431
+     "over": 0.028
     },
     {
      "line": 325.0,
-     "over": 0.0373
-    },
-    {
-     "line": 330.0,
-     "over": 0.0315
-    },
-    {
-     "line": 335.0,
-     "over": 0.0257
-    },
-    {
-     "line": 340.0,
-     "over": 0.02
+     "over": 0.0205
     }
    ],
    "refLine": 172.5,
-   "overProbAtRef": 0.596,
+   "overProbAtRef": 0.5536,
    "lean": "over",
-   "strength": 16,
+   "strength": 9,
    "confidence": "medium",
    "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 204 passing yards \u2014 it gives Tyrod a 60% chance to clear a 172.5-yard line.",
+   "verdict": "The model projects 181 passing yards \u2014 it gives Tyrod a 55% chance to clear a 172.5-yard line.",
    "factors": [
-    {
-     "group": "qb_situation",
-     "direction": "up",
-     "impact": 60.4,
-     "label": "5 starts this season under his belt",
-     "detail": "How settled the QB job is nudges the projection up by about 60 yards."
-    },
     {
      "group": "usage_role",
      "direction": "down",
-     "impact": -45.8,
+     "impact": -74.9,
      "label": "A run-leaning offense \u2014 about 25 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 46 yards."
+     "detail": "How often the team drops back nudges the projection down by about 75 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 26.2,
+     "label": "5 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection up by about 26 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
-     "impact": 22.4,
+     "impact": 13.0,
      "label": "Averaging 173.3 passing yards over his last 3 games \u2014 up from 157.6 over his last 8",
-     "detail": "He's picked it up lately \u2014 173.3 a game over his last 3 vs 157.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 22 yards."
+     "detail": "He's picked it up lately \u2014 173.3 a game over his last 3 vs 157.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 13 yards."
     },
     {
      "group": "rest_schedule",
      "direction": "down",
-     "impact": -5.2,
+     "impact": -11.3,
      "label": "Missed 2 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 5 yards."
-    },
-    {
-     "group": "opp_defense",
-     "direction": "up",
-     "impact": 4.1,
-     "label": "Miami's defense is a mixed picture on passing yards \u2014 nets out about +4 yds",
-     "detail": "Season-long they allow 221 a game (13th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 4 yards."
+     "detail": "The stop-start stretch nudges the projection down by about 11 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
-     "impact": -3.8,
+     "impact": -4.3,
      "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 20 for the Jets",
      "detail": "The expected scoring script nudges the projection down by about 4 yards."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 3.3,
+     "label": "Fair conditions \u2014 about 41 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 3 yards."
     }
    ],
    "actual": 6.0,
@@ -332,85 +320,78 @@
   },
   {
    "market": "pass_tds",
-   "projection": 1.1,
+   "projection": 1.0,
    "quantiles": {
     "p10": 0.0,
-    "p25": 0.3,
-    "p50": 0.9,
-    "p75": 1.8,
-    "p90": 2.8
+    "p25": 0.2,
+    "p50": 0.7,
+    "p75": 1.4,
+    "p90": 2.4
    },
    "probCurve": [
     {
      "line": 0.5,
-     "over": 0.7058
+     "over": 0.6067
     },
     {
      "line": 1.5,
-     "over": 0.3182
+     "over": 0.2332
     },
     {
      "line": 2.5,
-     "over": 0.1177
+     "over": 0.0786
     },
     {
      "line": 3.5,
-     "over": 0.0335
+     "over": 0.0217
     },
     {
      "line": 4.5,
-     "over": 0.0068
+     "over": 0.004
     }
    ],
    "refLine": 0.5,
-   "overProbAtRef": 0.7058,
+   "overProbAtRef": 0.6067,
    "lean": "over",
-   "strength": 29,
-   "confidence": "low",
-   "confidenceReason": "His week-to-week range has been wide, so take this one loosely.",
-   "verdict": "The model expects 1.1 touchdown passes \u2014 it gives Tyrod a 71% chance to go over 0.5.",
+   "strength": 18,
+   "confidence": "medium",
+   "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
+   "verdict": "The model expects 1.0 touchdown passes \u2014 it gives Tyrod a 61% chance to go over 0.5.",
    "factors": [
-    {
-     "group": "recent_form",
-     "direction": "up",
-     "impact": 0.24,
-     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.24 TD passes",
-     "detail": "He's off the 1.0-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.24 touchdown passes."
-    },
     {
      "group": "qb_situation",
      "direction": "down",
-     "impact": -0.15,
+     "impact": -0.29,
      "label": "5 starts this season under his belt",
-     "detail": "How settled the QB job is nudges the projection down by about 0.15 touchdown passes."
-    },
-    {
-     "group": "weather",
-     "direction": "up",
-     "impact": 0.15,
-     "label": "Fair conditions \u2014 about 41 degrees, 6 mph wind",
-     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.15 touchdown passes."
+     "detail": "How settled the QB job is nudges the projection down by about 0.29 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "down",
-     "impact": -0.1,
-     "label": "Miami's defense is a mixed picture on touchdown passes \u2014 nets out about -0.10 TD passes",
-     "detail": "Season-long they allow 1.7 a game (10th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.10 touchdown passes."
+     "impact": -0.22,
+     "label": "Miami's defense is a mixed picture on touchdown passes \u2014 nets out about -0.22 TD passes",
+     "detail": "Season-long they allow 1.7 a game (10th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.22 touchdown passes."
+    },
+    {
+     "group": "weather",
+     "direction": "up",
+     "impact": 0.2,
+     "label": "Fair conditions \u2014 about 41 degrees, 6 mph wind",
+     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.20 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "down",
-     "impact": -0.08,
+     "impact": -0.19,
      "label": "A run-leaning offense \u2014 about 25 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 0.08 touchdown passes."
+     "detail": "How often the team drops back nudges the projection down by about 0.19 touchdown passes."
     },
     {
-     "group": "rest_schedule",
-     "direction": "down",
-     "impact": -0.06,
-     "label": "Missed 2 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 0.06 touchdown passes."
+     "group": "recent_form",
+     "direction": "up",
+     "impact": 0.11,
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.11 TD passes",
+     "detail": "He's off the 1.0-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.11 touchdown passes."
     }
    ],
    "actual": 0.0,
@@ -418,190 +399,187 @@
   },
   {
    "market": "rush_yds",
-   "projection": 20.5,
+   "projection": 26.4,
    "quantiles": {
-    "p10": 1.3,
-    "p25": 5.5,
-    "p50": 17.6,
-    "p75": 36.6,
-    "p90": 53.2
+    "p10": 2.7,
+    "p25": 10.7,
+    "p50": 22.7,
+    "p75": 45.5,
+    "p90": 62.9
    },
    "probCurve": [
     {
      "line": 2.5,
-     "over": 0.7791
+     "over": 0.8603
     },
     {
      "line": 5.0,
-     "over": 0.6897
+     "over": 0.8025
     },
     {
      "line": 7.5,
-     "over": 0.6371
+     "over": 0.7525
     },
     {
      "line": 10.0,
-     "over": 0.5935
+     "over": 0.7055
     },
     {
      "line": 12.5,
-     "over": 0.5516
+     "over": 0.6575
     },
     {
      "line": 15.0,
-     "over": 0.5108
+     "over": 0.6101
     },
     {
      "line": 17.5,
-     "over": 0.4708
+     "over": 0.5642
     },
     {
      "line": 20.0,
-     "over": 0.4448
+     "over": 0.5194
     },
     {
      "line": 22.5,
-     "over": 0.4194
+     "over": 0.4753
     },
     {
      "line": 25.0,
-     "over": 0.3941
+     "over": 0.4508
     },
     {
      "line": 27.5,
-     "over": 0.3687
+     "over": 0.4278
     },
     {
      "line": 30.0,
-     "over": 0.3431
+     "over": 0.4049
     },
     {
      "line": 32.5,
-     "over": 0.3172
+     "over": 0.3821
     },
     {
      "line": 35.0,
-     "over": 0.2908
+     "over": 0.3591
     },
     {
      "line": 37.5,
-     "over": 0.2668
+     "over": 0.3361
     },
     {
      "line": 40.0,
-     "over": 0.2479
+     "over": 0.3129
     },
     {
      "line": 42.5,
-     "over": 0.2286
+     "over": 0.2896
     },
     {
      "line": 45.0,
-     "over": 0.2086
+     "over": 0.266
     },
     {
      "line": 47.5,
-     "over": 0.1881
+     "over": 0.2462
     },
     {
      "line": 50.0,
-     "over": 0.1668
+     "over": 0.2271
     },
     {
      "line": 52.5,
-     "over": 0.1444
+     "over": 0.2076
     },
     {
      "line": 55.0,
-     "over": 0.1318
+     "over": 0.1879
     },
     {
      "line": 57.5,
-     "over": 0.1228
+     "over": 0.1677
     },
     {
      "line": 60.0,
-     "over": 0.1135
+     "over": 0.1471
     },
     {
      "line": 62.5,
-     "over": 0.104
+     "over": 0.1257
     },
     {
      "line": 65.0,
-     "over": 0.0942
+     "over": 0.1125
     },
     {
      "line": 67.5,
-     "over": 0.084
+     "over": 0.1004
     },
     {
      "line": 70.0,
-     "over": 0.0765
+     "over": 0.088
     },
     {
      "line": 72.5,
-     "over": 0.0692
+     "over": 0.0752
     },
     {
      "line": 75.0,
-     "over": 0.0619
+     "over": 0.0643
     },
     {
      "line": 77.5,
-     "over": 0.054
+     "over": 0.0555
     },
     {
      "line": 80.0,
-     "over": 0.0458
+     "over": 0.0462
     },
     {
      "line": 82.5,
-     "over": 0.0413
+     "over": 0.0364
+    },
+    {
+     "line": 85.0,
+     "over": 0.0323
     }
    ],
    "refLine": 20.5,
-   "overProbAtRef": 0.4397,
-   "lean": "under",
-   "strength": 10,
+   "overProbAtRef": 0.5106,
+   "lean": "neutral",
+   "strength": 2,
    "confidence": "medium",
    "confidenceReason": "Decent 5-game sample, but with some week-to-week swing.",
-   "verdict": "The model projects 21 rushing yards \u2014 it gives Tyrod a 44% chance to clear a 20.5-yard line.",
+   "verdict": "The model projects 26 rushing yards \u2014 it gives Tyrod a 51% chance to clear a 20.5-yard line.",
    "factors": [
-    {
-     "group": "qb_situation",
-     "direction": "down",
-     "impact": -2.6,
-     "label": "5 starts this season under his belt",
-     "detail": "How settled the QB job is nudges the projection down by about 3 yards."
-    },
-    {
-     "group": "opp_defense",
-     "direction": "down",
-     "impact": -2.2,
-     "label": "Season stats say generous \u2014 4th most rushing yards allowed \u2014 but they've tightened up lately; nets out about -2 yds",
-     "detail": "Miami has allowed just 107 rushing yards a game over its last 5 \u2014 tighter than its season-long 138 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 2 yards."
-    },
-    {
-     "group": "rest_schedule",
-     "direction": "down",
-     "impact": -1.6,
-     "label": "Missed 2 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection down by about 2 yards."
-    },
     {
      "group": "usage_role",
      "direction": "up",
-     "impact": 1.3,
+     "impact": 6.0,
      "label": "A heavy workload \u2014 6.0 touches a game over his last 4",
-     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 1 yards."
+     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 6 yards."
     },
     {
-     "group": "weather",
+     "group": "rest_schedule",
+     "direction": "up",
+     "impact": 2.3,
+     "label": "A stop-start stretch \u2014 missed 2 of the last 5 weeks; nets out about +2 yds",
+     "detail": "Missed time can mean rust or fresh legs; on balance it nudges the projection up by about 2 yards."
+    },
+    {
+     "group": "qb_situation",
+     "direction": "up",
+     "impact": 0.8,
+     "label": "5 starts this season under his belt",
+     "detail": "How settled the QB job is nudges the projection up by about 0.8 rushing yards."
+    },
+    {
+     "group": "recent_form",
      "direction": "up",
      "impact": 0.6,
-     "label": "Fair conditions \u2014 about 41 degrees, 6 mph wind",
-     "detail": "Nothing scary in the forecast; weather nudges the projection up by about 0.6 rushing yards."
+     "label": "Averaging 24.7 rushing yards over his last 3 games",
+     "detail": "That's right in line with the 26.4 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.6 rushing yards."
     }
    ],
    "actual": 0.0,
@@ -749,7 +727,7 @@
   {
    "week": 13,
    "market": "pass_tds",
-   "projection": 1.0,
+   "projection": 1.1,
    "refLine": 0.5,
    "lean": "over",
    "actual": 1.0,
@@ -758,7 +736,7 @@
   {
    "week": 13,
    "market": "pass_yds",
-   "projection": 188.4,
+   "projection": 180.8,
    "refLine": 143.5,
    "lean": "over",
    "actual": 172.0,
@@ -767,7 +745,7 @@
   {
    "week": 13,
    "market": "rush_yds",
-   "projection": 18.4,
+   "projection": 21.8,
    "refLine": 19.5,
    "lean": "under",
    "actual": 44.0,
@@ -776,16 +754,16 @@
   {
    "week": 12,
    "market": "pass_tds",
-   "projection": 0.3,
+   "projection": 0.4,
    "refLine": 0.5,
-   "lean": "neutral",
+   "lean": "over",
    "actual": 1.0,
    "result": "over"
   },
   {
    "week": 12,
    "market": "pass_yds",
-   "projection": 129.5,
+   "projection": 131.3,
    "refLine": 126.5,
    "lean": "neutral",
    "actual": 222.0,
@@ -794,7 +772,7 @@
   {
    "week": 12,
    "market": "rush_yds",
-   "projection": 16.4,
+   "projection": 21.1,
    "refLine": 20.5,
    "lean": "under",
    "actual": 19.0,
@@ -803,7 +781,7 @@
   {
    "week": 7,
    "market": "pass_tds",
-   "projection": 0.8,
+   "projection": 0.9,
    "refLine": 1.5,
    "lean": "under",
    "actual": 0.0,
@@ -812,7 +790,7 @@
   {
    "week": 7,
    "market": "pass_yds",
-   "projection": 144.5,
+   "projection": 129.3,
    "refLine": 129.5,
    "lean": "neutral",
    "actual": 126.0,
