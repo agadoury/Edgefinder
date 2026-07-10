@@ -30,8 +30,13 @@ Everything below was consciously deferred, roughly in priority order.
   starters missing. Requires a licensed or scraped injury feed.
 - **Play-by-play upgrade.** Move from box-score aggregates to
   play-by-play-derived features (air yards, aDOT, routes run, red-zone
-  share, pressure rates, coverage schemes). Requires nflverse release
-  assets (blocked in the current build environment) or a data vendor.
+  share, pressure rates, coverage schemes). The free canonical sources
+  (nflverse snap counts, injuries, Next Gen Stats) are wired into
+  `pipeline/edgefinder/enrich.py` and download automatically in the
+  weekly GitHub Action (`.github/workflows/weekly-refresh.yml`), which
+  runs on open-internet runners; feature integration into features.py
+  is the remaining step (M9/M10) once schemas are validated against a
+  real download.
 - **Anytime-TD and combo markets.** Anytime TD scorer, rush+rec yards,
   completions, attempts, interceptions, longest reception.
 - **Distribution upgrades.** Replace per-quantile GBMs with a single
