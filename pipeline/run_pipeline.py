@@ -22,7 +22,9 @@ sys.path.insert(0, str(PIPELINE_DIR))
 
 from edgefinder import backtest as bt  # noqa: E402
 from edgefinder import conformal  # noqa: E402
+from edgefinder import enrich  # noqa: E402
 from edgefinder import export as ex  # noqa: E402
+from edgefinder import fanduel_benchmark  # noqa: E402
 from edgefinder import features, load, train, validate  # noqa: E402
 from edgefinder.download import download_all  # noqa: E402
 
@@ -43,6 +45,8 @@ def main() -> int:
     if not args.skip_download:
         print("== download ==")
         download_all()
+        print("== enrichment download ==")
+        enrich.fetch_all()  # degrades gracefully when sources unreachable
 
     print("== load ==")
     games = load.load_games()
@@ -83,6 +87,10 @@ def main() -> int:
     by_market = bt.run_backtest(frames, models, demo_week, calib, thresholds)
     bt.print_report(by_market)
 
+    print("\n== fanduel benchmark (M13, evaluation only) ==")
+    fd = fanduel_benchmark.run_benchmark(games=games)
+    fanduel_benchmark.print_benchmark(fd)
+
     print("\n== export ==")
     counts = ex.run_export(pw, games, frames, models, by_market, demo_week,
                            thresholds, calib, export_dir=args.export_dir)
@@ -90,7 +98,7 @@ def main() -> int:
     print("\n== validate ==")
     rc = validate.validate(args.export_dir)
     ex.write_report(by_market, counts, demo_week, rc == 0,
-                    export_dir=args.export_dir, calib=calib)
+                    export_dir=args.export_dir, calib=calib, fanduel=fd)
     print(f"\npipeline finished in {time.time() - t0:.0f}s "
           f"({counts['games']} games / {counts['players']} players / "
           f"{counts['props']} props); validation "

@@ -77,6 +77,10 @@ def predict_rows(
     out["projection"] = projection
     out["over_prob"] = over_ref
     out["rw"] = relative_width(quantiles)
+    # persisted so downstream evaluation (e.g. the M13 FanDuel benchmark)
+    # can rebuild the exact calibrated curve at arbitrary lines: count-
+    # market curves are a function of the mean prediction, not quantiles
+    out["mean_pred"] = mean_pred
     for q, i in Q_INDEX.items():
         out[f"p{int(q * 100):02d}"] = quantiles[:, i]
     return out

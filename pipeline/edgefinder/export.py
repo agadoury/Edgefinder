@@ -114,9 +114,20 @@ def select_players(
         qbf[(qbf["season"] == 2025) & (qbf["week"] == demo_week)],
     ]).drop_duplicates("player_id")[
         ["player_id", "games_played_season", "elig_targets_m4",
-         "elig_touches_m4", "elig_rush_m8"]
+         "elig_touches_m4", "elig_rush_m8", "inj_out"]
     ]
     wk = wk.merge(asof, on="player_id", how="left")
+
+    # M10: players ruled Out on the week's official injury report never
+    # make the slate — the designation is public pre-kickoff, and shipping
+    # a call on a player known not to play is a guaranteed DNP row. NaN
+    # (no injury data) keeps the player.
+    ruled_out = wk["inj_out"] == 1.0
+    if ruled_out.any():
+        names = wk.loc[ruled_out, "name"].tolist()
+        print(f"slate: excluding {int(ruled_out.sum())} ruled-Out player(s): "
+              f"{names[:10]}")
+        wk = wk[~ruled_out]
 
     wk_games = games[(games["season"] == 2025) & (games["week"] == demo_week)]
     starters = {
@@ -543,8 +554,13 @@ def write_report(
     validation_passed: bool,
     export_dir: Path = EXPORT_DIR,
     calib: Calibrator | None = None,
+    fanduel: dict | None = None,
 ) -> None:
-    """Human-readable run summary next to the export JSON."""
+    """Human-readable run summary next to the export JSON.
+
+    ``fanduel`` is fanduel_benchmark.run_benchmark()'s result (M13);
+    None/{} simply omits the section.
+    """
     lines = [
         "# EdgeFinder pipeline run report",
         "",
@@ -585,20 +601,30 @@ def write_report(
     ]
     lines += _diagnostics_lines(by_market)
     lines += _conformal_lines(calib)
+    if fanduel:
+        from edgefinder.fanduel_benchmark import report_lines
+        lines += report_lines(fanduel)
     lines += [
         "## Data quirks",
         "",
-        "* hvpkod has no week-18 files for 2021-2024 (404 upstream); those "
-        "seasons cover weeks 1-17. 2025 has all 18 weeks.",
+        "* hvpkod has no week-18 files for 2021-2024 (404 upstream); "
+        "2021-2023 cover weeks 1-17 and 2024 stops at week 16. 2025 has "
+        "all 18 weeks.",
         "* The cancelled 2022 wk17 BUF@CIN game exists in hvpkod but not in "
         "nfldata; its rows are excluded (stats were nullified anyway).",
         "* hvpkod codes the Rams `LA` through 2023 and `LAR` from 2024; the "
         "schedule-derived map normalizes both to nfldata `LA`.",
+        "* hvpkod's 2021-2024 archives retro-apply a player's end-of-season "
+        "team to every week; the enrichment joins (enrich_join.py) recover "
+        "traded players via an unambiguous name-only fallback.",
         "* Free-agent rows (`Team == FA`, always opponent `Bye`) are dropped.",
         "* A played-but-zero-usage game is indistinguishable from a DNP in "
         "the box-score source and is treated as DNP.",
         "* Cold start: form windows roll across season boundaries; rows with "
         "< 2 prior played career games are excluded from training/backtest.",
+        "* Enrichment sources (snap counts / injuries / player stats) are "
+        "join-coverage-gated at 90% per enrich_join.py; players ruled Out "
+        "on the week's report are excluded from the demo slate.",
     ]
     (export_dir / "REPORT.md").write_text("\n".join(lines) + "\n")
 

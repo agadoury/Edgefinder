@@ -75,12 +75,52 @@ FACTOR_GROUPS: dict[str, list[str]] = {
 #: so validation.py can re-run the experiment.
 POSITION_FLAGS: list[str] = ["pos_qb", "pos_rb", "pos_wr", "pos_te"]
 
+#: M9/M10 enrichment feature bundles, validated bundle-wise on the 2024
+#: walk-forward split (validation.py --exp enrich). Every bundle is built
+#: unconditionally (NaN + missing flag when its source is absent or below
+#: the enrich_join coverage gate); FACTOR_GROUPS membership below reflects
+#: the 2024 keep/drop decisions.
+#:
+#: * snaps (M9) — rolling offensive snap share from nflverse snap counts.
+#:   All values are strictly as-of (past games only).
+SNAP_FEATURES: list[str] = [
+    "snap_pct_m3", "snap_pct_m5", "snap_pct_m8", "snap_pct_last",
+    "snap_trend", "snap_delta", "snap_missing",
+]
+#: * air yards / true usage (M9) — rolling target share, air-yards share,
+#:   WOPR, aDOT and RACR from nflverse stats_player_week, plus the QB's
+#:   rolling passing air yards. Strictly as-of (past games only).
+AIR_FEATURES: list[str] = [
+    "tgt_share_m3", "tgt_share_m5", "tgt_share_m8", "ay_share_m5",
+    "wopr_m3", "wopr_m5", "adot_m5", "racr_m5", "pass_air_m5",
+    "air_missing",
+]
+#: * injuries (M10) — the official report for the PREDICTED week. This is
+#:   the one deliberate exception to the strictly-earlier rule: game-status
+#:   and practice designations are published before kickoff, so the current
+#:   week's report is legitimately known at prediction time (enforced by an
+#:   exact same-week join — never a future week; tests assert both).
+#:   "Not listed on a filed report" means healthy and is a true 0; only a
+#:   missing source yields NaN.
+INJURY_FEATURES: list[str] = [
+    "inj_questionable", "inj_doubtful", "practice_dnp", "practice_limited",
+    "pos_teammates_out", "top3_targets_out",
+]
+ENRICH_CANDIDATES: list[str] = SNAP_FEATURES + AIR_FEATURES + INJURY_FEATURES
+
 FEATURES: list[str] = [c for cols in FACTOR_GROUPS.values() for c in cols]
 
 META_COLS = ["season", "week", "player_id", "name", "pos", "team", "opp",
              "game_id", "is_home", "played", "has_game", "y",
              "prior_played", "eligible", "ref_blend", "ref_line",
-             "elig_targets_m4", "elig_touches_m4", "elig_rush_m8", "qb_name"]
+             "elig_targets_m4", "elig_touches_m4", "elig_rush_m8", "qb_name",
+             "inj_out"]
+
+#: columns kept in market frames beyond META + FEATURES so the validation
+#: harness can score candidate configs without rebuilding frames
+EXTRA_BUILDABLE: list[str] = POSITION_FLAGS + [
+    c for c in ENRICH_CANDIDATES if c not in FEATURES
+]
 
 
 def _ord(season: pd.Series, week: pd.Series) -> pd.Series:
@@ -111,9 +151,14 @@ def asof_join(
 
 
 def _roll(grouped: pd.core.groupby.SeriesGroupBy, window: int, how: str) -> pd.Series:
-    """Rolling mean/median including the current row, aligned by index."""
+    """Rolling mean/median/sum including the current row, aligned by index."""
     roller = grouped.rolling(window, min_periods=1)
-    out = roller.mean() if how == "mean" else roller.median()
+    if how == "mean":
+        out = roller.mean()
+    elif how == "sum":
+        out = roller.sum()
+    else:
+        out = roller.median()
     return out.droplevel(list(range(out.index.nlevels - 1)))
 
 
@@ -205,6 +250,146 @@ def qb_form_events(pw: pd.DataFrame) -> pd.DataFrame:
     qb["qb_pass_yds_l5"] = _roll(qb.groupby("qb_norm")["pass_yds"], 5, "mean")
     qb["qb_pass_tds_l5"] = _roll(qb.groupby("qb_norm")["pass_tds"], 5, "mean")
     return qb
+
+
+def snap_share_events(snap_games: pd.DataFrame) -> pd.DataFrame:
+    """Per snap-counted game: rolling offensive snap share including it.
+
+    ``snap_games`` comes from enrich_join (player_id, season, week,
+    offense_pct per game the player logged offensive snaps). Values
+    include the game they describe — consumers must as-of join with
+    strict inequality, like every other event table here.
+    """
+    ev = snap_games[["player_id", "season", "week", "offense_pct"]].copy()
+    ev["ord"] = _ord(ev["season"], ev["week"])
+    ev = ev.sort_values(["player_id", "ord"])
+    g = ev.groupby("player_id")["offense_pct"]
+    for w in (3, 5, 8):
+        ev[f"snap_pct_m{w}"] = _roll(g, w, "mean")
+    ev["snap_pct_last"] = ev["offense_pct"]
+    return ev
+
+
+def air_yards_events(air_games: pd.DataFrame) -> pd.DataFrame:
+    """Per stats_player_week game: rolling true-usage / air-yards block.
+
+    Shares (target_share, air_yards_share, wopr) roll as plain means;
+    aDOT and RACR roll as ratios of 5-game sums so a single low-volume
+    week can't blow them up. Events include the game they describe —
+    consumers must as-of join with strict inequality.
+    """
+    ev = air_games.copy()
+    ev["ord"] = _ord(ev["season"], ev["week"])
+    ev = ev.sort_values(["player_id", "ord"])
+    g = ev.groupby("player_id")
+    for w in (3, 5, 8):
+        ev[f"tgt_share_m{w}"] = _roll(g["target_share"], w, "mean")
+    ev["ay_share_m5"] = _roll(g["air_yards_share"], 5, "mean")
+    ev["wopr_m3"] = _roll(g["wopr"], 3, "mean")
+    ev["wopr_m5"] = _roll(g["wopr"], 5, "mean")
+    ev["pass_air_m5"] = _roll(g["passing_air_yards"], 5, "mean")
+
+    rec_ay5 = _roll(g["receiving_air_yards"], 5, "sum")
+    targets5 = _roll(g["targets"], 5, "sum")
+    rec_yds5 = _roll(g["receiving_yards"], 5, "sum")
+    ev["adot_m5"] = rec_ay5 / targets5.replace(0, np.nan)
+    # cap RACR: tiny air-yard sums (screen-heavy backs) explode the ratio
+    ev["racr_m5"] = (rec_yds5 / rec_ay5.where(rec_ay5 > 0)).clip(-5.0, 10.0)
+    return ev
+
+
+def _attach_enrichment_features(base: pd.DataFrame, pw: pd.DataFrame,
+                                enrichment) -> pd.DataFrame:
+    """M9/M10 blocks: as-of snap/air rolling features + current-week injuries.
+
+    Snap and air-yards features are strictly as-of (past games only).
+    Injury-report features are the documented exception: they join EXACTLY
+    on the predicted (season, week) because the official report is
+    published pre-kickoff. NaN means "source unavailable / no history";
+    injury zeros mean "not listed on a filed report" (healthy) and are
+    only written when the source passed its coverage gate.
+    """
+    if enrichment is None:
+        from edgefinder import enrich_join  # deferred: avoids import cycle
+        enrichment = enrich_join.attach_enrichment(pw)
+
+    scols = ["snap_pct_m3", "snap_pct_m5", "snap_pct_m8", "snap_pct_last"]
+    if enrichment.snap_games is not None and len(enrichment.snap_games):
+        sev = snap_share_events(enrichment.snap_games)
+        base[scols] = asof_join(base, sev, ["player_id"], scols)
+    else:
+        base[scols] = np.nan
+    base["snap_trend"] = base["snap_pct_m3"] - base["snap_pct_m8"]
+    base["snap_delta"] = base["snap_pct_last"] - base["snap_pct_m5"]
+    base["snap_missing"] = base["snap_pct_m5"].isna().astype(float)
+
+    acols = ["tgt_share_m3", "tgt_share_m5", "tgt_share_m8", "ay_share_m5",
+             "wopr_m3", "wopr_m5", "adot_m5", "racr_m5", "pass_air_m5"]
+    if enrichment.air_games is not None and len(enrichment.air_games):
+        aev = air_yards_events(enrichment.air_games)
+        base[acols] = asof_join(base, aev, ["player_id"], acols)
+    else:
+        base[acols] = np.nan
+    base["air_missing"] = base["tgt_share_m5"].isna().astype(float)
+
+    inj_cols = ["inj_out", "inj_doubtful", "inj_questionable",
+                "practice_dnp", "practice_limited"]
+    if enrichment.injury_weeks is not None:
+        merged = base[["player_id", "season", "week"]].merge(
+            enrichment.injury_weeks[["player_id", "season", "week", *inj_cols]],
+            on=["player_id", "season", "week"], how="left",
+        )
+        for c in inj_cols:  # not listed on a filed report = healthy
+            base[c] = merged[c].astype(float).fillna(0.0).to_numpy()
+    else:
+        base[inj_cols] = np.nan
+
+    if enrichment.pos_out_counts is not None:
+        merged = base[["season", "week", "team", "pos"]].merge(
+            enrichment.pos_out_counts,
+            left_on=["season", "week", "team", "pos"],
+            right_on=["season", "week", "team", "pos_group"], how="left",
+        )
+        n_out = merged["n_out"].fillna(0.0).to_numpy()
+        # teammates only: a player's own Out never counts itself
+        base["pos_teammates_out"] = np.clip(
+            n_out - base["inj_out"].fillna(0.0).to_numpy(), 0.0, None)
+    else:
+        base["pos_teammates_out"] = np.nan
+
+    if enrichment.injury_weeks is not None:
+        base["top3_targets_out"] = _top3_targets_out(base)
+    else:
+        base["top3_targets_out"] = np.nan
+    return base
+
+
+def _top3_targets_out(base: pd.DataFrame) -> np.ndarray:
+    """Out-count among the team-week's top-3 trailing-target players.
+
+    "Top 3" ranks the team's players that week by as-of trailing-4
+    targets (targets_m4, strictly past weeks); the Out flags are the
+    current week's official report. Own Out status never counts —
+    the signal is teammates' volume becoming available.
+    """
+    t = base[["season", "week", "team", "player_id",
+              "targets_m4", "inj_out"]].copy()
+    t["inj_out"] = t["inj_out"].fillna(0.0)
+    t = t[t["targets_m4"].notna() & (t["targets_m4"] > 0)]
+    t["rank"] = (t.groupby(["season", "week", "team"])["targets_m4"]
+                 .rank(ascending=False, method="first"))
+    top3 = t[t["rank"] <= 3]
+    agg = (top3.groupby(["season", "week", "team"])["inj_out"].sum()
+           .rename("top3_out").reset_index())
+    joined = base[["season", "week", "team", "player_id"]].merge(
+        agg, on=["season", "week", "team"], how="left")
+    total = joined["top3_out"].fillna(0.0).to_numpy()
+    in_top3 = base[["season", "week", "team", "player_id"]].merge(
+        top3[["season", "week", "team", "player_id"]].assign(_t3=1.0),
+        on=["season", "week", "team", "player_id"], how="left",
+    )["_t3"].notna().to_numpy()
+    own = base["inj_out"].fillna(0.0).to_numpy() * in_top3
+    return np.clip(total - own, 0.0, None)
 
 
 def defense_events(pw: pd.DataFrame, stat: str) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -323,8 +508,14 @@ def _qb_starts(pw: pd.DataFrame, games: pd.DataFrame) -> pd.Series:
     return joined["qb_prior_starts"].set_axis(pw.index)
 
 
-def build_base(pw: pd.DataFrame, games: pd.DataFrame) -> pd.DataFrame:
-    """Market-independent features for every player-week row of ``pw``."""
+def build_base(pw: pd.DataFrame, games: pd.DataFrame,
+               enrichment=None) -> pd.DataFrame:
+    """Market-independent features for every player-week row of ``pw``.
+
+    ``enrichment`` is an enrich_join.Enrichment (or None to load the
+    cached sources from disk; an Enrichment() with all-None tables builds
+    the enrichment columns as NaN + missing flags).
+    """
     base = pw.copy()
     base["ord"] = _ord(base["season"], base["week"])
 
@@ -395,6 +586,9 @@ def build_base(pw: pd.DataFrame, games: pd.DataFrame) -> pd.DataFrame:
     for p in ("QB", "RB", "WR", "TE"):
         base[f"pos_{p.lower()}"] = (base["pos"] == p).astype(float)
 
+    # M9/M10: snap share + air yards (as-of) and current-week injury report
+    base = _attach_enrichment_features(base, pw, enrichment)
+
     return base
 
 
@@ -452,7 +646,8 @@ def build_market_frame(
     frame["ref_blend"] = blend
     frame["ref_line"] = snap_ref_line(blend, market)
 
-    keep = [c for c in META_COLS if c in frame.columns] + FEATURES
+    keep = ([c for c in META_COLS if c in frame.columns] + FEATURES
+            + [c for c in EXTRA_BUILDABLE if c in frame.columns])
     return frame[keep].reset_index(drop=True)
 
 
@@ -470,8 +665,8 @@ def snap_ref_line(blend: pd.Series, market: str) -> pd.Series:
 
 
 def build_all_frames(
-    pw: pd.DataFrame, games: pd.DataFrame
+    pw: pd.DataFrame, games: pd.DataFrame, enrichment=None
 ) -> dict[str, pd.DataFrame]:
     """Base features once, then one frame per market."""
-    base = build_base(pw, games)
+    base = build_base(pw, games, enrichment)
     return {m: build_market_frame(base, pw, m) for m in MARKETS}

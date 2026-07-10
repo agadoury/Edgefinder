@@ -59,7 +59,9 @@ RAW_GH = "https://raw.githubusercontent.com"
 #: refresh_mirror_pin, then re-verify schemas before committing a new pin)
 MIRROR_PINS = {
     "dachhack/stathead": "ff229ec3fa54ea25b0ff62ec0ff944321f70e4af",
-    "Oliverwkw/LOTG-Stats": "main",  # no immutable pin published; HEAD only
+    # resolved from HEAD via refresh_mirror_pin and byte-verified against
+    # the cached files (md5 match) before pinning
+    "Oliverwkw/LOTG-Stats": "b7d1cd0b972dcb821432be326a21fe654756b960",
     "firstandthirty/nfl-tools": "9d6bdecbb00e5b4d5473f1b37ff669d74e849bb9",
 }
 

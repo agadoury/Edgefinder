@@ -33,9 +33,12 @@ sys.path.insert(0, str(PIPELINE_DIR))
 from edgefinder import metrics  # noqa: E402
 from edgefinder.conformal import CAL_TRAIN_SEASONS, calibration_mask  # noqa: E402
 from edgefinder.features import (  # noqa: E402
+    AIR_FEATURES,
     FEATURES,
+    INJURY_FEATURES,
     MARKETS,
     POSITION_FLAGS,
+    SNAP_FEATURES,
 )
 from edgefinder.train import Q_INDEX, train_market  # noqa: E402
 
@@ -122,6 +125,41 @@ def exp_features(frames) -> None:
     _print_config("M4+M7", eval_2024(frames, features=both), base)
 
 
+def exp_enrich(frames) -> None:
+    """M9/M10 enrichment bundles (snaps / air yards / injuries) on 2024.
+
+    Pre-registered decision rule, per bundle, judged against the pre-
+    enrichment production feature set: keep a bundle iff its mean dCRPS%
+    across the five markets is <= -0.10 or its mean dMAE% is <= -0.10,
+    and neither mean worsens by more than +0.10. Kept bundles are then
+    scored jointly (the shipped configuration must be the joint one).
+    """
+    base_feats = [c for c in FEATURES
+                  if c not in SNAP_FEATURES + AIR_FEATURES + INJURY_FEATURES]
+    bundles = [("snaps", SNAP_FEATURES), ("air_yards", AIR_FEATURES),
+               ("injuries", INJURY_FEATURES)]
+    base = eval_2024(frames, features=base_feats)
+    _print_config("base (pre-M9/M10 features)", base)
+    kept = []
+    for name, cols in bundles:
+        res = eval_2024(frames, features=base_feats + cols)
+        _print_config(f"+{name}", res, base)
+        dmae = float(np.mean([res[m]["mae"] / base[m]["mae"] - 1
+                              for m in res])) * 100
+        dcrps = float(np.mean([res[m]["crps"] / base[m]["crps"] - 1
+                               for m in res])) * 100
+        keep = ((dcrps <= -0.10 or dmae <= -0.10)
+                and dcrps <= 0.10 and dmae <= 0.10)
+        print(f"    bundle {name}: mean dMAE {dmae:+.2f}% "
+              f"mean dCRPS {dcrps:+.2f}% -> {'KEEP' if keep else 'DROP'}")
+        if keep:
+            kept.append((name, cols))
+    if len(kept) > 1:
+        joint = base_feats + [c for _, cols in kept for c in cols]
+        res = eval_2024(frames, features=joint)
+        _print_config("joint kept bundles", res, base)
+
+
 def exp_halflife(frames, features: list[str] | None = None) -> None:
     """M8 recency-weight grid: half-life in {None, 3, 2, 1.5, 1} seasons."""
     base = eval_2024(frames, features=features, half_life=None)
@@ -174,7 +212,7 @@ def load_frames(cache: Path | None) -> dict[str, pd.DataFrame]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--exp", required=True,
-                        choices=["features", "halflife", "quantreg"])
+                        choices=["features", "halflife", "quantreg", "enrich"])
     parser.add_argument("--cache", type=Path, default=None,
                         help="pickle path to cache/reuse the feature frames")
     parser.add_argument("--half-life", type=float, default=None,
@@ -185,6 +223,8 @@ def main() -> int:
         exp_features(frames)
     elif args.exp == "halflife":
         exp_halflife(frames)
+    elif args.exp == "enrich":
+        exp_enrich(frames)
     else:
         exp_quantreg(frames, half_life=args.half_life)
     return 0

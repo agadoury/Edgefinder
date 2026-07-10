@@ -16,14 +16,45 @@ python3 -m pytest pipeline/tests            # leakage-sensitive unit tests
 ## Data
 
 * `hvpkod/NFL-Data` — weekly per-position box scores (fantasy.nfl.com
-  actuals), seasons 2021-2025. **Quirk:** week 18 exists upstream only for
-  2025; 2021-2024 cover weeks 1-17. The cancelled 2022 wk17 BUF@CIN game is
-  present in hvpkod but not in the schedule; its rows are excluded.
+  actuals), seasons 2021-2025. **Quirks:** week 18 exists upstream only
+  for 2025; 2021-2023 cover weeks 1-17 and 2024 stops at week 16. The
+  cancelled 2022 wk17 BUF@CIN game is present in hvpkod but not in the
+  schedule; its rows are excluded. The 2021-2024 archives retro-apply a
+  player's end-of-season team to every week (traded players show their
+  final team all season) — the enrichment join compensates (below).
 * `nflverse/nfldata games.csv` — schedule, scores, rest, Vegas
   `spread_line` (positive = home favored, verified empirically each load)
   and `total_line`, roof/surface/temp/wind, starting QB names.
 * Team codes are normalized to nfldata codes; the hvpkod mapping (`LAR` →
   `LA` since 2024) is derived from the schedule, not hardcoded.
+
+### Enrichment (M9/M10/M13), cached under `data/raw/enrichment/`
+
+Fetched by `edgefinder/enrich.py` — canonical nflverse release URLs first,
+then mirrors PINNED to specific commits (personal repos; pins protect
+against silent drift, `--refresh-pins` re-resolves HEADs via
+`git ls-remote` smart-HTTP, which works even where github.com pages are
+blocked):
+
+* `snap_counts_{2021..2025}.csv.gz` — offensive snap share per player-game.
+* `injuries_{2021..2025}.csv.gz` — official game-status + practice
+  designations (2025 adds a `season_type` column; handled).
+* `stats_player_week_{2021..2025}.csv` — target share, air-yards share,
+  WOPR, RACR, air yards.
+* `props/fanduel_*_history.csv` — archived FanDuel prop line snapshots
+  (pass yds + receptions, Sep 2023-Jan 2026). Evaluation only (M13).
+
+`edgefinder/enrich_join.py` keys these onto our player-weeks by
+normalized name + team + season/week with a two-stage join (exact team
+first, then a name-only rescue restricted to keys unambiguous on both
+sides — this recovers traded players hit by the hvpkod retro-team quirk).
+Team codes are verified against the schedule every load (all three
+sources currently ship nfldata-canonical codes). Join coverage is printed
+per source per season and gated at >90% before a source may feed
+features; measured on the current cache: snap counts 98.9-99.4% of played
+player-weeks, player stats 98.2-100%, injuries 99.3-100% of
+fantasy-relevant report rows. Unjoinable rows keep NaN plus an explicit
+missing indicator — never silent zeros.
 
 ## Design notes
 
