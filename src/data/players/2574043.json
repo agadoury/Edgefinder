@@ -208,21 +208,21 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 14.9,
-     "label": "Seeing 5.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 15 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 12.9,
-     "label": "Averaging 36.3 receiving yards over his last 3 games",
-     "detail": "That's down from 43.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 13 yards."
+     "label": "Cooled off \u2014 36.3 receiving yards over his last 3 \u2014 but that still beats a typical TE week; nets out about +13 yds",
+     "detail": "He's off the 43.1-a-game pace of his last 8, but 36.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 13 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -4.3,
-     "label": "Vegas pegs this at 33.5 total points, about 19 for the Browns",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 19 for the Browns",
      "detail": "The expected scoring script nudges the projection down by about 4 yards."
     },
     {
@@ -359,29 +359,29 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.83,
-     "label": "Averaging 3.0 catches over his last 3 games",
-     "detail": "That's down from 4.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.8 catches."
+     "label": "Cooled off \u2014 3.0 catches over his last 3 \u2014 but that still beats a typical TE week; nets out about +1.8 catches",
+     "detail": "He's off the 4.2-a-game pace of his last 8, but 3.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 1.8 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.01,
-     "label": "Seeing 5.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.0 catches."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.5,
-     "label": "Vegas pegs this at 33.5 total points, about 19 for the Browns",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 19 for the Browns",
      "detail": "The expected scoring script nudges the projection down by about 0.5 catches."
     },
     {
      "group": "qb_situation",
      "direction": "up",
      "impact": 0.37,
-     "label": "Shedeur Sanders has just 2 starts this season \u2014 passing game still unsettled",
-     "detail": "Stability under center nudges the projection up by about 0.4 catches."
+     "label": "A newer QB under center \u2014 Shedeur Sanders has 2 starts this season; nets out about +0.4 catches",
+     "detail": "A short QB track record cuts both ways \u2014 on balance the situation under center nudges the projection up by about 0.4 catches."
     },
     {
      "group": "opp_defense",

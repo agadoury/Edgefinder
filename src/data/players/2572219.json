@@ -264,7 +264,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 29.9,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 30 yards."
     },
     {
@@ -272,20 +272,20 @@
      "direction": "up",
      "impact": 25.6,
      "label": "Averaging 63.3 receiving yards over his last 3 games",
-     "detail": "That's up from 58.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 26 yards."
+     "detail": "That's right in line with the 58.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 26 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 6.1,
-     "label": "Denver gives up 220 receiving yards a game \u2014 12th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 6 yards."
+     "label": "Season stats say stingy \u2014 12th fewest receiving yards allowed \u2014 but recent games say beatable; nets out about +6 yds",
+     "detail": "Denver has allowed 235 receiving yards a game over its last 5 \u2014 leakier than its season-long 220 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 6 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -2.6,
-     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 16 for the Raiders",
      "detail": "The expected scoring script nudges the projection down by about 3 yards."
     },
     {
@@ -416,28 +416,28 @@
      "direction": "up",
      "impact": 1.53,
      "label": "Averaging 5.7 catches over his last 3 games",
-     "detail": "That's up from 5.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.5 catches."
+     "detail": "That's right in line with the 5.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 1.5 catches."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.52,
-     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 16 for the Raiders",
      "detail": "The expected scoring script nudges the projection down by about 0.5 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.38,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.08,
-     "label": "Denver gives up 20 catches a game \u2014 12th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.1 catches."
+     "label": "Season stats say stingy \u2014 12th fewest catches allowed \u2014 but recent games say beatable; nets out about +0.1 catches",
+     "detail": "Denver has allowed 24 catches a game over its last 5 \u2014 leakier than its season-long 20 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 4.0,

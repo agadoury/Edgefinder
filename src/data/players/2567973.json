@@ -273,20 +273,20 @@
      "direction": "up",
      "impact": 28.8,
      "label": "Averaging 73.7 receiving yards over his last 3 games",
-     "detail": "That's down from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 29 yards."
+     "detail": "That's right in line with the 74.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 29 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 16.2,
-     "label": "Seeing 8.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 16 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -10.4,
-     "label": "Vegas pegs this at 41.5 total points, about 17 for the Saints",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 17 for the Saints",
      "detail": "The expected scoring script nudges the projection down by about 10 yards."
     },
     {
@@ -300,8 +300,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -1.0,
-     "label": "Tampa Bay gives up 266 receiving yards a game \u2014 4th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 1 yards."
+     "label": "Tampa Bay's defense is a mixed picture on receiving yards \u2014 nets out about -1 yds",
+     "detail": "Season-long they allow 266 a game (4th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 1 yards."
     }
    ],
    "actual": 30.0,
@@ -432,13 +432,13 @@
      "direction": "up",
      "impact": 1.67,
      "label": "Averaging 6.0 catches over his last 3 games",
-     "detail": "That's up from 5.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.7 catches."
+     "detail": "That's right in line with the 5.9 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 1.7 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.45,
-     "label": "Seeing 8.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {

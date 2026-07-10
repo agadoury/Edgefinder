@@ -233,13 +233,13 @@
      "direction": "up",
      "impact": 16.1,
      "label": "Averaging 67.0 rushing yards over his last 3 games",
-     "detail": "That's up from 66.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
+     "detail": "That's right in line with the 66.1 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 16 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 5.1,
-     "label": "Getting 13.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 13.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 5 yards."
     },
     {
@@ -253,8 +253,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 1.6,
-     "label": "Green Bay gives up 98 rushing yards a game \u2014 7th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 2 yards."
+     "label": "Season stats say stingy \u2014 7th fewest rushing yards allowed \u2014 but recent games say beatable; nets out about +2 yds",
+     "detail": "Green Bay has allowed 126 rushing yards a game over its last 5 \u2014 leakier than its season-long 98 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 2 yards."
     }
    ],
    "actual": 57.0,

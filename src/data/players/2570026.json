@@ -333,42 +333,42 @@
      "direction": "up",
      "impact": 46.2,
      "label": "Averaging 81.3 receiving yards over his last 3 games",
-     "detail": "That's down from 85.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 46 yards."
+     "detail": "That's right in line with the 85.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 46 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 17.9,
-     "label": "Seeing 8.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 18 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 5.5,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 6 yards."
     },
     {
      "group": "home_away",
      "direction": "up",
      "impact": 2.9,
-     "label": "On the road at Arizona",
-     "detail": "The road trip nudges the projection up by about 3 yards."
+     "label": "Road game at Arizona \u2014 nets out about +3 yds",
+     "detail": "Venue is a small piece of the picture \u2014 the trip nudges the projection up by about 3 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 2.0,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -1.9,
-     "label": "Arizona gives up 233 receiving yards a game \u2014 13th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+     "label": "Season stats say generous \u2014 13th most receiving yards allowed \u2014 but they've tightened up lately; nets out about -2 yds",
+     "detail": "Arizona has allowed just 215 receiving yards a game over its last 5 \u2014 tighter than its season-long 233 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 2 yards."
     }
    ],
    "actual": 167.0,
@@ -539,13 +539,13 @@
      "direction": "up",
      "impact": 4.38,
      "label": "Averaging 6.7 catches over his last 3 games",
-     "detail": "That's down from 7.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4.4 catches."
+     "detail": "That's right in line with the 7.1 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 4.4 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.7,
-     "label": "Seeing 8.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.7 catches."
     },
     {
@@ -559,21 +559,21 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.21,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.21,
-     "label": "Arizona gives up 21 catches a game \u2014 13th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.2 catches."
+     "label": "Season stats say generous \u2014 13th most catches allowed \u2014 but they've tightened up lately; nets out about -0.2 catches",
+     "detail": "Arizona has allowed just 18 catches a game over its last 5 \u2014 tighter than its season-long 21 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 0.2 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.14,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],

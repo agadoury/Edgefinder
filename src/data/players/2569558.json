@@ -300,15 +300,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 31.0,
-     "label": "Getting 22.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 22.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 31 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 24.9,
-     "label": "Averaging 105.3 rushing yards over his last 3 games",
-     "detail": "That's up from 85.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 25 yards."
+     "label": "Averaging 105.3 rushing yards over his last 3 games \u2014 up from 85.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 105.3 a game over his last 3 vs 85.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 25 yards."
     },
     {
      "group": "game_environment",
@@ -328,8 +328,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 1.7,
-     "label": "Seattle gives up 89 rushing yards a game \u2014 2nd fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 2 yards."
+     "label": "Season stats say stingy \u2014 2nd fewest rushing yards allowed \u2014 but recent games say beatable; nets out about +2 yds",
+     "detail": "Seattle has allowed 107 rushing yards a game over its last 5 \u2014 leakier than its season-long 89 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 2 yards."
     }
    ],
    "actual": 86.0,
@@ -512,7 +512,7 @@
      "direction": "up",
      "impact": 12.4,
      "label": "Averaging 42.3 receiving yards over his last 3 games",
-     "detail": "That's up from 40.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 12 yards."
+     "detail": "That's right in line with the 40.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 12 yards."
     },
     {
      "group": "usage_role",
@@ -632,8 +632,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.73,
-     "label": "Averaging 3.7 catches over his last 3 games",
-     "detail": "That's down from 4.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.7 catches."
+     "label": "Cooled off \u2014 3.7 catches over his last 3 \u2014 but that still beats a typical RB week; nets out about +0.7 catches",
+     "detail": "He's off the 4.5-a-game pace of his last 8, but 3.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.7 catches."
     },
     {
      "group": "usage_role",
@@ -653,14 +653,14 @@
      "group": "qb_situation",
      "direction": "up",
      "impact": 0.14,
-     "label": "Kirk Cousins has just 3 starts this season \u2014 passing game still unsettled",
-     "detail": "Stability under center nudges the projection up by about 0.1 catches."
+     "label": "A newer QB under center \u2014 Kirk Cousins has 3 starts this season; nets out about +0.1 catches",
+     "detail": "A short QB track record cuts both ways \u2014 on balance the situation under center nudges the projection up by about 0.1 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.13,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],

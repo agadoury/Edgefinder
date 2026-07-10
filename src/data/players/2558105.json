@@ -232,22 +232,22 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 14.4,
-     "label": "Averaging 37.7 receiving yards over his last 3 games",
-     "detail": "That's down from 57.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 14 yards."
+     "label": "Cooled off \u2014 37.7 receiving yards over his last 3 \u2014 but that still beats a typical WR week; nets out about +14 yds",
+     "detail": "He's off the 57.8-a-game pace of his last 8, but 37.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 14 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 7.8,
-     "label": "Seeing 5.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 8 yards."
     },
     {
      "group": "rest_schedule",
      "direction": "up",
      "impact": 2.0,
-     "label": "Missed 2 of the last 5 weeks",
-     "detail": "The stop-start stretch nudges the projection up by about 2 yards."
+     "label": "A stop-start stretch \u2014 missed 2 of the last 5 weeks; nets out about +2 yds",
+     "detail": "Missed time can mean rust or fresh legs; on balance it nudges the projection up by about 2 yards."
     },
     {
      "group": "qb_situation",
@@ -376,15 +376,15 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.37,
-     "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's down from 5.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.4 catches."
+     "label": "Cooled off \u2014 2.7 catches over his last 3 \u2014 but that still beats a typical WR week; nets out about +1.4 catches",
+     "detail": "He's off the 5.0-a-game pace of his last 8, but 2.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 1.4 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.24,
-     "label": "Vegas pegs this at 41.5 total points, about 24 for the Buccaneers",
-     "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 24 of it belongs to the Buccaneers; nets out about +0.2 catches",
+     "detail": "The total is modest, but the Buccaneers are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.2 catches."
     },
     {
      "group": "qb_situation",
@@ -404,8 +404,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.08,
-     "label": "New Orleans gives up 18 catches a game \u2014 6th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.1 catches."
+     "label": "New Orleans's defense is a mixed picture on catches \u2014 nets out about +0.1 catches",
+     "detail": "Season-long they allow 18 a game (6th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 5.0,

@@ -313,8 +313,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.36,
-     "label": "Averaging 0.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.36 touchdown passes."
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.36 TD passes",
+     "detail": "He's off the 1.5-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.36 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -327,14 +327,14 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.12,
-     "label": "Baltimore gives up 2 touchdown passes a game \u2014 16th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.12 touchdown passes."
+     "label": "Season stats say stingy \u2014 16th fewest touchdown passes allowed \u2014 but they've been softer against QBs; nets out about +0.12 TD passes",
+     "detail": "Baltimore is stingy overall but gives up more than most to QBs, and the positional matchup counts for more here \u2014 on balance it nudges the projection up by about 0.12 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -0.11,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.11 touchdown passes."
     },
     {

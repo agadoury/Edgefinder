@@ -192,22 +192,22 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 12.7,
-     "label": "Seeing 3.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 3.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 13 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 9.0,
-     "label": "Averaging 24.0 receiving yards over his last 3 games",
-     "detail": "That's down from 26.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 9 yards."
+     "label": "Cooled off \u2014 24.0 receiving yards over his last 3 \u2014 but that still beats a typical TE week; nets out about +9 yds",
+     "detail": "He's off the 26.2-a-game pace of his last 8, but 24.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 9 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 1.1,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
-     "detail": "The expected scoring script nudges the projection up by about 1 yards."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 20 for the Jets; nets out about +1 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 1 yards."
     },
     {
      "group": "qb_situation",
@@ -320,22 +320,22 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.53,
-     "label": "Averaging 3.0 catches over his last 3 games",
-     "detail": "That's down from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.5 catches."
+     "label": "Cooled off \u2014 3.0 catches over his last 3 \u2014 but that still beats a typical TE week; nets out about +0.5 catches",
+     "detail": "He's off the 3.5-a-game pace of his last 8, but 3.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.5 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.4,
-     "label": "Seeing 3.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 3.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.12,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
-     "detail": "The expected scoring script nudges the projection up by about 0.1 catches."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 20 for the Jets; nets out about +0.1 catches",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 5.0,

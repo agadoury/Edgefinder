@@ -220,14 +220,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 13.6,
-     "label": "Averaging 34.0 receiving yards over his last 3 games",
-     "detail": "That's down from 48.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 14 yards."
+     "label": "Cooled off \u2014 34.0 receiving yards over his last 3 \u2014 but that still beats a typical WR week; nets out about +14 yds",
+     "detail": "He's off the 48.9-a-game pace of his last 8, but 34.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 14 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 10.4,
-     "label": "Seeing 5.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 10 yards."
     },
     {
@@ -241,8 +241,8 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.8,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Chargers",
-     "detail": "The expected scoring script nudges the projection up by about 0.8 receiving yards."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 20 for the Chargers; nets out about +0.8 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 0.8 receiving yards."
     }
    ],
    "actual": 22.0,
@@ -364,14 +364,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.4,
-     "label": "Averaging 3.3 catches over his last 3 games",
-     "detail": "That's down from 4.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.4 catches."
+     "label": "Cooled off \u2014 3.3 catches over his last 3 \u2014 but that still beats a typical WR week; nets out about +1.4 catches",
+     "detail": "He's off the 4.5-a-game pace of his last 8, but 3.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 1.4 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.31,
-     "label": "Seeing 5.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
@@ -385,7 +385,7 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.14,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],

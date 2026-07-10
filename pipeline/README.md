@@ -89,6 +89,18 @@ python3 -m pytest pipeline/tests            # leakage-sensitive unit tests
 * **Explanations.** Group perturbation against position-conditional
   training medians on the mean model; groups with |impact| ≥
   max(1.5% of projection, ε) survive, top 3 always kept, cap 6.
+* **Headline polarity (U11).** Every factor headline is emitted from
+  `explain.HEADLINE_TEMPLATES`, where each template declares the
+  direction its stat framing implies (up/down/neutral/contrast). When a
+  group's net impact contradicts its stat framing (e.g. fewest-yards-
+  allowed defense but a positive impact), the renderer switches to a
+  contrast headline that leads with the net story ("Season stats say
+  stingy — … — but recent games say beatable; nets out about +14 yds"),
+  falling back to a neutral no-direction headline when the group's own
+  features can't support a counter-story. The registry doubles as a
+  label→polarity classifier; `tests/test_factor_copy.py` walks every
+  exported factor and asserts headline polarity ∈ {arrow direction,
+  contrast, neutral}.
 
 ## Layout
 

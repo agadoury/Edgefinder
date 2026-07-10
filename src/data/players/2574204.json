@@ -252,7 +252,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 20.2,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 20 yards."
     },
     {
@@ -260,7 +260,7 @@
      "direction": "up",
      "impact": 20.1,
      "label": "Averaging 55.3 receiving yards over his last 3 games",
-     "detail": "That's up from 52.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 20 yards."
+     "detail": "That's right in line with the 52.6 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 20 yards."
     },
     {
      "group": "opp_defense",
@@ -411,14 +411,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.93,
-     "label": "Averaging 5.3 catches over his last 3 games",
-     "detail": "That's up from 4.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.9 catches."
+     "label": "Averaging 5.3 catches over his last 3 games \u2014 up from 4.9 over his last 8",
+     "detail": "He's picked it up lately \u2014 5.3 a game over his last 3 vs 4.9 across his last 8; against a typical week at his position, his form nudges the projection up by about 1.9 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.84,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.8 catches."
     },
     {

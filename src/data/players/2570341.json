@@ -316,14 +316,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 13.7,
-     "label": "Averaging 98.3 receiving yards over his last 3 games",
-     "detail": "That's down from 116.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 14 yards."
+     "label": "Cooled off \u2014 98.3 receiving yards over his last 3 \u2014 but that still beats a typical WR week; nets out about +14 yds",
+     "detail": "He's off the 116.8-a-game pace of his last 8, but 98.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 14 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 11.9,
-     "label": "Seeing 8.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 12 yards."
     },
     {
@@ -344,7 +344,7 @@
      "group": "weather",
      "direction": "up",
      "impact": 1.8,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
@@ -506,14 +506,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 3.56,
-     "label": "Averaging 6.3 catches over his last 3 games",
-     "detail": "That's down from 7.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3.6 catches."
+     "label": "Cooled off \u2014 6.3 catches over his last 3 \u2014 but that still beats a typical WR week; nets out about +3.6 catches",
+     "detail": "He's off the 7.0-a-game pace of his last 8, but 6.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 3.6 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.94,
-     "label": "Seeing 8.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.9 catches."
     },
     {
@@ -527,8 +527,8 @@
      "group": "home_away",
      "direction": "up",
      "impact": 0.13,
-     "label": "On the road at Atlanta",
-     "detail": "The road trip nudges the projection up by about 0.1 catches."
+     "label": "Road game at Atlanta \u2014 nets out about +0.1 catches",
+     "detail": "Venue is a small piece of the picture \u2014 the trip nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 7.0,

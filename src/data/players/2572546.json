@@ -244,7 +244,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 28.2,
-     "label": "Getting 22.8 touches a game over his last 4",
+     "label": "A heavy workload \u2014 22.8 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 28 yards."
     },
     {
@@ -252,7 +252,7 @@
      "direction": "up",
      "impact": 23.2,
      "label": "Averaging 63.3 rushing yards over his last 3 games",
-     "detail": "That's up from 60.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 23 yards."
+     "detail": "That's right in line with the 60.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 23 yards."
     },
     {
      "group": "opp_defense",
@@ -272,7 +272,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -2.9,
-     "label": "Vegas pegs this at 41.5 total points, about 24 for the Buccaneers",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 24 for the Buccaneers",
      "detail": "The expected scoring script nudges the projection down by about 3 yards."
     }
    ],
@@ -435,8 +435,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 2.7,
-     "label": "Averaging 51.7 receiving yards over his last 3 games",
-     "detail": "That's up from 31.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+     "label": "Averaging 51.7 receiving yards over his last 3 games \u2014 up from 31.0 over his last 8",
+     "detail": "He's picked it up lately \u2014 51.7 a game over his last 3 vs 31.0 across his last 8; against a typical week at his position, his form nudges the projection up by about 3 yards."
     },
     {
      "group": "rest_schedule",
@@ -449,14 +449,14 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -1.1,
-     "label": "Vegas pegs this at 41.5 total points, about 24 for the Buccaneers",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 24 for the Buccaneers",
      "detail": "The expected scoring script nudges the projection down by about 1 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.1,
-     "label": "Seeing 4.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1 yards."
     },
     {
@@ -546,8 +546,8 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.56,
-     "label": "Seeing 4.2 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection down by about 0.6 catches."
+     "label": "Getting plenty of work \u2014 4.2 targets a game over his last 4 \u2014 but his broader role reads lighter; nets out about -0.6 catches",
+     "detail": "The raw counts are strong, but the fuller usage picture \u2014 his share of the offense and the team's volume \u2014 reads lighter; on balance his workload nudges the projection down by about 0.6 catches."
     },
     {
      "group": "qb_situation",
@@ -574,8 +574,8 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.12,
-     "label": "Vegas pegs this at 41.5 total points, about 24 for the Buccaneers",
-     "detail": "The expected scoring script nudges the projection up by about 0.1 catches."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 24 of it belongs to the Buccaneers; nets out about +0.1 catches",
+     "detail": "The total is modest, but the Buccaneers are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.1 catches."
     },
     {
      "group": "opp_defense",

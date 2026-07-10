@@ -144,7 +144,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 4.7,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 5 yards."
     },
     {
@@ -165,7 +165,7 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 2.7,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 3 yards."
     },
     {
@@ -255,14 +255,14 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.46,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.5 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.3,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
     },
     {
@@ -276,15 +276,15 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.09,
-     "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's up from 2.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.1 catches."
+     "label": "Averaging 2.7 catches over his last 3 games \u2014 up from 2.0 over his last 8",
+     "detail": "He's picked it up lately \u2014 2.7 a game over his last 3 vs 2.0 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.1 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.06,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 0.1 catches."
+     "label": "Weather is a wildcard here \u2014 12 mph wind in the forecast; nets out about +0.1 catches",
+     "detail": "Wind usually drags on catches, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 6.0,

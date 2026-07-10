@@ -242,8 +242,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 4.2,
-     "label": "Averaging 255.3 passing yards over his last 3 games",
-     "detail": "That's up from 235.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4 yards."
+     "label": "Averaging 255.3 passing yards over his last 3 games \u2014 up from 235.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 255.3 a game over his last 3 vs 235.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 4 yards."
     }
    ],
    "actual": 212.0,
@@ -293,21 +293,21 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.53,
-     "label": "Averaging 0.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.53 touchdown passes."
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.53 TD passes",
+     "detail": "He's off the 1.5-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.53 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.28,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
-     "detail": "The expected scoring script nudges the projection up by about 0.28 touchdown passes."
+     "label": "A modest total \u2014 40.5 points \u2014 but about 24 of it belongs to the Broncos; nets out about +0.28 TD passes",
+     "detail": "The total is modest, but the Broncos are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.28 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.06,
-     "label": "Las Vegas gives up 2 touchdown passes a game \u2014 14th most in the NFL",
+     "label": "Las Vegas gives up 1.6 touchdown passes a game \u2014 14th most in the NFL",
      "detail": "A matchup this generous nudges the projection up by about 0.06 touchdown passes."
     },
     {
@@ -460,14 +460,14 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -7.1,
-     "label": "Averaging 7.3 rushing yards over his last 3 games",
-     "detail": "That's down from 18.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 7 yards."
+     "label": "Averaging 7.3 rushing yards over his last 3 games \u2014 down from 18.9 over his last 8",
+     "detail": "He's cooled off lately \u2014 7.3 a game over his last 3 vs 18.9 across his last 8; against a typical week at his position, his form nudges the projection down by about 7 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -3.7,
-     "label": "Getting 3.2 touches a game over his last 4",
+     "label": "A light workload \u2014 3.2 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 4 yards."
     },
     {
@@ -481,7 +481,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.7,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 24 for the Broncos",
      "detail": "The expected scoring script nudges the projection down by about 0.7 rushing yards."
     }
    ],

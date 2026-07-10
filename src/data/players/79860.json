@@ -252,22 +252,22 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 47.2,
-     "label": "Averaging 215.3 passing yards over his last 3 games",
-     "detail": "That's down from 244.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 47 yards."
+     "label": "Cooled off \u2014 215.3 passing yards over his last 3 \u2014 but that still beats a typical QB week; nets out about +47 yds",
+     "detail": "He's off the 244.9-a-game pace of his last 8, but 215.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 47 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 21.9,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 22 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -2.1,
-     "label": "Arizona gives up 234 passing yards a game \u2014 13th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+     "label": "Season stats say generous \u2014 13th most passing yards allowed \u2014 but they've tightened up lately; nets out about -2 yds",
+     "detail": "Arizona has allowed just 216 passing yards a game over its last 5 \u2014 tighter than its season-long 234 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 2 yards."
     }
    ],
    "actual": 281.0,
@@ -324,8 +324,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.66,
-     "label": "Averaging 2.3 touchdown passes over his last 3 games",
-     "detail": "That's down from 3.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.66 touchdown passes."
+     "label": "Cooled off \u2014 2.3 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.66 TD passes",
+     "detail": "He's off the 3.0-a-game pace of his last 8, but 2.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.66 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -338,15 +338,15 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.13,
-     "label": "Arizona gives up 1 touchdown passes a game \u2014 13th fewest in the NFL",
+     "label": "Arizona gives up 1.4 touchdown passes a game \u2014 13th fewest in the NFL",
      "detail": "A matchup this stingy nudges the projection down by about 0.13 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.12,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
-     "detail": "The expected scoring script nudges the projection down by about 0.12 touchdown passes."
+     "label": "The scoring setup is a mixed signal \u2014 49.5 total, about 30 for the Rams; nets out about -0.12 TD passes",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection down by about 0.12 touchdown passes."
     },
     {
      "group": "home_away",

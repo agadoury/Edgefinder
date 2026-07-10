@@ -248,15 +248,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 8.0,
-     "label": "Seeing 7.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 8 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 4.2,
-     "label": "Averaging 48.3 receiving yards over his last 3 games",
-     "detail": "That's up from 41.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4 yards."
+     "label": "Averaging 48.3 receiving yards over his last 3 games \u2014 up from 41.8 over his last 8",
+     "detail": "He's picked it up lately \u2014 48.3 a game over his last 3 vs 41.8 across his last 8; against a typical week at his position, his form nudges the projection up by about 4 yards."
     },
     {
      "group": "home_away",
@@ -378,35 +378,35 @@
      "direction": "up",
      "impact": 0.47,
      "label": "Averaging 3.7 catches over his last 3 games",
-     "detail": "That's down from 3.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.5 catches."
+     "detail": "That's right in line with the 3.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.5 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.42,
-     "label": "Seeing 7.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.23,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
-     "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
+     "label": "A modest total \u2014 40.5 points \u2014 but about 24 of it belongs to the Broncos; nets out about +0.2 catches",
+     "detail": "The total is modest, but the Broncos are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.2 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.09,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.08,
-     "label": "Las Vegas gives up 21 catches a game \u2014 15th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.1 catches."
+     "label": "Season stats say stingy \u2014 15th fewest catches allowed \u2014 but they've been softer against WRs; nets out about +0.1 catches",
+     "detail": "Las Vegas is stingy overall but gives up more than most to WRs, and the positional matchup counts for more here \u2014 on balance it nudges the projection up by about 0.1 catches."
     },
     {
      "group": "home_away",

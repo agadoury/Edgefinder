@@ -191,8 +191,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -2.0,
-     "label": "Averaging 13.7 receiving yards over his last 3 games",
-     "detail": "That's down from 23.2 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+     "label": "Averaging 13.7 receiving yards over his last 3 games \u2014 down from 23.2 over his last 8",
+     "detail": "He's cooled off lately \u2014 13.7 a game over his last 3 vs 23.2 across his last 8; against a typical week at his position, his form nudges the projection down by about 2 yards."
     },
     {
      "group": "qb_situation",
@@ -310,8 +310,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.08,
-     "label": "Averaging 1.7 catches over his last 3 games",
-     "detail": "That's down from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.1 catches."
+     "label": "Averaging 1.7 catches over his last 3 games \u2014 down from 2.6 over his last 8",
+     "detail": "He's cooled off lately \u2014 1.7 a game over his last 3 vs 2.6 across his last 8; against a typical week at his position, his form nudges the projection down by about 0.1 catches."
     }
    ],
    "actual": 1.0,

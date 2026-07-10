@@ -220,22 +220,22 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 7.7,
-     "label": "Averaging 52.7 receiving yards over his last 3 games",
-     "detail": "That's up from 33.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 8 yards."
+     "label": "Averaging 52.7 receiving yards over his last 3 games \u2014 up from 33.8 over his last 8",
+     "detail": "He's picked it up lately \u2014 52.7 a game over his last 3 vs 33.8 across his last 8; against a typical week at his position, his form nudges the projection up by about 8 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 2.2,
-     "label": "Kansas City gives up 213 receiving yards a game \u2014 10th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 2 yards."
+     "label": "Season stats say stingy \u2014 10th fewest receiving yards allowed \u2014 but recent games say beatable; nets out about +2 yds",
+     "detail": "Kansas City has allowed 256 receiving yards a game over its last 5 \u2014 leakier than its season-long 213 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 2 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 1.7,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 2 yards."
+     "label": "Weather is a wildcard here \u2014 a freezing kickoff around 27 degrees; nets out about +2 yds",
+     "detail": "Cold usually slows scoring, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 2 yards."
     },
     {
      "group": "home_away",
@@ -248,14 +248,14 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 1.5,
-     "label": "Vegas pegs this at 41.5 total points, about 18 for the Texans",
-     "detail": "The expected scoring script nudges the projection up by about 2 yards."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 18 for the Texans; nets out about +2 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 2 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.4,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1 yards."
     }
    ],
@@ -354,15 +354,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.28,
-     "label": "Seeing 7.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.18,
-     "label": "Vegas pegs this at 41.5 total points, about 18 for the Texans",
-     "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 18 for the Texans; nets out about +0.2 catches",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 0.2 catches."
     },
     {
      "group": "home_away",
@@ -375,8 +375,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.14,
-     "label": "Averaging 4.3 catches over his last 3 games",
-     "detail": "That's up from 3.4 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.1 catches."
+     "label": "Heating up \u2014 4.3 catches over his last 3 \u2014 but still shy of a typical WR week; nets out about -0.1 catches",
+     "detail": "He's up from 3.4 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.1 catches."
     }
    ],
    "actual": 3.0,

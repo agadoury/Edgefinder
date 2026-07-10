@@ -220,21 +220,21 @@
      "group": "qb_situation",
      "direction": "up",
      "impact": 1.8,
-     "label": "Kirk Cousins has just 3 starts this season \u2014 passing game still unsettled",
-     "detail": "Stability under center nudges the projection up by about 2 yards."
+     "label": "A newer QB under center \u2014 Kirk Cousins has 3 starts this season; nets out about +2 yds",
+     "detail": "A short QB track record cuts both ways \u2014 on balance the situation under center nudges the projection up by about 2 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 1.0,
-     "label": "Averaging 44.3 receiving yards over his last 3 games",
-     "detail": "That's up from 32.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.0 receiving yards."
+     "label": "Averaging 44.3 receiving yards over his last 3 games \u2014 up from 32.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 44.3 a game over his last 3 vs 32.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 1.0 receiving yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.2,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],
@@ -333,15 +333,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.34,
-     "label": "Seeing 5.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -0.24,
-     "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's up from 1.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.2 catches."
+     "label": "Heating up \u2014 2.7 catches over his last 3 \u2014 but still shy of a typical WR week; nets out about -0.2 catches",
+     "detail": "He's up from 1.9 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.2 catches."
     },
     {
      "group": "qb_situation",

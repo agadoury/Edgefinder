@@ -212,14 +212,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 12.3,
-     "label": "Averaging 39.0 receiving yards over his last 3 games",
-     "detail": "That's down from 45.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 12 yards."
+     "label": "Cooled off \u2014 39.0 receiving yards over his last 3 \u2014 but that still beats a typical TE week; nets out about +12 yds",
+     "detail": "He's off the 45.4-a-game pace of his last 8, but 39.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 12 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 10.8,
-     "label": "Seeing 4.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 11 yards."
     },
     {
@@ -332,7 +332,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.84,
-     "label": "Seeing 4.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.8 catches."
     },
     {
@@ -340,7 +340,7 @@
      "direction": "up",
      "impact": 0.77,
      "label": "Averaging 3.3 catches over his last 3 games",
-     "detail": "That's down from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.8 catches."
+     "detail": "That's right in line with the 3.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.8 catches."
     },
     {
      "group": "game_environment",
@@ -353,8 +353,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.08,
-     "label": "Green Bay gives up 22 catches a game \u2014 12th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.1 catches."
+     "label": "Season stats say generous \u2014 12th most catches allowed \u2014 but they've tightened up lately; nets out about -0.1 catches",
+     "detail": "Green Bay has allowed just 15 catches a game over its last 5 \u2014 tighter than its season-long 22 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 0.1 catches."
     },
     {
      "group": "qb_situation",

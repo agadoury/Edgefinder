@@ -232,22 +232,22 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -26.2,
-     "label": "His offense throws about 27 passes a game",
+     "label": "A run-leaning offense \u2014 about 27 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 26 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 19.0,
-     "label": "Los Angeles gives up 185 passing yards a game \u2014 2nd fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 19 yards."
+     "label": "Los Angeles's defense is a mixed picture on passing yards \u2014 nets out about +19 yds",
+     "detail": "Season-long they allow 185 a game (2nd fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 19 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 16.2,
-     "label": "Averaging 218.0 passing yards over his last 3 games",
-     "detail": "That's down from 238.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
+     "label": "Cooled off \u2014 218.0 passing yards over his last 3 \u2014 but that still beats a typical QB week; nets out about +16 yds",
+     "detail": "He's off the 238.1-a-game pace of his last 8, but 218.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 16 yards."
     },
     {
      "group": "qb_situation",
@@ -267,7 +267,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -4.3,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 22 for the Eagles",
      "detail": "The expected scoring script nudges the projection down by about 4 yards."
     }
    ],
@@ -332,29 +332,29 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.18,
-     "label": "Los Angeles gives up 1 touchdown passes a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.18 touchdown passes."
+     "label": "Los Angeles's defense is a mixed picture on touchdown passes \u2014 nets out about +0.18 TD passes",
+     "detail": "Season-long they allow 1.0 a game (5th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.18 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -0.15,
-     "label": "His offense throws about 27 passes a game",
+     "label": "A run-leaning offense \u2014 about 27 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.15 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.15,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 22 for the Eagles",
      "detail": "The expected scoring script nudges the projection down by about 0.15 touchdown passes."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -0.03,
-     "label": "Averaging 1.0 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.03 touchdown passes."
+     "label": "Averaging 1.0 touchdown passes over his last 3 games \u2014 down from 1.8 over his last 8",
+     "detail": "He's cooled off lately \u2014 1.0 a game over his last 3 vs 1.8 across his last 8; against a typical week at his position, his form nudges the projection down by about 0.03 touchdown passes."
     }
    ],
    "actual": 0.0,
@@ -524,15 +524,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 4.9,
-     "label": "Getting 6.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 6.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 5 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.6,
-     "label": "Los Angeles gives up 107 rushing yards a game \u2014 13th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.6 rushing yards."
+     "label": "Season stats say stingy \u2014 13th fewest rushing yards allowed \u2014 but they've been softer against QBs; nets out about +0.6 yds",
+     "detail": "Los Angeles is stingy overall but gives up more than most to QBs, and the positional matchup counts for more here \u2014 on balance it nudges the projection up by about 0.6 rushing yards."
     },
     {
      "group": "qb_situation",

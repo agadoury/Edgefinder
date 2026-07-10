@@ -212,15 +212,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 18.6,
-     "label": "Getting 12.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 12.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 19 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 9.7,
-     "label": "Averaging 34.0 rushing yards over his last 3 games",
-     "detail": "That's down from 40.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 10 yards."
+     "label": "Cooled off \u2014 34.0 rushing yards over his last 3 \u2014 but that still beats a typical RB week; nets out about +10 yds",
+     "detail": "He's off the 40.1-a-game pace of his last 8, but 34.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 10 yards."
     },
     {
      "group": "opp_defense",
@@ -233,7 +233,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -2.3,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 2 yards."
     },
     {
@@ -371,21 +371,21 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 3.1,
-     "label": "Averaging 9.3 receiving yards over his last 3 games",
-     "detail": "That's down from 14.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+     "label": "Cooled off \u2014 9.3 receiving yards over his last 3 \u2014 but that still beats a typical RB week; nets out about +3 yds",
+     "detail": "He's off the 14.5-a-game pace of his last 8, but 9.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 3 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 2.9,
-     "label": "Seeing 3.0 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 3 yards."
+     "label": "A modest 3.0 targets a game over his last 4 \u2014 but his broader role is bigger than that; nets out about +3 yds",
+     "detail": "The raw counts are modest, but the fuller usage picture \u2014 his share of the offense and the team's volume \u2014 reads stronger; on balance his workload nudges the projection up by about 3 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -2.8,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 3 yards."
     },
     {
@@ -498,15 +498,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.66,
-     "label": "Seeing 3.0 targets a game over his last 4",
-     "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.7 catches."
+     "label": "A modest 3.0 targets a game over his last 4 \u2014 but his broader role is bigger than that; nets out about +0.7 catches",
+     "detail": "The raw counts are modest, but the fuller usage picture \u2014 his share of the offense and the team's volume \u2014 reads stronger; on balance his workload nudges the projection up by about 0.7 catches."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.34,
      "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's up from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.3 catches."
+     "detail": "That's right in line with the 2.6 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.3 catches."
     },
     {
      "group": "qb_situation",

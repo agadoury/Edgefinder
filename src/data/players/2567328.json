@@ -273,20 +273,20 @@
      "direction": "up",
      "impact": 72.6,
      "label": "Averaging 102.7 rushing yards over his last 3 games",
-     "detail": "That's down from 103.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 73 yards."
+     "detail": "That's right in line with the 103.4 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 73 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 37.8,
-     "label": "Getting 23.0 touches a game over his last 4",
+     "label": "A heavy workload \u2014 23.0 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 38 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 20.2,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 30 for the Bills",
      "detail": "The expected scoring script nudges the projection up by about 20 yards."
     },
     {
@@ -307,8 +307,8 @@
      "group": "weather",
      "direction": "up",
      "impact": 2.5,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 2 yards."
+     "label": "Winds near 12 mph \u2014 but rough weather tilts games toward the run; nets out about +2 yds",
+     "detail": "Bad weather usually means more handoffs \u2014 the forecast nudges the projection up by about 2 yards."
     }
    ],
    "actual": 80.0,
@@ -509,15 +509,15 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 2.1,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 30 for the Bills",
      "detail": "The expected scoring script nudges the projection up by about 2 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -1.0,
-     "label": "Cincinnati gives up 266 receiving yards a game \u2014 3rd most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 1 yards."
+     "label": "Cincinnati's defense is a mixed picture on receiving yards \u2014 nets out about -1 yds",
+     "detail": "Season-long they allow 266 a game (3rd most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 1 yards."
     },
     {
      "group": "qb_situation",
@@ -614,7 +614,7 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.29,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 30 for the Bills",
      "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
     },
     {
@@ -628,8 +628,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.24,
-     "label": "Averaging 3.0 catches over his last 3 games",
-     "detail": "That's up from 1.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.2 catches."
+     "label": "Heating up \u2014 3.0 catches over his last 3 \u2014 but still shy of a typical RB week; nets out about -0.2 catches",
+     "detail": "He's up from 1.9 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.2 catches."
     },
     {
      "group": "qb_situation",
@@ -649,8 +649,8 @@
      "group": "rest_schedule",
      "direction": "up",
      "impact": 0.08,
-     "label": "Rest edge to Cincinnati \u2014 7 days off vs their 10",
-     "detail": "The rest edge versus Cincinnati nudges the projection up by about 0.1 catches."
+     "label": "Rest is a mixed factor this week \u2014 7 days between games; nets out about +0.1 catches",
+     "detail": "The schedule angles cut both ways; on balance rest nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 2.0,

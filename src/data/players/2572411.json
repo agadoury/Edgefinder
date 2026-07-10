@@ -257,13 +257,13 @@
      "direction": "up",
      "impact": 25.8,
      "label": "Averaging 66.0 receiving yards over his last 3 games",
-     "detail": "That's up from 62.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 26 yards."
+     "detail": "That's right in line with the 62.0 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 26 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 24.4,
-     "label": "Seeing 8.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 24 yards."
     },
     {
@@ -384,14 +384,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.21,
-     "label": "Averaging 5.3 catches over his last 3 games",
-     "detail": "That's up from 4.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.2 catches."
+     "label": "Averaging 5.3 catches over his last 3 games \u2014 up from 4.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 5.3 a game over his last 3 vs 4.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 1.2 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.27,
-     "label": "Seeing 8.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
@@ -405,8 +405,8 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.15,
-     "label": "Vegas pegs this at 49.5 total points, about 20 for the Cardinals",
-     "detail": "The expected scoring script nudges the projection down by about 0.1 catches."
+     "label": "A big total \u2014 49.5 points \u2014 but only about 20 of them belong to the Cardinals; nets out about -0.1 catches",
+     "detail": "The total is big, but the Cardinals are the underdog side of it \u2014 the expected split nudges the projection down by about 0.1 catches."
     }
    ],
    "actual": null,

@@ -180,8 +180,8 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -3.5,
-     "label": "Vegas pegs this at 49.5 total points, about 20 for the Cardinals",
-     "detail": "The expected scoring script nudges the projection down by about 4 yards."
+     "label": "A big total \u2014 49.5 points \u2014 but only about 20 of them belong to the Cardinals; nets out about -4 yds",
+     "detail": "The total is big, but the Cardinals are the underdog side of it \u2014 the expected split nudges the projection down by about 4 yards."
     },
     {
      "group": "qb_situation",
@@ -194,8 +194,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -2.2,
-     "label": "Averaging 44.3 receiving yards over his last 3 games",
-     "detail": "That's up from 19.9 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+     "label": "Heating up \u2014 44.3 receiving yards over his last 3 \u2014 but still shy of a typical WR week; nets out about -2 yds",
+     "detail": "He's up from 19.9 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 2 yards."
     },
     {
      "group": "usage_role",
@@ -291,8 +291,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.19,
-     "label": "Averaging 4.7 catches over his last 3 games",
-     "detail": "That's up from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.2 catches."
+     "label": "Heating up \u2014 4.7 catches over his last 3 \u2014 but still shy of a typical WR week; nets out about -0.2 catches",
+     "detail": "He's up from 2.6 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.2 catches."
     },
     {
      "group": "qb_situation",

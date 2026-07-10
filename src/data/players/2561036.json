@@ -236,15 +236,15 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 38.6,
-     "label": "Averaging 217.0 passing yards over his last 3 games",
-     "detail": "That's down from 251.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 39 yards."
+     "label": "Cooled off \u2014 217.0 passing yards over his last 3 \u2014 but that still beats a typical QB week; nets out about +39 yds",
+     "detail": "He's off the 251.0-a-game pace of his last 8, but 217.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 39 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 29.9,
-     "label": "His offense throws about 25 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 30 yards."
+     "label": "His recent workload is a mixed signal \u2014 about 25 passes a game; nets out about +30 yds",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection up by about 30 yards."
     },
     {
      "group": "game_environment",
@@ -301,15 +301,15 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.44,
-     "label": "Averaging 0.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.44 touchdown passes."
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.44 TD passes",
+     "detail": "He's off the 1.8-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.44 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.43,
-     "label": "His offense throws about 25 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 0.43 touchdown passes."
+     "label": "His recent workload is a mixed signal \u2014 about 25 passes a game; nets out about +0.43 TD passes",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection up by about 0.43 touchdown passes."
     },
     {
      "group": "game_environment",

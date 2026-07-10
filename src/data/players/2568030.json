@@ -208,15 +208,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 23.6,
-     "label": "Getting 19.8 touches a game over his last 4",
+     "label": "A heavy workload \u2014 19.8 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 24 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 22.9,
-     "label": "Averaging 56.7 rushing yards over his last 3 games",
-     "detail": "That's down from 74.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 23 yards."
+     "label": "Cooled off \u2014 56.7 rushing yards over his last 3 \u2014 but that still beats a typical RB week; nets out about +23 yds",
+     "detail": "He's off the 74.5-a-game pace of his last 8, but 56.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 23 yards."
     },
     {
      "group": "opp_defense",
@@ -236,7 +236,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -2.5,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 20 for the Jets",
      "detail": "The expected scoring script nudges the projection down by about 3 yards."
     },
     {

@@ -236,8 +236,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 6.0,
-     "label": "Averaging 32.0 receiving yards over his last 3 games",
-     "detail": "That's down from 45.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 6 yards."
+     "label": "Cooled off \u2014 32.0 receiving yards over his last 3 \u2014 but that still beats a typical WR week; nets out about +6 yds",
+     "detail": "He's off the 45.4-a-game pace of his last 8, but 32.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 6 yards."
     },
     {
      "group": "usage_role",
@@ -257,8 +257,8 @@
      "group": "weather",
      "direction": "up",
      "impact": 1.8,
-     "label": "Freezing kickoff \u2014 around 16 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 2 yards."
+     "label": "Weather is a wildcard here \u2014 a freezing kickoff around 16 degrees; nets out about +2 yds",
+     "detail": "Cold usually slows scoring, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 2 yards."
     }
    ],
    "actual": 0.0,
@@ -364,8 +364,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.73,
-     "label": "Averaging 3.3 catches over his last 3 games",
-     "detail": "That's down from 4.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.7 catches."
+     "label": "Cooled off \u2014 3.3 catches over his last 3 \u2014 but that still beats a typical WR week; nets out about +0.7 catches",
+     "detail": "He's off the 4.0-a-game pace of his last 8, but 3.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.7 catches."
     },
     {
      "group": "usage_role",

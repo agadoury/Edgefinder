@@ -208,14 +208,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 5.5,
-     "label": "Averaging 45.3 rushing yards over his last 3 games",
-     "detail": "That's up from 35.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 5 yards."
+     "label": "Averaging 45.3 rushing yards over his last 3 games \u2014 up from 35.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 45.3 a game over his last 3 vs 35.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 5 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 1.2,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
@@ -229,15 +229,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 1.0,
-     "label": "Getting 11.2 touches a game over his last 4",
+     "label": "A heavy workload \u2014 11.2 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 1.0 rushing yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.6,
-     "label": "Minnesota gives up 128 rushing yards a game \u2014 10th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.6 rushing yards."
+     "label": "Minnesota's defense is a mixed picture on rushing yards \u2014 nets out about -0.6 yds",
+     "detail": "Season-long they allow 128 a game (10th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.6 rushing yards."
     },
     {
      "group": "game_environment",

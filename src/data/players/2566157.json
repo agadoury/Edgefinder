@@ -232,14 +232,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 22.0,
-     "label": "Averaging 62.3 rushing yards over his last 3 games",
-     "detail": "That's up from 56.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 22 yards."
+     "label": "Averaging 62.3 rushing yards over his last 3 games \u2014 up from 56.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 62.3 a game over his last 3 vs 56.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 22 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 10.4,
-     "label": "Getting 17.0 touches a game over his last 4",
+     "label": "A heavy workload \u2014 17.0 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 10 yards."
     },
     {
@@ -394,7 +394,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -1.2,
-     "label": "Seeing 2.8 targets a game over his last 4",
+     "label": "A light workload \u2014 2.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection down by about 1 yards."
     },
     {
@@ -492,15 +492,15 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.23,
-     "label": "Seeing 2.8 targets a game over his last 4",
+     "label": "A light workload \u2014 2.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection down by about 0.2 catches."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -0.19,
-     "label": "Averaging 1.3 catches over his last 3 games",
-     "detail": "That's down from 2.4 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.2 catches."
+     "label": "Averaging 1.3 catches over his last 3 games \u2014 down from 2.4 over his last 8",
+     "detail": "He's cooled off lately \u2014 1.3 a game over his last 3 vs 2.4 across his last 8; against a typical week at his position, his form nudges the projection down by about 0.2 catches."
     },
     {
      "group": "opp_defense",

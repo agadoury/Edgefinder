@@ -244,21 +244,21 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 17.6,
-     "label": "Seeing 6.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 18 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 10.6,
-     "label": "Averaging 37.3 receiving yards over his last 3 games",
-     "detail": "That's up from 34.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 11 yards."
+     "label": "Averaging 37.3 receiving yards over his last 3 games \u2014 up from 34.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 37.3 a game over his last 3 vs 34.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 11 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 7.5,
-     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 26 for the Cowboys",
      "detail": "The expected scoring script nudges the projection up by about 7 yards."
     },
     {
@@ -404,20 +404,20 @@
      "direction": "up",
      "impact": 2.07,
      "label": "Averaging 4.7 catches over his last 3 games",
-     "detail": "That's up from 4.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2.1 catches."
+     "detail": "That's right in line with the 4.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 2.1 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.18,
-     "label": "Seeing 6.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.2 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.19,
-     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 26 for the Cowboys",
      "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
     },
     {

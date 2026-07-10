@@ -211,15 +211,15 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -3.3,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
-     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+     "label": "A big total \u2014 54.5 points \u2014 but only about 24 of them belong to the Bengals; nets out about -3 yds",
+     "detail": "The total is big, but the Bengals are the underdog side of it \u2014 the expected split nudges the projection down by about 3 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -3.3,
-     "label": "Buffalo gives up 141 rushing yards a game \u2014 3rd most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 3 yards."
+     "label": "Season stats say generous \u2014 3rd most rushing yards allowed \u2014 but they've tightened up lately; nets out about -3 yds",
+     "detail": "Buffalo has allowed just 129 rushing yards a game over its last 5 \u2014 tighter than its season-long 141 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 3 yards."
     },
     {
      "group": "rest_schedule",
@@ -232,15 +232,15 @@
      "group": "weather",
      "direction": "up",
      "impact": 1.8,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 2 yards."
+     "label": "Winds near 12 mph \u2014 but rough weather tilts games toward the run; nets out about +2 yds",
+     "detail": "Bad weather usually means more handoffs \u2014 the forecast nudges the projection up by about 2 yards."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -1.7,
-     "label": "Averaging 46.0 rushing yards over his last 3 games",
-     "detail": "That's up from 29.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+     "label": "Heating up \u2014 46.0 rushing yards over his last 3 \u2014 but still shy of a typical RB week; nets out about -2 yds",
+     "detail": "He's up from 29.6 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 2 yards."
     }
    ],
    "actual": 31.0,

@@ -255,8 +255,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 20.6,
-     "label": "Averaging 167.0 passing yards over his last 3 games",
-     "detail": "That's down from 191.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 21 yards."
+     "label": "Cooled off \u2014 167.0 passing yards over his last 3 \u2014 but that still beats a typical QB week; nets out about +21 yds",
+     "detail": "He's off the 191.0-a-game pace of his last 8, but 167.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 21 yards."
     },
     {
      "group": "opp_defense",
@@ -269,7 +269,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -6.4,
-     "label": "His offense throws about 25 passes a game",
+     "label": "A run-leaning offense \u2014 about 25 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 6 yards."
     },
     {
@@ -327,15 +327,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.3,
-     "label": "His offense throws about 25 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 0.30 touchdown passes."
+     "label": "His recent workload is a mixed signal \u2014 about 25 passes a game; nets out about +0.30 TD passes",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection up by about 0.30 touchdown passes."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.25,
-     "label": "Averaging 0.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.25 touchdown passes."
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.25 TD passes",
+     "detail": "He's off the 1.2-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.25 touchdown passes."
     },
     {
      "group": "weather",
@@ -348,7 +348,7 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.1,
-     "label": "New York gives up 2 touchdown passes a game \u2014 14th most in the NFL",
+     "label": "New York gives up 1.6 touchdown passes a game \u2014 14th most in the NFL",
      "detail": "A matchup this generous nudges the projection up by about 0.10 touchdown passes."
     },
     {
@@ -362,7 +362,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.04,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Dolphins",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 22 for the Dolphins",
      "detail": "The expected scoring script nudges the projection down by about 0.04 touchdown passes."
     }
    ],

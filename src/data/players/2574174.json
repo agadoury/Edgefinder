@@ -244,7 +244,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 7.9,
-     "label": "Getting 18.0 touches a game over his last 4",
+     "label": "A heavy workload \u2014 18.0 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 8 yards."
     },
     {
@@ -258,22 +258,22 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -4.6,
-     "label": "Vegas pegs this at 41.5 total points, about 18 for the Texans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 18 for the Texans",
      "detail": "The expected scoring script nudges the projection down by about 5 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 2.3,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 2 yards."
+     "label": "A freezing kickoff \u2014 but rough weather tilts games toward the run; nets out about +2 yds",
+     "detail": "Cold games lean on the ground game \u2014 the forecast nudges the projection up by about 2 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 1.9,
-     "label": "Averaging 60.7 rushing yards over his last 3 games",
-     "detail": "That's up from 46.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2 yards."
+     "label": "Averaging 60.7 rushing yards over his last 3 games \u2014 up from 46.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 60.7 a game over his last 3 vs 46.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 2 yards."
     },
     {
      "group": "rest_schedule",

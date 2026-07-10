@@ -339,7 +339,7 @@
      "direction": "up",
      "impact": 26.5,
      "label": "Averaging 161.7 passing yards over his last 3 games",
-     "detail": "That's up from 154.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 26 yards."
+     "detail": "That's right in line with the 154.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 26 yards."
     },
     {
      "group": "opp_defense",
@@ -352,7 +352,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -12.9,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 13 yards."
     },
     {
@@ -431,21 +431,21 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.1,
-     "label": "Washington gives up 2 touchdown passes a game \u2014 5th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.10 touchdown passes."
+     "label": "Washington's defense is a mixed picture on touchdown passes \u2014 nets out about -0.10 TD passes",
+     "detail": "Season-long they allow 1.9 a game (5th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.10 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.09,
-     "label": "His offense throws about 29 passes a game",
-     "detail": "How often the team drops back nudges the projection up by about 0.09 touchdown passes."
+     "label": "His recent workload is a mixed signal \u2014 about 29 passes a game; nets out about +0.09 TD passes",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection up by about 0.09 touchdown passes."
     },
     {
      "group": "weather",
      "direction": "down",
      "impact": -0.05,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],
@@ -581,20 +581,20 @@
      "direction": "down",
      "impact": -2.8,
      "label": "Averaging 19.3 rushing yards over his last 3 games",
-     "detail": "That's down from 20.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 3 yards."
+     "detail": "That's right in line with the 20.0 he's averaged across his last 8; against a typical week at his position, his form nudges the projection down by about 3 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -2.5,
-     "label": "Washington gives up 133 rushing yards a game \u2014 6th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 3 yards."
+     "label": "Season stats say generous \u2014 6th most rushing yards allowed \u2014 but they clamp down on QBs; nets out about -3 yds",
+     "detail": "Washington is generous overall but has held QBs below the norm, and the positional matchup counts for more here \u2014 on balance it nudges the projection down by about 3 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -2.0,
-     "label": "Getting 4.0 touches a game over his last 4",
+     "label": "A light workload \u2014 4.0 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 2 yards."
     },
     {

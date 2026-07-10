@@ -232,21 +232,21 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 5.0,
-     "label": "Buffalo gives up 177 receiving yards a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 5 yards."
+     "label": "Buffalo's defense is a mixed picture on receiving yards \u2014 nets out about +5 yds",
+     "detail": "Season-long they allow 177 a game (the fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 5 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 3.6,
      "label": "Averaging 36.7 receiving yards over his last 3 games",
-     "detail": "That's down from 39.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4 yards."
+     "detail": "That's right in line with the 39.0 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 4 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 3.2,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 3 yards."
     },
     {
@@ -359,29 +359,29 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.23,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.15,
-     "label": "Buffalo gives up 16 catches a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.2 catches."
+     "label": "Buffalo's defense is a mixed picture on catches \u2014 nets out about +0.2 catches",
+     "detail": "Season-long they allow 16 a game (the fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.2 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.14,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 0.1 catches."
+     "label": "Weather is a wildcard here \u2014 12 mph wind in the forecast; nets out about +0.1 catches",
+     "detail": "Wind usually drags on catches, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.1 catches."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.05,
      "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's down from 2.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.1 catches."
+     "detail": "That's right in line with the 2.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 2.0,

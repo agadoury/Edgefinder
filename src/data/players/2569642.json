@@ -280,29 +280,29 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 21.3,
-     "label": "Getting 21.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 21.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 21 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 16.2,
-     "label": "Averaging 94.7 rushing yards over his last 3 games",
-     "detail": "That's up from 71.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
+     "label": "Averaging 94.7 rushing yards over his last 3 games \u2014 up from 71.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 94.7 a game over his last 3 vs 71.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 16 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -13.8,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
-     "detail": "The expected scoring script nudges the projection down by about 14 yards."
+     "label": "A big total \u2014 54.5 points \u2014 but only about 24 of them belong to the Bengals; nets out about -14 yds",
+     "detail": "The total is big, but the Bengals are the underdog side of it \u2014 the expected split nudges the projection down by about 14 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 1.5,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 1 yards."
+     "label": "Winds near 12 mph \u2014 but rough weather tilts games toward the run; nets out about +1 yds",
+     "detail": "Bad weather usually means more handoffs \u2014 the forecast nudges the projection up by about 1 yards."
     }
    ],
    "actual": 23.0,
@@ -500,14 +500,14 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 14.2,
-     "label": "Seeing 8.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 14 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 10.2,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 10 yards."
     },
     {
@@ -515,14 +515,14 @@
      "direction": "up",
      "impact": 4.6,
      "label": "Averaging 28.7 receiving yards over his last 3 games",
-     "detail": "That's up from 26.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 5 yards."
+     "detail": "That's right in line with the 26.6 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 5 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 2.8,
-     "label": "Buffalo gives up 177 receiving yards a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 3 yards."
+     "label": "Buffalo's defense is a mixed picture on receiving yards \u2014 nets out about +3 yds",
+     "detail": "Season-long they allow 177 a game (the fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 3 yards."
     },
     {
      "group": "home_away",
@@ -658,14 +658,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.91,
-     "label": "Averaging 5.0 catches over his last 3 games",
-     "detail": "That's up from 4.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.9 catches."
+     "label": "Averaging 5.0 catches over his last 3 games \u2014 up from 4.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 5.0 a game over his last 3 vs 4.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.9 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.47,
-     "label": "Seeing 8.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 8.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.5 catches."
     },
     {
@@ -679,22 +679,22 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.2,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 0.2 catches."
+     "label": "Weather is a wildcard here \u2014 12 mph wind in the forecast; nets out about +0.2 catches",
+     "detail": "Wind usually drags on catches, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.2 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.19,
-     "label": "Vegas pegs this at 54.5 total points, about 24 for the Bengals",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 24 for the Bengals",
      "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
     },
     {
      "group": "qb_situation",
      "direction": "up",
      "impact": 0.09,
-     "label": "Joe Burrow has just 3 starts this season \u2014 passing game still unsettled",
-     "detail": "Stability under center nudges the projection up by about 0.1 catches."
+     "label": "A newer QB under center \u2014 Joe Burrow has 3 starts this season; nets out about +0.1 catches",
+     "detail": "A short QB track record cuts both ways \u2014 on balance the situation under center nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 3.0,

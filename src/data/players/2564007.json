@@ -225,7 +225,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -4.3,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 4 yards."
     },
     {
@@ -283,15 +283,15 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.39,
-     "label": "Freezing kickoff \u2014 around 16 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.39 touchdown passes."
+     "label": "Weather is a wildcard here \u2014 a freezing kickoff around 16 degrees; nets out about +0.39 TD passes",
+     "detail": "Cold usually slows scoring, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.39 touchdown passes."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.34,
-     "label": "Averaging 2.0 touchdown passes over his last 3 games",
-     "detail": "That's up from 1.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.34 touchdown passes."
+     "label": "Averaging 2.0 touchdown passes over his last 3 games \u2014 up from 1.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 2.0 a game over his last 3 vs 1.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.34 touchdown passes."
     },
     {
      "group": "game_environment",
@@ -318,7 +318,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.04,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.04 touchdown passes."
     }
    ],

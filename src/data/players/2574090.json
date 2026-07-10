@@ -200,21 +200,21 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 14.5,
-     "label": "Getting 10.8 touches a game over his last 4",
+     "label": "A heavy workload \u2014 10.8 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 15 yards."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -4.2,
-     "label": "Averaging 24.7 rushing yards over his last 3 games",
-     "detail": "That's up from 17.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 4 yards."
+     "label": "Heating up \u2014 24.7 rushing yards over his last 3 \u2014 but still shy of a typical RB week; nets out about -4 yds",
+     "detail": "He's up from 17.6 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 4 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.6,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],
@@ -388,8 +388,8 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.5,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
-     "detail": "The expected scoring script nudges the projection up by about 0.5 receiving yards."
+     "label": "A modest total \u2014 40.5 points \u2014 but about 24 of it belongs to the Broncos; nets out about +0.5 yds",
+     "detail": "The total is modest, but the Broncos are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.5 receiving yards."
     },
     {
      "group": "qb_situation",
@@ -493,15 +493,15 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.18,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
-     "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
+     "label": "A modest total \u2014 40.5 points \u2014 but about 24 of it belongs to the Broncos; nets out about +0.2 catches",
+     "detail": "The total is modest, but the Broncos are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.2 catches."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -0.1,
      "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's down from 2.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.1 catches."
+     "detail": "That's right in line with the 2.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection down by about 0.1 catches."
     },
     {
      "group": "qb_situation",
@@ -521,7 +521,7 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.05,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],

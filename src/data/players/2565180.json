@@ -184,21 +184,21 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 9.0,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 9 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 4.9,
-     "label": "Averaging 27.3 receiving yards over his last 3 games",
-     "detail": "That's up from 24.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 5 yards."
+     "label": "Averaging 27.3 receiving yards over his last 3 games \u2014 up from 24.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 27.3 a game over his last 3 vs 24.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 5 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 1.5,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 1 yards."
     },
     {
@@ -311,21 +311,21 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.75,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.7 catches."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.27,
-     "label": "Averaging 3.3 catches over his last 3 games",
-     "detail": "That's up from 2.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.3 catches."
+     "label": "Averaging 3.3 catches over his last 3 games \u2014 up from 2.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 3.3 a game over his last 3 vs 2.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.3 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.25,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
     },
     {

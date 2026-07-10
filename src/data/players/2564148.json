@@ -296,14 +296,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 47.3,
-     "label": "Averaging 129.0 rushing yards over his last 3 games",
-     "detail": "That's up from 108.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 47 yards."
+     "label": "Averaging 129.0 rushing yards over his last 3 games \u2014 up from 108.5 over his last 8",
+     "detail": "He's picked it up lately \u2014 129.0 a game over his last 3 vs 108.5 across his last 8; against a typical week at his position, his form nudges the projection up by about 47 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 30.4,
-     "label": "Getting 23.2 touches a game over his last 4",
+     "label": "A heavy workload \u2014 23.2 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 30 yards."
     },
     {
@@ -482,8 +482,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 2.3,
-     "label": "Averaging 28.7 receiving yards over his last 3 games",
-     "detail": "That's up from 23.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2 yards."
+     "label": "Averaging 28.7 receiving yards over his last 3 games \u2014 up from 23.9 over his last 8",
+     "detail": "He's picked it up lately \u2014 28.7 a game over his last 3 vs 23.9 across his last 8; against a typical week at his position, his form nudges the projection up by about 2 yards."
     },
     {
      "group": "opp_defense",
@@ -595,7 +595,7 @@
      "direction": "down",
      "impact": -0.1,
      "label": "Averaging 2.7 catches over his last 3 games",
-     "detail": "That's down from 2.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.1 catches."
+     "detail": "That's right in line with the 2.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection down by about 0.1 catches."
     },
     {
      "group": "qb_situation",

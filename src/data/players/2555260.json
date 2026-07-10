@@ -244,15 +244,15 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 53.4,
-     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 26 for the Cowboys",
      "detail": "The expected scoring script nudges the projection up by about 53 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 35.9,
-     "label": "Averaging 314.0 passing yards over his last 3 games",
-     "detail": "That's up from 267.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 36 yards."
+     "label": "Averaging 314.0 passing yards over his last 3 games \u2014 up from 267.8 over his last 8",
+     "detail": "He's picked it up lately \u2014 314.0 a game over his last 3 vs 267.8 across his last 8; against a typical week at his position, his form nudges the projection up by about 36 yards."
     },
     {
      "group": "qb_situation",
@@ -309,8 +309,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.35,
-     "label": "Detroit gives up 2 touchdown passes a game \u2014 3rd most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.35 touchdown passes."
+     "label": "Detroit's defense is a mixed picture on touchdown passes \u2014 nets out about -0.35 TD passes",
+     "detail": "Season-long they allow 2.1 a game (3rd most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.35 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -323,22 +323,22 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.19,
-     "label": "His offense throws about 35 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 0.19 touchdown passes."
+     "label": "His recent workload is a mixed signal \u2014 about 35 passes a game; nets out about -0.19 TD passes",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection down by about 0.19 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.14,
-     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 26 for the Cowboys",
      "detail": "The expected scoring script nudges the projection up by about 0.14 touchdown passes."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.09,
-     "label": "Averaging 2.7 touchdown passes over his last 3 games",
-     "detail": "That's up from 2.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.09 touchdown passes."
+     "label": "Averaging 2.7 touchdown passes over his last 3 games \u2014 up from 2.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 2.7 a game over his last 3 vs 2.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.09 touchdown passes."
     }
    ],
    "actual": 1.0,

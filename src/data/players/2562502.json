@@ -196,29 +196,29 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 2.8,
-     "label": "Averaging 25.7 rushing yards over his last 3 games",
-     "detail": "That's down from 37.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+     "label": "Cooled off \u2014 25.7 rushing yards over his last 3 \u2014 but that still beats a typical RB week; nets out about +3 yds",
+     "detail": "He's off the 37.2-a-game pace of his last 8, but 25.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 3 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -2.5,
-     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
-     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+     "label": "The scoring setup is a mixed signal \u2014 55.5 total, about 30 for the Lions; nets out about -3 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection down by about 3 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -2.2,
-     "label": "Getting 10.2 touches a game over his last 4",
-     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 2 yards."
+     "label": "Getting plenty of work \u2014 10.2 touches a game over his last 4 \u2014 but his broader role reads lighter; nets out about -2 yds",
+     "detail": "The raw counts are strong, but the fuller usage picture \u2014 his share of the offense and the team's volume \u2014 reads lighter; on balance his workload nudges the projection down by about 2 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -2.0,
-     "label": "Dallas gives up 125 rushing yards a game \u2014 13th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+     "label": "Season stats say generous \u2014 13th most rushing yards allowed \u2014 but they've tightened up lately; nets out about -2 yds",
+     "detail": "Dallas has allowed just 101 rushing yards a game over its last 5 \u2014 tighter than its season-long 125 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 2 yards."
     },
     {
      "group": "qb_situation",

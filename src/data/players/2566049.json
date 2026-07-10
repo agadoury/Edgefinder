@@ -245,28 +245,28 @@
      "direction": "up",
      "impact": 39.2,
      "label": "Averaging 79.7 rushing yards over his last 3 games",
-     "detail": "That's down from 80.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 39 yards."
+     "detail": "That's right in line with the 80.4 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 39 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 30.2,
-     "label": "Getting 20.2 touches a game over his last 4",
+     "label": "A heavy workload \u2014 20.2 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 30 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -6.6,
-     "label": "Vegas pegs this at 55.5 total points, about 26 for the Cowboys",
-     "detail": "The expected scoring script nudges the projection down by about 7 yards."
+     "label": "A big total \u2014 55.5 points \u2014 but only about 26 of them belong to the Cowboys; nets out about -7 yds",
+     "detail": "The total is big, but the Cowboys are the underdog side of it \u2014 the expected split nudges the projection down by about 7 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 6.0,
-     "label": "Detroit gives up 104 rushing yards a game \u2014 11th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 6 yards."
+     "label": "Season stats say stingy \u2014 11th fewest rushing yards allowed \u2014 but recent games say beatable; nets out about +6 yds",
+     "detail": "Detroit has allowed 126 rushing yards a game over its last 5 \u2014 leakier than its season-long 104 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 6 yards."
     },
     {
      "group": "qb_situation",

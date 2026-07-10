@@ -216,7 +216,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 20.3,
-     "label": "Getting 13.2 touches a game over his last 4",
+     "label": "A heavy workload \u2014 13.2 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 20 yards."
     },
     {
@@ -231,7 +231,7 @@
      "direction": "up",
      "impact": 3.8,
      "label": "Averaging 38.0 rushing yards over his last 3 games",
-     "detail": "That's up from 37.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4 yards."
+     "detail": "That's right in line with the 37.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 4 yards."
     },
     {
      "group": "game_environment",
@@ -414,7 +414,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 1.0,
-     "label": "Seeing 5.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.0 receiving yards."
     },
     {
@@ -428,8 +428,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.6,
-     "label": "Averaging 16.3 receiving yards over his last 3 games",
-     "detail": "That's down from 18.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.6 receiving yards."
+     "label": "Averaging 16.3 receiving yards over his last 3 games \u2014 down from 18.8 over his last 8",
+     "detail": "He's cooled off lately \u2014 16.3 a game over his last 3 vs 18.8 across his last 8; against a typical week at his position, his form nudges the projection down by about 0.6 receiving yards."
     }
    ],
    "actual": 0.0,
@@ -535,7 +535,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.37,
-     "label": "Seeing 5.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 5.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {

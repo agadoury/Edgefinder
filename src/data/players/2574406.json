@@ -256,15 +256,15 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -38.9,
-     "label": "Vegas pegs this at 41.5 total points, about 17 for the Saints",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 17 for the Saints",
      "detail": "The expected scoring script nudges the projection down by about 39 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -21.6,
-     "label": "His offense throws about 35 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 22 yards."
+     "label": "His recent workload is a mixed signal \u2014 about 35 passes a game; nets out about -22 yds",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection down by about 22 yards."
     },
     {
      "group": "opp_defense",
@@ -277,8 +277,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 5.6,
-     "label": "Averaging 254.7 passing yards over his last 3 games",
-     "detail": "That's up from 213.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 6 yards."
+     "label": "Averaging 254.7 passing yards over his last 3 games \u2014 up from 213.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 254.7 a game over his last 3 vs 213.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 6 yards."
     },
     {
      "group": "weather",
@@ -335,15 +335,15 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.21,
-     "label": "Vegas pegs this at 41.5 total points, about 17 for the Saints",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 17 for the Saints",
      "detail": "The expected scoring script nudges the projection down by about 0.21 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -0.08,
-     "label": "His offense throws about 35 passes a game",
-     "detail": "How often the team drops back nudges the projection down by about 0.08 touchdown passes."
+     "label": "His recent workload is a mixed signal \u2014 about 35 passes a game; nets out about -0.08 TD passes",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection down by about 0.08 touchdown passes."
     },
     {
      "group": "weather",
@@ -356,8 +356,8 @@
      "group": "home_away",
      "direction": "up",
      "impact": 0.05,
-     "label": "On the road at Tampa Bay",
-     "detail": "The road trip nudges the projection up by about 0.05 touchdown passes."
+     "label": "Road game at Tampa Bay \u2014 nets out about +0.05 TD passes",
+     "detail": "Venue is a small piece of the picture \u2014 the trip nudges the projection up by about 0.05 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -370,8 +370,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.04,
-     "label": "Tampa Bay gives up 2 touchdown passes a game \u2014 9th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.04 touchdown passes."
+     "label": "Tampa Bay's defense is a mixed picture on touchdown passes \u2014 nets out about -0.04 TD passes",
+     "detail": "Season-long they allow 1.8 a game (9th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.04 touchdown passes."
     }
    ],
    "actual": 0.0,

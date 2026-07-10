@@ -224,7 +224,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -33.3,
-     "label": "His offense throws about 27 passes a game",
+     "label": "A run-leaning offense \u2014 about 27 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 33 yards."
     },
     {
@@ -303,7 +303,7 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.27,
-     "label": "His offense throws about 27 passes a game",
+     "label": "A run-leaning offense \u2014 about 27 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.27 touchdown passes."
     },
     {
@@ -317,8 +317,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.24,
-     "label": "Averaging 2.0 touchdown passes over his last 3 games",
-     "detail": "That's up from 1.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.24 touchdown passes."
+     "label": "Averaging 2.0 touchdown passes over his last 3 games \u2014 up from 1.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 2.0 a game over his last 3 vs 1.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.24 touchdown passes."
     },
     {
      "group": "weather",
@@ -338,8 +338,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.05,
-     "label": "Indianapolis gives up 1 touchdown passes a game \u2014 12th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.05 touchdown passes."
+     "label": "Indianapolis's defense is a mixed picture on touchdown passes \u2014 nets out about +0.05 TD passes",
+     "detail": "Season-long they allow 1.3 a game (12th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.05 touchdown passes."
     }
    ],
    "actual": 2.0,
@@ -476,8 +476,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -3.2,
-     "label": "Averaging 21.0 rushing yards over his last 3 games",
-     "detail": "That's down from 25.4 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 3 yards."
+     "label": "Averaging 21.0 rushing yards over his last 3 games \u2014 down from 25.4 over his last 8",
+     "detail": "He's cooled off lately \u2014 21.0 a game over his last 3 vs 25.4 across his last 8; against a typical week at his position, his form nudges the projection down by about 3 yards."
     },
     {
      "group": "qb_situation",

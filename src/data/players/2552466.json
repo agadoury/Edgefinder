@@ -264,15 +264,15 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -23.4,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 23 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 19.0,
-     "label": "Averaging 240.0 passing yards over his last 3 games",
-     "detail": "That's up from 195.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 19 yards."
+     "label": "Averaging 240.0 passing yards over his last 3 games \u2014 up from 195.5 over his last 8",
+     "detail": "He's picked it up lately \u2014 240.0 a game over his last 3 vs 195.5 across his last 8; against a typical week at his position, his form nudges the projection up by about 19 yards."
     },
     {
      "group": "qb_situation",
@@ -285,8 +285,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 7.6,
-     "label": "Minnesota gives up 196 passing yards a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 8 yards."
+     "label": "Minnesota's defense is a mixed picture on passing yards \u2014 nets out about +8 yds",
+     "detail": "Season-long they allow 196 a game (5th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 8 yards."
     },
     {
      "group": "game_environment",
@@ -343,15 +343,15 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.35,
-     "label": "His offense throws about 29 passes a game",
+     "label": "A run-leaning offense \u2014 about 29 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.35 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.14,
-     "label": "Minnesota gives up 1 touchdown passes a game \u2014 7th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.14 touchdown passes."
+     "label": "Minnesota's defense is a mixed picture on touchdown passes \u2014 nets out about +0.14 TD passes",
+     "detail": "Season-long they allow 1.2 a game (7th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.14 touchdown passes."
     },
     {
      "group": "game_environment",
@@ -555,28 +555,28 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 2.0,
-     "label": "Averaging 42.0 rushing yards over his last 3 games",
-     "detail": "That's up from 35.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 2 yards."
+     "label": "Averaging 42.0 rushing yards over his last 3 games \u2014 up from 35.2 over his last 8",
+     "detail": "He's picked it up lately \u2014 42.0 a game over his last 3 vs 35.2 across his last 8; against a typical week at his position, his form nudges the projection up by about 2 yards."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -1.8,
-     "label": "Minnesota gives up 128 rushing yards a game \u2014 10th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+     "label": "Season stats say generous \u2014 10th most rushing yards allowed \u2014 but they clamp down on QBs; nets out about -2 yds",
+     "detail": "Minnesota is generous overall but has held QBs below the norm, and the positional matchup counts for more here \u2014 on balance it nudges the projection down by about 2 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.5,
-     "label": "Getting 6.8 touches a game over his last 4",
+     "label": "A heavy workload \u2014 6.8 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 2 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 1.0,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {

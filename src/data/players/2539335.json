@@ -272,15 +272,15 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -20.3,
-     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 16 for the Raiders",
      "detail": "The expected scoring script nudges the projection down by about 20 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 14.1,
-     "label": "Averaging 229.3 passing yards over his last 3 games",
-     "detail": "That's up from 198.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 14 yards."
+     "label": "Averaging 229.3 passing yards over his last 3 games \u2014 up from 198.0 over his last 8",
+     "detail": "He's picked it up lately \u2014 229.3 a game over his last 3 vs 198.0 across his last 8; against a typical week at his position, his form nudges the projection up by about 14 yards."
     },
     {
      "group": "usage_role",
@@ -337,8 +337,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.25,
-     "label": "Denver gives up 1 touchdown passes a game \u2014 the fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.25 touchdown passes."
+     "label": "Denver's defense is a mixed picture on touchdown passes \u2014 nets out about +0.25 TD passes",
+     "detail": "Season-long they allow 0.9 a game (the fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.25 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -351,14 +351,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.19,
-     "label": "Averaging 1.3 touchdown passes over his last 3 games",
-     "detail": "That's up from 1.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.19 touchdown passes."
+     "label": "Averaging 1.3 touchdown passes over his last 3 games \u2014 up from 1.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 1.3 a game over his last 3 vs 1.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.19 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.05,
-     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 16 for the Raiders",
      "detail": "The expected scoring script nudges the projection down by about 0.05 touchdown passes."
     },
     {

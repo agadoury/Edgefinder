@@ -196,8 +196,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 8.6,
-     "label": "Averaging 26.0 rushing yards over his last 3 games",
-     "detail": "That's down from 43.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 9 yards."
+     "label": "Cooled off \u2014 26.0 rushing yards over his last 3 \u2014 but that still beats a typical RB week; nets out about +9 yds",
+     "detail": "He's off the 43.2-a-game pace of his last 8, but 26.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 9 yards."
     },
     {
      "group": "usage_role",
@@ -210,8 +210,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.6,
-     "label": "Minnesota gives up 128 rushing yards a game \u2014 10th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.6 rushing yards."
+     "label": "Minnesota's defense is a mixed picture on rushing yards \u2014 nets out about -0.6 yds",
+     "detail": "Season-long they allow 128 a game (10th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.6 rushing yards."
     }
    ],
    "actual": 32.0,

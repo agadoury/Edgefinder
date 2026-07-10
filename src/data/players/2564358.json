@@ -179,8 +179,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -1.4,
-     "label": "Averaging 17.7 receiving yards over his last 3 games",
-     "detail": "That's down from 25.2 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 1 yards."
+     "label": "Averaging 17.7 receiving yards over his last 3 games \u2014 down from 25.2 over his last 8",
+     "detail": "He's cooled off lately \u2014 17.7 a game over his last 3 vs 25.2 across his last 8; against a typical week at his position, his form nudges the projection down by about 1 yards."
     },
     {
      "group": "qb_situation",
@@ -193,7 +193,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.9,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 0.9 receiving yards."
     },
     {
@@ -313,14 +313,14 @@
      "direction": "up",
      "impact": 0.14,
      "label": "Averaging 2.3 catches over his last 3 games",
-     "detail": "That's up from 2.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.1 catches."
+     "detail": "That's right in line with the 2.2 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.1 catches."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.13,
-     "label": "Cleveland gives up 18 catches a game \u2014 4th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.1 catches."
+     "label": "Cleveland's defense is a mixed picture on catches \u2014 nets out about +0.1 catches",
+     "detail": "Season-long they allow 18 a game (4th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.1 catches."
     },
     {
      "group": "weather",
@@ -333,7 +333,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.06,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 0.1 catches."
     }
    ],

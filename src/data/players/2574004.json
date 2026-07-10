@@ -204,8 +204,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -2.8,
-     "label": "Averaging 35.3 receiving yards over his last 3 games",
-     "detail": "That's up from 28.1 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 3 yards."
+     "label": "Heating up \u2014 35.3 receiving yards over his last 3 \u2014 but still shy of a typical WR week; nets out about -3 yds",
+     "detail": "He's up from 28.1 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 3 yards."
     },
     {
      "group": "usage_role",
@@ -239,8 +239,8 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.6,
-     "label": "Green Bay gives up 202 receiving yards a game \u2014 6th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.6 receiving yards."
+     "label": "Green Bay's defense is a mixed picture on receiving yards \u2014 nets out about +0.6 yds",
+     "detail": "Season-long they allow 202 a game (6th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.6 receiving yards."
     }
    ],
    "actual": 67.0,
@@ -345,8 +345,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.17,
-     "label": "Green Bay gives up 22 catches a game \u2014 12th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.2 catches."
+     "label": "Season stats say generous \u2014 12th most catches allowed \u2014 but they've tightened up lately; nets out about -0.2 catches",
+     "detail": "Green Bay has allowed just 15 catches a game over its last 5 \u2014 tighter than its season-long 22 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 0.2 catches."
     },
     {
      "group": "rest_schedule",

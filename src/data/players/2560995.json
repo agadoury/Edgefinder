@@ -180,14 +180,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 9.3,
-     "label": "Averaging 23.7 receiving yards over his last 3 games",
-     "detail": "That's down from 36.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 9 yards."
+     "label": "Cooled off \u2014 23.7 receiving yards over his last 3 \u2014 but that still beats a typical TE week; nets out about +9 yds",
+     "detail": "He's off the 36.1-a-game pace of his last 8, but 23.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 9 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 8.7,
-     "label": "Seeing 4.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 9 yards."
     },
     {
@@ -300,22 +300,22 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.91,
-     "label": "Averaging 2.0 catches over his last 3 games",
-     "detail": "That's down from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.9 catches."
+     "label": "Cooled off \u2014 2.0 catches over his last 3 \u2014 but that still beats a typical TE week; nets out about +0.9 catches",
+     "detail": "He's off the 3.5-a-game pace of his last 8, but 2.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.9 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.4,
-     "label": "Seeing 4.2 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.2 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.4 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.11,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
-     "detail": "The expected scoring script nudges the projection up by about 0.1 catches."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 22 of it belongs to the Eagles; nets out about +0.1 catches",
+     "detail": "The total is modest, but the Eagles are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": 8.0,

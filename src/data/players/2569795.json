@@ -152,8 +152,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -4.1,
-     "label": "Averaging 2.0 rushing yards over his last 3 games",
-     "detail": "That's down from 19.8 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 4 yards."
+     "label": "Averaging 2.0 rushing yards over his last 3 games \u2014 down from 19.8 over his last 8",
+     "detail": "He's cooled off lately \u2014 2.0 a game over his last 3 vs 19.8 across his last 8; against a typical week at his position, his form nudges the projection down by about 4 yards."
     },
     {
      "group": "opp_defense",
@@ -180,7 +180,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.6,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 0.6 rushing yards."
     },
     {
@@ -342,7 +342,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -3.7,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 4 yards."
     },
     {
@@ -363,7 +363,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 1.1,
-     "label": "Seeing 4.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1 yards."
     },
     {
@@ -377,8 +377,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.5,
-     "label": "Averaging 25.7 receiving yards over his last 3 games",
-     "detail": "That's up from 21.6 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.5 receiving yards."
+     "label": "Heating up \u2014 25.7 receiving yards over his last 3 \u2014 but still shy of a typical RB week; nets out about -0.5 yds",
+     "detail": "He's up from 21.6 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.5 receiving yards."
     }
    ],
    "actual": 28.0,
@@ -468,14 +468,14 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.67,
-     "label": "Averaging 5.0 catches over his last 3 games",
-     "detail": "That's up from 3.5 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.7 catches."
+     "label": "Heating up \u2014 5.0 catches over his last 3 \u2014 but still shy of a typical RB week; nets out about -0.7 catches",
+     "detail": "He's up from 3.5 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.7 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.49,
-     "label": "Seeing 4.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.5 catches."
     },
     {
@@ -503,7 +503,7 @@
      "group": "game_environment",
      "direction": "down",
      "impact": -0.06,
-     "label": "Vegas pegs this at 33.5 total points, about 14 for the Titans",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 33.5 points, about 14 for the Titans",
      "detail": "The expected scoring script nudges the projection down by about 0.1 catches."
     }
    ],

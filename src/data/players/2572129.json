@@ -200,21 +200,21 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 5.0,
-     "label": "Averaging 51.3 receiving yards over his last 3 games",
-     "detail": "That's up from 33.1 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 5 yards."
+     "label": "Averaging 51.3 receiving yards over his last 3 games \u2014 up from 33.1 over his last 8",
+     "detail": "He's picked it up lately \u2014 51.3 a game over his last 3 vs 33.1 across his last 8; against a typical week at his position, his form nudges the projection up by about 5 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 1.9,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
-     "detail": "The expected scoring script nudges the projection up by about 2 yards."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 20 for the Jets; nets out about +2 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 2 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.8,
-     "label": "Seeing 6.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 2 yards."
     }
    ],
@@ -313,8 +313,8 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.27,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
-     "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
+     "label": "The scoring setup is a mixed signal \u2014 41.5 total, about 20 for the Jets; nets out about +0.3 catches",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection up by about 0.3 catches."
     },
     {
      "group": "qb_situation",
@@ -327,7 +327,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.23,
-     "label": "Seeing 6.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.2 catches."
     },
     {

@@ -248,14 +248,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 21.0,
-     "label": "Averaging 97.0 receiving yards over his last 3 games",
-     "detail": "That's up from 69.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 21 yards."
+     "label": "Averaging 97.0 receiving yards over his last 3 games \u2014 up from 69.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 97.0 a game over his last 3 vs 69.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 21 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 18.3,
-     "label": "Seeing 9.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 9.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 18 yards."
     },
     {
@@ -269,15 +269,15 @@
      "group": "weather",
      "direction": "up",
      "impact": 4.4,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 4.1,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
-     "detail": "The expected scoring script nudges the projection up by about 4 yards."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 22 of it belongs to the Eagles; nets out about +4 yds",
+     "detail": "The total is modest, but the Eagles are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 4 yards."
     },
     {
      "group": "opp_defense",
@@ -406,14 +406,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.31,
-     "label": "Averaging 8.3 catches over his last 3 games",
-     "detail": "That's up from 5.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.3 catches."
+     "label": "Averaging 8.3 catches over his last 3 games \u2014 up from 5.5 over his last 8",
+     "detail": "He's picked it up lately \u2014 8.3 a game over his last 3 vs 5.5 across his last 8; against a typical week at his position, his form nudges the projection up by about 1.3 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.6,
-     "label": "Seeing 9.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 9.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.6 catches."
     },
     {
@@ -427,14 +427,14 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.34,
-     "label": "Vegas pegs this at 41.5 total points, about 22 for the Eagles",
-     "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 22 of it belongs to the Eagles; nets out about +0.3 catches",
+     "detail": "The total is modest, but the Eagles are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.3 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.14,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {

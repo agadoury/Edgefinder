@@ -208,22 +208,22 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 28.0,
-     "label": "Seeing 7.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 28 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 20.7,
-     "label": "Averaging 67.3 receiving yards over his last 3 games",
-     "detail": "That's up from 43.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 21 yards."
+     "label": "Averaging 67.3 receiving yards over his last 3 games \u2014 up from 43.0 over his last 8",
+     "detail": "He's picked it up lately \u2014 67.3 a game over his last 3 vs 43.0 across his last 8; against a typical week at his position, his form nudges the projection up by about 21 yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 3.6,
-     "label": "Minnesota gives up 196 receiving yards a game \u2014 5th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 4 yards."
+     "label": "Season stats say stingy \u2014 5th fewest receiving yards allowed \u2014 but they've been softer against TEs; nets out about +4 yds",
+     "detail": "Minnesota is stingy overall but gives up more than most to TEs, and the positional matchup counts for more here \u2014 on balance it nudges the projection up by about 4 yards."
     },
     {
      "group": "game_environment",
@@ -366,14 +366,14 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 1.64,
-     "label": "Averaging 6.0 catches over his last 3 games",
-     "detail": "That's up from 4.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 1.6 catches."
+     "label": "Averaging 6.0 catches over his last 3 games \u2014 up from 4.4 over his last 8",
+     "detail": "He's picked it up lately \u2014 6.0 a game over his last 3 vs 4.4 across his last 8; against a typical week at his position, his form nudges the projection up by about 1.6 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.0,
-     "label": "Seeing 7.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 7.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 1.0 catches."
     },
     {
@@ -394,7 +394,7 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.21,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {

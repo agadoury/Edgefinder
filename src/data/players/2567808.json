@@ -188,7 +188,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 6.8,
-     "label": "Getting 11.5 touches a game over his last 4",
+     "label": "A heavy workload \u2014 11.5 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 7 yards."
     },
     {
@@ -209,15 +209,15 @@
      "group": "weather",
      "direction": "up",
      "impact": 2.0,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 2 yards."
+     "label": "A freezing kickoff \u2014 but rough weather tilts games toward the run; nets out about +2 yds",
+     "detail": "Cold games lean on the ground game \u2014 the forecast nudges the projection up by about 2 yards."
     },
     {
      "group": "home_away",
      "direction": "down",
      "impact": -0.9,
-     "label": "Playing at home",
-     "detail": "Home cooking nudges the projection down by about 0.9 rushing yards."
+     "label": "Home game this week \u2014 nets out about -0.9 yds",
+     "detail": "Venue is a small piece of the picture \u2014 being home nudges the projection down by about 0.9 rushing yards."
     },
     {
      "group": "qb_situation",

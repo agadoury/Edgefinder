@@ -240,21 +240,21 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 31.4,
-     "label": "Averaging 150.7 passing yards over his last 3 games",
-     "detail": "That's down from 222.4 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 31 yards."
+     "label": "Cooled off \u2014 150.7 passing yards over his last 3 \u2014 but that still beats a typical QB week; nets out about +31 yds",
+     "detail": "He's off the 222.4-a-game pace of his last 8, but 150.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 31 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -26.5,
-     "label": "His offense throws about 26 passes a game",
+     "label": "A run-leaning offense \u2014 about 26 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 26 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -12.1,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Chargers",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 20 for the Chargers",
      "detail": "The expected scoring script nudges the projection down by about 12 yards."
     },
     {
@@ -319,8 +319,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.27,
-     "label": "Averaging 1.0 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.27 touchdown passes."
+     "label": "Cooled off \u2014 1.0 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.27 TD passes",
+     "detail": "He's off the 1.8-a-game pace of his last 8, but 1.0 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.27 touchdown passes."
     },
     {
      "group": "rest_schedule",
@@ -333,21 +333,21 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -0.15,
-     "label": "His offense throws about 26 passes a game",
+     "label": "A run-leaning offense \u2014 about 26 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.15 touchdown passes."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.08,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Chargers",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 20 for the Chargers",
      "detail": "The expected scoring script nudges the projection down by about 0.08 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.06,
-     "label": "Philadelphia gives up 1 touchdown passes a game \u2014 5th fewest in the NFL",
+     "label": "Philadelphia gives up 1.0 touchdown passes a game \u2014 5th fewest in the NFL",
      "detail": "A matchup this stingy nudges the projection down by about 0.06 touchdown passes."
     }
    ],
@@ -477,15 +477,15 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -2.9,
-     "label": "Philadelphia gives up 129 rushing yards a game \u2014 9th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 3 yards."
+     "label": "Philadelphia's defense is a mixed picture on rushing yards \u2014 nets out about -3 yds",
+     "detail": "Season-long they allow 129 a game (9th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 3 yards."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -2.0,
-     "label": "Averaging 16.0 rushing yards over his last 3 games",
-     "detail": "That's down from 32.5 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+     "label": "Averaging 16.0 rushing yards over his last 3 games \u2014 down from 32.5 over his last 8",
+     "detail": "He's cooled off lately \u2014 16.0 a game over his last 3 vs 32.5 across his last 8; against a typical week at his position, his form nudges the projection down by about 2 yards."
     },
     {
      "group": "qb_situation",

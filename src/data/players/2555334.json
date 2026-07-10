@@ -280,7 +280,7 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 47.8,
-     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 30 for the Lions",
      "detail": "The expected scoring script nudges the projection up by about 48 yards."
     },
     {
@@ -295,7 +295,7 @@
      "direction": "up",
      "impact": 30.0,
      "label": "Averaging 263.3 passing yards over his last 3 games",
-     "detail": "That's up from 262.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 30 yards."
+     "detail": "That's right in line with the 262.0 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 30 yards."
     },
     {
      "group": "usage_role",
@@ -359,8 +359,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.69,
-     "label": "Averaging 1.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 2.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.69 touchdown passes."
+     "label": "Cooled off \u2014 1.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.69 TD passes",
+     "detail": "He's off the 2.0-a-game pace of his last 8, but 1.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.69 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -373,15 +373,15 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.13,
-     "label": "Vegas pegs this at 55.5 total points, about 30 for the Lions",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 55.5 points, about 30 for the Lions",
      "detail": "The expected scoring script nudges the projection up by about 0.13 touchdown passes."
     },
     {
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.09,
-     "label": "Dallas gives up 2 touchdown passes a game \u2014 the most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.09 touchdown passes."
+     "label": "Dallas's defense is a mixed picture on touchdown passes \u2014 nets out about -0.09 TD passes",
+     "detail": "Season-long they allow 2.3 a game (the most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.09 touchdown passes."
     }
    ],
    "actual": 1.0,

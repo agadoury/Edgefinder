@@ -159,15 +159,15 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 2.5,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 3 yards."
     },
     {
      "group": "recent_form",
      "direction": "down",
      "impact": -1.7,
-     "label": "Averaging 16.3 receiving yards over his last 3 games",
-     "detail": "That's down from 18.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 2 yards."
+     "label": "Averaging 16.3 receiving yards over his last 3 games \u2014 down from 18.0 over his last 8",
+     "detail": "He's cooled off lately \u2014 16.3 a game over his last 3 vs 18.0 across his last 8; against a typical week at his position, his form nudges the projection down by about 2 yards."
     },
     {
      "group": "qb_situation",
@@ -263,14 +263,14 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.27,
-     "label": "Seeing 4.0 targets a game over his last 4",
+     "label": "A heavy workload \u2014 4.0 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -0.23,
-     "label": "Vegas pegs this at 40.5 total points, about 16 for the Raiders",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 40.5 points, about 16 for the Raiders",
      "detail": "The expected scoring script nudges the projection down by about 0.2 catches."
     },
     {
@@ -278,14 +278,14 @@
      "direction": "up",
      "impact": 0.19,
      "label": "Averaging 2.3 catches over his last 3 games",
-     "detail": "That's up from 2.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.2 catches."
+     "detail": "That's right in line with the 2.2 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.2 catches."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.06,
-     "label": "Denver gives up 20 catches a game \u2014 12th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.1 catches."
+     "label": "Season stats say stingy \u2014 12th fewest catches allowed \u2014 but recent games say beatable; nets out about +0.1 catches",
+     "detail": "Denver has allowed 24 catches a game over its last 5 \u2014 leakier than its season-long 20 \u2014 and recent form counts for more here; on balance the matchup nudges the projection up by about 0.1 catches."
     }
    ],
    "actual": null,

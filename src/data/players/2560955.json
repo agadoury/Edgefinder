@@ -247,7 +247,7 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 30.4,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 30 for the Bills",
      "detail": "The expected scoring script nudges the projection up by about 30 yards."
     },
     {
@@ -262,7 +262,7 @@
      "direction": "up",
      "impact": 17.8,
      "label": "Averaging 231.0 passing yards over his last 3 games",
-     "detail": "That's down from 233.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 18 yards."
+     "detail": "That's right in line with the 233.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 18 yards."
     }
    ],
    "actual": 251.0,
@@ -319,15 +319,15 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.51,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 54.5 points, about 30 for the Bills",
      "detail": "The expected scoring script nudges the projection up by about 0.51 touchdown passes."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 0.48,
-     "label": "Averaging 1.3 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.48 touchdown passes."
+     "label": "Cooled off \u2014 1.3 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.48 TD passes",
+     "detail": "He's off the 1.5-a-game pace of his last 8, but 1.3 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.48 touchdown passes."
     },
     {
      "group": "weather",
@@ -347,8 +347,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.21,
-     "label": "Cincinnati gives up 2 touchdown passes a game \u2014 2nd most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.21 touchdown passes."
+     "label": "Season stats say generous \u2014 2nd most touchdown passes allowed \u2014 but they've tightened up lately; nets out about -0.21 TD passes",
+     "detail": "Cincinnati has allowed just 1.8 touchdown passes a game over its last 5 \u2014 tighter than its season-long 2.2 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 0.21 touchdown passes."
     }
    ],
    "actual": 3.0,
@@ -546,28 +546,28 @@
      "direction": "up",
      "impact": 6.7,
      "label": "Averaging 32.7 rushing yards over his last 3 games",
-     "detail": "That's up from 31.2 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 7 yards."
+     "detail": "That's right in line with the 31.2 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 7 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -3.4,
-     "label": "Vegas pegs this at 54.5 total points, about 30 for the Bills",
-     "detail": "The expected scoring script nudges the projection down by about 3 yards."
+     "label": "The scoring setup is a mixed signal \u2014 54.5 total, about 30 for the Bills; nets out about -3 yds",
+     "detail": "The scoring signals cut both ways here \u2014 on balance the game script nudges the projection down by about 3 yards."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -3.1,
-     "label": "Getting 5.8 touches a game over his last 4",
-     "detail": "Carries drive yardage \u2014 his recent workload nudges the projection down by about 3 yards."
+     "label": "His recent workload is a mixed signal \u2014 5.8 touches a game over his last 4; nets out about -3 yds",
+     "detail": "The usage signals point in different directions here \u2014 on balance his workload nudges the projection down by about 3 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 1.2,
-     "label": "12 mph winds in the forecast",
-     "detail": "Wind that stiff makes deep throws tough \u2014 it nudges the projection up by about 1 yards."
+     "label": "Winds near 12 mph \u2014 but rough weather tilts games toward the run; nets out about +1 yds",
+     "detail": "Bad weather usually means more handoffs \u2014 the forecast nudges the projection up by about 1 yards."
     }
    ],
    "actual": 78.0,

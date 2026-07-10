@@ -256,7 +256,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 20.0,
-     "label": "Getting 13.8 touches a game over his last 4",
+     "label": "A heavy workload \u2014 13.8 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 20 yards."
     },
     {
@@ -264,20 +264,20 @@
      "direction": "up",
      "impact": 16.0,
      "label": "Averaging 69.7 rushing yards over his last 3 games",
-     "detail": "That's down from 70.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 16 yards."
+     "detail": "That's right in line with the 70.6 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 16 yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 4.0,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 1.7,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 2 yards."
     },
     {

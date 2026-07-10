@@ -240,36 +240,36 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 3.7,
-     "label": "Averaging 48.3 receiving yards over his last 3 games",
-     "detail": "That's up from 39.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 4 yards."
+     "label": "Averaging 48.3 receiving yards over his last 3 games \u2014 up from 39.8 over his last 8",
+     "detail": "He's picked it up lately \u2014 48.3 a game over his last 3 vs 39.8 across his last 8; against a typical week at his position, his form nudges the projection up by about 4 yards."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 1.6,
-     "label": "Seeing 6.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 2 yards."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.9,
-     "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
-     "detail": "The expected scoring script nudges the projection up by about 0.9 receiving yards."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 23 of it belongs to the Chiefs; nets out about +0.9 yds",
+     "detail": "The total is modest, but the Chiefs are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.9 receiving yards."
     },
     {
      "group": "opp_defense",
      "direction": "up",
      "impact": 0.9,
-     "label": "Houston gives up 196 receiving yards a game \u2014 4th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 0.9 receiving yards."
+     "label": "Houston's defense is a mixed picture on receiving yards \u2014 nets out about +0.9 yds",
+     "detail": "Season-long they allow 196 a game (4th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 0.9 receiving yards."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.7,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.7 receiving yards."
+     "label": "Weather is a wildcard here \u2014 a freezing kickoff around 27 degrees; nets out about +0.7 yds",
+     "detail": "Cold usually slows scoring, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.7 receiving yards."
     }
    ],
    "actual": 55.0,
@@ -383,7 +383,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 0.73,
-     "label": "Seeing 6.5 targets a game over his last 4",
+     "label": "A heavy workload \u2014 6.5 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.7 catches."
     },
     {
@@ -391,21 +391,21 @@
      "direction": "up",
      "impact": 0.46,
      "label": "Averaging 3.7 catches over his last 3 games",
-     "detail": "That's down from 3.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.5 catches."
+     "detail": "That's right in line with the 3.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.5 catches."
     },
     {
      "group": "weather",
      "direction": "up",
      "impact": 0.15,
-     "label": "Freezing kickoff \u2014 around 27 degrees",
-     "detail": "Cold, heavy air tends to slow scoring; it nudges the projection up by about 0.1 catches."
+     "label": "Weather is a wildcard here \u2014 a freezing kickoff around 27 degrees; nets out about +0.1 catches",
+     "detail": "Cold usually slows scoring, but it isn't the whole story here \u2014 on balance the forecast nudges the projection up by about 0.1 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.13,
-     "label": "Vegas pegs this at 41.5 total points, about 23 for the Chiefs",
-     "detail": "The expected scoring script nudges the projection up by about 0.1 catches."
+     "label": "A modest total \u2014 41.5 points \u2014 but about 23 of it belongs to the Chiefs; nets out about +0.1 catches",
+     "detail": "The total is modest, but the Chiefs are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.1 catches."
     },
     {
      "group": "qb_situation",

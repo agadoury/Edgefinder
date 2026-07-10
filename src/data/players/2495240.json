@@ -295,15 +295,15 @@
      "group": "usage_role",
      "direction": "down",
      "impact": -45.8,
-     "label": "His offense throws about 25 passes a game",
+     "label": "A run-leaning offense \u2014 about 25 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 46 yards."
     },
     {
      "group": "recent_form",
      "direction": "up",
      "impact": 22.4,
-     "label": "Averaging 173.3 passing yards over his last 3 games",
-     "detail": "That's up from 157.6 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 22 yards."
+     "label": "Averaging 173.3 passing yards over his last 3 games \u2014 up from 157.6 over his last 8",
+     "detail": "He's picked it up lately \u2014 173.3 a game over his last 3 vs 157.6 across his last 8; against a typical week at his position, his form nudges the projection up by about 22 yards."
     },
     {
      "group": "rest_schedule",
@@ -316,14 +316,14 @@
      "group": "opp_defense",
      "direction": "up",
      "impact": 4.1,
-     "label": "Miami gives up 221 passing yards a game \u2014 13th fewest in the NFL",
-     "detail": "The season-long numbers lean stingy, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection up by about 4 yards."
+     "label": "Miami's defense is a mixed picture on passing yards \u2014 nets out about +4 yds",
+     "detail": "Season-long they allow 221 a game (13th fewest in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection up by about 4 yards."
     },
     {
      "group": "game_environment",
      "direction": "down",
      "impact": -3.8,
-     "label": "Vegas pegs this at 41.5 total points, about 20 for the Jets",
+     "label": "A quiet scoring setup \u2014 Vegas pegs this at 41.5 points, about 20 for the Jets",
      "detail": "The expected scoring script nudges the projection down by about 4 yards."
     }
    ],
@@ -374,8 +374,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.24,
-     "label": "Averaging 0.7 touchdown passes over his last 3 games",
-     "detail": "That's down from 1.0 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.24 touchdown passes."
+     "label": "Cooled off \u2014 0.7 touchdown passes over his last 3 \u2014 but that still beats a typical QB week; nets out about +0.24 TD passes",
+     "detail": "He's off the 1.0-a-game pace of his last 8, but 0.7 still stacks up above a typical week at his position \u2014 on balance his form nudges the projection up by about 0.24 touchdown passes."
     },
     {
      "group": "qb_situation",
@@ -395,14 +395,14 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -0.1,
-     "label": "Miami gives up 2 touchdown passes a game \u2014 10th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 0.10 touchdown passes."
+     "label": "Miami's defense is a mixed picture on touchdown passes \u2014 nets out about -0.10 TD passes",
+     "detail": "Season-long they allow 1.7 a game (10th most in the NFL), but the fuller matchup read pulls the other way \u2014 on balance it nudges the projection down by about 0.10 touchdown passes."
     },
     {
      "group": "usage_role",
      "direction": "down",
      "impact": -0.08,
-     "label": "His offense throws about 25 passes a game",
+     "label": "A run-leaning offense \u2014 about 25 passes a game",
      "detail": "How often the team drops back nudges the projection down by about 0.08 touchdown passes."
     },
     {
@@ -579,8 +579,8 @@
      "group": "opp_defense",
      "direction": "down",
      "impact": -2.2,
-     "label": "Miami gives up 138 rushing yards a game \u2014 4th most in the NFL",
-     "detail": "The season-long numbers lean generous, but recent defensive form and how they fare against his position count for more here \u2014 on balance the matchup nudges the projection down by about 2 yards."
+     "label": "Season stats say generous \u2014 4th most rushing yards allowed \u2014 but they've tightened up lately; nets out about -2 yds",
+     "detail": "Miami has allowed just 107 rushing yards a game over its last 5 \u2014 tighter than its season-long 138 \u2014 and recent form counts for more here; on balance the matchup nudges the projection down by about 2 yards."
     },
     {
      "group": "rest_schedule",
@@ -593,7 +593,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 1.3,
-     "label": "Getting 6.0 touches a game over his last 4",
+     "label": "A heavy workload \u2014 6.0 touches a game over his last 4",
      "detail": "Carries drive yardage \u2014 his recent workload nudges the projection up by about 1 yards."
     },
     {

@@ -231,8 +231,8 @@
      "group": "recent_form",
      "direction": "up",
      "impact": 0.7,
-     "label": "Averaging 55.7 receiving yards over his last 3 games",
-     "detail": "That's up from 31.9 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.7 receiving yards."
+     "label": "Averaging 55.7 receiving yards over his last 3 games \u2014 up from 31.9 over his last 8",
+     "detail": "He's picked it up lately \u2014 55.7 a game over his last 3 vs 31.9 across his last 8; against a typical week at his position, his form nudges the projection up by about 0.7 receiving yards."
     },
     {
      "group": "usage_role",
@@ -329,8 +329,8 @@
      "group": "recent_form",
      "direction": "down",
      "impact": -0.36,
-     "label": "Averaging 3.0 catches over his last 3 games",
-     "detail": "That's up from 2.0 across his last 8; stacked against a typical week at his position, his form nudges the projection down by about 0.4 catches."
+     "label": "Heating up \u2014 3.0 catches over his last 3 \u2014 but still shy of a typical WR week; nets out about -0.4 catches",
+     "detail": "He's up from 2.0 across his last 8, but even the warmer stretch sits below a typical week at his position \u2014 on balance his form nudges the projection down by about 0.4 catches."
     },
     {
      "group": "home_away",
@@ -343,8 +343,8 @@
      "group": "game_environment",
      "direction": "up",
      "impact": 0.16,
-     "label": "Vegas pegs this at 40.5 total points, about 24 for the Broncos",
-     "detail": "The expected scoring script nudges the projection up by about 0.2 catches."
+     "label": "A modest total \u2014 40.5 points \u2014 but about 24 of it belongs to the Broncos; nets out about +0.2 catches",
+     "detail": "The total is modest, but the Broncos are expected to do most of the scoring \u2014 the expected split nudges the projection up by about 0.2 catches."
     },
     {
      "group": "usage_role",
@@ -357,7 +357,7 @@
      "group": "weather",
      "direction": "up",
      "impact": 0.06,
-     "label": "Indoor game \u2014 weather is a non-factor",
+     "label": "Indoor game \u2014 wind and cold are off the table",
      "detail": "Roof's closed, so wind and cold are off the table."
     }
    ],

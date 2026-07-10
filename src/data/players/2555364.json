@@ -191,7 +191,7 @@
      "group": "usage_role",
      "direction": "up",
      "impact": 3.3,
-     "label": "Seeing 3.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 3.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 3 yards."
     },
     {
@@ -199,7 +199,7 @@
      "direction": "up",
      "impact": 3.1,
      "label": "Averaging 23.0 receiving yards over his last 3 games",
-     "detail": "That's down from 23.8 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 3 yards."
+     "detail": "That's right in line with the 23.8 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 3 yards."
     }
    ],
    "actual": null,
@@ -289,20 +289,20 @@
      "direction": "up",
      "impact": 0.33,
      "label": "Averaging 2.3 catches over his last 3 games",
-     "detail": "That's down from 2.5 across his last 8; stacked against a typical week at his position, his form nudges the projection up by about 0.3 catches."
+     "detail": "That's right in line with the 2.5 he's averaged across his last 8; against a typical week at his position, his form nudges the projection up by about 0.3 catches."
     },
     {
      "group": "game_environment",
      "direction": "up",
      "impact": 0.31,
-     "label": "Vegas pegs this at 49.5 total points, about 30 for the Rams",
+     "label": "A high-scoring setup \u2014 Vegas pegs this at 49.5 points, about 30 for the Rams",
      "detail": "The expected scoring script nudges the projection up by about 0.3 catches."
     },
     {
      "group": "usage_role",
      "direction": "up",
      "impact": 0.29,
-     "label": "Seeing 3.8 targets a game over his last 4",
+     "label": "A heavy workload \u2014 3.8 targets a game over his last 4",
      "detail": "Volume is opportunity \u2014 his recent workload nudges the projection up by about 0.3 catches."
     },
     {
