@@ -82,6 +82,17 @@ export function useWatchlist(): {
   return { ids, has, toggle };
 }
 
+// ---------- First-visit welcome tour ----------
+
+const tourSeenStore = new LocalStore<boolean>("edgefinder.tourSeen", false);
+
+/** Whether the landing-page orientation banner has been dismissed. */
+export function useTourSeen(): [boolean, () => void] {
+  const seen = useStore(tourSeenStore);
+  const dismiss = useCallback(() => tourSeenStore.set(true), []);
+  return [seen, dismiss];
+}
+
 // ---------- Pick 'em Before You Peek ----------
 
 export type PickSide = "over" | "under";

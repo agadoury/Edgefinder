@@ -20,12 +20,18 @@ const MARGIN = 8; // minimum distance from viewport edges
 export function InfoTip({
   label,
   children,
+  trigger,
+  triggerClassName,
 }: {
   /** Accessible name, e.g. "What does confidence mean?" */
   label: string;
   children: ReactNode;
   /** Kept for API compatibility — the portal clamps to the viewport itself. */
   align?: "center" | "left" | "right";
+  /** Custom trigger content (defaults to the info dot). */
+  trigger?: ReactNode;
+  /** Extra classes for the trigger button (e.g. when trigger is a custom mark). */
+  triggerClassName?: string;
 }) {
   const [open, setOpen] = useState(false);
   const id = useId();
@@ -108,9 +114,12 @@ export function InfoTip({
         }}
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
-        className="inline-flex h-4 w-4 items-center justify-center rounded-full text-ink3 transition-colors hover:text-accent2"
+        className={
+          triggerClassName ??
+          "inline-flex h-4 w-4 items-center justify-center rounded-full text-ink3 transition-colors hover:text-accent2"
+        }
       >
-        <Info className="h-3.5 w-3.5" aria-hidden />
+        {trigger ?? <Info className="h-3.5 w-3.5" aria-hidden />}
       </button>
       {open &&
         typeof document !== "undefined" &&

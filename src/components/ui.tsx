@@ -1,9 +1,82 @@
 // Shared presentational atoms — no hooks, safe in server and client components.
+// (InfoTip is a client component; rendering it here is fine from either side.)
 import type { Confidence, Lean, PropResult } from "../lib/data";
 import { initials, monogramInk, team } from "../lib/teams";
-import { fmtStat, leanLabel, resultLabel } from "../lib/format";
+import { firstName, fmtStat, leanLabel, resultLabel } from "../lib/format";
 import { strengthTier } from "../lib/tiers";
 import { ArrowDown, ArrowUp, Check, Minus, X } from "lucide-react";
+import { InfoTip } from "./Tooltip";
+
+/**
+ * The reveal toggle's visible name, which differs by viewport: the mobile
+ * header fits only "Results", desktop says "Show results". Any copy that
+ * points at the toggle should use this so it never names a control the
+ * reader can't see.
+ */
+export function ResultsToggleName() {
+  return (
+    <>
+      <span className="sm:hidden">“Results”</span>
+      <span className="hidden sm:inline">“Show results”</span>
+    </>
+  );
+}
+
+/** Tappable explainer for the two no-grade results. Renders nothing otherwise. */
+export function ResultTip({ result }: { result: PropResult }) {
+  if (result === "dnp")
+    return (
+      <InfoTip label="What does DNP mean?">
+        <strong className="text-ink">Did not play.</strong> The player sat this game out — injury,
+        rest, or inactive — so this call gets no grade and never counts in our record.
+      </InfoTip>
+    );
+  if (result === "push")
+    return (
+      <InfoTip label="What is a push?">
+        <strong className="text-ink">A push.</strong> The real number landed exactly on the line —
+        nobody wins, nobody loses, and it never counts in our record.
+      </InfoTip>
+    );
+  return null;
+}
+
+/**
+ * Honest pre-reveal availability note: an amber dot for players who missed
+ * recent weeks their team played. Derived from schedule facts that predate
+ * this game — it never spoils the result.
+ */
+export function AvailabilityDot({
+  name,
+  missedWeeks,
+  window = 5,
+}: {
+  name: string;
+  missedWeeks?: number[];
+  window?: number;
+}) {
+  if (!missedWeeks || missedWeeks.length === 0) return null;
+  const first = firstName(name);
+  const weeks =
+    missedWeeks.length === 1 ? `week ${missedWeeks[0]}` : `weeks ${missedWeeks.join(", ")}`;
+  return (
+    <InfoTip
+      label={`Availability watch for ${name}`}
+      triggerClassName="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full"
+      trigger={
+        <span
+          className="block h-2 w-2 rounded-full bg-push shadow-[0_0_6px_rgba(251,191,36,0.55)]"
+          aria-hidden
+        />
+      }
+    >
+      <strong className="text-push">Availability watch.</strong> {first} sat out {weeks} — that&apos;s{" "}
+      {missedWeeks.length} of the {window}{" "}
+      weeks before this one. A schedule fact from before kickoff, not a spoiler of this
+      week&apos;s result.
+    </InfoTip>
+  );
+}
 
 export function MonogramAvatar({
   name,

@@ -3,6 +3,7 @@
 import { RotateCcw, Target } from "lucide-react";
 import { useReveal } from "./RevealContext";
 import { usePickem } from "./PickemContext";
+import { ResultsToggleName } from "./ui";
 import { InfoTip } from "./Tooltip";
 
 function fmtRecord(wins: number, losses: number): string {
@@ -119,14 +120,19 @@ export function PickemPanel() {
           </InfoTip>
         </h2>
         <p className="tnum mt-0.5 text-xs text-ink2">
-          {record.locked === 0
-            ? "Nothing locked yet — call over or under on any stat below."
-            : revealed && record.graded > 0
-              ? `You ${fmtRecord(record.you.wins, record.you.losses)} · model ${fmtRecord(
-                  record.model.wins,
-                  record.model.losses
-                )}${record.locked > record.graded ? ` · ${record.locked - record.graded} ungraded` : ""}`
-              : `${record.locked} ${record.locked === 1 ? "call" : "calls"} locked — flip “Show results” to grade them.`}
+          {record.locked === 0 ? (
+            "Nothing locked yet — call over or under on any stat below."
+          ) : revealed && record.graded > 0 ? (
+            `You ${fmtRecord(record.you.wins, record.you.losses)} · model ${fmtRecord(
+              record.model.wins,
+              record.model.losses
+            )}${record.locked > record.graded ? ` · ${record.locked - record.graded} ungraded` : ""}`
+          ) : (
+            <>
+              {record.locked} {record.locked === 1 ? "call" : "calls"} locked — flip{" "}
+              <ResultsToggleName /> to grade them.
+            </>
+          )}
         </p>
       </div>
       {record.locked > 0 && (

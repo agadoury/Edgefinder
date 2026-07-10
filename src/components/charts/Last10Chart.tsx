@@ -30,6 +30,23 @@ export function Last10Chart({
 
   const ordered = useMemo(() => [...games].reverse(), [games]); // oldest → newest
 
+  // Timeline slots: played games, plus hollow "out" ticks for weeks skipped
+  // between two same-season games (injury, rest, or the bye — the box score
+  // alone can't say which, so the copy stays honest about that).
+  type Slot = { kind: "game"; g: RecentGame } | { kind: "out"; season: number; week: number };
+  const slots = useMemo<Slot[]>(() => {
+    const out: Slot[] = [];
+    for (let i = 0; i < ordered.length; i++) {
+      out.push({ kind: "game", g: ordered[i] });
+      const cur = ordered[i];
+      const nxt = ordered[i + 1];
+      if (nxt && cur.season === nxt.season) {
+        for (let w = cur.week + 1; w < nxt.week; w++) out.push({ kind: "out", season: cur.season, week: w });
+      }
+    }
+    return out;
+  }, [ordered]);
+
   const maxVal = Math.max(...ordered.map((g) => g.stats[market] ?? 0), line);
   const niceMax = useMemo(() => {
     const raw = maxVal * 1.15;
@@ -39,16 +56,20 @@ export function Last10Chart({
   }, [maxVal]);
 
   const y = (v: number) => plotBottom - (v / niceMax) * (plotBottom - PAD_T);
-  const band = (W - PAD_L - PAD_R) / ordered.length;
+  const band = (W - PAD_L - PAD_R) / slots.length;
   const barW = Math.max(8, Math.min(20, band - 12));
 
   const yTicks = [niceMax / 2, niceMax];
   const unit = UNIT_SHORT[market];
+  const outCount = slots.length - ordered.length;
+  const hovered = hover !== null ? slots[hover] : undefined;
 
   return (
     <div className="relative" ref={boxRef}>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full select-none" role="img"
-        aria-label={`Last ${ordered.length} games of ${unit}; bars above the ${fmtLine(line)} line are green, below are red`}>
+        aria-label={`Last ${ordered.length} games of ${unit}; bars above the ${fmtLine(line)} line are green, below are red${
+          outCount > 0 ? `; ${outCount} hollow ${outCount === 1 ? "tick marks a week" : "ticks mark weeks"} with no game played` : ""
+        }`}>
         {/* gridlines + y ticks */}
         {yTicks.map((t) => (
           <g key={t}>
@@ -61,15 +82,45 @@ export function Last10Chart({
         ))}
         <line x1={PAD_L} x2={W - PAD_R} y1={plotBottom} y2={plotBottom} stroke="rgba(148,163,184,0.3)" strokeWidth={1} />
 
-        {/* bars */}
-        {ordered.map((g, i) => {
-          const v = g.stats[market] ?? 0;
+        {/* bars + hollow "out" ticks */}
+        {slots.map((s, i) => {
           const cx = PAD_L + band * i + band / 2;
+          const isHover = hover === i;
+          if (s.kind === "out") {
+            return (
+              <g key={`out-${s.season}-${s.week}`}>
+                <circle
+                  cx={cx}
+                  cy={plotBottom - 7}
+                  r={4.5}
+                  fill="none"
+                  stroke="#8792a6"
+                  strokeWidth={1.5}
+                  strokeDasharray="2.5 2"
+                  opacity={isHover ? 1 : 0.7}
+                />
+                <text x={cx} y={plotBottom + 14} textAnchor="middle" fontSize={9.5} fill="#8792a6" opacity={0.65}>
+                  W{s.week}
+                </text>
+                <rect
+                  x={PAD_L + band * i}
+                  y={PAD_T}
+                  width={band}
+                  height={plotBottom - PAD_T}
+                  fill="transparent"
+                  onPointerEnter={() => setHover(i)}
+                  onPointerLeave={() => setHover(null)}
+                  aria-label={`Week ${s.week}: no game played`}
+                />
+              </g>
+            );
+          }
+          const g = s.g;
+          const v = g.stats[market] ?? 0;
           const over = v > line;
           const h = Math.max(2, plotBottom - y(v));
-          const isHover = hover === i;
           return (
-            <g key={`${g.week}`}>
+            <g key={`${g.season}-${g.week}`}>
               <path
                 d={`M ${cx - barW / 2} ${plotBottom}
                     L ${cx - barW / 2} ${plotBottom - h + 4}
@@ -107,7 +158,7 @@ export function Last10Chart({
       </svg>
 
       {/* tooltip */}
-      {hover !== null && ordered[hover] && (
+      {hovered && hover !== null && (
         <div
           className="pointer-events-none absolute z-30 -translate-x-1/2 rounded-lg border border-edge bg-raised px-2.5 py-1.5 text-xs shadow-xl shadow-black/50"
           style={{
@@ -115,12 +166,23 @@ export function Last10Chart({
             top: 0,
           }}
         >
-          <span className="tnum font-bold text-ink">
-            {fmtStat(ordered[hover].stats[market] ?? 0)} {unit}
-          </span>
-          <span className="ml-1.5 text-ink3">
-            Wk {ordered[hover].week} {ordered[hover].home ? "vs" : "@"} {ordered[hover].opponent}
-          </span>
+          {hovered.kind === "out" ? (
+            <>
+              <span className="font-bold text-ink2">Out</span>
+              <span className="ml-1.5 text-ink3">
+                Wk {hovered.week} — no game (injury, rest, or bye)
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="tnum font-bold text-ink">
+                {fmtStat(hovered.g.stats[market] ?? 0)} {unit}
+              </span>
+              <span className="ml-1.5 text-ink3">
+                Wk {hovered.g.week} {hovered.g.home ? "vs" : "@"} {hovered.g.opponent}
+              </span>
+            </>
+          )}
         </div>
       )}
     </div>

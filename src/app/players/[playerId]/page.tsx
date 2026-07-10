@@ -8,12 +8,16 @@ import {
   getMeta,
   getPlayer,
   getPlayerIds,
+  getSlate,
+  type SlateProp,
 } from "../../../lib/data";
+import { AVAILABILITY_WINDOW, getAvailabilityWatch } from "../../../lib/availability";
 import { fmtKickoff, fmtLine, fmtSpread, firstName } from "../../../lib/format";
 import { teamFullName } from "../../../lib/teams";
 import { PlayerAvatar } from "../../../components/PlayerAvatar";
 import { WeatherChip } from "../../../components/GameCard";
 import { MarketCard } from "../../../components/MarketCard";
+import { NextUp } from "../../../components/NextUp";
 import { Receipts } from "../../../components/Receipts";
 import { StarButton } from "../../../components/Star";
 import { PickemPanel } from "../../../components/Pickem";
@@ -58,6 +62,36 @@ export default async function PlayerPage({
   const game = getGame(player.gameId);
   const first = firstName(player.name);
   const matchupWord = player.home ? "vs" : "at";
+  const headshots = getHeadshots();
+  const missedWeeks = getAvailabilityWatch()[player.playerId];
+
+  // ----- next-step flow: same-game players + the next call by strength -----
+  const slate = getSlate();
+  const bestByPlayer = new Map<string, SlateProp>();
+  for (const r of slate.props) {
+    if (r.gameId !== player.gameId || r.playerId === player.playerId) continue;
+    const cur = bestByPlayer.get(r.playerId);
+    if (!cur || r.strength > cur.strength) bestByPlayer.set(r.playerId, r);
+  }
+  const sameGame = [...bestByPlayer.values()]
+    .sort((a, b) => b.strength - a.strength || a.name.localeCompare(b.name))
+    .slice(0, 8);
+
+  const ordered = [...slate.props].sort(
+    (a, b) =>
+      b.strength - a.strength ||
+      a.name.localeCompare(b.name) ||
+      a.market.localeCompare(b.market)
+  );
+  const idx = ordered.findIndex((r) => r.playerId === player.playerId);
+  let nextCall: SlateProp | null = null;
+  for (let i = 1; i <= ordered.length && idx !== -1; i++) {
+    const candidate = ordered[(idx + i) % ordered.length];
+    if (candidate.playerId !== player.playerId) {
+      nextCall = candidate;
+      break;
+    }
+  }
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
@@ -75,7 +109,7 @@ export default async function PlayerPage({
           name={player.name}
           teamCode={player.team}
           size={72}
-          src={getHeadshots()[player.playerId]}
+          src={headshots[player.playerId]}
         />
         <div className="min-w-0 flex-1">
           <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -121,6 +155,24 @@ export default async function PlayerPage({
                 can change how teams play late.
               </InfoTip>
             </span>
+            {missedWeeks && (
+              <span className="chip border-push/30 bg-push/8 font-semibold text-push">
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-push shadow-[0_0_6px_rgba(251,191,36,0.55)]"
+                  aria-hidden
+                />
+                Availability watch
+                <InfoTip label={`Availability watch for ${player.name}`}>
+                  {first} sat out{" "}
+                  {missedWeeks.length === 1
+                    ? `week ${missedWeeks[0]}`
+                    : `weeks ${missedWeeks.join(", ")}`}{" "}
+                  — {missedWeeks.length} of the {AVAILABILITY_WINDOW}{" "}
+                  weeks before this one, while his team played. A schedule fact from before
+                  kickoff, not a spoiler of this week&apos;s result.
+                </InfoTip>
+              </span>
+            )}
           </div>
         </div>
       </header>
@@ -145,6 +197,14 @@ export default async function PlayerPage({
         ))}
 
         <Receipts history={player.modelHistory} first={first} />
+
+        {/* where to next — never a dead end */}
+        <NextUp
+          gameLabel={`${game.away} @ ${game.home}`}
+          sameGame={sameGame}
+          nextCall={nextCall}
+          headshots={headshots}
+        />
       </div>
 
       <p className="mt-8 text-xs leading-relaxed text-ink3">

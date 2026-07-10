@@ -25,7 +25,15 @@ import { UNIT_SHORT, callOutcome, fmtLine, fmtSigned, fmtStat, leanLabel } from 
 import { TIER_SCALE_COPY } from "../lib/tiers";
 import { useReveal } from "./RevealContext";
 import { usePickem } from "./PickemContext";
-import { ConfidenceBadge, HitMissMark, LeanPill, ResultBadge, StrengthMeter } from "./ui";
+import {
+  ConfidenceBadge,
+  HitMissMark,
+  LeanPill,
+  ResultBadge,
+  ResultTip,
+  ResultsToggleName,
+  StrengthMeter,
+} from "./ui";
 import { InfoTip } from "./Tooltip";
 import { CountUp } from "./CountUp";
 import { DistributionChart } from "./charts/DistributionChart";
@@ -286,7 +294,9 @@ export function MarketCard({
             )}
           </span>
         ) : (
-          <span className="text-xs text-ink3">Flip “Show results” to grade you both.</span>
+          <span className="text-xs text-ink3">
+            Flip <ResultsToggleName /> to grade you both.
+          </span>
         )}
       </div>
     ) : null;
@@ -358,7 +368,30 @@ export function MarketCard({
               </InfoTip>
             </p>
           )}
-          <p className="mt-4 text-sm leading-relaxed text-ink2">{prop.verdict}</p>
+          {/* the verdict follows the line being tested — never argue with the slider */}
+          {atRef ? (
+            <p className="mt-4 text-sm leading-relaxed text-ink2" aria-live="polite">
+              {prop.verdict}
+            </p>
+          ) : (
+            <div aria-live="polite">
+              <p className="mt-4 text-sm leading-relaxed text-ink2">
+                At <strong className="tnum text-ink">{fmtLine(line)}</strong>, we give {first} a{" "}
+                <strong className={`tnum ${pOver >= 0.5 ? "text-over" : "text-under"}`}>
+                  {Math.round(pOver * 100)}%
+                </strong>{" "}
+                chance to go over —{" "}
+                {pOver >= 0.54
+                  ? "the model would take the over there."
+                  : pOver <= 0.46
+                    ? "the model would take the under there."
+                    : "basically a coin flip at that number."}
+              </p>
+              <p className="mt-1.5 text-xs leading-relaxed text-ink3">
+                Our resting call at the {fmtLine(prop.refLine)} reference: {prop.verdict}
+              </p>
+            </div>
+          )}
           <p className="mt-3 rounded-lg border border-white/7 bg-white/3 px-3 py-2 text-xs leading-relaxed text-ink3">
             <span className="font-semibold text-ink2">Why this confidence:</span>{" "}
             {prop.confidenceReason}
@@ -580,7 +613,10 @@ export function MarketCard({
           <span className="text-[11px] font-bold tracking-wider text-ink3 uppercase">
             What actually happened
           </span>
-          <ResultBadge result={prop.result} actual={prop.actual} unit={unit} />
+          <span className="inline-flex items-center gap-1.5">
+            <ResultBadge result={prop.result} actual={prop.actual} unit={unit} />
+            <ResultTip result={prop.result} />
+          </span>
           <HitMissMark outcome={outcome} size={14} />
           <span className="text-sm text-ink2">{resultSentence}</span>
           {prop.actual !== null && (
@@ -593,7 +629,9 @@ export function MarketCard({
           <span className="absolute inset-0 z-10 flex items-center justify-center">
             <span className="chip border-white/15 bg-raised/90 font-semibold text-ink2">
               <EyeOff className="h-3.5 w-3.5" aria-hidden />
-              Spoiler — flip “Show results” in the header
+              <span>
+                Spoiler — flip <ResultsToggleName /> in the header
+              </span>
             </span>
           </span>
         )}

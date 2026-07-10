@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, MapPin } from "lucide-react";
 import { getHeadshots, getMeta, getSlate } from "../../../lib/data";
+import { getAvailabilityWatch } from "../../../lib/availability";
 import { fmtKickoff, fmtLine, fmtSpread } from "../../../lib/format";
 import { team, teamFullName } from "../../../lib/teams";
 import { Board } from "../../../components/Board";
@@ -116,6 +117,7 @@ export default async function GamePage({
           games={[game]}
           markets={meta.markets}
           headshots={getHeadshots()}
+          availability={getAvailabilityWatch()}
         />
       </section>
 

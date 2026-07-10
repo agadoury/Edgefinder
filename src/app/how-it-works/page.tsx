@@ -60,6 +60,26 @@ const GLOSSARY = [
     term: "P(over)",
     def: "The model's chance a player clears the line, from its full range of outcomes. Below 50% favors the under.",
   },
+  {
+    term: "Hit",
+    def: "The real number landed on the side we leaned. We count hits and misses at equal weight — that's the whole point of the receipts.",
+  },
+  {
+    term: "Miss",
+    def: "The real number landed on the other side of our lean. Misses stay on the board forever, right next to the hits.",
+  },
+  {
+    term: "Push",
+    def: "The real number landed exactly on the line. Nobody wins, nobody loses — a push gets no grade and never counts in our record.",
+  },
+  {
+    term: "DNP",
+    def: "Did not play. The player sat out (injury, rest, inactive), so the call gets no grade and never counts in our record — including every hit rate on this page.",
+  },
+  {
+    term: "Prop",
+    def: "Industry shorthand for “proposition” — a single player-stat line like 249.5 passing yards. You'll mostly see us say call (our read) on a market (the stat).",
+  },
 ];
 
 export default function HowItWorks() {
@@ -145,7 +165,65 @@ export default function HowItWorks() {
           exact figure is in the table below.
         </p>
 
-        <div className="card mt-6 overflow-hidden">
+        {/* phones get stacked per-market cards — no five-column squeeze */}
+        <div className="mt-6 grid gap-3 sm:hidden">
+          {meta.markets.map((m) => {
+            const e = bm[m.id];
+            if (!e) return null;
+            const rows = [
+              {
+                label: "Avg. miss",
+                value: (
+                  <>
+                    ±{e.mae} <span className="text-xs text-ink3">{UNIT_SHORT[m.id]}</span>
+                  </>
+                ),
+              },
+              {
+                label: "Simple guess misses by",
+                value: (
+                  <>
+                    ±{e.baselineMae}{" "}
+                    <span className="text-xs text-accent2">
+                      (we&apos;re {Math.round(((e.baselineMae - e.mae) / e.baselineMae) * 100)}%
+                      tighter)
+                    </span>
+                  </>
+                ),
+              },
+              { label: "Real number inside range", value: <>{Math.round(e.coverage80 * 100)}%</> },
+              {
+                label: "Strong calls that hit",
+                value: (
+                  <>
+                    {Math.round(e.strongCallHitRate * 100)}%{" "}
+                    <span className="text-xs text-ink3">of {e.strongCallN}</span>
+                  </>
+                ),
+              },
+            ];
+            return (
+              <div key={m.id} className="card p-4">
+                <h3 className="text-sm font-bold">{MARKET_LONG[m.id]}</h3>
+                <dl className="mt-2.5 grid gap-1.5">
+                  {rows.map((r) => (
+                    <div key={r.label} className="flex items-baseline justify-between gap-3">
+                      <dt className="text-xs text-ink3">{r.label}</dt>
+                      <dd className="tnum text-sm font-semibold text-ink">{r.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            );
+          })}
+          <p className="px-1 text-xs leading-relaxed text-ink3">
+            “Simple guess” = just using the player&apos;s recent median — the bar any model has to
+            beat. “Strong calls” are leans with strength 60+. Evaluated on {meta.backtest.season}{" "}
+            weeks 1–{meta.backtest.weeksEvaluated}; model {meta.modelVersion}.
+          </p>
+        </div>
+
+        <div className="card mt-6 hidden overflow-hidden sm:block">
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-sm">
               <thead>
@@ -221,8 +299,8 @@ export default function HowItWorks() {
             a little natural wobble at the extremes.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-ink2">
-            This is also why we never show 95% calls on NFL props — football is too noisy for that,
-            and any tool that claims otherwise is selling something.
+            This is also why we never show 95% calls on NFL player stats — football is too noisy
+            for that, and any tool that claims otherwise is selling something.
           </p>
         </div>
         <div className="card p-5">

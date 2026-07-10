@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { ArrowRight, BrainCircuit, ReceiptText, ShieldCheck } from "lucide-react";
 import { getHeadshots, getMeta, getSlate } from "../lib/data";
+import { getAvailabilityWatch } from "../lib/availability";
 import { Board } from "../components/Board";
 import { GameCard } from "../components/GameCard";
 import { HeroVisual } from "../components/HeroVisual";
 import { RevealCTA } from "../components/RevealCTA";
+import { WelcomeTour } from "../components/WelcomeTour";
 import { InfoTip } from "../components/Tooltip";
 
 export default function Home() {
@@ -14,8 +16,11 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      {/* ---------- first-visit orientation (dismissable, never a modal) ---------- */}
+      <WelcomeTour />
+
       {/* ---------- hero ---------- */}
-      <section className="relative pt-14 pb-10 sm:pt-20">
+      <section className="relative pt-10 pb-10 sm:pt-16">
         <div className="absolute top-20 right-0 xl:right-4">
           <HeroVisual />
         </div>
@@ -31,7 +36,7 @@ export default function Home() {
             <span className="accent-text">before you bet.</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink2">
-            EdgeFinder projects every big player prop — passing, rushing, catching — and explains
+            EdgeFinder projects every big player stat — passing, rushing, catching — and explains
             each number in plain English. No jargon, no black box. Just the matchup, the form, the
             weather, and how hard our model leans.
           </p>
@@ -52,24 +57,26 @@ export default function Home() {
           </div>
         </div>
 
-        {/* proof points */}
-        <dl className="mt-10 grid max-w-3xl grid-cols-1 gap-3 sm:grid-cols-3">
-          <div className="card px-4 py-3">
-            <dt className="flex items-center gap-1 text-xs text-ink3">
-              Avg. passing-yards miss
+        {/* proof points — 3-up even on phones so the board stays close to the top */}
+        <dl className="mt-8 grid max-w-3xl grid-cols-3 gap-2 sm:mt-10 sm:gap-3">
+          <div className="card px-2.5 py-2.5 sm:px-4 sm:py-3">
+            <dt className="flex items-center gap-1 text-[10px] leading-tight text-ink3 sm:text-xs">
+              <span>
+                Avg. passing-yards <span className="whitespace-nowrap">miss</span>
+              </span>
               <InfoTip label="What does average miss mean?">
                 Across {meta.backtest.weeksEvaluated} weeks of {meta.backtest.season}, our
                 passing-yards call landed within about {Math.round(passYds?.mae ?? 0)} yards of the
                 real number, on average.
               </InfoTip>
             </dt>
-            <dd className="tnum mt-1 text-2xl font-bold">
+            <dd className="tnum mt-1 text-lg font-bold sm:text-2xl">
               ±{Math.round(passYds?.mae ?? 0)}{" "}
-              <span className="text-sm font-medium text-ink3">yds</span>
+              <span className="text-xs font-medium text-ink3 sm:text-sm">yds</span>
             </dd>
           </div>
-          <div className="card px-4 py-3">
-            <dt className="flex items-center gap-1 text-xs text-ink3">
+          <div className="card px-2.5 py-2.5 sm:px-4 sm:py-3">
+            <dt className="flex items-center gap-1 text-[10px] leading-tight text-ink3 sm:text-xs">
               Range coverage
               <InfoTip label="What does range coverage mean?">
                 About {Math.round((passYds?.coverage80 ?? 0) * 10)} times out of 10 this season,
@@ -77,20 +84,22 @@ export default function Home() {
                 player page. Other stats vary — the report card has each one.
               </InfoTip>
             </dt>
-            <dd className="tnum mt-1 text-2xl font-bold">
+            <dd className="tnum mt-1 text-lg font-bold sm:text-2xl">
               {Math.round((passYds?.coverage80 ?? 0) * 100)}
-              <span className="text-sm font-medium text-ink3">%</span>
+              <span className="text-xs font-medium text-ink3 sm:text-sm">%</span>
             </dd>
           </div>
-          <div className="card px-4 py-3">
-            <dt className="flex items-center gap-1 text-xs text-ink3">
+          <div className="card px-2.5 py-2.5 sm:px-4 sm:py-3">
+            <dt className="flex items-center gap-1 text-[10px] leading-tight text-ink3 sm:text-xs">
               Weeks back-tested
               <InfoTip label="What is back-testing?">
                 We replayed every earlier {meta.backtest.season} week the same way we replay this
                 one — the model never sees the game it is predicting.
               </InfoTip>
             </dt>
-            <dd className="tnum mt-1 text-2xl font-bold">{meta.backtest.weeksEvaluated}</dd>
+            <dd className="tnum mt-1 text-lg font-bold sm:text-2xl">
+              {meta.backtest.weeksEvaluated}
+            </dd>
           </div>
         </dl>
       </section>
@@ -125,25 +134,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- games strip ---------- */}
-      <section aria-label="This week's games" className="mt-12">
+      {/* ---------- games strip: swipeable on phones, grid on desktop ---------- */}
+      <section aria-label="This week's games" className="mt-10 sm:mt-12">
         <div className="mb-4 flex items-baseline justify-between">
           <h2 className="text-lg font-bold tracking-tight">Week {meta.week} slate</h2>
-          <span className="text-xs text-ink3">Tap a game for its calls · all times Eastern</span>
+          <span className="text-xs text-ink3">
+            <span className="md:hidden">
+              {slate.games.length} games · swipe → · times ET
+            </span>
+            <span className="hidden md:inline">Tap a game for its calls · all times Eastern</span>
+          </span>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <ul
+          className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-1 md:mx-0 md:grid md:snap-none md:grid-cols-3 md:gap-4 md:overflow-visible md:px-0 md:pb-0"
+          aria-label={`${slate.games.length} games — scrolls horizontally on small screens`}
+        >
           {slate.games.map((g) => (
-            <GameCard
+            <li
               key={g.gameId}
-              game={g}
-              callCount={slate.props.filter((p) => p.gameId === g.gameId).length}
-            />
+              className="w-[80%] max-w-[300px] shrink-0 snap-start md:w-auto md:max-w-none"
+            >
+              <GameCard
+                game={g}
+                callCount={slate.props.filter((p) => p.gameId === g.gameId).length}
+              />
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       {/* ---------- board ---------- */}
-      <section className="mt-14 scroll-mt-24" id="board">
+      <section className="mt-10 scroll-mt-24 sm:mt-14" id="board">
         <div className="mb-1 flex items-center gap-2">
           <h2 className="text-2xl font-bold tracking-tight">This Week&apos;s Top Calls</h2>
         </div>
@@ -163,6 +184,7 @@ export default function Home() {
           games={slate.games}
           markets={meta.markets}
           headshots={getHeadshots()}
+          availability={getAvailabilityWatch()}
         />
       </section>
 
