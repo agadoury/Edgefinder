@@ -1,6 +1,6 @@
 # EdgeFinder pipeline run report
 
-Generated 2026-08-11 11:03Z — model v1.0.0, trained on 2021-2024 REG with recency-weighted samples (half-life 3.0 seasons); intervals conformalized on a held-out 2024 split.
+Generated 2026-08-18 10:43Z — model v1.0.0, trained on 2021-2024 REG with recency-weighted samples (half-life 3.0 seasons); intervals conformalized on a held-out 2024 split.
 
 * **Demo slate:** 2025 week 14 (14 games, 170 players, 351 prop rows)
 * **Validation:** PASSED
