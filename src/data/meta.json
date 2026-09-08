@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-01T14:47:50Z",
+ "generatedAt": "2026-09-08T14:26:53Z",
  "season": 2025,
  "week": 14,
  "mode": "backtest_replay",
@@ -68,7 +68,7 @@
   "byMarket": {
    "pass_yds": {
     "n": 435,
-    "mae": 57.45,
+    "mae": 57.46,
     "baselineMae": 69.17,
     "coverage80": 0.807,
     "strongCallHitRate": 0.933,
@@ -160,7 +160,7 @@
    },
    "rush_yds": {
     "n": 1226,
-    "mae": 18.53,
+    "mae": 18.54,
     "baselineMae": 19.32,
     "coverage80": 0.816,
     "strongCallHitRate": 1.0,
@@ -181,14 +181,14 @@
      {
       "bucketMid": 0.45,
       "predicted": 0.444,
-      "actual": 0.452,
-      "n": 409
+      "actual": 0.454,
+      "n": 410
      },
      {
       "bucketMid": 0.55,
       "predicted": 0.545,
-      "actual": 0.55,
-      "n": 240
+      "actual": 0.548,
+      "n": 239
      },
      {
       "bucketMid": 0.65,
@@ -222,13 +222,13 @@
       "bucketMid": 0.35,
       "predicted": 0.355,
       "actual": 0.303,
-      "n": 436
+      "n": 435
      },
      {
       "bucketMid": 0.45,
-      "predicted": 0.453,
+      "predicted": 0.452,
       "actual": 0.423,
-      "n": 834
+      "n": 835
      },
      {
       "bucketMid": 0.55,
@@ -260,39 +260,39 @@
     "calibration": [
      {
       "bucketMid": 0.15,
-      "predicted": 0.214,
-      "actual": 0.229,
-      "n": 446
+      "predicted": 0.215,
+      "actual": 0.228,
+      "n": 448
      },
      {
       "bucketMid": 0.35,
       "predicted": 0.352,
-      "actual": 0.344,
-      "n": 477
+      "actual": 0.345,
+      "n": 475
      },
      {
       "bucketMid": 0.45,
       "predicted": 0.45,
-      "actual": 0.467,
-      "n": 520
+      "actual": 0.465,
+      "n": 518
      },
      {
       "bucketMid": 0.55,
       "predicted": 0.548,
-      "actual": 0.499,
-      "n": 463
+      "actual": 0.502,
+      "n": 466
      },
      {
       "bucketMid": 0.65,
       "predicted": 0.646,
-      "actual": 0.599,
+      "actual": 0.597,
       "n": 357
      },
      {
       "bucketMid": 0.85,
       "predicted": 0.787,
-      "actual": 0.724,
-      "n": 503
+      "actual": 0.725,
+      "n": 502
      }
     ]
    }

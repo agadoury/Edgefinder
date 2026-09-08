@@ -1,6 +1,6 @@
 # EdgeFinder pipeline run report
 
-Generated 2026-09-01 14:47Z — model v1.0.0, trained on 2021-2024 REG with recency-weighted samples (half-life 3.0 seasons); intervals conformalized on a held-out 2024 split.
+Generated 2026-09-08 14:26Z — model v1.0.0, trained on 2021-2024 REG with recency-weighted samples (half-life 3.0 seasons); intervals conformalized on a held-out 2024 split.
 
 * **Demo slate:** 2025 week 14 (14 games, 170 players, 351 prop rows)
 * **Validation:** PASSED
@@ -11,11 +11,11 @@ Generated 2026-09-01 14:47Z — model v1.0.0, trained on 2021-2024 REG with rece
 
 | market | n | MAE | baseline MAE | coverage80 | CRPS | Brier | strong-call hit | strong n |
 |---|---|---|---|---|---|---|---|---|
-| pass_yds | 435 | 57.45 | 69.17 | 0.807 | 33.703 | 0.2107 | 0.933 | 15 |
-| pass_tds | 435 | 0.84 | 0.95 | 0.821 | 0.485 | 0.1889 | 0.868 | 53 |
-| rush_yds | 1226 | 18.53 | 19.32 | 0.816 | 10.695 | 0.2312 | 1.000 | 5 |
-| rec_yds | 2766 | 18.21 | 19.25 | 0.846 | 10.327 | 0.2292 | 1.000 | 12 |
-| receptions | 2766 | 1.37 | 1.41 | 0.810 | 0.779 | 0.2224 | 0.865 | 111 |
+| pass_yds | 435 | 57.46 | 69.17 | 0.807 | 33.704 | 0.2107 | 0.933 | 15 |
+| pass_tds | 435 | 0.84 | 0.95 | 0.821 | 0.485 | 0.1888 | 0.868 | 53 |
+| rush_yds | 1226 | 18.54 | 19.32 | 0.816 | 10.695 | 0.2313 | 1.000 | 5 |
+| rec_yds | 2766 | 18.21 | 19.25 | 0.846 | 10.326 | 0.2292 | 1.000 | 12 |
+| receptions | 2766 | 1.37 | 1.41 | 0.810 | 0.779 | 0.2223 | 0.865 | 111 |
 
 Baseline = the refLine blend (trailing-5 median x season median). The model beats it on every market.
 
@@ -25,16 +25,16 @@ Per-quantile empirical coverage P(y <= q_tau) (target = tau) and mean pinball lo
 
 | market | p05 | p10 | p25 | p50 | p75 | p90 | p95 | CRPS | Brier |
 |---|---|---|---|---|---|---|---|---|---|
-| pass_yds (coverage) | 0.083 | 0.136 | 0.278 | 0.508 | 0.724 | 0.913 | 0.949 | 33.703 | 0.2107 |
-| pass_yds (pinball) | 7.288 | 12.661 | 22.446 | 28.825 | 24.615 | 13.656 | 8.471 |  |  |
-| pass_tds (coverage) | 0.290 | 0.290 | 0.331 | 0.503 | 0.745 | 0.936 | 0.963 | 0.485 | 0.1889 |
+| pass_yds (coverage) | 0.083 | 0.136 | 0.278 | 0.508 | 0.724 | 0.913 | 0.949 | 33.704 | 0.2107 |
+| pass_yds (pinball) | 7.287 | 12.661 | 22.446 | 28.827 | 24.615 | 13.656 | 8.471 |  |  |
+| pass_tds (coverage) | 0.290 | 0.290 | 0.331 | 0.503 | 0.745 | 0.936 | 0.963 | 0.485 | 0.1888 |
 | pass_tds (pinball) | 0.075 | 0.144 | 0.308 | 0.438 | 0.376 | 0.220 | 0.137 |  |  |
-| rush_yds (coverage) | 0.183 | 0.205 | 0.307 | 0.532 | 0.796 | 0.898 | 0.945 | 10.695 | 0.2312 |
-| rush_yds (pinball) | 1.582 | 2.902 | 6.056 | 9.091 | 8.596 | 5.597 | 3.606 |  |  |
-| rec_yds (coverage) | 0.189 | 0.217 | 0.297 | 0.523 | 0.773 | 0.914 | 0.957 | 10.327 | 0.2292 |
-| rec_yds (pinball) | 1.506 | 2.783 | 5.978 | 8.998 | 8.404 | 5.227 | 3.248 |  |  |
-| receptions (coverage) | 0.184 | 0.205 | 0.299 | 0.530 | 0.780 | 0.914 | 0.963 | 0.779 | 0.2224 |
-| receptions (pinball) | 0.127 | 0.236 | 0.486 | 0.685 | 0.603 | 0.362 | 0.227 |  |  |
+| rush_yds (coverage) | 0.183 | 0.205 | 0.307 | 0.531 | 0.795 | 0.898 | 0.945 | 10.695 | 0.2313 |
+| rush_yds (pinball) | 1.582 | 2.902 | 6.056 | 9.094 | 8.597 | 5.597 | 3.606 |  |  |
+| rec_yds (coverage) | 0.189 | 0.217 | 0.297 | 0.523 | 0.773 | 0.914 | 0.957 | 10.326 | 0.2292 |
+| rec_yds (pinball) | 1.506 | 2.783 | 5.978 | 8.998 | 8.402 | 5.226 | 3.247 |  |  |
+| receptions (coverage) | 0.184 | 0.205 | 0.299 | 0.530 | 0.780 | 0.914 | 0.963 | 0.779 | 0.2223 |
+| receptions (pinball) | 0.127 | 0.236 | 0.486 | 0.685 | 0.602 | 0.362 | 0.227 |  |  |
 
 Calibration-bucket drift (|predicted − actual| over the P(over) buckets) and strong-call Wilson 95% intervals:
 
@@ -44,7 +44,7 @@ Calibration-bucket drift (|predicted − actual| over the P(over) buckets) and s
 | pass_tds | 0.084 | 0.043 | 0.868 (53) | [0.752, 0.935] |
 | rush_yds | 0.158 | 0.018 | 1.000 (5) | [0.566, 1.000] |
 | rec_yds | 0.052 | 0.034 | 1.000 (12) | [0.757, 1.000] |
-| receptions | 0.063 | 0.033 | 0.865 (111) | [0.789, 0.916] |
+| receptions | 0.062 | 0.031 | 0.865 (111) | [0.789, 0.916] |
 
 ## Interval calibration (split conformal, 2024)
 
@@ -65,13 +65,13 @@ Archived FanDuel prop snapshots (pass yds + receptions) matched to the 2025 walk
 
 | market | n matched | model MAE | FD line MAE | Brier at FD | lean hit rate (n) | Wilson 95% | strong hit rate (n) | Wilson 95% |
 |---|---|---|---|---|---|---|---|---|
-| pass_yds | 375 | 56.53 | 53.52 | 0.2594 | 0.513 (267) | [0.453, 0.572] | 1.000 (2) | [0.342, 1.000] |
-| receptions | 1771 | 1.63 | 1.59 | 0.2592 | 0.546 (1391) | [0.519, 0.572] | 0.538 (13) | [0.291, 0.768] |
+| pass_yds | 375 | 56.53 | 53.52 | 0.2595 | 0.511 (266) | [0.451, 0.571] | 1.000 (2) | [0.342, 1.000] |
+| receptions | 1771 | 1.63 | 1.59 | 0.2590 | 0.547 (1391) | [0.521, 0.573] | 0.538 (13) | [0.291, 0.768] |
 
 P(over FanDuel line) calibration:
 
 * **pass_yds** — [0.15] pred 0.21 act 0.53 n=38 | [0.35] pred 0.36 act 0.43 n=44 | [0.45] pred 0.45 act 0.50 n=125 | [0.55] pred 0.54 act 0.47 n=120 | [0.65] pred 0.64 act 0.70 n=40 | [0.85] pred 0.76 act 0.50 n=8
-* **receptions** — [0.15] pred 0.23 act 0.43 n=202 | [0.35] pred 0.35 act 0.41 n=427 | [0.45] pred 0.45 act 0.50 n=485 | [0.55] pred 0.55 act 0.46 n=393 | [0.65] pred 0.64 act 0.54 n=197 | [0.85] pred 0.76 act 0.42 n=67
+* **receptions** — [0.15] pred 0.24 act 0.42 n=205 | [0.35] pred 0.35 act 0.41 n=423 | [0.45] pred 0.45 act 0.49 n=483 | [0.55] pred 0.55 act 0.46 n=397 | [0.65] pred 0.64 act 0.54 n=197 | [0.85] pred 0.76 act 0.42 n=66
 
 A ~52.4% hit rate is the break-even at standard -110 pricing (the archived FanDuel prices on our leaned sides imply 52.9% (pass_yds) and 55.6% (receptions)). The hit rates above carry wide intervals and sit near that bar — **we are NOT claiming market edge**; against real closing lines the model is a study tool, not a money machine. Snapshots are near-closing (median hours to kickoff reported per market: pass_yds 1.6h, receptions 1.6h), not the literal final tick. 2023-2024 archive seasons are excluded because the shipped models train through 2024 — scoring them here would not be walk-forward.
 
